@@ -1,0 +1,10 @@
+- Auth0 is a platform for user registration, login, MFA, SSO, and social login. 
+- Auth0 also provides APIs and tools for securing applications and managing access control
+- JWT is an open standard for securely transmitting information as a JSON object. 
+- JWTs are used for authentication, authorization, and secure data exchange.
+- Use Auth0 for a comprehensive authentication and authorization solution, including social media support, MFA, SSO, and secure data storage. 
+- Use Auth0 for access control tools and APIs in web applications and APIs. 
+- Use JWT when manual control over token content is needed, such as signing algorithm, token expiration, and custom claims. 
+- Use JWT for situations requiring custom implementation of token creation, verification, and revocation. 
+- JWT is suitable when full control over the authentication process is desired. 
+- Auth0 is recommended for a simplified, all-in-one authentication and authorization management.
