@@ -1,3 +1,8 @@
+- [Boring Design Pattern](#boring-design-pattern)
+- [Worker Pool Pattern](#worker-pool-pattern)
+- [Fan-In](#fan-in)
+- [Fan-Out](#fan-out)
+
 ### Boring Design Pattern
 
 1. **Small and Independent Tasks**: The boring design pattern is well-suited for scenarios where you have several small and independent tasks that can be executed concurrently. Each task can be encapsulated within a separate goroutine.
