@@ -160,8 +160,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fb9c61834a6abf7d",
+  "active": "b4904ce9751ea41b",
   "lastOpenFiles": [
+    "Untitled",
     "LLD/00 - Index.md",
     "LLD/02 - Object-oriented programming (OOP).md",
     "LLD/01 - Introduction.md",
@@ -191,7 +192,6 @@
     "Golang/Palindrome of Chinese string.md",
     "Golang/Use of empty struct.md",
     "Golang/Pointers.md",
-    "Golang/Map Internals.md",
     "Pasted image 20240604120711.png",
     "Pasted image 20240604102843.png",
     "Pasted image 20240604101357.png",
