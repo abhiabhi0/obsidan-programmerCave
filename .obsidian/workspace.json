@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLD/03 - Constructor, Access modifiers.md",
+                "file": "LLD/03 - Constructor, Access modifiers, Inheritance.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LLD/03 - Constructor, Access modifiers.md",
+                "file": "LLD/03 - Constructor, Access modifiers, Inheritance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LLD/03 - Constructor, Access modifiers.md",
+                "file": "LLD/03 - Constructor, Access modifiers, Inheritance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLD/03 - Constructor, Access modifiers.md"
+                "file": "LLD/03 - Constructor, Access modifiers, Inheritance.md"
               }
             }
           }
@@ -164,7 +164,7 @@
   "lastOpenFiles": [
     "LLD/02 - Object-oriented programming (OOP).md",
     "LLD/01 - Introduction.md",
-    "LLD/03 - Constructor, Access modifiers.md",
+    "LLD/03 - Constructor, Access modifiers, Inheritance.md",
     "00 Tasks/00 Tasks.md",
     "00 Tasks",
     "LLD/00 - Index.md",

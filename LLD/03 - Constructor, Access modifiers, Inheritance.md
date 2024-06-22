@@ -15,6 +15,7 @@
 #### Parameterized constructor:
 -  real benefit of constructors is that they help us maintain encapsulation when injecting state into the object.
 
+---
 ## Access modifiers
 - There are two types of modifiers in Java: **access modifiers** and **non-access modifiers**.
 ### Types of access modifiers in Java:
@@ -30,4 +31,8 @@
 | Default   | Yes   | Yes     | No       | No     |
 | Private   | Yes   | No      | No       | No     |
 
+---
+## Inheritance:
+-  mechanism that allows one class to acquire all the properties from another class by inheriting the class.
+- represents the IS-A relationship which is also known as a parent-child relationship.
 
