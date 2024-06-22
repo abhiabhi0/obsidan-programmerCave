@@ -36,3 +36,16 @@
 -  mechanism that allows one class to acquire all the properties from another class by inheriting the class.
 - represents the IS-A relationship which is also known as a parent-child relationship.
 
+### Types of inheritance:
+ - **Single** - when a class can have only one parent class.
+ - **Multilevel** - when a class can have multiple parent classes at different levels.
+ - **Hierarchical** - When two or more classes inherits a single class, it is known as hierarchical inheritance.
+ - **Multiple** - When a class can have multiple parent classes, it is known as multiple inheritance.
+
+---
+## Diamond Problem
+
+- ambiguity that arises when two classes B and C inherit from A, and class D inherits from both B and C.
+-  If there is a method in A that B and C have overridden, and D does not override it, then which version of the method does D inherit: that of B, or that of C.
+
+![[Pasted image 20240622221813.png]]
