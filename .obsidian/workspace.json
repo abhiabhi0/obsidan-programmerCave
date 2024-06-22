@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLD/02 - Object-oriented programming (OOP).md",
+                "file": "00 Tasks/00 Tasks.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LLD/02 - Object-oriented programming (OOP).md",
+                "file": "00 Tasks/00 Tasks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LLD/02 - Object-oriented programming (OOP).md",
+                "file": "00 Tasks/00 Tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLD/02 - Object-oriented programming (OOP).md"
+                "file": "00 Tasks/00 Tasks.md"
               }
             }
           }
@@ -160,11 +160,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b4904ce9751ea41b",
+  "active": "fb9c61834a6abf7d",
   "lastOpenFiles": [
-    "Untitled",
-    "LLD/00 - Index.md",
     "LLD/02 - Object-oriented programming (OOP).md",
+    "00 Tasks/00 Tasks.md",
+    "00 Tasks",
+    "LLD/00 - Index.md",
     "LLD/01 - Introduction.md",
     "Golang/Concurrency Patterns.md",
     "LLD",
@@ -207,7 +208,6 @@
     "Untitled.canvas",
     "DSA",
     "Interview Prep/Questions on Resume",
-    "Interview Prep",
-    "AI"
+    "Interview Prep"
   ]
 }
