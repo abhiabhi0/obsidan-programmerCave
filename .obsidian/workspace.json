@@ -24,9 +24,12 @@
             "id": "932f942b4b35c83a",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2024-06-22 22.22.44.excalidraw.md"
+                "file": "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
             }
           }
@@ -97,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2024-06-22 22.22.44.excalidraw.md",
+                "file": "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2024-06-22 22.22.44.excalidraw.md",
+                "file": "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -137,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2024-06-22 22.22.44.excalidraw.md"
+                "file": "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md"
               }
             }
           }
@@ -161,15 +164,15 @@
   },
   "active": "932f942b4b35c83a",
   "lastOpenFiles": [
-    "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
+    "LLD/01 - Introduction.md",
+    "LLD/02 - Object-oriented programming (OOP).md",
     "Excalidraw/Drawing 2024-06-22 22.22.44.excalidraw.md",
+    "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
     "Pasted image 20240622221813.png",
     "Excalidraw/Drawing 2024-06-22 22.16.17.excalidraw.md",
     "Excalidraw",
     "Untitled.canvas",
-    "LLD/02 - Object-oriented programming (OOP).md",
     "Untitled 1.canvas",
-    "LLD/01 - Introduction.md",
     "00 Tasks/00 Tasks.md",
     "00 Tasks",
     "LLD/00 - Index.md",
