@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 Tasks/00 Tasks.md",
+                "file": "LLD/02 - Object-oriented programming (OOP).md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "00 Tasks/00 Tasks.md",
+                "file": "LLD/02 - Object-oriented programming (OOP).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "00 Tasks/00 Tasks.md",
+                "file": "LLD/02 - Object-oriented programming (OOP).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 Tasks/00 Tasks.md"
+                "file": "LLD/02 - Object-oriented programming (OOP).md"
               }
             }
           }
@@ -162,11 +162,11 @@
   },
   "active": "fb9c61834a6abf7d",
   "lastOpenFiles": [
+    "LLD/01 - Introduction.md",
     "LLD/02 - Object-oriented programming (OOP).md",
     "00 Tasks/00 Tasks.md",
     "00 Tasks",
     "LLD/00 - Index.md",
-    "LLD/01 - Introduction.md",
     "Golang/Concurrency Patterns.md",
     "LLD",
     "Golang/Closing a Channel.md",

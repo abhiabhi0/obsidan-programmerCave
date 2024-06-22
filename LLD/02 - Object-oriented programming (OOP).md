@@ -4,9 +4,18 @@
 - Advantages of OO include the potential for information hiding: if a caller needn't pass any data structure, then the caller needn't be aware of any data structure, and can therefore be completely decoupled from the data format.
 ##### Abstraction:
 - process of hiding the implementation details of a program from the user.
+###### Advantages of Abstraction
+- used to create a boundary between the application and the client code.
+- separate responsibilities into software entities (classes, method, etc.) that only know the required functionality of each other but not how that functionality is implemented.
+- It allows the programmer to change the internal implementation of methods or concrete classes without hampering the interface.
+-  increase the code security as only relevant details will be provided to users.
 ##### Encapsulation:
 - used to hide the values or state of a structured data object inside a class,
 - preventing direct access to them by clients in a way that could expose hidden implementation details or violate state invariance maintained by the methods.
+###### Advantages of Encapsulation:
+- **Hiding Data** - Users will have no idea how classes are being implemented or stored. All that users will know is that values are being passed and initialized.
+- **More Flexibility** - Enables you to set variables as read or write-only.
+- **Easy to Reuse** - With encapsulation it's easy to change and adapt to new requirements.
 ##### Class:
 - is a blueprint which you use to create objects.
 ##### Object:
