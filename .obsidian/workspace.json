@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLD/02 - Object-oriented programming (OOP).md",
+                "file": "LLD/03 - Constructor, Access modifiers.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LLD/02 - Object-oriented programming (OOP).md",
+                "file": "LLD/03 - Constructor, Access modifiers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LLD/02 - Object-oriented programming (OOP).md",
+                "file": "LLD/03 - Constructor, Access modifiers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLD/02 - Object-oriented programming (OOP).md"
+                "file": "LLD/03 - Constructor, Access modifiers.md"
               }
             }
           }
@@ -162,8 +162,9 @@
   },
   "active": "fb9c61834a6abf7d",
   "lastOpenFiles": [
-    "LLD/01 - Introduction.md",
     "LLD/02 - Object-oriented programming (OOP).md",
+    "LLD/01 - Introduction.md",
+    "LLD/03 - Constructor, Access modifiers.md",
     "00 Tasks/00 Tasks.md",
     "00 Tasks",
     "LLD/00 - Index.md",
@@ -192,7 +193,6 @@
     "Golang/Thread Safe Stack Implementation.md",
     "Golang/Palindrome of Chinese string.md",
     "Golang/Use of empty struct.md",
-    "Golang/Pointers.md",
     "Pasted image 20240604120711.png",
     "Pasted image 20240604102843.png",
     "Pasted image 20240604101357.png",
