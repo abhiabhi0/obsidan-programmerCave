@@ -52,9 +52,9 @@
 
 ---
 
-### Java Code
+## Java Code
 
-user.java
+User.java
 ```java
 package com.scaler.lld.scaler;
 
@@ -80,6 +80,114 @@ public class User {
 
     public void printInfo(String title) {
         System.out.println(" \n User: " + title + " " + this.getName());
+    }
+}
+```
+
+Student.java
+```java
+package com.scaler.lld.scaler;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class Student extends User {
+
+    private String batchName;
+    private Integer psp;
+    private StudentStatus status = StudentStatus.ACTIVE; // ACTIVE, PAUSED, COMPLETED
+
+    // Define parametrised constructor
+
+    public Student(String name, String email, String batchName, Integer psp) {
+        super(name, email);
+        this.batchName = batchName;
+
+        if (psp < 0 || psp > 100) {
+            throw new IllegalArgumentException("PSP should be between 0 and 100");
+        }
+        this.psp = psp;
+    }
+
+    public Student() {
+    }
+
+    void changeBatch(String batchName) {
+        this.batchName = batchName;
+    }
+
+    @Override
+    public void printInfo() {
+        System.out.println("\nStudent: " + getName() + " " + getBatchName());
+    }
+
+}
+```
+
+StudentStatus.java
+```java
+package com.scaler.lld.scaler;
+
+public enum StudentStatus {
+    ACTIVE, PAUSED, COMPLETED, EDGE
+}
+```
+
+Mentor.java
+```java
+package com.scaler.lld.scaler;
+
+import java.util.ArrayList;
+import java.util.List;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class Mentor extends User {
+    private List<Student> mentees = new ArrayList<>();
+    private String company;
+
+    public Mentor(String name, String email, List<Student> mentees, String company) {
+        super(name, email);
+        this.mentees = mentees;
+        this.company = company;
+    }
+}
+```
+
+App.java
+```java
+package com.scaler.lld;
+
+import java.util.List;
+import com.scaler.lld.scaler.Student;
+import com.scaler.lld.scaler.User;
+
+public class App {
+    public static void main(String[] args) {
+        User student = new Student("student", "student@scaler.in", "batch", 100);
+        student.printInfo(); // inheritance
+    }
+
+    public static void resetEmail(List<User> users) {
+        for (User user : users) {
+            user.changeEmail("");
+
+            if (user instanceof Student) {
+                Student student = (Student) user;
+
+                System.out.println("Name :" + student.getName() + " " + student.getPsp());
+
+                student.setPsp(0);
+                System.out.println("Name :" + student.getName() + " " + student.getPsp());
+
+            }            
+
+        }
+
     }
 }
 ```

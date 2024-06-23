@@ -101,8 +101,8 @@
               "type": "backlink",
               "state": {
                 "file": "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
-                "collapseAll": false,
-                "extraContext": false,
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
@@ -144,12 +144,12 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -162,7 +162,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "932f942b4b35c83a",
+  "active": "c297e15289533d73",
   "lastOpenFiles": [
     "LLD/01 - Introduction.md",
     "LLD/02 - Object-oriented programming (OOP).md",
