@@ -82,14 +82,4 @@ public class User {
         System.out.println(" \n User: " + title + " " + this.getName());
     }
 }
-
-// Interfaces
-// Class - Blueprint
-// Interface - Blue print of behaviour
-// Database db = new MySqlDB();
-// Interfaces - define methods with an impl.
-// Abstract - mixture of interface and class
-// implemented methods + not-implemented
-// Abstract classes - state
-
 ```
