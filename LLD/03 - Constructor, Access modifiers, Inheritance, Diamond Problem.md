@@ -49,3 +49,47 @@
 -  If there is a method in A that B and C have overridden, and D does not override it, then which version of the method does D inherit: that of B, or that of C.
 
 ![[Pasted image 20240622221813.png]]
+
+---
+
+### Java Code
+
+user.java
+```java
+package com.scaler.lld.scaler;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class User {
+    private String name;
+    private String email;
+
+    public void changeEmail(String email) {
+        this.email = email;
+    }
+
+    public void printInfo() {
+    }
+
+    public void printInfo(String title) {
+        System.out.println(" \n User: " + title + " " + this.getName());
+    }
+}
+
+// Interfaces
+// Class - Blueprint
+// Interface - Blue print of behaviour
+// Database db = new MySqlDB();
+// Interfaces - define methods with an impl.
+// Abstract - mixture of interface and class
+// implemented methods + not-implemented
+// Abstract classes - state
+
+```
