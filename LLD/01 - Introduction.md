@@ -1,14 +1,3 @@
-- [Low-level design (LLD):](#low-level-design-lld)
-	- [Why LLD?](#why-lld)
-		- [Maintainability:](#maintainability)
-		- [Scalability:](#scalability)
-		- [Extensibility:](#extensibility)
-- [Programming paradigms](#programming-paradigms)
-- [Imperative:](#imperative)
-	- [Procedural programming:](#procedural-programming)
-	- [Object Oriented Programming](#object-oriented-programming)
-- [Declarative:](#declarative)
----
 ### Low-level design (LLD):
 - component-level design process that follows a step-by-step refinement process. 
 - used for designing data structures, required software architecture, source code and ultimately, performance algorithms. 

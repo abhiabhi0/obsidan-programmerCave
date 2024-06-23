@@ -1,18 +1,3 @@
-
-- [OOP](#oop)
-		- [Abstraction:](#abstraction)
-			- [Advantages of Abstraction](#advantages-of-abstraction)
-		- [Encapsulation:](#encapsulation)
-			- [Advantages of Encapsulation:](#advantages-of-encapsulation)
-		- [Class:](#class)
-		- [Object:](#object)
-	- [Java OOP Code](#java-oop-code)
-	- [Python OOP Code](#python-oop-code)
-	- [Golang Code](#golang-code)
-			- [Advantages:](#advantages)
-			- [Disadvantages:](#disadvantages)
-
----
 ### OOP
 - programming paradigm that uses objects to model real-world things and aims to implement state and behavior using objects.
 - State and behaviour are combined into one new concept: an Object. An OO application can therefore produce some output by calling an Object, without needing to pass data structures.

@@ -1,16 +1,3 @@
-- [Constructor](#constructor)
-			- [Syntax of a constructor:](#syntax-of-a-constructor)
-	- [Types of Constructor:](#types-of-constructor)
-		- [Default constructor:](#default-constructor)
-		- [Parameterized constructor:](#parameterized-constructor)
-- [Access modifiers](#access-modifiers)
-	- [Types of access modifiers in Java:](#types-of-access-modifiers-in-java)
-- [Inheritance:](#inheritance)
-	- [Types of inheritance:](#types-of-inheritance)
-- [Diamond Problem](#diamond-problem)
-- [Java Code](#java-code)
-
----
 ## Constructor
 - special method that is called when an object is created. 
 - used to initialize the object. 
