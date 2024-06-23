@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
+                "file": "LLD/00 - Index.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
+                "file": "LLD/00 - Index.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
+                "file": "LLD/00 - Index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -140,7 +140,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md"
+                "file": "LLD/00 - Index.md"
               }
             }
           }
@@ -162,12 +162,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c297e15289533d73",
+  "active": "932f942b4b35c83a",
   "lastOpenFiles": [
     "LLD/01 - Introduction.md",
     "LLD/02 - Object-oriented programming (OOP).md",
-    "Excalidraw/Drawing 2024-06-22 22.22.44.excalidraw.md",
     "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
+    "Excalidraw/Drawing 2024-06-22 22.22.44.excalidraw.md",
     "Pasted image 20240622221813.png",
     "Excalidraw/Drawing 2024-06-22 22.16.17.excalidraw.md",
     "Excalidraw",
