@@ -52,7 +52,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLD/04 - Polymorphism.md",
+                "file": "LLD/00 - Index.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -126,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LLD/04 - Polymorphism.md",
+                "file": "LLD/00 - Index.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -143,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LLD/04 - Polymorphism.md",
+                "file": "LLD/00 - Index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -166,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLD/04 - Polymorphism.md"
+                "file": "LLD/00 - Index.md"
               }
             }
           }
@@ -190,8 +190,8 @@
   },
   "active": "9ec8cd9625464b25",
   "lastOpenFiles": [
-    "Excalidraw/Polymorphism.excalidraw.md",
     "LLD/04 - Polymorphism.md",
+    "Excalidraw/Polymorphism.excalidraw.md",
     "Excalidraw/Drawing 2024-06-24 21.46.15.excalidraw.png",
     "LLD/00 - Index.md",
     "00 Tasks/00 Tasks.md",
