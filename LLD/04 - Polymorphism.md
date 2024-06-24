@@ -45,4 +45,26 @@ public class User {
 - The compiler distinguishes these two methods by the number of parameters in the list and their data types. The return type of the method does not matter.
 
 ### Method Overriding (Runtime polymorphism)
-- Runtime polymorphism is also called Dynamic method dispatch. Instead of resolving the overridden method at compile-time, it is resolved at runtime
+- Runtime polymorphism is also called Dynamic method dispatch. Instead of resolving the overridden method at compile-time, it is resolved at runtime.
+```java
+public class User {
+	private String name;
+	private String email;
+
+	public void printUser() {
+		System.out.println("Name: " + name + ", Email: " + email);
+	}
+}
+
+public class Student extends User {
+	private String batchName;
+	private Integer psp;
+
+	@Override
+	public void printUser() {
+		System.out.println("Name: " + name + ", Email: " + email + ",
+		Batch: " + batchName + ", PSP: " + psp);
+	}
+}
+```
+
