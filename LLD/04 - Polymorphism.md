@@ -6,6 +6,8 @@
 - Compile-time polymorphism can be achieved by method overloading
 - Runtime polymorphism can be achieved by method overriding.
 
+![[Polymorphism.excalidraw]]
+
 ### Subtyping
 - concept in object-oriented programming that allows a variable of a base class to reference a derived class object. This is called polymorphism, because the variable can take on many forms.
 - The variable can be used to call methods that are defined in the base class, but the actual implementation of the method is defined in the derived class.
@@ -24,7 +26,7 @@ public class Student extends User {
 User user = new Student();
 ```
 
-### Method Overriding (Compile time polymorphism)
+### Method Overloading (Compile time polymorphism)
 - feature that allows a class to have more than one method having the same name, if their argument lists are different. 
 - It is similar to constructor overloading in Java, that allows a class to have more than one constructor having different argument lists.
 ```java
@@ -44,7 +46,7 @@ public class User {
 
 - The compiler distinguishes these two methods by the number of parameters in the list and their data types. The return type of the method does not matter.
 
-### Method Overriding (Runtime polymorphism)
+### Method Overloading (Runtime polymorphism)
 - Runtime polymorphism is also called Dynamic method dispatch. Instead of resolving the overridden method at compile-time, it is resolved at runtime.
 ```java
 public class User {

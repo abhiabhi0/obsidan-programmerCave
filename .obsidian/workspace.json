@@ -32,9 +32,35 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "dd58b490ff9bb664",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LLD/04 - Polymorphism.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9ec8cd9625464b25",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LLD/04 - Polymorphism.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -162,11 +188,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "932f942b4b35c83a",
+  "active": "9ec8cd9625464b25",
   "lastOpenFiles": [
+    "Excalidraw/Polymorphism.excalidraw.md",
+    "LLD/04 - Polymorphism.md",
+    "Excalidraw/Drawing 2024-06-24 21.46.15.excalidraw.png",
     "LLD/00 - Index.md",
     "00 Tasks/00 Tasks.md",
-    "LLD/04 - Polymorphism.md",
     "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
     "LLD/02 - Object-oriented programming (OOP).md",
     "LLD/01 - Introduction.md",
@@ -197,14 +225,11 @@
     "Interview Prep/Database Concurrency in PostgreSQL.md",
     "Interview Prep/Concurrency Control Protocol.md",
     "Interview Prep/DB connection pool.md",
-    "Interview Prep/Types of load balancing algorithms.md",
-    "Interview Prep/CAP Theorem.md",
     "Pasted image 20240604120711.png",
     "Pasted image 20240604102843.png",
     "Pasted image 20240604101357.png",
     "Pasted image 20240604101050.png",
     "Pasted image 20240603131241.png",
-    "Pasted image 20240603131221.png",
     "System Design",
     "AA 7 June 2024 ko 24 lpa ka offer aaya hai",
     "Java",
