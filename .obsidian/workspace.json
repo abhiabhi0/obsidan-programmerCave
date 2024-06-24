@@ -4,63 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "172cbbe0076686e0",
+        "id": "164cde90478476e0",
         "type": "tabs",
         "children": [
           {
-            "id": "5a58520dba09545c",
+            "id": "1f3bdc680745120f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "932f942b4b35c83a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "LLD/04 - Polymorphism.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dd58b490ff9bb664",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "LLD/04 - Polymorphism.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9ec8cd9625464b25",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "LLD/00 - Index.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -126,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LLD/00 - Index.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -143,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LLD/00 - Index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -165,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "LLD/00 - Index.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -188,16 +139,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9ec8cd9625464b25",
+  "active": "1f3bdc680745120f",
   "lastOpenFiles": [
     "LLD/04 - Polymorphism.md",
-    "Excalidraw/Polymorphism.excalidraw.md",
-    "Excalidraw/Drawing 2024-06-24 21.46.15.excalidraw.png",
-    "LLD/00 - Index.md",
-    "00 Tasks/00 Tasks.md",
     "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
     "LLD/02 - Object-oriented programming (OOP).md",
     "LLD/01 - Introduction.md",
+    "LLD/00 - Index.md",
+    "Excalidraw/Polymorphism.excalidraw.md",
+    "Excalidraw/Drawing 2024-06-24 21.46.15.excalidraw.png",
+    "00 Tasks/00 Tasks.md",
     "Excalidraw/Drawing 2024-06-22 22.22.44.excalidraw.md",
     "Pasted image 20240622221813.png",
     "Excalidraw/Drawing 2024-06-22 22.16.17.excalidraw.md",
