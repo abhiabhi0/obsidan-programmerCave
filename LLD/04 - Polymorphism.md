@@ -68,3 +68,48 @@ public class Student extends User {
 }
 ```
 
+#### Advantages of Polymorphism
+- Code reusability is the main advantage of polymorphism; once a class is defined, it can be used multiple times to create an object.
+
+#### Problems with Polymorphism
+- Implementing code is complex because understanding the hierarchy of classes and its overridden method is quite difficult.
+- Runtime polymorphism can lead to the real-time performance issue (during the process), it basically degrades the performances as decisions are taken at run time because, machine needs to decide which method or variable to invoke
+
+### Interface
+- similar to a class, but it cannot be instantiated. 
+- It can contain only constants, method signatures, default methods, static methods, and nested types. 
+- Method bodies exist only for default methods and static methods.
+-  can be thought of as a blueprint of behavior. 
+- It is used to achieve abstraction and multiple inheritance in Java.
+
+#### Why use an interface?
+- It is used to achieve abstraction.
+- Due to multiple inheritance, it can achieve loose coupling. 
+- Define a common behavior for unrelated classes.
+
+```java
+public interface Person {
+	String getName();
+	String getEmail();
+}
+
+public class User implements Person {
+	private String name;
+	private String email;
+	
+	public User(String name, String email) {
+		this.name = name;
+		this.email = email;
+	}
+	
+	@Override
+	public String getName() {
+		return name;
+	}
+	
+	@Override
+	public String getEmail() {
+		return email;
+	}
+}
+```
