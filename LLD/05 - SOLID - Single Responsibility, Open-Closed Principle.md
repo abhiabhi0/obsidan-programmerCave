@@ -13,6 +13,19 @@
 	- Fly
 	- Eat
 	- Make a sound
+```mermaid
+classDiagram
+    class Bird{
+        +weight: int
+        +colour: string
+        +type: string
+        +size: string
+        +beakType: string
+        +fly()
+        +eat()
+        +makeSound()
+    }
+```
 
 ```java
 public class Bird {
@@ -107,3 +120,35 @@ public void fly() {
 - If multiple classes have common functionalities, we would like to use inheritance to avoid code duplication and also have fixed contracts so that the subclasses are forced to implement the common functionalities. 
 - If the common classes have common attributes, consider using abstract classes since they can have instance variables. 
 - If the common classes have common methods, consider using interfaces since they can have only abstract methods. However, the implementation of the methods can be different in the subclasses. Interfaces are also useful when we want to have multiple inheritance
+
+### Fixing OCP violation in the Bird class
+- In order to fix the SRP violations, we would consider having a parent class `Bird` and child classes `Eagle`, `Penguin`, and `Parrot`.
+- Since, different birds have the same attributes and behaviours, we would want to use classes
+- An instance of the `Bird` class does not make sense, hence we would use an abstract class. 
+- We can't use an interface since we would want to have instance variables
+
+```mermaid
+classDiagram
+    Bird <|-- Eagle
+    Bird <|-- Penguin
+    Bird <|-- Parrot
+    class Bird{
+        +weight: int
+        +colour: string
+        +type: string
+        +size: string
+        +beakType: string
+        +fly()
+    }
+    class Eagle{
+        +fly()
+    }
+    class Penguin{
+        +fly()
+    }
+    class Parrot{
+        +fly()
+    }
+```
+
+
