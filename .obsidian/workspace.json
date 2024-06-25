@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "164cde90478476e0",
+        "id": "9311b482988e3f1e",
         "type": "tabs",
         "children": [
           {
-            "id": "1f3bdc680745120f",
+            "id": "8c4bf9190d9893aa",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {}
             }
           }
@@ -120,9 +120,31 @@
               "type": "outline",
               "state": {}
             }
+          },
+          {
+            "id": "4db7103f30888791",
+            "type": "leaf",
+            "state": {
+              "type": "tasks_timeline_view",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
+      },
+      {
+        "id": "e1f64291e07d4de7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cb183d99e24ad297",
+            "type": "leaf",
+            "state": {
+              "type": "tasks_timeline_view",
+              "state": {}
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
@@ -139,13 +161,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "1f3bdc680745120f",
+  "active": "8c4bf9190d9893aa",
   "lastOpenFiles": [
+    "LLD/00 - Index.md",
+    "Inbox.md",
     "LLD/04 - Polymorphism.md",
     "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
     "LLD/02 - Object-oriented programming (OOP).md",
     "LLD/01 - Introduction.md",
-    "LLD/00 - Index.md",
     "Excalidraw/Polymorphism.excalidraw.md",
     "Excalidraw/Drawing 2024-06-24 21.46.15.excalidraw.png",
     "00 Tasks/00 Tasks.md",
