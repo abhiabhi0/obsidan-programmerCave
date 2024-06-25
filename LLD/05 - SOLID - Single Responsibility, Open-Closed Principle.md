@@ -93,4 +93,17 @@ public void fly() {
 - In the above code, we are checking the type of the bird and then calling the appropriate method. 
 - If we want to add a new type of bird, we would have to change the code in the fly method. 
 - This is a violation of the Open/Closed Principle
-- 
+
+### Abstract classes and interfaces
+- class that is declared using the abstract keyword. 
+- allows us to declare method signatures using the abstract keyword (abstract method) and forces its subclasses to implement all the declared methods. 
+- if a class has a method that is abstract, then the class itself must be abstract.
+- Abstract classes have no restrictions on field and method modifiers, while in an interface, all are public by default
+- Abstract classes may also have constructors which will get executed during the child object's instantiation.
+- An abstract class can have abstract methods and non-abstract methods.
+- An abstract method is a method that is declared without an implementation. It is a method that is declared using the abstract keyword and does not have a body.
+
+#### When to use abstract classes and interfaces?
+- If multiple classes have common functionalities, we would like to use inheritance to avoid code duplication and also have fixed contracts so that the subclasses are forced to implement the common functionalities. 
+- If the common classes have common attributes, consider using abstract classes since they can have instance variables. 
+- If the common classes have common methods, consider using interfaces since they can have only abstract methods. However, the implementation of the methods can be different in the subclasses. Interfaces are also useful when we want to have multiple inheritance
