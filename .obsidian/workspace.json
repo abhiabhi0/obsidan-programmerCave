@@ -4,15 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "9311b482988e3f1e",
+        "id": "6f9f76cc2c2334d5",
         "type": "tabs",
         "children": [
           {
-            "id": "8c4bf9190d9893aa",
+            "id": "9562a47fc32a9b4e",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "LLD/05 - SOLID - Single Responsibility, Open-Closed Principle.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ]
@@ -74,6 +79,7 @@
       {
         "id": "3cdc6cb448adcac1",
         "type": "tabs",
+        "dimension": 40.56372549019608,
         "children": [
           {
             "id": "22dd375b770bebf6",
@@ -81,6 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "LLD/05 - SOLID - Single Responsibility, Open-Closed Principle.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -97,6 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "LLD/05 - SOLID - Single Responsibility, Open-Closed Principle.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -118,7 +126,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "LLD/05 - SOLID - Single Responsibility, Open-Closed Principle.md"
+              }
             }
           },
           {
@@ -130,11 +140,12 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "e1f64291e07d4de7",
         "type": "tabs",
+        "dimension": 59.43627450980392,
         "children": [
           {
             "id": "cb183d99e24ad297",
@@ -161,11 +172,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8c4bf9190d9893aa",
+  "active": "9562a47fc32a9b4e",
   "lastOpenFiles": [
+    "Pasted image 20240625174445.png",
     "LLD/00 - Index.md",
-    "Inbox.md",
+    "LLD/05 - SOLID - Single Responsibility, Open-Closed Principle.md",
     "LLD/04 - Polymorphism.md",
+    "Inbox.md",
     "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
     "LLD/02 - Object-oriented programming (OOP).md",
     "LLD/01 - Introduction.md",
@@ -197,8 +210,6 @@
     "Pasted image 20240613112340.png",
     "Golang/Slice Internals.md",
     "Interview Prep/Database Concurrency in PostgreSQL.md",
-    "Interview Prep/Concurrency Control Protocol.md",
-    "Interview Prep/DB connection pool.md",
     "Pasted image 20240604120711.png",
     "Pasted image 20240604102843.png",
     "Pasted image 20240604101357.png",
