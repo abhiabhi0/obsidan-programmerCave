@@ -13,25 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLD/05 - SOLID - Single Responsibility, Open-Closed Principle.md",
+                "file": "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
-          },
-          {
-            "id": "fa7b791225800195",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Pasted image 20240625174445.png"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pasted image 20240625174445.png",
+                "file": "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -115,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pasted image 20240625174445.png",
+                "file": "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -138,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Pasted image 20240625174445.png"
+                "file": "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md"
               }
             }
           },
@@ -183,15 +172,16 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "fa7b791225800195",
+  "active": "9562a47fc32a9b4e",
   "lastOpenFiles": [
     "LLD/05 - SOLID - Single Responsibility, Open-Closed Principle.md",
+    "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
+    "LLD/00 - Index.md",
+    "Pasted image 20240625174445.png",
     "LLD/02 - Object-oriented programming (OOP).md",
     "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
     "LLD/04 - Polymorphism.md",
-    "LLD/00 - Index.md",
     "Inbox.md",
-    "Pasted image 20240625174445.png",
     "LLD/01 - Introduction.md",
     "Excalidraw/Polymorphism.excalidraw.md",
     "Excalidraw/Drawing 2024-06-24 21.46.15.excalidraw.png",

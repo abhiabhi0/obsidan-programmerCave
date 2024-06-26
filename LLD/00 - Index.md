@@ -2,6 +2,8 @@
 - [[02 - Object-oriented programming (OOP)]]
 - [[03 - Constructor, Access modifiers, Inheritance, Diamond Problem]]
 - [[04 - Polymorphism]]
+- [[05 - SOLID - Single Responsibility, Open-Closed Principle]]
+- 
 
 
 
