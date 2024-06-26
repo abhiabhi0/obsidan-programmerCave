@@ -200,4 +200,5 @@ public interface Flyable {
 
 ## Dependency Inversion Principle
 - refers to the decoupling of software modules. This way, instead of high-level modules depending on low-level modules, both will depend on abstractions.
-- 
+- High-level modules, which provide complex logic, should be easily reusable and unaffected by changes in low-level modules, which provide utility features. 
+- To achieve that, you need to introduce an abstraction that decouples the high-level and low-level modules from each other.
