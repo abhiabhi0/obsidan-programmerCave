@@ -19,8 +19,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f023ded1b0cbc3f2",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.5"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -140,7 +151,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       },
       {
         "id": "e1f64291e07d4de7",
@@ -172,7 +183,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9562a47fc32a9b4e",
+  "active": "f023ded1b0cbc3f2",
   "lastOpenFiles": [
     "Inbox.md",
     "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
