@@ -34,7 +34,7 @@
 	- This global access point should be static and should return the same instance of the singleton class every time it is called. 
 	- If the instance does not exist, it should create the instance and then return it.
 	
-#### Simple Singleton
+#### Simple Singleton in Java
 - first step is to hide the constructor by making it private. This will prevent other classes from instantiating the singleton class.
 
 ```java
@@ -64,7 +64,7 @@ public class Database {
 }
 ```
 
-#### Thread-Safe Singleton
+#### Thread-Safe Singleton in Java
 - above code is not thread-safe. 
 - If two threads call the getInstance() method at the same time, both threads will check if the instance variable is null. Both threads will find that the instance variable is null. 
 - Both threads will create a new instance of the Database class. This will result in two instances of the Database class. 
@@ -86,7 +86,7 @@ public class Database {
 }
 ```
 
-#### Double-Checked Locking
+#### Double-Checked Locking in Java
 - above code is thread-safe. However, it is not efficient. 
 - If two threads call the getInstance() method at the same time, both threads will check if the instance variable is null. Both threads will find that the instance variable is null. Both threads will wait for the lock to be released. 
 - Once the lock is released, one thread will create a new instance of the Database class. The other thread will wait for the lock to be released. Once the lock is released, it will create a new instance of the Database class. This will result in two instances of the Database class. 
@@ -112,6 +112,103 @@ public class Database {
 	}
 }
 ```
+
+#### Singleton Pattern in Python
+
+```python
+class Logger(object):
+    _instance = None
+
+    def __new__(cls):
+        if cls._instance is None:
+            print('Creating the object')
+            cls._instance = super(Logger, cls).__new__(cls)
+            # Put any initialization here.
+        return cls._instance
+```
+
+- The object is created on the first call to the class:
+```python
+log1 = Logger()
+print(log1)
+```
+
+```
+Creating the object
+<Logger object at 0x7fa8e9cf7f60>
+```
+
+- But the second call returns the same instance. The message “Creating the object” does not print, nor is a different object returned:
+
+```python
+log2 = Logger()
+print(log2)
+print('Are they the same object?', log1 is log2)
+```
+
+```
+<Logger object at 0x7fa8e9cf7f60>
+Are they the same object? True
+```
+
+#### Singleton Pattern in Golang
+##### Using user-defined function
+
+```go 
+var lock = &sync.Mutex{}
+
+type single struct {
+}
+
+var singleInstance *single
+
+func getInstance() *single {
+    if singleInstance == nil {
+        lock.Lock()
+        defer lock.Unlock()
+        if singleInstance == nil {
+            fmt.Println("Creting Single Instance Now")
+            singleInstance = &single{}
+        } else {
+            fmt.Println("Single Instance already created-1")
+        }
+    } else {
+        fmt.Println("Single Instance already created-2")
+    }
+    return singleInstance
+}
+```
+
+- Above code ensures that only one instance of the `single` struct is created.
+- There is a check at the start for nil singleInstance. This is to prevent the expensive lock operations every time getinstance() method is called. If this check fails then it means that singleInstance is already created
+- The singleInstance is created inside the lock.
+- There is another check for nil singleIinstance after the lock is acquired. This is to make sure that if more than one goroutine bypass the first check then only one goroutine is able to create the singleton instance otherwise each of the goroutine will create its own instance of the single struct.
+
+##### Using sync.Once 
+- `sync.Once` will only perform the operation only once
+
+```go
+var once sync.Once
+
+type single struct {
+}
+
+var singleInstance *single
+
+func getInstance() *single {
+    if singleInstance == nil {
+        once.Do(
+            func() {
+                fmt.Println("Creting Single Instance Now")
+                singleInstance = &single{}
+            })
+    } else {
+        fmt.Println("Single Instance already created-2")
+    }
+    return singleInstance
+}
+```
+
 
 ## Builder
 
@@ -202,3 +299,117 @@ Database database = new Database.DatabaseBuilder()
 	.password("password")
 	.build();
 ```
+
+#### Builder Pattern in Python 
+
+```python 
+from __future__ import annotations
+from abc import ABC, abstractmethod
+from typing import Any
+
+
+class Builder(ABC):
+    """
+    The Builder interface specifies methods for creating the different parts of the Product objects.
+    """
+
+    @property
+    @abstractmethod
+    def product(self) -> None:
+        pass
+
+    @abstractmethod
+    def produce_part_a(self) -> None:
+        pass
+
+    @abstractmethod
+    def produce_part_b(self) -> None:
+        pass
+
+    @abstractmethod
+    def produce_part_c(self) -> None:
+        pass
+
+
+class ConcreteBuilder1(Builder):
+    def __init__(self) -> None:
+        self.reset()
+
+    def reset(self) -> None:
+        self._product = Product1()
+
+    @property
+    def product(self) -> Product1:
+        product = self._product
+        self.reset()
+        return product
+
+    def produce_part_a(self) -> None:
+        self._product.add("PartA1")
+
+    def produce_part_b(self) -> None:
+        self._product.add("PartB1")
+
+    def produce_part_c(self) -> None:
+        self._product.add("PartC1")
+
+
+class Product1():
+    def __init__(self) -> None:
+        self.parts = []
+
+    def add(self, part: Any) -> None:
+        self.parts.append(part)
+
+    def list_parts(self) -> None:
+        print(f"Product parts: {', '.join(self.parts)}", end="")
+
+
+class Director:
+    def __init__(self) -> None:
+        self._builder = None
+
+    @property
+    def builder(self) -> Builder:
+        return self._builder
+
+    @builder.setter
+    def builder(self, builder: Builder) -> None:
+        self._builder = builder
+
+    def build_minimal_viable_product(self) -> None:
+        self.builder.produce_part_a()
+
+    def build_full_featured_product(self) -> None:
+        self.builder.produce_part_a()
+        self.builder.produce_part_b()
+        self.builder.produce_part_c()
+
+
+if __name__ == "__main__":
+    director = Director()
+    builder = ConcreteBuilder1()
+    director.builder = builder
+
+    print("Standard basic product: ")
+    director.build_minimal_viable_product()
+    builder.product.list_parts()
+
+    print("\n")
+
+    print("Standard full featured product: ")
+    director.build_full_featured_product()
+    builder.product.list_parts()
+
+    print("\n")
+
+    # Remember, the Builder pattern can be used without a Director class.
+    print("Custom product: ")
+    builder.produce_part_a()
+    builder.produce_part_b()
+    builder.product.list_parts()
+```
+
+**References:**
+[Singleton Pattern in Python](https://python-patterns.guide/gang-of-four/singleton/)
+[Singleton Pattern in Golang](https://golangbyexample.com/singleton-design-pattern-go/)
