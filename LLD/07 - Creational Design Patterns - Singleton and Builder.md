@@ -116,38 +116,37 @@ public class Database {
 #### Singleton Pattern in Python
 
 ```python
-	class Logger(object):
-	    _instance = None
-	
-	    def __new__(cls):
-	        if cls._instance is None:
-	            print('Creating the object')
-	            cls._instance = super(Logger, cls).__new__(cls)
-	            # Put any initialization here.
-	        return cls._instance
+	class ConnectionPool(object):
+    _instance = None
+
+    def __new__(cls):
+        if cls._instance is None:
+            print("Creating the object")
+            cls._instance = super(ConnectionPool, cls).__new__(cls)
+        return cls._instance
 ```
 
 - The object is created on the first call to the class:
 ```python
-log1 = Logger()
-print(log1)
+pool1 = ConnectionPool()
+print(pool1)
 ```
 
 ```
 Creating the object
-<Logger object at 0x7fa8e9cf7f60>
+<__main__.ConnectionPool object at 0x7f15ecf9fe80>
 ```
 
 - But the second call returns the same instance. The message “Creating the object” does not print, nor is a different object returned:
 
 ```python
-log2 = Logger()
-print(log2)
-print('Are they the same object?', log1 is log2)
+pool2 = ConnectionPool()
+print(pool2)
+print("Are they the same object?", pool1 is pool2)
 ```
 
 ```
-<Logger object at 0x7fa8e9cf7f60>
+<__main__.ConnectionPool object at 0x7f15ecf9fe80>
 Are they the same object? True
 ```
 
