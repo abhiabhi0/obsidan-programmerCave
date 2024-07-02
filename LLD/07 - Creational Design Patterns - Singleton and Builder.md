@@ -116,7 +116,7 @@ public class Database {
 #### Singleton Pattern in Python
 
 ```python
-	class ConnectionPool(object):
+class ConnectionPool(object):
     _instance = None
 
     def __new__(cls):
@@ -156,32 +156,32 @@ Are they the same object? True
 ```go 
 var lock = &sync.Mutex{}
 
-type single struct {
+type connectionPool struct {
 }
 
-var singleInstance *single
+var connPoolInstance *connectionPool
 
-func getInstance() *single {
-    if singleInstance == nil {
-        lock.Lock()
-        defer lock.Unlock()
-        if singleInstance == nil {
-            fmt.Println("Creting Single Instance Now")
-            singleInstance = &single{}
-        } else {
-            fmt.Println("Single Instance already created-1")
-        }
-    } else {
-        fmt.Println("Single Instance already created-2")
-    }
-    return singleInstance
+func GetInstance() *connectionPool {
+    if connPoolInstance == nil {
+        lock.Lock()
+        defer lock.Unlock()
+        if connPoolInstance == nil {
+            fmt.Println("Creating Connection Pool Instance Now")
+            connPoolInstance = &connectionPool{}
+        } else {
+            fmt.Println("Connection Pool Instance already created-1")
+        }
+    } else {
+        fmt.Println("Connection Pool Instance already created-2")
+    }
+    return connPoolInstance
 }
 ```
 
-- Above code ensures that only one instance of the `single` struct is created.
-- There is a check at the start for nil singleInstance. This is to prevent the expensive lock operations every time getinstance() method is called. If this check fails then it means that singleInstance is already created
-- The singleInstance is created inside the lock.
-- There is another check for nil singleIinstance after the lock is acquired. This is to make sure that if more than one goroutine bypass the first check then only one goroutine is able to create the singleton instance otherwise each of the goroutine will create its own instance of the single struct.
+- Above code ensures that only one instance of the `connectionPool` struct is created.
+- There is a check at the start for nil `connPoolInstance`. This is to prevent the expensive lock operations every time `Getinstance()` method is called. If this check fails then it means that `connPoolInstance` is already created
+- The `connPoolInstance` is created inside the lock.
+- There is another check for nil `connPoolInstance` after the lock is acquired. This is to make sure that if more than one goroutine bypass the first check then only one goroutine is able to create the singleton instance otherwise each of the goroutine will create its own instance of the single struct.
 
 ##### Using sync.Once 
 - `sync.Once` will only perform the operation only once
@@ -189,22 +189,22 @@ func getInstance() *single {
 ```go
 var once sync.Once
 
-type single struct {
+type connectionPool struct {
 }
 
-var singleInstance *single
+var connPoolInstance *connectionPool
 
-func getInstance() *single {
-    if singleInstance == nil {
-        once.Do(
-            func() {
-                fmt.Println("Creting Single Instance Now")
-                singleInstance = &single{}
-            })
-    } else {
-        fmt.Println("Single Instance already created-2")
-    }
-    return singleInstance
+func GetInstanceUsingSync() *connectionPool {
+    if connPoolInstance == nil {
+        once.Do(
+            func() {
+                fmt.Println("Creating Connection Pool Instance Now")
+                connPoolInstance = &connectionPool{}
+            })
+    } else {
+        fmt.Println("Connection Pool Instance already created-2")
+    }
+    return connPoolInstance
 }
 ```
 
