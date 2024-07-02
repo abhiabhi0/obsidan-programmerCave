@@ -304,109 +304,62 @@ Database database = new Database.DatabaseBuilder()
 ```python 
 from __future__ import annotations
 from abc import ABC, abstractmethod
-from typing import Any
-
 
 class Builder(ABC):
-    """
-    The Builder interface specifies methods for creating the different parts of the Product objects.
-    """
-
-    @property
     @abstractmethod
-    def product(self) -> None:
+    def with_name(self, name: str) -> Builder:
         pass
 
     @abstractmethod
-    def produce_part_a(self) -> None:
+    def with_url(self, host: str, port: int) -> Builder:
         pass
 
     @abstractmethod
-    def produce_part_b(self) -> None:
+    def build(self) -> Database:
         pass
 
-    @abstractmethod
-    def produce_part_c(self) -> None:
-        pass
-
-
-class ConcreteBuilder1(Builder):
+class DatabaseBuilder(Builder):
     def __init__(self) -> None:
-        self.reset()
+        self._database = Database()
 
-    def reset(self) -> None:
-        self._product = Product1()
-
-    @property
-    def product(self) -> Product1:
-        product = self._product
-        self.reset()
-        return product
-
-    def produce_part_a(self) -> None:
-        self._product.add("PartA1")
-
-    def produce_part_b(self) -> None:
-        self._product.add("PartB1")
-
-    def produce_part_c(self) -> None:
-        self._product.add("PartC1")
-
-
-class Product1():
-    def __init__(self) -> None:
-        self.parts = []
-
-    def add(self, part: Any) -> None:
-        self.parts.append(part)
-
-    def list_parts(self) -> None:
-        print(f"Product parts: {', '.join(self.parts)}", end="")
+    def with_name(self, name: str) -> DatabaseBuilder:
+        self._database._name = name
+        return self
+    
+    def with_url(self, host: str, port: int) -> DatabaseBuilder:
+        self._database._host = host
+        self._database._port = port
+        return self
+    
+    def build(self) -> Database:
+        if not self.is_valid():
+            raise ValueError("Invalid database configuration")
+        return self._database
+    
+    def is_valid(self) -> bool:
+        return self._database._name is not None
 
 
-class Director:
-    def __init__(self) -> None:
-        self._builder = None
+class Database:
+    def __init__(self, name=None, host=None, port=None):
+        self._name = name
+        self._host = host
+        self._port = port
 
-    @property
-    def builder(self) -> Builder:
-        return self._builder
-
-    @builder.setter
-    def builder(self, builder: Builder) -> None:
-        self._builder = builder
-
-    def build_minimal_viable_product(self) -> None:
-        self.builder.produce_part_a()
-
-    def build_full_featured_product(self) -> None:
-        self.builder.produce_part_a()
-        self.builder.produce_part_b()
-        self.builder.produce_part_c()
-
-
+    def __repr__(self):
+        return f"Database(name={self._name}, host={self._host}, port={self._port})"
+    
 if __name__ == "__main__":
-    director = Director()
-    builder = ConcreteBuilder1()
-    director.builder = builder
+    try:
+        # Building a valid database
+        db = DatabaseBuilder().with_name("MyDB").with_url("localhost", 3306).build()
+        print(db)
 
-    print("Standard basic product: ")
-    director.build_minimal_viable_product()
-    builder.product.list_parts()
-
-    print("\n")
-
-    print("Standard full featured product: ")
-    director.build_full_featured_product()
-    builder.product.list_parts()
-
-    print("\n")
-
-    # Remember, the Builder pattern can be used without a Director class.
-    print("Custom product: ")
-    builder.produce_part_a()
-    builder.produce_part_b()
-    builder.product.list_parts()
+        # Building an invalid database (missing name)
+        invalid_db = DatabaseBuilder().with_url("localhost", 3306).build()
+        print(invalid_db)
+    except ValueError as e:
+        print(e)
 ```
 
 **References:**

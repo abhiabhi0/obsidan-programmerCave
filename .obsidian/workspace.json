@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6f9f76cc2c2334d5",
+        "id": "d6cd4bf03ad2de8f",
         "type": "tabs",
         "children": [
           {
-            "id": "9562a47fc32a9b4e",
+            "id": "3b84f262b83a5ad4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox.md",
+                "file": "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Inbox.md",
+                "file": "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Inbox.md",
+                "file": "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Inbox.md"
+                "file": "LLD/07 - Creational Design Patterns - Singleton and Builder.md"
               }
             }
           },
@@ -172,11 +172,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9562a47fc32a9b4e",
+  "active": "3b84f262b83a5ad4",
   "lastOpenFiles": [
+    "Inbox.md",
     "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
     "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
-    "Inbox.md",
     "LLD/05 - SOLID - Single Responsibility, Open-Closed Principle.md",
     "LLD/00 - Index.md",
     "Pasted image 20240625174445.png",
