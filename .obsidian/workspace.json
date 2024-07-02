@@ -13,25 +13,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
+                "file": "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
-          },
-          {
-            "id": "f023ded1b0cbc3f2",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.6.5"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
+                "file": "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -115,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
+                "file": "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -138,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md"
+                "file": "LLD/07 - Creational Design Patterns - Singleton and Builder.md"
               }
             }
           },
@@ -183,10 +172,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "f023ded1b0cbc3f2",
+  "active": "c297e15289533d73",
   "lastOpenFiles": [
-    "Inbox.md",
     "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
+    "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
+    "Inbox.md",
     "LLD/05 - SOLID - Single Responsibility, Open-Closed Principle.md",
     "LLD/00 - Index.md",
     "Pasted image 20240625174445.png",
@@ -221,7 +211,6 @@
     "Interview Prep/AWS Services.md",
     "Pasted image 20240613112340.png",
     "Golang/Slice Internals.md",
-    "Interview Prep/Database Concurrency in PostgreSQL.md",
     "Pasted image 20240604120711.png",
     "Pasted image 20240604102843.png",
     "Pasted image 20240604101357.png",
