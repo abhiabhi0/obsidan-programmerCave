@@ -12,6 +12,7 @@
 -  lets you construct complex objects step by step.
 - allows you to produce different types and representations of an object using the same construction code.
 
+---
 ## Singleton
 
 ### Problems
@@ -66,7 +67,7 @@ public class Database {
 
 #### Thread-Safe Singleton in Java
 - above code is not thread-safe. 
-- If two threads call the getInstance() method at the same time, both threads will check if the instance variable is null. Both threads will find that the instance variable is null. 
+- If two threads call the `getInstance()` method at the same time, both threads will check if the instance variable is null. Both threads will find that the instance variable is null. 
 - Both threads will create a new instance of the Database class. This will result in two instances of the Database class. 
 
 ```java
@@ -208,7 +209,7 @@ func GetInstanceUsingSync() *connectionPool {
 }
 ```
 
-
+---
 ## Builder
 
 ### Problems
