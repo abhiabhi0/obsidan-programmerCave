@@ -411,3 +411,5 @@ func (b *DatabaseBuilder) isValid() bool {
 **References:**
 [Singleton Pattern in Python](https://python-patterns.guide/gang-of-four/singleton/)
 [Singleton Pattern in Golang](https://golangbyexample.com/singleton-design-pattern-go/)
+[Github](https://github.com/abhiabhi0/design-patterns)
+
