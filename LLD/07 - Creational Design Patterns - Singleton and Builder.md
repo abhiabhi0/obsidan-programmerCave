@@ -227,7 +227,7 @@ func GetInstanceUsingSync() *connectionPool {
 	
 ### Solution
 
-#### Inner Class
+#### Using Inner Class in Java
 - we can use a class to accept parameters for object creation. The parameter class is type safe, and it is easy to identify the parameters.
 
 ```java
