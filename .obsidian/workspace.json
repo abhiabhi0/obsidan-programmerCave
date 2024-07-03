@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
+                "file": "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
+                "file": "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
+                "file": "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLD/07 - Creational Design Patterns - Singleton and Builder.md"
+                "file": "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md"
               }
             }
           },
@@ -140,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "e1f64291e07d4de7",
@@ -174,16 +174,18 @@
   },
   "active": "3b84f262b83a5ad4",
   "lastOpenFiles": [
-    "Inbox.md",
-    "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
-    "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
+    "LLD/02 - Object-oriented programming (OOP).md",
+    "LLD/01 - Introduction.md",
     "LLD/05 - SOLID - Single Responsibility, Open-Closed Principle.md",
+    "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
+    "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
+    "LLD/09 - Structural Design Patterns - Adapter and Flyweight.md",
+    "LLD/08 - Creational Design Patterns - Prototype and Factory.md",
+    "Inbox.md",
     "LLD/00 - Index.md",
     "Pasted image 20240625174445.png",
-    "LLD/02 - Object-oriented programming (OOP).md",
     "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
     "LLD/04 - Polymorphism.md",
-    "LLD/01 - Introduction.md",
     "Excalidraw/Polymorphism.excalidraw.md",
     "Excalidraw/Drawing 2024-06-24 21.46.15.excalidraw.png",
     "00 Tasks/00 Tasks.md",
@@ -208,9 +210,7 @@
     "Pasted image 20240614101653.png",
     "Pasted image 20240614101549.png",
     "Golang/Reading from Console.md",
-    "Interview Prep/AWS Services.md",
     "Pasted image 20240613112340.png",
-    "Golang/Slice Internals.md",
     "Pasted image 20240604120711.png",
     "Pasted image 20240604102843.png",
     "Pasted image 20240604101357.png",
