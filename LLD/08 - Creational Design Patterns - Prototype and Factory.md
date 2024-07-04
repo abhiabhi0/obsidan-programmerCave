@@ -7,8 +7,9 @@ existing object and avoiding dependencies on the class of the object that needs 
 - is a creational design pattern that can be used to create objects without specifying the exact class of the object that will be created. 
 - The pattern is used to avoid dependencies on the class of the object that needs to be created.
 
+---
 ## Prototype
--  allows us to hide the complexity of making new instances from the client.
+- allows us to hide the complexity of making new instances from the client.
 - The concept is to copy an existing object rather than creating a new instance from scratch, something that may include costly operations. 
 - The existing object acts as a prototype and contains the state of the object. The newly copied object may change same properties only if required. 
 - This approach saves costly resources and time, especially when object creation is a heavy process.
@@ -20,8 +21,7 @@ User user = new User("John", "Doe", "john@doe.in", "1234567890");
 ```
 
 - We might be calling a separate API to get these random values for the user. So each time we want to create a new user we have to call the API. 
-- Instead, we can create a new user by cloning an existing user and
-modifying the fields that are necessary. This way we can avoid calling the API each time we want to create a new user. 
+- Instead, we can create a new user by cloning an existing user and modifying the fields that are necessary. This way we can avoid calling the API each time we want to create a new user. 
 - To clone an existing user, we have to implement a common interface for all the user objects `clone()`.
 
 ```java 
@@ -79,6 +79,7 @@ User user = registry.getPrototype(UserRole.STUDENT);
 user.setId(1);
 ```
 
+---
 ## Factory
 - is a creational pattern that uses factory methods to deal with the problem of creating objects without having to specify the exact class of the object that will be created. 
 - This is done by creating objects by calling a factory method—either specified in an interface and implemented by child classes, or implemented in a base class and optionally overridden by derived classes—rather than by calling a constructor.

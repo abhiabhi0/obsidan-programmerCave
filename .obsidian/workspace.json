@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "d6cd4bf03ad2de8f",
+        "id": "f3c5d95106435447",
         "type": "tabs",
         "children": [
           {
-            "id": "3b84f262b83a5ad4",
+            "id": "ba21c479b23f9c1c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
+                "file": "LLD/08 - Creational Design Patterns - Prototype and Factory.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
+                "file": "LLD/08 - Creational Design Patterns - Prototype and Factory.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
+                "file": "LLD/08 - Creational Design Patterns - Prototype and Factory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLD/07 - Creational Design Patterns - Singleton and Builder.md"
+                "file": "LLD/08 - Creational Design Patterns - Prototype and Factory.md"
               }
             }
           },
@@ -172,18 +172,18 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3b84f262b83a5ad4",
+  "active": "ba21c479b23f9c1c",
   "lastOpenFiles": [
+    "Inbox.md",
+    "LLD/08 - Creational Design Patterns - Prototype and Factory.md",
+    "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
     "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
     "LLD/05 - SOLID - Single Responsibility, Open-Closed Principle.md",
     "LLD/04 - Polymorphism.md",
     "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
     "LLD/02 - Object-oriented programming (OOP).md",
     "LLD/01 - Introduction.md",
-    "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
     "LLD/09 - Structural Design Patterns - Adapter and Flyweight.md",
-    "LLD/08 - Creational Design Patterns - Prototype and Factory.md",
-    "Inbox.md",
     "LLD/00 - Index.md",
     "Pasted image 20240625174445.png",
     "Excalidraw/Polymorphism.excalidraw.md",
