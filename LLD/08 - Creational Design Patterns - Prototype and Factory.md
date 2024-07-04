@@ -143,16 +143,14 @@ User user = factory.createUser("John", "Doe");
 ```
 
 - The complete steps to implement the factory method pattern are:
-	- Base factory interface - Create a factory class that contains a method for creating objects.
-	- Child factory class - Create a child class that extends the base factory class and overrides the factory method to create objects of its own type.
-	- Request - Request an object from the factory class without having to know the class of the object that will be returned.
-
+	- **Base factory interface** - Create a factory class that contains a method for creating objects.
+	- **Child factory class** - Create a child class that extends the base factory class and overrides the factory method to create objects of its own type.
+	- **Request** - Request an object from the factory class without having to know the class of the object that will be returned.
 ### Abstract Factory 
 - is a creational pattern that provides an interface for creating families of related or dependent objects without specifying their concrete classes
 
 **Example**
-- We have already created a `User` abstract class. Now we will create
-the concrete classes `Student` and `Teacher`. 
+- We have already created a `User` abstract class. Now we will create the concrete classes `Student` and `Teacher`. 
 - To restrict the usage of subclasses, we can create factories for each of the concrete classes. The `StudentFactory` will be used to create `Student` objects and the `TeacherFactory` will be used to create `Teacher` objects.
 
 ```java 
