@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLD/08 - Creational Design Patterns - Prototype and Factory.md",
+                "file": "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LLD/08 - Creational Design Patterns - Prototype and Factory.md",
+                "file": "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LLD/08 - Creational Design Patterns - Prototype and Factory.md",
+                "file": "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLD/08 - Creational Design Patterns - Prototype and Factory.md"
+                "file": "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md"
               }
             }
           },
@@ -140,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       },
       {
         "id": "e1f64291e07d4de7",
@@ -175,7 +175,7 @@
   "active": "ba21c479b23f9c1c",
   "lastOpenFiles": [
     "Inbox.md",
-    "LLD/08 - Creational Design Patterns - Prototype and Factory.md",
+    "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
     "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
     "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
     "LLD/05 - SOLID - Single Responsibility, Open-Closed Principle.md",
