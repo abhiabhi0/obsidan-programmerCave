@@ -140,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "e1f64291e07d4de7",
@@ -172,7 +172,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "ba21c479b23f9c1c",
+  "active": "c297e15289533d73",
   "lastOpenFiles": [
     "Inbox.md",
     "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
