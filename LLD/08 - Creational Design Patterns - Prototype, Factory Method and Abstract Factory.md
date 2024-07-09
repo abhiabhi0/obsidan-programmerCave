@@ -79,6 +79,231 @@ User user = registry.getPrototype(UserRole.STUDENT);
 user.setId(1);
 ```
 
+### Prototype Pattern in Python
+
+```python
+from abc import ABC, abstractmethod
+from copy import deepcopy
+from enum import Enum
+
+class ObjectClonable(ABC):
+    @abstractmethod
+    def clone(self):
+        pass
+
+class MLModel(ObjectClonable):
+    def __init__(self, model_type, description, training_split, validation_split, alpha, beta):
+        self._model_type = model_type
+        self._description = description
+        self._training_split = training_split
+        self._validation_split = validation_split
+        self._alpha = alpha
+        self._beta = beta
+
+    def clone(self):
+        return deepcopy(self)
+
+    # Getter and Setter methods
+    @property
+    def model_type(self):
+        return self._model_type
+
+    @model_type.setter
+    def model_type(self, model_type):
+        self._model_type = model_type
+
+    @property
+    def description(self):
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        self._description = description
+
+    @property
+    def training_split(self):
+        return self._training_split
+
+    @training_split.setter
+    def training_split(self, training_split):
+        self._training_split = training_split
+
+    @property
+    def validation_split(self):
+        return self._validation_split
+
+    @validation_split.setter
+    def validation_split(self, validation_split):
+        self._validation_split = validation_split
+
+    @property
+    def alpha(self):
+        return self._alpha
+
+    @alpha.setter
+    def alpha(self, alpha):
+        self._alpha = alpha
+
+    @property
+    def beta(self):
+        return self._beta
+
+    @beta.setter
+    def beta(self, beta):
+        self._beta = beta
+
+    def __str__(self):
+        return f'MLModel(type={self._model_type}, description={self._description}, ' \
+               f'training_split={self._training_split}, validation_split={self._validation_split}, ' \
+               f'alpha={self._alpha}, beta={self._beta})'
+
+class ModelType(Enum):
+    LR = "LR"
+    SVM = "SVM"
+    DT = "DT"
+
+# Step 4: Create and populate registry
+class ModelRegistry:
+    def __init__(self):
+        self._models = {}
+
+    def register_model(self, model):
+        self._models[model.model_type] = model
+
+    def get_model(self, model_type):
+        model = self._models.get(model_type)
+        return model.clone() if model else None
+
+# Example usage
+if __name__ == "__main__":
+    # Create models
+    lr_model = MLModel(ModelType.LR, "Linear Regression Model", 0.7, 0.3, 0.01, 0.1)
+    svm_model = MLModel(ModelType.SVM, "Support Vector Machine Model", 0.6, 0.4, 0.02, 0.2)
+
+    # Register models
+    registry = ModelRegistry()
+    registry.register_model(lr_model)
+    registry.register_model(svm_model)
+
+    # Retrieve and clone models
+    cloned_lr_model = registry.get_model(ModelType.LR)
+    cloned_lr_model.description = "Linear Regression Model Cloned"
+    cloned_svm_model = registry.get_model(ModelType.SVM)
+    cloned_svm_model.description = "Support Vector Machine Model Cloned"
+    print(lr_model)
+    print(cloned_lr_model)
+    print(svm_model)
+    print(cloned_svm_model)
+
+```
+
+### Prototype Pattern in Golang
+
+```go
+package prototype
+
+type ObjectClonable interface {
+	Clone() *MLModel
+}
+
+type MLModel struct {
+	modelType       ModelType
+	description     string
+	trainingSplit   float64
+	validationSplit float64
+	alpha           float64
+	beta            float64
+}
+
+func (m *MLModel) Clone() *MLModel {
+	return &MLModel{
+		modelType:       m.modelType,
+		description:     m.description,
+		trainingSplit:   m.trainingSplit,
+		validationSplit: m.validationSplit,
+		alpha:           m.alpha,
+		beta:            m.beta,
+	}
+}
+
+// Getter and Setter methods
+func (m *MLModel) GetModelType() ModelType {
+	return m.modelType
+}
+
+func (m *MLModel) SetModelType(modelType ModelType) {
+	m.modelType = modelType
+}
+
+func (m *MLModel) GetDescription() string {
+	return m.description
+}
+
+func (m *MLModel) SetDescription(description string) {
+	m.description = description
+}
+
+func (m *MLModel) GetTrainingSplit() float64 {
+	return m.trainingSplit
+}
+
+func (m *MLModel) SetTrainingSplit(trainingSplit float64) {
+	m.trainingSplit = trainingSplit
+}
+
+func (m *MLModel) GetValidationSplit() float64 {
+	return m.validationSplit
+}
+
+func (m *MLModel) SetValidationSplit(validationSplit float64) {
+	m.validationSplit = validationSplit
+}
+
+func (m *MLModel) GetAlpha() float64 {
+	return m.alpha
+}
+
+func (m *MLModel) SetAlpha(alpha float64) {
+	m.alpha = alpha
+}
+
+func (m *MLModel) GetBeta() float64 {
+	return m.beta
+}
+
+func (m *MLModel) SetBeta(beta float64) {
+	m.beta = beta
+}
+
+type ModelType string
+
+const (
+	LR  ModelType = "LR"
+	SVM ModelType = "SVM"
+	DT  ModelType = "DT"
+)
+
+type ModelRegistry struct {
+	models map[ModelType]*MLModel
+}
+
+func NewModelRegistry() *ModelRegistry {
+	return &ModelRegistry{
+		models: make(map[ModelType]*MLModel),
+	}
+}
+
+func (r *ModelRegistry) RegisterModel(model *MLModel) {
+	r.models[model.GetModelType()] = model
+}
+
+func (r *ModelRegistry) GetModel(modelType ModelType) *MLModel {
+	if model, exists := r.models[modelType]; exists {
+		return model.Clone()
+	}
+	return nil
+}
+```
 ---
 ## Factory
 - is a creational pattern that uses factory methods to deal with the problem of creating objects without having to specify the exact class of the object that will be created. 
@@ -146,6 +371,199 @@ User user = factory.createUser("John", "Doe");
 	- **Base factory interface** - Create a factory class that contains a method for creating objects.
 	- **Child factory class** - Create a child class that extends the base factory class and overrides the factory method to create objects of its own type.
 	- **Request** - Request an object from the factory class without having to know the class of the object that will be returned.
+#### Factory Method in Python
+
+```python
+from abc import ABC, abstractmethod
+
+class Button(ABC):
+    def __init__(self, border: float):
+        self._border = border
+
+    @property
+    def border(self) -> float:
+        return self._border
+
+    @border.setter
+    def border(self, value: float):
+        self._border = value
+
+    @abstractmethod
+    def render(self):
+        pass
+
+    @abstractmethod
+    def onClick(self):
+        pass
+
+class ButtonFactory(ABC):
+    @abstractmethod
+    def createButton(self, border: float, radius: float, length: float) -> Button:
+        pass
+
+class RoundButton(Button):
+    def __init__(self, border: float, radius: float):
+        super().__init__(border)
+        self._radius = radius
+
+    @property
+    def radius(self) -> float:
+        return self._radius
+
+    def onClick(self):
+        print("Round Button was clicked!")
+
+    def render(self):
+        print("Rendered!")
+
+class RoundButtonFactory(ButtonFactory):
+    def createButton(self, border: float, radius: float, length: float) -> Button:
+        return RoundButton(border, radius)
+    
+class SquareButton(Button):
+    def __init__(self, border: float, length: float):
+        super().__init__(border)
+        self._length = length
+
+    @property
+    def length(self) -> float:
+        return self._length
+
+    def onClick(self):
+        print("Square Button was clicked!")
+
+    def render(self):
+        print("Rendered!")
+
+class SquareButtonFactory(ButtonFactory):
+    def createButton(self, border: float, radius: float, length: float) -> Button:
+        return SquareButton(border, length)
+    
+def client_code(factory: ButtonFactory):
+    button = factory.createButton(border=1.0, radius=5.0, length=10.0)
+
+    button.render()
+    button.onClick()
+
+def main():
+    round_button_factory = RoundButtonFactory()
+    print("Using RoundButtonFactory:")
+    client_code(round_button_factory)
+
+    square_button_factory = SquareButtonFactory()
+    print("\nUsing SquareButtonFactory:")
+    client_code(square_button_factory)
+
+if __name__ == "__main__":
+    main()
+```
+
+#### Factory Method in Golang
+
+```go
+package factorymethod
+
+import "fmt"
+
+// Button is the abstract product
+type Button interface {
+	Render()
+	OnClick()
+	GetBorder() float64
+	SetBorder(border float64)
+}
+
+// RoundButton is a concrete product
+type RoundButton struct {
+	border float64
+	radius float64
+}
+
+func (b *RoundButton) Render() {
+	fmt.Println("Rendered RoundButton!")
+}
+
+func (b *RoundButton) OnClick() {
+	fmt.Println("Round Button was clicked!")
+}
+
+func (b *RoundButton) GetBorder() float64 {
+	return b.border
+}
+
+func (b *RoundButton) SetBorder(border float64) {
+	b.border = border
+}
+
+func (b *RoundButton) GetRadius() float64 {
+	return b.radius
+}
+
+func (b *RoundButton) SetRadius(radius float64) {
+	b.radius = radius
+}
+
+// SquareButton is a concrete product
+type SquareButton struct {
+	border float64
+	length float64
+}
+
+func (b *SquareButton) Render() {
+	fmt.Println("Rendered SquareButton!")
+}
+
+func (b *SquareButton) OnClick() {
+	fmt.Println("Square Button was clicked!")
+}
+
+func (b *SquareButton) GetBorder() float64 {
+	return b.border
+}
+
+func (b *SquareButton) SetBorder(border float64) {
+	b.border = border
+}
+
+func (b *SquareButton) GetLength() float64 {
+	return b.length
+}
+
+func (b *SquareButton) SetLength(length float64) {
+	b.length = length
+}
+
+// ButtonFactory is the abstract factory
+type ButtonFactory interface {
+	CreateButton(border float64, radius float64, length float64) Button
+}
+
+// RoundButtonFactory is a concrete factory
+type RoundButtonFactory struct{}
+
+func (f *RoundButtonFactory) CreateButton(border float64, radius float64, length float64) Button {
+	return &RoundButton{
+		border: border,
+		radius: radius,
+	}
+}
+
+// SquareButtonFactory is a concrete factory
+type SquareButtonFactory struct{}
+
+func (f *SquareButtonFactory) CreateButton(border float64, radius float64, length float64) Button {
+	return &SquareButton{
+		border: border,
+		length: length,
+	}
+}
+
+func ClientCode(factory ButtonFactory) {
+	button := factory.CreateButton(1.0, 5.0, 10.0)
+	button.Render()
+	button.OnClick()
+}
+```
 ### Abstract Factory 
 - is a creational pattern that provides an interface for creating families of related or dependent objects without specifying their concrete classes
 
@@ -213,11 +631,265 @@ Teacher teacher = factory.createTeacher("John", "Doe");
 
 - The class `ClassroomFactory` becomes our abstract factory that essentially is a factory of factories.
 
+#### Abstract Factory in Python
+
+```python
+from abc import ABC, abstractmethod
+
+# Abstract Product: Button
+class Button(ABC):
+    def __init__(self, border: float):
+        self._border = border
+
+    @property
+    def border(self) -> float:
+        return self._border
+
+    @abstractmethod
+    def render(self):
+        pass
+
+    @abstractmethod
+    def onClick(self):
+        pass
+
+# Concrete Product: DarkButton
+class DarkButton(Button):
+    def __init__(self, border: float, radius: float):
+        super().__init__(border)
+        self._radius = radius
+
+    @property
+    def radius(self) -> float:
+        return self._radius
+
+    def onClick(self):
+        print("Dark Btn was clicked!")
+
+    def render(self):
+        print("Rendered!")
+
+# Abstract Product: Radio
+class Radio(ABC):
+    @abstractmethod
+    def onSelect(self):
+        pass
+
+    @abstractmethod
+    def render(self):
+        pass
+
+# Concrete Product: DarkRadio
+class DarkRadio(Radio):
+    def onSelect(self):
+        print("DarkRadio selected!")
+
+    def render(self):
+        print("DarkRadio rendered!")
+
+# Abstract Factory
+class ThemeFactory(ABC):
+    @abstractmethod
+    def createButton(self, border: float, length: float, radius: float) -> Button:
+        pass
+
+    @abstractmethod
+    def createRadio(self) -> Radio:
+        pass
+
+# Concrete Factory: DarkThemeFactory
+class DarkThemeFactory(ThemeFactory):
+    def createButton(self, border: float, length: float, radius: float) -> Button:
+        return DarkButton(border, radius)
+
+    def createRadio(self) -> Radio:
+        return DarkRadio()
+
+# Concrete Product: LightButton
+class LightButton(Button):
+    def __init__(self, border: float, length: float):
+        super().__init__(border)
+        self._length = length
+
+    @property
+    def length(self) -> float:
+        return self._length
+
+    def onClick(self):
+        print("Light Btn was clicked!")
+
+    def render(self):
+        print("Rendered!")
+
+# Concrete Product: LightRadio
+class LightRadio(Radio):
+    def onSelect(self):
+        print("LightRadio selected!")
+
+    def render(self):
+        print("LightRadio rendered!")
+
+# Concrete Factory: LightThemeFactory
+class LightThemeFactory(ThemeFactory):
+    def createButton(self, border: float, length: float, radius: float) -> Button:
+        return LightButton(border, length)
+
+    def createRadio(self) -> Radio:
+        return LightRadio()
+
+# Client code
+def client_code(factory: ThemeFactory):
+    button = factory.createButton(border=1.0, length=10.0, radius=5.0)
+    button.render()
+    button.onClick()
+
+    radio = factory.createRadio()
+    radio.render()
+    radio.onSelect()
+
+def main():
+    print("Using DarkThemeFactory:")
+    dark_factory = DarkThemeFactory()
+    client_code(dark_factory)
+
+    print("\nUsing LightThemeFactory:")
+    light_factory = LightThemeFactory()
+    client_code(light_factory)
+
+if __name__ == "__main__":
+    main()
+```
+
+#### Abstract Factory in Golang
+
+```go
+package abstractfactory
+
+import "fmt"
+
+// Button is the abstract product
+type Button interface {
+	Render()
+	OnClick()
+	GetBorder() float64
+}
+
+// DarkButton is a concrete product
+type DarkButton struct {
+	border float64
+	radius float64
+}
+
+func (b *DarkButton) Render() {
+	fmt.Println("Rendered DarkButton!")
+}
+
+func (b *DarkButton) OnClick() {
+	fmt.Println("Dark Btn was clicked!")
+}
+
+func (b *DarkButton) GetBorder() float64 {
+	return b.border
+}
+
+func (b *DarkButton) GetRadius() float64 {
+	return b.radius
+}
+
+// Radio is the abstract product
+type Radio interface {
+	OnSelect()
+	Render()
+}
+
+// DarkRadio is a concrete product
+type DarkRadio struct{}
+
+func (r *DarkRadio) OnSelect() {
+	fmt.Println("DarkRadio selected!")
+}
+
+func (r *DarkRadio) Render() {
+	fmt.Println("DarkRadio rendered!")
+}
+
+// LightButton is a concrete product
+type LightButton struct {
+	border float64
+	length float64
+}
+
+func (b *LightButton) Render() {
+	fmt.Println("Rendered LightButton!")
+}
+
+func (b *LightButton) OnClick() {
+	fmt.Println("Light Btn was clicked!")
+}
+
+func (b *LightButton) GetBorder() float64 {
+	return b.border
+}
+
+func (b *LightButton) GetLength() float64 {
+	return b.length
+}
+
+// LightRadio is a concrete product
+type LightRadio struct{}
+
+func (r *LightRadio) OnSelect() {
+	fmt.Println("LightRadio selected!")
+}
+
+func (r *LightRadio) Render() {
+	fmt.Println("LightRadio rendered!")
+}
+
+// ThemeFactory is the abstract factory
+type ThemeFactory interface {
+	CreateButton(border, length, radius float64) Button
+	CreateRadio() Radio
+}
+
+// DarkThemeFactory is a concrete factory
+type DarkThemeFactory struct{}
+
+func (f *DarkThemeFactory) CreateButton(border, length, radius float64) Button {
+	return &DarkButton{border: border, radius: radius}
+}
+
+func (f *DarkThemeFactory) CreateRadio() Radio {
+	return &DarkRadio{}
+}
+
+// LightThemeFactory is a concrete factory
+type LightThemeFactory struct{}
+
+func (f *LightThemeFactory) CreateButton(border, length, radius float64) Button {
+	return &LightButton{border: border, length: length}
+}
+
+func (f *LightThemeFactory) CreateRadio() Radio {
+	return &LightRadio{}
+}
+
+// Client code
+func ClientCode(factory ThemeFactory) {
+	button := factory.CreateButton(1.0, 10.0, 5.0)
+	button.Render()
+	button.OnClick()
+
+	radio := factory.CreateRadio()
+	radio.Render()
+	radio.OnSelect()
+}
+```
+
 #### Advantages of Abstract Factory
 - **Isolate concrete classes** - The client code is not coupled to the concrete classes of the objects that it creates.
 - **Easy to exchange product families** - The client code can request an object from the factory class without having to know the class of the object that will be returned. This makes it easy to exchange product families.
 - **Promotes consistency among products** - The client code can request an object from the factory class without having to know the class of the object that will be returned. This makes it easy to maintain consistency among products.
-
-
-
-
+---
+**References:**
+[Github](https://github.com/abhiabhi0/design-patterns)

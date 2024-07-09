@@ -172,11 +172,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "43db23bba81980c6",
+  "active": "c297e15289533d73",
   "lastOpenFiles": [
-    "Inbox.md",
-    "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
     "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
+    "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
+    "Inbox.md",
     "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
     "LLD/05 - SOLID - Single Responsibility, Open-Closed Principle.md",
     "LLD/04 - Polymorphism.md",
