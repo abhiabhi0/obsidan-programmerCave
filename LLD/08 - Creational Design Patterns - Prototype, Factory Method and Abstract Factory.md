@@ -176,8 +176,8 @@ Teacher teacher = teacherFactory.createTeacher("John", "Doe");
 ```
 
 - But now we have a problem, we can use the factories to create any type of student and teacher. Should a teacher teaching Physics be able to teach a student of Biology class? 
-- This is where the concept of related or a family of objects comes into play. The `Student` and `Teacher` objects are related to each other. A
-teacher should only be able to teach a student of the same class. So we can create a factory that can create a family of related objects. The `ClassroomFactory` will be used to create `Student` and `Teacher` objects of the same class.
+- This is where the concept of related or a family of objects comes into play. The `Student` and `Teacher` objects are related to each other. 
+- A teacher should only be able to teach a student of the same class. So we can create a factory that can create a family of related objects. The `ClassroomFactory` will be used to create `Student` and `Teacher` objects of the same class.
 
 ```java 
 abstract class ClassroomFactory {
