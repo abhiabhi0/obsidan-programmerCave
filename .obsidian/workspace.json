@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
+                "file": "LLD/09 - Structural Design Patterns - Adapter and Flyweight.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
+                "file": "LLD/09 - Structural Design Patterns - Adapter and Flyweight.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
+                "file": "LLD/09 - Structural Design Patterns - Adapter and Flyweight.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md"
+                "file": "LLD/09 - Structural Design Patterns - Adapter and Flyweight.md"
               }
             }
           },
@@ -172,10 +172,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c297e15289533d73",
+  "active": "43db23bba81980c6",
   "lastOpenFiles": [
-    "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
     "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
+    "LLD/10 - Structural Design Patterns - Decorator and Facade.md",
+    "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
     "Inbox.md",
     "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
     "LLD/05 - SOLID - Single Responsibility, Open-Closed Principle.md",
@@ -209,7 +210,6 @@
     "Interview Prep/Internals of Indexing.md",
     "Pasted image 20240614101653.png",
     "Pasted image 20240614101549.png",
-    "Golang/Reading from Console.md",
     "Pasted image 20240613112340.png",
     "Pasted image 20240604120711.png",
     "Pasted image 20240604102843.png",

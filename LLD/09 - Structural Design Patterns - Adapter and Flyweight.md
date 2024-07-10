@@ -9,9 +9,9 @@
 **Flyweight**
 - lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.
 
+---
 ## Adapter
 - is a structural pattern that allows objects with incompatible interfaces to collaborate.
-
 - Adapter  is a special object that converts the interface of one object so that another object can understand it.
 - An adapter wraps one of the objects to hide the complexity of conversion happening behind the scenes. The wrapped object isnʼt even aware of the adapter.
 
