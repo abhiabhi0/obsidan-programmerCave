@@ -140,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "e1f64291e07d4de7",
@@ -172,7 +172,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "43db23bba81980c6",
+  "active": "c297e15289533d73",
   "lastOpenFiles": [
     "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
     "LLD/09 - Structural Design Patterns - Adapter and Flyweight.md",
