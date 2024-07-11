@@ -12,11 +12,10 @@
 ---
 ## Adapter
 - is a structural pattern that allows objects with incompatible interfaces to collaborate.
-- Adapter  is a special object that converts the interface of one object so that another object can understand it.
+- Adapter is a special object that converts the interface of one object so that another object can understand it.
 - An adapter wraps one of the objects to hide the complexity of conversion happening behind the scenes. The wrapped object isnʼt even aware of the adapter.
-
 ### Problem
-- Let us take the example of payment processing.  We first use the Stripe payment gateway.
+- Let us take the example of payment processing. We first use the Stripe payment gateway.
 
 ```java
 public class StripeApi {
@@ -54,7 +53,6 @@ public class PayPalApi {
 
 - As you can see, the Stripe API and the PayPal API have different method names. 
 - The Stripe API uses `createPayment` and `checkStatus` while the PayPal API uses `makePayment` and `getStatus`.
-
 ### Implementation
 - **Incompatible classes** - You should have two classes that have incompatible interfaces. For example, the Stripe API and the PayPal API.
 
