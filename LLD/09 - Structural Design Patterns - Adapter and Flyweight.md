@@ -439,7 +439,7 @@ classDiagram
 - The major problem here is for each object, the image field consumes a lot of memory. The image is also the same for all the bullets.
 - Other parts of a particle’s state, such as coordinates, movement vector and speed, are unique to each particle. After all, the values of these fields change over time. This data represents the always changing context in which the particle exists, while the color and sprite remain constant for each particle.
 - This constant data of an object is usually called the **intrinsic state**. It lives within the object; other objects can only read it, not change it. 
-The rest of the object’s state, often altered “from the outside” by other objects, is called the **extrinsic state**.
+- The rest of the object’s state, often altered “from the outside” by other objects, is called the **extrinsic state**.
 
 - The Flyweight pattern suggests that you stop storing the extrinsic state inside the object. Instead, you should pass this state to specific methods which rely on it. 
 - Only the intrinsic state stays within the object, letting you reuse it in different contexts.
