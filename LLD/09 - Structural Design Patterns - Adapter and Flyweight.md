@@ -515,3 +515,173 @@ public class BulletFactory {
 ```
 
 - **Client code** - The client code usually creates a bunch of pre-populated flyweights in the initialization stage of the application.
+
+### Flyweight Pattern in Python
+
+```python
+from enum import Enum
+from typing import Dict
+
+class BulletType(Enum):
+    NINE_MM = 1
+    ELEVEN_MM = 2
+    ACP = 3
+
+class Bullet:
+    def __init__(self, image: str, radius: float, weight: float, bullet_type: BulletType):
+        self.__image = image
+        self.__radius = radius
+        self.__weight = weight
+        self.__type = bullet_type
+
+    @property
+    def image(self) -> str:
+        return self.__image
+
+    @property
+    def radius(self) -> float:
+        return self.__radius
+
+    @property
+    def weight(self) -> float:
+        return self.__weight
+
+    @property
+    def type(self) -> BulletType:
+        return self.__type
+
+class BulletRegistry:
+    def __init__(self):
+        self.__bullets: Dict[BulletType, Bullet] = {}
+
+    def add_bullet(self, bullet: Bullet):
+        self.__bullets[bullet.type] = bullet
+
+    def get_bullet(self, bullet_type: BulletType) -> Bullet:
+        return self.__bullets.get(bullet_type)
+
+class FlyingBullet:
+    def __init__(self, x: float, y: float, z: float, direction: float, bullet: Bullet):
+        self.__x = x
+        self.__y = y
+        self.__z = z
+        self.__direction = direction
+        self.__bullet = bullet
+
+if __name__ == "__main__":
+    # Create a BulletRegistry instance
+    registry = BulletRegistry()
+
+    # Add bullets to the registry
+    registry.add_bullet(Bullet("9mm.png", 9.0, 7.5, BulletType.NINE_MM))
+    registry.add_bullet(Bullet("11mm.png", 11.0, 8.0, BulletType.ELEVEN_MM))
+    registry.add_bullet(Bullet("acp.png", 12.0, 9.0, BulletType.ACP))
+
+    # Retrieve a bullet from the registry
+    bullet = registry.get_bullet(BulletType.NINE_MM)
+
+    # Create a FlyingBullet instance
+    flying_bullet = FlyingBullet(0.0, 0.0, 0.0, 90.0, bullet)
+
+    # Print the details of the FlyingBullet instance
+    print(f"FlyingBullet details: x={flying_bullet._FlyingBullet__x}, "
+          f"y={flying_bullet._FlyingBullet__y}, z={flying_bullet._FlyingBullet__z}, "
+          f"direction={flying_bullet._FlyingBullet__direction}, "
+          f"bullet_type={flying_bullet._FlyingBullet__bullet.type.name}, "
+          f"bullet_image={flying_bullet._FlyingBullet__bullet.image}, "
+          f"bullet_radius={flying_bullet._FlyingBullet__bullet.radius}, "
+          f"bullet_weight={flying_bullet._FlyingBullet__bullet.weight}")
+```
+
+### Flyweight Pattern in Go
+
+```go
+package flyweight
+
+import (
+	"fmt"
+)
+
+// BulletType enum
+type BulletType int
+
+const (
+	NINE_MM BulletType = iota
+	ELEVEN_MM
+	ACP
+)
+
+// Bullet struct representing the flyweight object
+type Bullet struct {
+	image  string
+	radius float64
+	weight float64
+	bType  BulletType
+}
+
+func NewBullet(image string, radius, weight float64, bType BulletType) *Bullet {
+	return &Bullet{
+		image:  image,
+		radius: radius,
+		weight: weight,
+		bType:  bType,
+	}
+}
+
+func (b *Bullet) Image() string {
+	return b.image
+}
+
+func (b *Bullet) Radius() float64 {
+	return b.radius
+}
+
+func (b *Bullet) Weight() float64 {
+	return b.weight
+}
+
+func (b *Bullet) Type() BulletType {
+	return b.bType
+}
+
+// BulletRegistry to manage shared Bullet instances
+type BulletRegistry struct {
+	bullets map[BulletType]*Bullet
+}
+
+func NewBulletRegistry() *BulletRegistry {
+	return &BulletRegistry{
+		bullets: make(map[BulletType]*Bullet),
+	}
+}
+
+func (br *BulletRegistry) AddBullet(bullet *Bullet) {
+	br.bullets[bullet.Type()] = bullet
+}
+
+func (br *BulletRegistry) GetBullet(bType BulletType) *Bullet {
+	return br.bullets[bType]
+}
+
+// FlyingBullet struct representing the extrinsic state
+type FlyingBullet struct {
+	x, y, z   float64
+	direction float64
+	bullet    *Bullet
+}
+
+func NewFlyingBullet(x, y, z, direction float64, bullet *Bullet) *FlyingBullet {
+	return &FlyingBullet{
+		x:         x,
+		y:         y,
+		z:         z,
+		direction: direction,
+		bullet:    bullet,
+	}
+}
+
+func (fb *FlyingBullet) Details() string {
+	return fmt.Sprintf("FlyingBullet details: x=%.1f, y=%.1f, z=%.1f, direction=%.1f, bullet_type=%d, bullet_image=%s, bullet_radius=%.1f, bullet_weight=%.1f",
+		fb.x, fb.y, fb.z, fb.direction, fb.bullet.Type(), fb.bullet.Image(), fb.bullet.Radius(), fb.bullet.Weight())
+}
+```
