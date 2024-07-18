@@ -87,7 +87,7 @@ classDiagram
 * The above approach is extremely brittle. If we want to add a new functionality, we will have to create a new class for each combination of existing functionalities. It also leads to class explosion. 
 * The number of classes grows exponentially with the number of possible combinations of functionalities.
 
-### Solution
+### Solution (Java)
 * The problem with the above approach is that inheritance is static. We can't add new functionality to an existing class at runtime.
 
 * Another option is to use composition. 
@@ -158,6 +158,166 @@ public class Client {
 }
 ```
 
+### Decorator Pattern in Python
+
+```python
+from abc import ABC, abstractmethod
+
+class Datasource(ABC):
+    @abstractmethod
+    def read(self):
+        pass
+
+    @abstractmethod
+    def write(self, value):
+        pass
+
+class BaseDecorator(Datasource):
+    def __init__(self, next_layer):
+        self._next_layer = next_layer
+
+class FileDatasource(Datasource):
+    def read(self):
+        return "Base"
+
+    def write(self, value):
+        print(value)
+
+class CompressionDecorator(BaseDecorator):
+    def __init__(self, datasource):
+        super().__init__(datasource)
+
+    def read(self):
+        compressed = self._next_layer.read()
+        return self._decompress(compressed)
+
+    def _decompress(self, compressed):
+        return f"{compressed} - Decompressed"
+
+    def write(self, value):
+        compressed = self._compress(value)
+        self._next_layer.write(compressed)
+
+    def _compress(self, value):
+        return f"{value} - Compressed"
+
+class EncryptionDecorator(BaseDecorator):
+    def __init__(self, next_layer):
+        super().__init__(next_layer)
+
+    def read(self):
+        value = self._next_layer.read()
+        return self._decrypt(value)
+
+    def _decrypt(self, value):
+        return f"{value} - Decrypted"
+
+    def write(self, value):
+        encrypted = self._encrypt(value)
+        self._next_layer.write(encrypted)
+
+    def _encrypt(self, value):
+        return f"{value} - Encrypted"
+
+if __name__ == "__main__":
+    datasource = FileDatasource()
+    encrypted_datasource = EncryptionDecorator(datasource)
+    compressed_encrypted_datasource = CompressionDecorator(encrypted_datasource)
+
+    compressed_encrypted_datasource.write("Test Data")
+    print(compressed_encrypted_datasource.read())
+```
+
+### Decorator Pattern in Golang
+
+```go
+package decorator
+
+import "fmt"
+
+type Datasource interface {
+	Read() string
+	Write(value string)
+}
+
+type BaseDecorator struct {
+	nextLayer Datasource
+}
+
+func (b *BaseDecorator) Read() string {
+	return b.nextLayer.Read()
+}
+
+func (b *BaseDecorator) Write(value string) {
+	b.nextLayer.Write(value)
+}
+
+type FileDatasource struct{}
+
+func (f *FileDatasource) Read() string {
+	return "Base"
+}
+
+func (f *FileDatasource) Write(value string) {
+	fmt.Println(value)
+}
+
+type CompressionDecorator struct {
+	BaseDecorator
+}
+
+func NewCompressionDecorator(datasource Datasource) *CompressionDecorator {
+	return &CompressionDecorator{
+		BaseDecorator{nextLayer: datasource},
+	}
+}
+
+func (c *CompressionDecorator) Read() string {
+	compressed := c.nextLayer.Read()
+	return c.decompress(compressed)
+}
+
+func (c *CompressionDecorator) decompress(compressed string) string {
+	return compressed + " - Decompressed"
+}
+
+func (c *CompressionDecorator) Write(value string) {
+	compressed := c.compress(value)
+	c.nextLayer.Write(compressed)
+}
+
+func (c *CompressionDecorator) compress(value string) string {
+	return value + " - Compressed"
+}
+
+type EncryptionDecorator struct {
+	BaseDecorator
+}
+
+func NewEncryptionDecorator(datasource Datasource) *EncryptionDecorator {
+	return &EncryptionDecorator{
+		BaseDecorator{nextLayer: datasource},
+	}
+}
+
+func (e *EncryptionDecorator) Read() string {
+	value := e.nextLayer.Read()
+	return e.decrypt(value)
+}
+
+func (e *EncryptionDecorator) decrypt(value string) string {
+	return value + " - Decrypted"
+}
+
+func (e *EncryptionDecorator) Write(value string) {
+	encrypted := e.encrypt(value)
+	e.nextLayer.Write(encrypted)
+}
+
+func (e *EncryptionDecorator) encrypt(value string) string {
+	return value + " - Encrypted"
+}
+```
 ### Advantages
 * Object behavior can be extended at runtime by wrapping an object with one or several decorators without creating a new subclass.
 * Runtime configuration of an object is possible.
