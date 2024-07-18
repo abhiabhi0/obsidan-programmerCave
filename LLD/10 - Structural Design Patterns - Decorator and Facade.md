@@ -326,7 +326,6 @@ func (e *EncryptionDecorator) encrypt(value string) string {
 ---
 ## Facade
 * structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
-
 ### Problem
 * Let us take the example of an e-commerce application. 
 * The application has a lot of functionality. It has a product catalog, a shopping cart, a payment system, a shipping system, etc. The application has a lot of classes and a lot of dependencies between them. The application is complex and it is hard to understand how all the classes work together. 
@@ -360,11 +359,9 @@ public class Order {
 * The Order class is hard to test. You will have to mock all the dependencies. The Order class is also hard to reuse. If you want to reuse the Order class in another application, you will have to change the code. 
 * Every time one of the logic changes, you will have to change the code in multiple places and hence violating SOLID principles.
 
-* A facade is a class that provides a simple interface to a complex subsystem which contains lots of moving parts. 
+* A **facade** is a class that provides a simple interface to a complex subsystem which contains lots of moving parts. 
 * A facade might provide limited functionality in comparison to working with the subsystem directly. However, it includes only those features that clients really care about.
-
-### Solution
-
+### Solution (Java)
 * Facade pattern suggests that you wrap a complex subsystem with a simpler interface. 
 * The Facade pattern provides a higher-level interface that makes the subsystem easier to use. 
 * The Facade pattern is implemented by simply creating a new class that encapsulates the complex logic of the existing classes. For our example above, we will move the complex logic to a new class called `OrderProcessor`.
