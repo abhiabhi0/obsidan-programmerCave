@@ -1,5 +1,3 @@
-10 - Decorator and Facade
-
 **Decorator**
  - structural design pattern that allows adding new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
 
@@ -7,7 +5,6 @@
 * structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
 ---
 ## Decorator
-
 * attaches additional responsibilities to an object dynamically.
 ### Problem
 - Let us say we want to build a class that sends our users emails with a greeting. We can start with a simple class:
@@ -399,3 +396,179 @@ public class Order {
 * The `Order` class is now much simpler. It has a single responsibility of creating an order. 
 * The `Order` class is also easier to test. You can mock the `OrderProcessor` class. 
 * The `Order` class is also easier to reuse. You can reuse the `Order` class in another application without changing the code.
+
+### Facade Pattern in Python
+
+```python
+from abc import ABC, abstractmethod
+
+class OrderManager(ABC):
+    @abstractmethod
+    def create_order(self) -> None:
+        pass
+
+class OrderManagerImpl(OrderManager):
+    def __init__(self, order_processor: 'OrderProcessor'):
+        self.order_processor = order_processor
+
+    def create_order(self) -> None:
+        self.order_processor.process()
+
+class AnalyticsService:
+    def track(self) -> None:
+        print("Analytics created")
+
+class InventoryService:
+    def check_inventory(self) -> None:
+        print("Inventory checked")
+
+class OrderProcessor:
+    def __init__(self, recommendation_service: 'RecommendationService', 
+                 payment_service: 'PaymentService', 
+                 warehouse_processor: 'WarehouseProcessor'):
+        self.recommendation_service = recommendation_service
+        self.payment_service = payment_service
+        self.warehouse_processor = warehouse_processor
+
+    def process(self) -> None:
+        self.warehouse_processor.process()
+        self.recommendation_service.recommend()
+        self.payment_service.pay()
+
+class OrderFlowProcessor:
+    def __init__(self):
+        self.payment_service = PaymentService()
+        self.inventory_service = InventoryService()
+        self.recommendation_service = RecommendationService()
+        self.analytics_service = AnalyticsService()
+
+    def process(self) -> None:
+        self.payment_service.pay()
+        # update
+        self.inventory_service.check_inventory()
+        # analytics
+        self.recommendation_service.recommend()
+        self.analytics_service.track()
+
+class PaymentService:
+    def pay(self) -> None:
+        print("Payment done")
+
+class RecommendationService:
+    def recommend(self) -> None:
+        print("Recommendation created")
+
+class WarehouseProcessor:
+    def __init__(self, inventory_service: InventoryService, 
+                 analytics_service: AnalyticsService):
+        self.inventory_service = inventory_service
+        self.analytics_service = analytics_service
+
+    def process(self) -> None:
+        self.inventory_service.check_inventory()
+        self.analytics_service.track()
+
+if __name__ == "__main__":
+    order_flow_processor = OrderFlowProcessor()
+    order_flow_processor.process()
+```
+
+### Facade Pattern in Golang
+
+```go
+package facade
+
+import "fmt"
+
+// OrderManager interface
+type OrderManager interface {
+	CreateOrder()
+}
+
+// OrderManagerImpl struct
+type OrderManagerImpl struct {
+	orderProcessor *OrderProcessor
+}
+
+func (o *OrderManagerImpl) CreateOrder() {
+	o.orderProcessor.Process()
+}
+
+// OrderProcessor struct
+type OrderProcessor struct {
+	recommendationService *RecommendationService
+	paymentService        *PaymentService
+	warehouseProcessor    *WarehouseProcessor
+}
+
+func (o *OrderProcessor) Process() {
+	o.warehouseProcessor.Process()
+	o.recommendationService.Recommend()
+	o.paymentService.Pay()
+}
+
+// OrderFlowProcessor struct
+type OrderFlowProcessor struct {
+	paymentService        *PaymentService
+	inventoryService      *InventoryService
+	recommendationService *RecommendationService
+	analyticsService      *AnalyticsService
+}
+
+func NewOrderFlowProcessor() *OrderFlowProcessor {
+	return &OrderFlowProcessor{
+		paymentService:        &PaymentService{},
+		inventoryService:      &InventoryService{},
+		recommendationService: &RecommendationService{},
+		analyticsService:      &AnalyticsService{},
+	}
+}
+
+func (o *OrderFlowProcessor) Process() {
+	o.paymentService.Pay()
+	// update
+	o.inventoryService.CheckInventory()
+	// analytics
+	o.recommendationService.Recommend()
+	o.analyticsService.Track()
+}
+
+// PaymentService struct
+type PaymentService struct{}
+
+func (p *PaymentService) Pay() {
+	fmt.Println("Payment done")
+}
+
+// RecommendationService struct
+type RecommendationService struct{}
+
+func (r *RecommendationService) Recommend() {
+	fmt.Println("Recommendation created")
+}
+
+// WarehouseProcessor struct
+type WarehouseProcessor struct {
+	inventoryService *InventoryService
+	analyticsService *AnalyticsService
+}
+
+func (w *WarehouseProcessor) Process() {
+	w.inventoryService.CheckInventory()
+	w.analyticsService.Track()
+}
+
+// AnalyticsService struct
+type AnalyticsService struct{}
+
+func (a *AnalyticsService) Track() {
+	fmt.Println("Analytics created")
+}
+
+// InventoryService struct
+type InventoryService struct{}
+
+func (i *InventoryService) CheckInventory() {
+	fmt.Println("Inventory checked")
+}
+```

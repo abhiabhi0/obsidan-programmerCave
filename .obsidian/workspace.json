@@ -173,12 +173,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c297e15289533d73",
+  "active": "4f66e15caaac9cf4",
   "lastOpenFiles": [
-    "Inbox.md",
     "LLD/09 - Structural Design Patterns - Adapter and Flyweight.md",
-    "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
     "LLD/10 - Structural Design Patterns - Decorator and Facade.md",
+    "Inbox.md",
+    "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
     "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
     "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
     "LLD/05 - SOLID - Single Responsibility, Open-Closed Principle.md",
