@@ -5,15 +5,11 @@
 
 **Facade**
 * structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
-
-—
-
+---
 ## Decorator
 
 * attaches additional responsibilities to an object dynamically.
-
 ### Problem
-
 - Let us say we want to build a class that sends our users emails with a greeting. We can start with a simple class:
 
 ```java
@@ -96,21 +92,20 @@ classDiagram
 
 * Another option is to use composition. 
 * We can create a new class that will contain references to the existing classes and delegate the calls to the existing classes. This where the Decorator pattern comes in. 
-* The Decorator pattern allows us to add new functionality to an existing object without altering its structure. The Decorator pattern is also known as Wrapper.
+* The **Decorator pattern** allows us to add new functionality to an existing object without altering its structure. The Decorator pattern is also known as **Wrapper**.
 
-* A wrapper is an object that can be linked with some target object. The wrapper contains the same set of methods as the target and delegates to it all requests it receives. 
+* A **wrapper** is an object that can be linked with some target object. The wrapper contains the same set of methods as the target and delegates to it all requests it receives. 
 * However, the wrapper may alter the result by doing something either before or after it passes the request to the target. The wrapper implements the same interface as the wrapped object. 
 
 * The Decorator pattern is implemented with the following steps:
- 	- **Common product interface** - Declare the common interface for both wrappers and wrapped objects.
+  - **Common product interface** - Declare the common interface for both wrappers and wrapped objects.
 ```java
 public interface Communicator {
     void send(String target, String message);
 }
 ```
 
-	 - **Concrete product** - Create a concrete product class that implements the common interface and represents the basic behavior of the wrapped object.
-
+ - **Concrete product** - Create a concrete product class that implements the common interface and represents the basic behavior of the wrapped object.
 ```java
 public class EmailService implements Communicator {
     @Override
@@ -120,8 +115,7 @@ public class EmailService implements Communicator {
 }
 ```
 
-	- **Base decorator** - Create a base decorator class that implements the common interface and contains a field for storing a reference to a wrapped object.
-
+- **Base decorator** - Create a base decorator class that implements the common interface and contains a field for storing a reference to a wrapped object.
 ```java
 public abstract class CommunicatorDecorator implements Communicator {
     protected Communicator communicator;
@@ -132,8 +126,7 @@ public abstract class CommunicatorDecorator implements Communicator {
 }
 ```
 
-	- **Concrete decorators** - Create concrete decorator classes that extend the base decorator class and add additional behavior to the wrapped object.
-
+- **Concrete decorators** - Create concrete decorator classes that extend the base decorator class and add additional behavior to the wrapped object.
 ```java
 public class PhoneService extends CommunicatorDecorator {
     public PhoneService(Communicator communicator) {
@@ -152,7 +145,7 @@ public class PhoneService extends CommunicatorDecorator {
 }
 ```
 
-	- **Client** - The client code works with all objects using the common interface. This way it can stay independent of the concrete classes of objects it works with.
+- **Client** - The client code works with all objects using the common interface. This way it can stay independent of the concrete classes of objects it works with.
 
 ```java
 public class Client {
@@ -170,9 +163,7 @@ public class Client {
 * Runtime configuration of an object is possible.
 * New behavior can be added to an object without changing its code.
 * SRP is respected by encapsulating the behavior in a separate class.
-
-—
-
+---
 ## Facade
 * structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
 
