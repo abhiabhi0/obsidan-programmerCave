@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLD/10 - Structural Design Patterns - Decorator and Facade.md",
+                "file": "LLD/11 - Behavioural Design Patterns - Observer and Strategy.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LLD/10 - Structural Design Patterns - Decorator and Facade.md",
+                "file": "LLD/11 - Behavioural Design Patterns - Observer and Strategy.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LLD/10 - Structural Design Patterns - Decorator and Facade.md",
+                "file": "LLD/11 - Behavioural Design Patterns - Observer and Strategy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLD/10 - Structural Design Patterns - Decorator and Facade.md"
+                "file": "LLD/11 - Behavioural Design Patterns - Observer and Strategy.md"
               }
             }
           },
@@ -140,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "e1f64291e07d4de7",
@@ -174,9 +174,10 @@
   },
   "active": "4f66e15caaac9cf4",
   "lastOpenFiles": [
-    "LLD/09 - Structural Design Patterns - Adapter and Flyweight.md",
     "LLD/10 - Structural Design Patterns - Decorator and Facade.md",
+    "LLD/11 - Behavioural Design Patterns - Observer and Strategy.md",
     "Inbox.md",
+    "LLD/09 - Structural Design Patterns - Adapter and Flyweight.md",
     "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
     "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
     "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
@@ -207,7 +208,6 @@
     "Kubernetes/Architecture.md",
     "Golang/Generate JWT using go.md",
     "Python/GIL.md",
-    "Interview Prep/Internals of Indexing.md",
     "Pasted image 20240614101653.png",
     "Pasted image 20240614101549.png",
     "Pasted image 20240613112340.png",
