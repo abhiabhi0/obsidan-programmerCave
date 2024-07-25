@@ -85,14 +85,14 @@ public interface class Observable {
 }
 ```
 
-	0.	**Observer interface** - This interface defines the methods that the observer class must implement. The observer class is responsible for updating itself when the state of the subject changes.
+- **Observer interface** - This interface defines the methods that the observer class must implement. The observer class is responsible for updating itself when the state of the subject changes.
 ```java
 public interface class Observer {
     void notify();
 }
 ```
 
-	0.	**Concrete observables** - These are the classes that implement the `Observable` interface. The `BitcoinTracker` class is a concrete observable. The `BitcoinTracker` class is responsible for notifying the observers when the state of the subject changes.
+- **Concrete observables** - These are the classes that implement the `Observable` interface. The `BitcoinTracker` class is a concrete observable. The `BitcoinTracker` class is responsible for notifying the observers when the state of the subject changes.
 ```java
 public class BitcoinTracker implements Observable {
     private Bitcoin bitcoin;
@@ -104,7 +104,7 @@ public class BitcoinTracker implements Observable {
 }
 ```
 
-	•	To simplify the code and provide better interfaces, we can borrow from the registry pattern and register observers and even add utility methods to the `Observable` interface.
+- To simplify the code and provide better interfaces, we can borrow from the registry pattern and register observers and even add utility methods to the `Observable` interface.
 
 ```java
 public abstract class Observable {
@@ -127,7 +127,7 @@ public abstract class Observable {
 }
 ```
 
-	0.	**Concrete observers** - These are the classes that implement the `Observer` interface. The `EmailSender` class is a concrete observer. The `EmailSender` class is responsible for updating itself when the state of the subject changes.
+- **Concrete observers** - These are the classes that implement the `Observer` interface. The `EmailSender` class is a concrete observer. The `EmailSender` class is responsible for updating itself when the state of the subject changes.
 
 ```java
 public class EmailSender implements Observer {
