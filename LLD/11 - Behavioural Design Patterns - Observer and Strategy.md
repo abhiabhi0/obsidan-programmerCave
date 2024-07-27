@@ -139,7 +139,7 @@ public class EmailSender implements Observer {
 }
 ```
 
-	0.	**Client** - The client is responsible for creating the subject and the observers. The client is also responsible for registering the observers with the subject.
+- **Client** - The client is responsible for creating the subject and the observers. The client is also responsible for registering the observers with the subject.
 
 ```java
 public class Client {
@@ -154,14 +154,12 @@ public class Client {
 
 ### Recap
 
-	•	There are often times when you want to notify other objects when the state of an object changes. The Observer pattern suggests that you define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
-	•	In-place updates and polling are not ideal. In-place updates violate the Single Responsibility Principle whereas polling is wasteful.
-	•	To implement the Observer pattern, define an Observable interface that defines the methods that the subject class must implement.
-	•	Define an Observer interface that defines the methods that the observer class must implement. The subject class is responsible for notifying the observers when the state of the subject changes. The observer class is responsible for updating itself when the state of the subject changes.
+•	There are often times when you want to notify other objects when the state of an object changes. The Observer pattern suggests that you define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+•	In-place updates and polling are not ideal. In-place updates violate the Single Responsibility Principle whereas polling is wasteful.
+•	To implement the Observer pattern, define an Observable interface that defines the methods that the subject class must implement.
+•	Define an Observer interface that defines the methods that the observer class must implement. The subject class is responsible for notifying the observers when the state of the subject changes. The observer class is responsible for updating itself when the state of the subject changes.
 
-
-—
-
+---
 ## Strategy Design Pattern
 
 	⁃	(also known as the policy pattern) is a software design pattern that enables an algorithm's behavior to be selected at runtime. 
