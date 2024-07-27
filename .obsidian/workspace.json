@@ -19,8 +19,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "e7312c6183eae2b1",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.6.7"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -140,7 +151,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       },
       {
         "id": "e1f64291e07d4de7",
@@ -172,7 +183,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4f66e15caaac9cf4",
+  "active": "e7312c6183eae2b1",
   "lastOpenFiles": [
     "LLD/10 - Structural Design Patterns - Decorator and Facade.md",
     "LLD/11 - Behavioural Design Patterns - Observer and Strategy.md",
