@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLD/11 - Behavioural Design Patterns - Observer and Strategy.md",
+                "file": "Inbox.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -87,7 +87,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LLD/11 - Behavioural Design Patterns - Observer and Strategy.md",
+                "file": "Inbox.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LLD/11 - Behavioural Design Patterns - Observer and Strategy.md",
+                "file": "Inbox.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -127,7 +127,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLD/11 - Behavioural Design Patterns - Observer and Strategy.md"
+                "file": "Inbox.md"
               }
             }
           },
@@ -140,7 +140,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "e1f64291e07d4de7",
@@ -172,10 +172,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4f66e15caaac9cf4",
+  "active": "c297e15289533d73",
   "lastOpenFiles": [
-    "LLD/10 - Structural Design Patterns - Decorator and Facade.md",
     "LLD/11 - Behavioural Design Patterns - Observer and Strategy.md",
+    "LLD/10 - Structural Design Patterns - Decorator and Facade.md",
     "Inbox.md",
     "LLD/09 - Structural Design Patterns - Adapter and Flyweight.md",
     "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
