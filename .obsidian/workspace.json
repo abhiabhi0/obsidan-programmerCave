@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Defer, Panic, and Recover.md",
+                "file": "Golang/Error Control.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -111,9 +111,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Golang/Defer, Panic, and Recover.md",
     "Golang/Map Internals.md",
     "Golang/Design Patterns.md",
-    "Golang/Defer, Panic, and Recover.md",
     "Golang/Context.md",
     "Golang/Concurrency Patterns.md",
     "Golang/Concurrency in Go.md",
