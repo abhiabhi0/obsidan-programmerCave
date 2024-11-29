@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Array vs Slice.md",
+                "file": "Golang/Call the compute function a total of 100 times, distributed among 8 goroutines.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -111,6 +111,7 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Golang/Array vs Slice.md",
     "Excalidraw/Drawing 2024-11-29 14.39.22.excalidraw.md",
     "Untitled.canvas",
     "Inbox.md",
@@ -139,7 +140,6 @@
     "Golang/Concurrency Patterns.md",
     "LLD",
     "Golang/Closing a Channel.md",
-    "Golang/Array vs Slice.md",
     "Golang/Function Literals, Naked Returns, Variadic Functions, Init Functions.md",
     "Golang/Function as a Value.md",
     "Golang/Concurrency in Go.md",
