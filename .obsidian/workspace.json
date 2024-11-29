@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Call the compute function a total of 100 times, distributed among 8 goroutines.md",
+                "file": "Golang/Concurrency Patterns.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -111,6 +111,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Golang/Concurrency in Go.md",
+    "Golang/Closing a Channel.md",
+    "Golang/Call the compute function a total of 100 times, distributed among 8 goroutines.md",
     "Golang/Array vs Slice.md",
     "Excalidraw/Drawing 2024-11-29 14.39.22.excalidraw.md",
     "Untitled.canvas",
@@ -139,10 +142,8 @@
     "00 Tasks",
     "Golang/Concurrency Patterns.md",
     "LLD",
-    "Golang/Closing a Channel.md",
     "Golang/Function Literals, Naked Returns, Variadic Functions, Init Functions.md",
     "Golang/Function as a Value.md",
-    "Golang/Concurrency in Go.md",
     "Kubernetes/Architecture.md",
     "Pasted image 20240614101653.png",
     "Pasted image 20240614101549.png",

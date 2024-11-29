@@ -1,3 +1,37 @@
+### Quick Summary
+
+#### Goroutines:
+
+- **Lightweight Threads**: Managed by Go runtime.
+- **Synchronization**: Use `sync.WaitGroup` to wait for goroutines to finish.
+    - **Example**:
+```go
+var wg sync.WaitGroup  
+wg.Add(1)  
+go func() {  
+	defer wg.Done()  
+	// Task  
+	}()  
+wg.Wait()
+```
+#### Channels:
+
+- **Purpose**: Enable safe, synchronized communication between goroutines.
+
+#### Race Conditions:
+
+- **Solution**: Use `sync.Mutex` for safe shared data access.
+    - **Example**:
+```go
+var mu sync.Mutex  
+var data int  
+func updateData() {  
+	mu.Lock()  
+	data++  
+	mu.Unlock()  
+}
+```
+
 - **Goroutines** are a unique feature in Go, offering an efficient solution for concurrent programming. They are lightweight and managed by the Go runtime. 
 - To manage goroutines, synchronization is required to avoid issues like race conditions. The `sync.WaitGroup` is a common tool for managing goroutines' lifecycle. 
 ```go
