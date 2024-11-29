@@ -112,8 +112,9 @@
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
     "Golang/Concurrency in Go.md",
-    "Golang/Closing a Channel.md",
     "Golang/Call the compute function a total of 100 times, distributed among 8 goroutines.md",
+    "Golang/Concurrency Patterns.md",
+    "Golang/Closing a Channel.md",
     "Golang/Array vs Slice.md",
     "Excalidraw/Drawing 2024-11-29 14.39.22.excalidraw.md",
     "Untitled.canvas",
@@ -140,7 +141,6 @@
     "Excalidraw",
     "Untitled 1.canvas",
     "00 Tasks",
-    "Golang/Concurrency Patterns.md",
     "LLD",
     "Golang/Function Literals, Naked Returns, Variadic Functions, Init Functions.md",
     "Golang/Function as a Value.md",
