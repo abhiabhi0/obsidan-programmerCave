@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Design Patterns.md",
+                "file": "Golang/Defer, Panic, and Recover.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -111,6 +111,8 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Golang/Map Internals.md",
+    "Golang/Design Patterns.md",
     "Golang/Defer, Panic, and Recover.md",
     "Golang/Context.md",
     "Golang/Concurrency Patterns.md",
@@ -139,12 +141,10 @@
     "00 Tasks/00 Tasks.md",
     "Excalidraw/Drawing 2024-06-22 22.22.44.excalidraw.md",
     "Pasted image 20240622221813.png",
-    "Excalidraw/Drawing 2024-06-22 22.16.17.excalidraw.md",
     "Excalidraw",
     "Untitled 1.canvas",
     "00 Tasks",
     "LLD",
-    "Golang/Function Literals, Naked Returns, Variadic Functions, Init Functions.md",
     "Pasted image 20240614101653.png",
     "Pasted image 20240614101549.png",
     "Pasted image 20240613112340.png",
