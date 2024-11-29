@@ -1,5 +1,4 @@
 In Go, arrays and slices are two different types of data structures used to store collections of elements. Here’s a detailed comparison of the two:
-
 ### Arrays
 1. **Fixed Size**: Arrays in Go have a fixed size, which must be specified at the time of declaration. The size is a part of the array's type.
    ```go

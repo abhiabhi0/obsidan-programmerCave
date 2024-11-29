@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "663642043d33818d",
+        "id": "34d20c3b7d8db301",
         "type": "tabs",
         "children": [
           {
-            "id": "4f66e15caaac9cf4",
+            "id": "5393ec9ce544d4a8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Inbox.md",
+                "file": "Golang/Array vs Slice.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -49,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "global inter",
+                "query": "tag:#excalidraw",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -79,87 +79,24 @@
       {
         "id": "3cdc6cb448adcac1",
         "type": "tabs",
-        "dimension": 40.56372549019608,
         "children": [
-          {
-            "id": "22dd375b770bebf6",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Inbox.md",
-                "collapseAll": true,
-                "extraContext": true,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "a33559f6ab14d217",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Inbox.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": false
-              }
-            }
-          },
           {
             "id": "5f69249ebce3dba5",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "frequency",
+                "sortOrder": "alphabeticalReverse",
                 "useHierarchy": true
               }
-            }
-          },
-          {
-            "id": "c297e15289533d73",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Inbox.md"
-              }
-            }
-          },
-          {
-            "id": "4db7103f30888791",
-            "type": "leaf",
-            "state": {
-              "type": "tasks_timeline_view",
-              "state": {}
-            }
-          }
-        ],
-        "currentTab": 4
-      },
-      {
-        "id": "e1f64291e07d4de7",
-        "type": "tabs",
-        "dimension": 59.43627450980392,
-        "children": [
-          {
-            "id": "cb183d99e24ad297",
-            "type": "leaf",
-            "state": {
-              "type": "tasks_timeline_view",
-              "state": {}
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 327.5
+    "width": 327.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -172,11 +109,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "c297e15289533d73",
+  "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2024-11-29 14.39.22.excalidraw.md",
+    "Untitled.canvas",
+    "Inbox.md",
     "LLD/11 - Behavioural Design Patterns - Observer and Strategy.md",
     "LLD/10 - Structural Design Patterns - Decorator and Facade.md",
-    "Inbox.md",
     "LLD/09 - Structural Design Patterns - Adapter and Flyweight.md",
     "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
     "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
@@ -195,7 +134,6 @@
     "Pasted image 20240622221813.png",
     "Excalidraw/Drawing 2024-06-22 22.16.17.excalidraw.md",
     "Excalidraw",
-    "Untitled.canvas",
     "Untitled 1.canvas",
     "00 Tasks",
     "Golang/Concurrency Patterns.md",
@@ -206,8 +144,6 @@
     "Golang/Function as a Value.md",
     "Golang/Concurrency in Go.md",
     "Kubernetes/Architecture.md",
-    "Golang/Generate JWT using go.md",
-    "Python/GIL.md",
     "Pasted image 20240614101653.png",
     "Pasted image 20240614101549.png",
     "Pasted image 20240613112340.png",
