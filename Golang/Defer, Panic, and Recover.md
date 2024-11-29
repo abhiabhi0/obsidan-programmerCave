@@ -1,3 +1,14 @@
+### Summary:
+
+1. **Defer**: Ensures cleanup actions (e.g., closing files) are executed regardless of function's return path. Key rules:
+    - Arguments are evaluated immediately.
+    - Deferred calls execute in LIFO order.
+    - Can modify named return values.
+    
+1. **Panic**: Halts normal flow, triggers deferred functions, and propagates errors up the call stack. Useful for handling critical errors.
+    
+3. **Recover**: Regains control during a panic, preventing program crashes. Must be used inside deferred functions.
+
 A **defer statement** pushes a function call onto a list. The list of saved calls is executed after the surrounding function returns. Defer is commonly used to simplify functions that perform various clean-up actions.
 
 ```go

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Defer, Panic, and Recover.md",
+                "file": "Golang/Design Patterns.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -109,8 +109,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b4904ce9751ea41b",
+  "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Golang/Defer, Panic, and Recover.md",
     "Golang/Context.md",
     "Golang/Concurrency Patterns.md",
     "Golang/Concurrency in Go.md",
@@ -144,7 +145,6 @@
     "00 Tasks",
     "LLD",
     "Golang/Function Literals, Naked Returns, Variadic Functions, Init Functions.md",
-    "Golang/Function as a Value.md",
     "Pasted image 20240614101653.png",
     "Pasted image 20240614101549.png",
     "Pasted image 20240613112340.png",
