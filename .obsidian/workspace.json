@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Concurrency Patterns.md",
+                "file": "Golang/Defer, Panic, and Recover.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -109,11 +109,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5393ec9ce544d4a8",
+  "active": "b4904ce9751ea41b",
   "lastOpenFiles": [
+    "Golang/Context.md",
+    "Golang/Concurrency Patterns.md",
     "Golang/Concurrency in Go.md",
     "Golang/Call the compute function a total of 100 times, distributed among 8 goroutines.md",
-    "Golang/Concurrency Patterns.md",
     "Golang/Closing a Channel.md",
     "Golang/Array vs Slice.md",
     "Excalidraw/Drawing 2024-11-29 14.39.22.excalidraw.md",
@@ -144,7 +145,6 @@
     "LLD",
     "Golang/Function Literals, Naked Returns, Variadic Functions, Init Functions.md",
     "Golang/Function as a Value.md",
-    "Kubernetes/Architecture.md",
     "Pasted image 20240614101653.png",
     "Pasted image 20240614101549.png",
     "Pasted image 20240613112340.png",
