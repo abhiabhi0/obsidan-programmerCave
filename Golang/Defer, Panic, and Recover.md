@@ -1,95 +1,41 @@
-### Summary:
+### **Defer** (Resource cleanup):
 
-1. **Defer**: Ensures cleanup actions (e.g., closing files) are executed regardless of function's return path. Key rules:
-    - Arguments are evaluated immediately.
-    - Deferred calls execute in LIFO order.
-    - Can modify named return values.
+1. **Definition**: "The `defer` keyword schedules a function to be executed after the surrounding function completes. It’s commonly used for cleanup tasks like closing files, unlocking resources, or releasing locks."
     
-1. **Panic**: Halts normal flow, triggers deferred functions, and propagates errors up the call stack. Useful for handling critical errors.
+2. **Key Points**:
     
-3. **Recover**: Regains control during a panic, preventing program crashes. Must be used inside deferred functions.
-
-A **defer statement** pushes a function call onto a list. The list of saved calls is executed after the surrounding function returns. Defer is commonly used to simplify functions that perform various clean-up actions.
+    - "Defer statements are executed in **LIFO (Last In, First Out)** order."
+    - "The arguments of a deferred function are evaluated when the `defer` statement is executed, not when the function actually runs."
+3. **Example**: "For instance, we use `defer` to ensure a file gets closed, even if an error occurs during file processing."
+```go
+file, err := os.Open("example.txt")
+if err != nil {
+    log.Fatal(err)
+}
+defer file.Close()  // Ensures the file gets closed when the function exits
+```
 
 ```go
-func CopyFile(dstName, srcName string) (written int64, err error) {
-    src, err := os.Open(srcName)
-    if err != nil {
-        return
-    }
+func p() {
+	fmt.Println("p")
+	defer fmt.Println("defer in p")
+	fmt.Println("q")
+}
 
-    dst, err := os.Create(dstName)
-    if err != nil {
-        return
-    }
-
-    written, err = io.Copy(dst, src)
-    dst.Close()
-    src.Close()
-    return
+func main() {
+	fmt.Println("Start")
+	defer fmt.Println("Deferred execution")
+	p()
+	fmt.Println("End")
 }
 ```
 
-This works, but there is a bug. If the call to os.Create fails, the function will return without closing the source file. This can be easily remedied by putting a call to src.Close before the second return statement, but if the function were more complex the problem might not be so easily noticed and resolved. By introducing defer statements we can ensure that the files are always closed:
-
-```go
-func CopyFile(dstName, srcName string) (written int64, err error) {
-    src, err := os.Open(srcName)
-    if err != nil {
-        return
-    }
-    defer src.Close()
-
-    dst, err := os.Create(dstName)
-    if err != nil {
-        return
-    }
-    defer dst.Close()
-
-    return io.Copy(dst, src)
-}
+```
+Start
+p
+q
+defer in p
+End
+Deferred execution
 ```
 
-Defer statements allow us to think about closing each file right after opening it, guaranteeing that, regardless of the number of return statements in the function, the files _will_ be closed.
-
-The behavior of defer statements is straightforward and predictable. There are three simple rules:
-
-1. _A deferred function’s arguments are evaluated when the defer statement is evaluated._
-
-In this example, the expression “i” is evaluated when the Println call is deferred. The deferred call will print “0” after the function returns.
-
-```go
-func a() {
-    i := 0
-    defer fmt.Println(i)
-    i++
-    return
-}
-```
-
-2. _Deferred function calls are executed in Last In First Out order after the surrounding function returns._
-
-This function prints “3210”:
-
-```go
-func b() {
-    for i := 0; i < 4; i++ {
-        defer fmt.Print(i)
-    }
-}
-```
-
-3. _Deferred functions may read and assign to the returning function’s named return values._
-
-In this example, a deferred function increments the return value i _after_ the surrounding function returns. Thus, this function returns 2:
-
-```
-func c() (i int) {
-    defer func() { i++ }()
-    return 1
-}
-```
-
-**Panic** is a built-in function that stops the ordinary flow of control and begins _panicking_. When the function F calls panic, execution of F stops, any deferred functions in F are executed normally, and then F returns to its caller. To the caller, F then behaves like a call to panic. The process continues up the stack until all functions in the current goroutine have returned, at which point the program crashes. Panics can be initiated by invoking panic directly. They can also be caused by runtime errors, such as out-of-bounds array accesses.
-
-**Recover** is a built-in function that regains control of a panicking goroutine. Recover is only useful inside deferred functions. During normal execution, a call to recover will return nil and have no other effect. If the current goroutine is panicking, a call to recover will capture the value given to panic and resume normal execution.
