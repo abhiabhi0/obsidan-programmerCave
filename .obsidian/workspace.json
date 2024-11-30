@@ -13,14 +13,29 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Error Control.md",
+                "file": "Golang/Function Closures.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Function Closures"
+            }
+          },
+          {
+            "id": "83b001772a1d3716",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.7"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.7"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -40,7 +55,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -55,7 +72,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -63,7 +82,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
@@ -88,10 +109,64 @@
               "state": {
                 "sortOrder": "alphabeticalReverse",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "7d2ecce46f77ae15",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "0ae54054c3b2edd3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "846cf53ff19fec75",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "8ad1549a8865b9ec",
+            "type": "leaf",
+            "state": {
+              "type": "tasks_timeline_view",
+              "state": {},
+              "icon": "calendar-clock",
+              "title": "Tasks Timeline"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -109,8 +184,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "5393ec9ce544d4a8",
+  "active": "8ad1549a8865b9ec",
   "lastOpenFiles": [
+    "Golang/Function as a Value.md",
+    "Golang/Error Control.md",
     "Golang/Defer, Panic, and Recover.md",
     "Golang/Map Internals.md",
     "Golang/Design Patterns.md",
@@ -138,8 +215,6 @@
     "Pasted image 20240625174445.png",
     "Excalidraw/Polymorphism.excalidraw.md",
     "Excalidraw/Drawing 2024-06-24 21.46.15.excalidraw.png",
-    "00 Tasks/00 Tasks.md",
-    "Excalidraw/Drawing 2024-06-22 22.22.44.excalidraw.md",
     "Pasted image 20240622221813.png",
     "Excalidraw",
     "Untitled 1.canvas",
