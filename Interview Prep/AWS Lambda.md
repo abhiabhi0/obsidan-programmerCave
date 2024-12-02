@@ -88,7 +88,8 @@
         
         ```bash
         aws lambda create-function --function-name my-lambda-function \
-          --zip-file fileb://function.zip --handler main \
+      
+		  --zip-file fileb://function.zip --handler main \
           --runtime go1.x --role arn:aws:iam::your-account-id:role/your-lambda-role
         ```
         
