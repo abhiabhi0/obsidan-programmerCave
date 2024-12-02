@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/Challenges faced while working with Kafka.md",
+                "file": "Interview Prep/AWS Lambda.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Challenges faced while working with Kafka"
+              "title": "AWS Lambda"
             }
           }
         ]
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interview Prep/Challenges faced while working with Kafka.md",
+                "file": "Interview Prep/AWS Lambda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Challenges faced while working with Kafka"
+              "title": "Backlinks for AWS Lambda"
             }
           },
           {
@@ -126,12 +126,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Interview Prep/Challenges faced while working with Kafka.md",
+                "file": "Interview Prep/AWS Lambda.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Challenges faced while working with Kafka"
+              "title": "Outgoing links from AWS Lambda"
             }
           },
           {
@@ -140,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interview Prep/Challenges faced while working with Kafka.md"
+                "file": "Interview Prep/AWS Lambda.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Challenges faced while working with Kafka"
+              "title": "Outline of AWS Lambda"
             }
           },
           {
@@ -176,12 +176,12 @@
               "title": "Tasks Timeline"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 494.5,
-    "collapsed": true
+    "width": 206.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,10 +198,11 @@
       "smart-connections:Open: Smart Chat Conversation": false
     }
   },
-  "active": "5393ec9ce544d4a8",
+  "active": "846cf53ff19fec75",
   "lastOpenFiles": [
-    "Interview Prep/Kafka.md",
     "Interview Prep/Challenges faced while working with Kafka.md",
+    "Interview Prep/AWS Lambda.md",
+    "Interview Prep/Kafka.md",
     "Golang/Function Closures.md",
     "smart-chats/UNTITLED CHAT 2024-11-30 05 56 25.md",
     "smart-chats",
@@ -227,7 +228,6 @@
     "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
     "LLD/05 - SOLID - Single Responsibility, Open-Closed Principle.md",
     "LLD/04 - Polymorphism.md",
-    "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
     "Pasted image 20240625174445.png",
     "Excalidraw/Drawing 2024-06-24 21.46.15.excalidraw.png",
     "Pasted image 20240622221813.png",
