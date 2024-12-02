@@ -1,5 +1,18 @@
 Apache Kafka is a distributed event streaming platform designed for high-throughput, low-latency ingestion of data streams. It is widely used for building real-time data pipelines and streaming applications. Here’s a comprehensive overview of Kafka’s architecture:
 
+### Summary
+
+1. **Core Components**:
+    - **Producers**: Publish data to Kafka topics, select partitions via keys.
+    - **Consumers**: Read data from topics, organized in consumer groups.
+    - **Brokers**: Kafka servers storing data and managing requests.
+    - **Topics & Partitions**: Topics are split into partitions for scalability.
+    - **Replication**: Ensures fault tolerance with leaders and followers.
+    - **ZooKeeper**: Manages metadata and leader elections (phasing out for metadata quorum).
+2. **Data Flow**:
+    - Producers send records to partitions → Brokers replicate data → Consumers fetch records using offsets.
+    - Failures trigger leader election for partitions to maintain availability.
+
 ### Core Components of Kafka
 
 1. **Producers**:
@@ -80,7 +93,3 @@ Apache Kafka is a distributed event streaming platform designed for high-through
 3. **Replication and Failover**:
     - In case of a broker failure, followers can take over as the leader of a partition.
     - ZooKeeper helps manage leader election and failover processes.
-
-### Summary
-
-Kafka’s architecture is designed for scalability, fault tolerance, and high-throughput data ingestion and processing. It leverages a distributed system model with multiple brokers, topics, and partitions, ensuring efficient data distribution and replication. Kafka’s ecosystem, including Kafka Connect and Kafka Streams, extends its capabilities, making it a powerful tool for building real-time data pipelines and stream processing applications.
