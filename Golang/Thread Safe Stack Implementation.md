@@ -130,5 +130,3 @@ func main() {
 	fmt.Println(stack.All())
 
 }
-
-```
