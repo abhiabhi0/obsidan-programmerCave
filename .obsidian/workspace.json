@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Thread Safe Stack Implementation.md",
+                "file": "Golang/Thread Safe Map Implementation.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Thread Safe Stack Implementation"
+              "title": "Thread Safe Map Implementation"
             }
           }
         ]
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Golang/Thread Safe Stack Implementation.md",
+                "file": "Golang/Thread Safe Map Implementation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Thread Safe Stack Implementation"
+              "title": "Backlinks for Thread Safe Map Implementation"
             }
           },
           {
@@ -126,12 +126,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Golang/Thread Safe Stack Implementation.md",
+                "file": "Golang/Thread Safe Map Implementation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Thread Safe Stack Implementation"
+              "title": "Outgoing links from Thread Safe Map Implementation"
             }
           },
           {
@@ -140,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Golang/Thread Safe Stack Implementation.md"
+                "file": "Golang/Thread Safe Map Implementation.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Thread Safe Stack Implementation"
+              "title": "Outline of Thread Safe Map Implementation"
             }
           },
           {
@@ -200,8 +200,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "Golang/What is ORM in Go (Golang).md",
     "Golang/Thread Safe Stack Implementation.md",
+    "Golang/Thread Safe Map Implementation.md",
+    "Golang/What is ORM in Go (Golang).md",
     "Interview Prep/AWS S3.md",
     "Interview Prep/AWS Lambda.md",
     "Interview Prep/Challenges faced while working with Kafka.md",
@@ -227,7 +228,6 @@
     "LLD/10 - Structural Design Patterns - Decorator and Facade.md",
     "LLD/09 - Structural Design Patterns - Adapter and Flyweight.md",
     "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
-    "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
     "Pasted image 20240625174445.png",
     "Excalidraw/Drawing 2024-06-24 21.46.15.excalidraw.png",
     "Pasted image 20240622221813.png",
