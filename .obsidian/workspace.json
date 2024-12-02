@@ -150,8 +150,8 @@
             "state": {
               "type": "smart-connections-view",
               "state": {},
-              "icon": "smart-connections",
-              "title": "Smart Connections"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -160,12 +160,22 @@
             "state": {
               "type": "smart-search-view",
               "state": {},
-              "icon": "search",
-              "title": "Smart Search"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          },
+          {
+            "id": "fa3ad7decec95b9b",
+            "type": "leaf",
+            "state": {
+              "type": "tasks_timeline_view",
+              "state": {},
+              "icon": "calendar-clock",
+              "title": "Tasks Timeline"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -186,7 +196,7 @@
       "smart-connections:Open: Smart Chat Conversation": false
     }
   },
-  "active": "b4904ce9751ea41b",
+  "active": "fa3ad7decec95b9b",
   "lastOpenFiles": [
     "smart-chats/UNTITLED CHAT 2024-11-30 05 56 25.md",
     "smart-chats",
