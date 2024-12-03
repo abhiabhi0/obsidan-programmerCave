@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/URL shortner.md",
+                "file": "LLD/01 - Introduction.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "URL shortner"
+              "title": "01 - Introduction"
             }
           }
         ]
@@ -107,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Golang/URL shortner.md",
+                "file": "LLD/01 - Introduction.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for URL shortner"
+              "title": "Backlinks for 01 - Introduction"
             }
           },
           {
@@ -126,12 +126,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Golang/URL shortner.md",
+                "file": "LLD/01 - Introduction.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from URL shortner"
+              "title": "Outgoing links from 01 - Introduction"
             }
           },
           {
@@ -140,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Golang/URL shortner.md"
+                "file": "LLD/01 - Introduction.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of URL shortner"
+              "title": "Outline of 01 - Introduction"
             }
           },
           {
@@ -200,8 +200,17 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "Golang/Thread Safe Map Implementation.md",
+    "LLD/02 - Object-oriented programming (OOP).md",
+    "LLD/01 - Introduction.md",
+    "LLD/00 - Index.md",
+    "Golang/Design Patterns.md",
+    "Golang/Concurrency Patterns.md",
+    "Golang/Concurrency in Go.md",
+    "Golang/Closing a Channel.md",
+    "Golang/Call the compute function a total of 100 times, distributed among 8 goroutines.md",
+    "Golang/Array vs Slice.md",
     "Golang/URL shortner.md",
+    "Golang/Thread Safe Map Implementation.md",
     "Golang/Thread Safe Stack Implementation.md",
     "Golang/What is ORM in Go (Golang).md",
     "Interview Prep/AWS S3.md",
@@ -215,19 +224,10 @@
     "Golang/Error Control.md",
     "Golang/Defer, Panic, and Recover.md",
     "Golang/Map Internals.md",
-    "Golang/Design Patterns.md",
     "Golang/Context.md",
-    "Golang/Concurrency Patterns.md",
-    "Golang/Concurrency in Go.md",
-    "Golang/Call the compute function a total of 100 times, distributed among 8 goroutines.md",
-    "Golang/Closing a Channel.md",
-    "Golang/Array vs Slice.md",
     "Excalidraw/Drawing 2024-11-29 14.39.22.excalidraw.md",
     "Untitled.canvas",
     "Inbox.md",
-    "LLD/11 - Behavioural Design Patterns - Observer and Strategy.md",
-    "LLD/10 - Structural Design Patterns - Decorator and Facade.md",
-    "LLD/09 - Structural Design Patterns - Adapter and Flyweight.md",
     "Pasted image 20240625174445.png",
     "Excalidraw/Drawing 2024-06-24 21.46.15.excalidraw.png",
     "Pasted image 20240622221813.png",

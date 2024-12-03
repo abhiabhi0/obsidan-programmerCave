@@ -5,13 +5,13 @@
 - Post-build, each component is specified in detail
 
 #### Why LLD?
-- goal of LLD or a low-level design (LLD) is to give the internal logical design of the actual program code.
+- goal of LLD or a low-level design (LLD) is to give the **internal logical design of the actual program code**.
 - describes the class diagrams with the methods and relations between classes and program specs. 
 - It describes the modules so that the programmer can directly code the program from the document.
 - Ultimately, LLD has the following goals:
-  - Low level implementation details of a system
-  - organization of code
-  - write good software
+  - **Low level implementation details of a system**
+  - **organization of code**
+  - **write good software**
 - A good software is a software that is
   - easy to maintain
   - easy to scale.
