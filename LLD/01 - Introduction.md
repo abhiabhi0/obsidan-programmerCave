@@ -66,7 +66,7 @@ def update_account(account: int, delta: int) -> None:
 
 
 #### Object Oriented Programming 
-[[02 - Object-oriented programming (OOP)]]]
+[[02 - Object-oriented programming (OOP)]]
 
 ### Declarative:
 - focuses on what the program should accomplish without specifying all the details of how the program should achieve the result e.g. SQL, Lisp, etc.
