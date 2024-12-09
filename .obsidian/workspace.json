@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/Software Architectural Patterns.md",
+                "file": "Interview Prep/API Gateway.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Software Architectural Patterns"
+              "title": "API Gateway"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.50418853759766
+    "width": 200
   },
   "right": {
     "id": "107f5edfe773bdb6",
@@ -201,6 +201,10 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "{40406506-B515-4027-9F76-E876EFFF6A52}.png",
+    "Kubernetes/API Gateway.md",
+    "Interview Prep/API Gateway.md",
+    "Interview Prep/Software Architectural Patterns.md",
     "{83C64CEA-B5C9-46DD-8E6D-5E3D6C0BDC22}.png",
     "{8A8DDE8D-1119-4ABC-AF90-4B4C908F4D7D}.png",
     "{6B34DB5F-7646-477A-8243-1E8BA8A8C0BB}.png",
@@ -211,7 +215,6 @@
     "Interview Prep/Database Concurrency in PostgreSQL.md",
     "Interview Prep/Database Sharding.md",
     "Interview Prep/Challenges faced while working with Kafka.md",
-    "Interview Prep/Software Architectural Patterns.md",
     "{FB486C91-55BB-4F7F-84C2-B312B5B4ABA2}.png",
     "Interview Prep/REST API Authentication Methods.md",
     "Interview Prep/CAP Theorem.md",
@@ -229,8 +232,6 @@
     "LLD/04 - Polymorphism.md",
     "smart-chats/UNTITLED CHAT 2024-11-30 05 56 25.md",
     "LLD/03 - Constructor, Access modifiers, Inheritance, Diamond Problem.md",
-    "LLD/02 - Object-oriented programming (OOP).md",
-    "LLD/01 - Introduction.md",
     "smart-chats",
     "Untitled.canvas",
     "Pasted image 20240625174445.png",
