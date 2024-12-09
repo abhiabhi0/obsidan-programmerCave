@@ -6,3 +6,9 @@ Involves sending a username and password with each request, but can be less secu
 #### When to use: 
 Suitable for simple applications where security and encryption aren’t the primary concern or when used over secured connections.
 
+### 2. Token Authentication: 
+Uses generated tokens, like JSON Web Tokens (JWT), exchanged between client and server, offering enhanced security without sending login credentials with each request.
+
+#### When to use: 
+Ideal for more secure and scalable systems, especially when avoiding sending login credentials with each request is a priority.
+
