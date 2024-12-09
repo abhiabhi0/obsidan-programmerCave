@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/JSON Web Token (JWT).md",
+                "file": "Interview Prep/Software Architectural Patterns.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JSON Web Token (JWT)"
+              "title": "Software Architectural Patterns"
             }
           }
         ]
@@ -201,9 +201,12 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Interview Prep/Database Sharding.md",
+    "Interview Prep/Software Architectural Patterns.md",
+    "{8A8DDE8D-1119-4ABC-AF90-4B4C908F4D7D}.png",
+    "Interview Prep/JSON Web Token (JWT).md",
     "{FB486C91-55BB-4F7F-84C2-B312B5B4ABA2}.png",
     "Interview Prep/REST API Authentication Methods.md",
-    "Interview Prep/JSON Web Token (JWT).md",
     "Interview Prep/CAP Theorem.md",
     "{83289A2E-3DF1-4003-8389-26C48AB69B96}.png",
     "REST API Authentication Methods.md",
@@ -228,7 +231,6 @@
     "Golang/Concurrency Patterns.md",
     "Golang/Concurrency in Go.md",
     "Golang/Closing a Channel.md",
-    "Golang/URL shortner.md",
     "smart-chats",
     "Untitled.canvas",
     "Pasted image 20240625174445.png",
@@ -241,8 +243,6 @@
     "Pasted image 20240614101653.png",
     "Pasted image 20240614101549.png",
     "Pasted image 20240613112340.png",
-    "Pasted image 20240604120711.png",
-    "Pasted image 20240604102843.png",
     "System Design",
     "AA 7 June 2024 ko 24 lpa ka offer aaya hai",
     "Java",
