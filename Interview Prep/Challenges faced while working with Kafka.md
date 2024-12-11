@@ -1,12 +1,10 @@
-### **Challenge Faced: Consumer Lag**
+### Challenge Faced: Consumer Lag
 
-**What is Consumer Lag?**  
+#### What is Consumer Lag?  
 Consumer lag occurs when a Kafka consumer processes messages slower than the rate at which producers send them. This creates a gap between the log end offset (latest message written to Kafka) and the committed offset (last message processed by the consumer).
 
 ---
-
-**Why is it a Challenge?**
-
+#### Why is it a Challenge?
 1. **Delays in Real-Time Data Processing**: Impacts the timeliness of data-driven applications.
 2. **Resource Overload**: Excessive lag can cause brokers to run out of memory or storage.
 
