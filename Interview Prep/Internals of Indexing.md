@@ -1,3 +1,31 @@
+### Indexing Summary
+- **Purpose**: Organizes an unordered table to improve query efficiency.
+- **Definition**: A data structure (B-tree or its variants) that stores indexed column values and pointers to corresponding rows in the table's heap.
+### Internal Representation
+- **Example**: Table `employee` with `id` as a primary key automatically creates an index.
+- **Heap Representation**: Table rows are stored in pages. Index points to exact row locations in these pages.
+### Query Execution Scenarios
+#### **With Index**
+- **Process**:
+    - Query optimizer chooses an **index scan**.
+    - Searches through the index to find the `id`.
+    - Uses the pointer to locate the corresponding row in the heap.
+- **Efficiency**: Fast and optimal for queries on large datasets.
+#### **Without Index**
+- **Process**:
+    - Query optimizer defaults to a **full table scan**.
+    - Examines all rows in the table to find matches for the query condition.
+    - May leverage **parallel scans** to improve performance.
+- **Efficiency**: Acceptable for small datasets but slow for large tables.
+### Query Optimization Factors
+
+- **Data Size**: Determines whether an index or full table scan is better.
+- **Indexes**: Presence and type of indexes influence scan choice.
+- **Statistics**: Internal database stats guide the optimizer’s decision (e.g., row distribution, table fragmentation).
+### Key Takeaway
+Indexes significantly reduce search time for large datasets but come with overhead for maintenance and storage.
+
+---
 Indexing is the way to get an unordered table into an order that will maximize the query’s efficiency while searching.
 
 An index is a data structure on disk & in-memory that stores a column value(onto which index is created) along with pointers to the corresponding rows of table in heap. This data structure is usually implemented as a B-tree (Balanced Tree) or it’s variation.

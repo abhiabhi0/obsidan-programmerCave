@@ -1,5 +1,4 @@
 Apache Kafka is a distributed event streaming platform designed for high-throughput, low-latency ingestion of data streams. It is widely used for building real-time data pipelines and streaming applications. Here’s a comprehensive overview of Kafka’s architecture:
-
 ### Summary
 
 1. **Core Components**:
