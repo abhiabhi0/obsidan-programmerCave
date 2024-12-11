@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/PostgreSQL vs SQL Server.md",
+                "file": "Interview Prep/REST.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PostgreSQL vs SQL Server"
+              "title": "REST"
             }
           }
         ]
@@ -201,6 +201,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Interview Prep/Redis.md",
+    "Interview Prep/PostgreSQL vs SQL Server.md",
+    "Interview Prep/Questions on Resume 1.0.md",
     "Interview Prep/Kafka.md",
     "Interview Prep/Internals of Indexing.md",
     "Interview Prep/Improve API performance.md",
@@ -230,9 +233,6 @@
     "Interview Prep/REST API Authentication Methods.md",
     "{83289A2E-3DF1-4003-8389-26C48AB69B96}.png",
     "REST API Authentication Methods.md",
-    "Golang/Defer, Panic, and Recover.md",
-    "Golang/Context.md",
-    "Golang/Call the compute function a total of 100 times, distributed among 8 goroutines.md",
     "smart-chats",
     "Untitled.canvas",
     "Pasted image 20240625174445.png",
