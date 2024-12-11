@@ -1,4 +1,4 @@
-- **Amazon S3 Basics**:
+#### Amazon S3 Basics:
   - **Data Storage**: Stores data as objects within buckets.
   - **Objects**: A file and any metadata describing the file.
   - **Buckets**: Containers for objects.

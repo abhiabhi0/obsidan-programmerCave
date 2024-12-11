@@ -1,3 +1,36 @@
+### Summary
+
+- **AWS Lambda**:
+    - Serverless compute service, no server management.
+    - Event-driven execution: triggers like S3, DynamoDB changes, HTTP requests.
+    - Automatic scaling, pay-per-use pricing.
+- **Lambda Function**:
+    - Code deployed on AWS Lambda, executed via events.
+    - Components:
+        - Handler function: processes events.
+        - Event source: triggers the function.
+        - Execution role: defines permissions for AWS services.
+- **Key Features**:
+    - Automatic scaling, event-driven, cost-efficient.
+- **Lambda vs Lambda Function**:
+    - Lambda: AWS service for running serverless functions.
+    - Lambda Function: User-written code running on AWS Lambda.
+- **Use Cases**:
+    - Data processing (e.g., S3, DynamoDB).
+    - Real-time file processing.
+    - APIs (via API Gateway).
+    - Scheduled tasks (CloudWatch events).
+- **Advantages**:
+    - No server management, cost-efficient, scalable.
+    - Easy AWS service integration.
+- **Disadvantages**:
+    - Cold starts increase latency.
+    - 15-minute execution time limit.
+    - Language support limited without custom runtimes.
+- **Best Practices**:
+    - Keep functions small and single-purpose.
+    - Use environment variables for configuration.
+    - Monitor with AWS CloudWatch Logs.
 ### What is AWS Lambda?
 
 - AWS Lambda is a **serverless compute service** provided by Amazon Web Services (AWS).
@@ -19,13 +52,13 @@
     - **Event Source**: The trigger that invokes the function (e.g., S3 bucket, DynamoDB, API Gateway).
     - **Execution Role**: An IAM role that grants necessary permissions for the function to interact with other AWS services.
 
-#### **Key Features of Lambda**
+#### Key Features of Lambda
 
 - **Automatic Scaling**: AWS Lambda scales to meet demand automatically.
 - **Event-Driven Execution**: Triggers (like HTTP requests or changes in an S3 bucket) invoke Lambda functions.
 - **Pay-as-You-Go Pricing**: Charges are based on compute time, which makes it cost-effective.
 
-#### **Steps to Create a Lambda Function in Go**
+#### Steps to Create a Lambda Function in Go
 
 1. **Write Your Lambda Function**:
     
@@ -103,32 +136,32 @@
         ```
         
 
-#### **Lambda vs Lambda Function: Understanding the Difference**
+#### Lambda vs Lambda Function: Understanding the Difference
 
 - **AWS Lambda**: Refers to the **cloud-based service** provided by AWS that handles the infrastructure, scaling, and execution of serverless functions.
 - **Lambda Function**: The **specific code** that you write and deploy on AWS Lambda. It is executed in response to events like HTTP requests, database changes, etc.
 
-#### **Common Use Cases**
+#### Common Use Cases
 
 - **Data Processing**: Lambda is commonly used for processing data from services like S3, DynamoDB, or Kinesis streams.
 - **Real-time File Processing**: Automatically process files uploaded to S3 (e.g., image resizing or file format conversion).
 - **APIs**: Lambda functions are often used as the backend for RESTful APIs via API Gateway.
 - **Scheduled Tasks**: Lambda can be used to run scheduled jobs like database cleanup or sending notifications via CloudWatch events.
 
-#### **Advantages of AWS Lambda**
+#### Advantages of AWS Lambda
 
 - **No Server Management**: There’s no need to provision, scale, or manage servers.
 - **Cost-Efficiency**: You pay only for what you use (compute time in milliseconds).
 - **Scalability**: AWS Lambda can scale automatically to handle large traffic spikes.
 - **Easy Integration**: Lambda integrates easily with many AWS services, such as API Gateway, S3, and DynamoDB.
 
-#### **Disadvantages of AWS Lambda**
+#### Disadvantages of AWS Lambda
 
 - **Cold Start Latency**: Lambda may experience higher latency (cold start) when a function is invoked for the first time or after being idle.
 - **Execution Time Limit**: Lambda functions are limited to a maximum execution time of 15 minutes.
 - **Limited to Supported Languages**: Although Lambda supports multiple programming languages (e.g., Go, Node.js, Python, Java), custom runtimes are needed for other languages.
 
-#### **Best Practices**
+#### Best Practices
 
 - **Keep Functions Small**: Write small, single-purpose functions for better maintainability and scalability.
 - **Use Environment Variables**: Store configuration settings as environment variables instead of hardcoding them.
