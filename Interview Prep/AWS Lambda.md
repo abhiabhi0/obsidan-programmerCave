@@ -1,4 +1,4 @@
-#### **What is AWS Lambda?**
+### What is AWS Lambda?
 
 - AWS Lambda is a **serverless compute service** provided by Amazon Web Services (AWS).
 - It allows developers to **run code without managing servers** by automatically provisioning and managing the infrastructure.
@@ -11,7 +11,7 @@
     - **Pay-as-You-Go Pricing**: You only pay for the compute time used (measured in milliseconds). No charges when code is not running.
     - **Event-Driven**: Functions are triggered by specific events (HTTP requests, database changes, etc.).
 
-#### **What is a Lambda Function?**
+#### What is a Lambda Function?
 
 - A **lambda function** refers to the **code** that is deployed on AWS Lambda and executed in response to events.
 - Components of a Lambda function:
