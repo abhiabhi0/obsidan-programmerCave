@@ -1,10 +1,6 @@
-
-
 Concurrency control protocols are the set of rules which are maintained in order to solve the concurrency control problems in the database. It ensures that the concurrent transactions can execute properly while maintaining the database consistency. The concurrent execution of a transaction is provided with atomicity, consistency, isolation, durability, and serializability via the concurrency control protocols.
-
 - Locked based concurrency control protocol
 - Timestamp based concurrency control protocol
-
 ### Locked based Protocol
 
 In [locked based protocol](https://www.geeksforgeeks.org/lock-based-concurrency-control-protocol-in-dbms/), each transaction needs to acquire locks before they start accessing or modifying the data items. There are two types of locks used in databases.
