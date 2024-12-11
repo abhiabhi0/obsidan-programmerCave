@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/REST API Authentication Methods.md",
+                "file": "Interview Prep/SQL vs NoSQL.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "REST API Authentication Methods"
+              "title": "SQL vs NoSQL"
             }
           }
         ]

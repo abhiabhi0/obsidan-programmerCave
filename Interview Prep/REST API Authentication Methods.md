@@ -1,4 +1,21 @@
 ![[{83289A2E-3DF1-4003-8389-26C48AB69B96}.png]]
+
+### Summary:
+- **Basic Authentication**:
+    - Sends username and password with each request.
+    - Less secure without encryption (use with HTTPS).
+    - **When to use**: Simple apps with low security needs or over secured connections.
+- **Token Authentication**:
+    - Uses tokens (e.g., JWT) to authenticate without sending credentials in each request.
+    - **When to use**: Secure, scalable systems; avoids sending credentials frequently.
+- **OAuth Authentication**:
+    - Grants third-party limited access to user resources with access tokens.
+    - **When to use**: Third-party integrations or controlled resource access by external apps.
+- **API Key Authentication**:
+    - Uses unique keys for access, sent in headers/parameters.
+    - Less secure than token-based or OAuth.
+    - **When to use**: Simple access control for less sensitive environments.
+
 ### 1. Basic Authentication: 
 Involves sending a username and password with each request, but can be less secure without encryption.
 #### When to use: 
