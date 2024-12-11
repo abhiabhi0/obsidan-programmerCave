@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/AWS Services.md",
+                "file": "Interview Prep/CAP Theorem.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AWS Services"
+              "title": "CAP Theorem"
             }
           }
         ]
@@ -201,6 +201,7 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Interview Prep/AWS Services.md",
     "Interview Prep/AWS S3.md",
     "Interview Prep/AWS Lambda.md",
     "Interview Prep/AWS Interview Topics.md",
@@ -232,7 +233,6 @@
     "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
     "LLD/06 - SOLID - Liskov Substitution, Interface Segregation, and Dependency Inversion.md",
     "LLD/05 - SOLID - Single Responsibility, Open-Closed Principle.md",
-    "LLD/04 - Polymorphism.md",
     "smart-chats",
     "Untitled.canvas",
     "Pasted image 20240625174445.png",
