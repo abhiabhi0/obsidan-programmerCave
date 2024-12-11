@@ -152,7 +152,6 @@ func main() {
 3. **Usage Scenarios**:
    - **Unbuffered Channel**: Useful for scenarios where you need strict synchronization between goroutines.
    - **Buffered Channel**: Useful for scenarios where you want to allow the sender to proceed without waiting for the receiver, up to a certain point.
-
 ### Goroutine
  - A Goroutine is a function or procedure that runs concurrently with other Goroutines on a dedicated Goroutine thread. 
  - Goroutine threads are lighter than ordinary threads, and most Golang programs use thousands of goroutines at the same time.  
@@ -235,7 +234,6 @@ var arr [3]int
 - Arrays in Go have fixed sizes, meaning you cannot add or remove elements once they are declared.
 
 ### How will you perform inheritance with Golang?
-
 - Golang does not support classes, hence there is no inheritance.  
 - However, you may use composition to imitate inheritance behavior by leveraging an existing struct object to establish the initial behavior of a new object. 
 - Once the new object is created, the functionality of the original struct can be enhanced.

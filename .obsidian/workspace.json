@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/Golang Interview Questions.md",
+                "file": "Interview Prep/Internals of Indexing.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Golang Interview Questions"
+              "title": "Internals of Indexing"
             }
           }
         ]
@@ -201,6 +201,8 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Interview Prep/Improve API performance.md",
+    "Interview Prep/Golang Interview Questions.md",
     "Interview Prep/DevOps Engineer.md",
     "Interview Prep/DB connection pool.md",
     "Interview Prep/Database Sharding.md",
@@ -223,8 +225,6 @@
     "{6B34DB5F-7646-477A-8243-1E8BA8A8C0BB}.png",
     "Interview Prep/JSON Web Token (JWT).md",
     "Interview Prep/Internals of Indexing.md",
-    "Interview Prep/Improve API performance.md",
-    "Interview Prep/Golang Interview Questions.md",
     "{FB486C91-55BB-4F7F-84C2-B312B5B4ABA2}.png",
     "Interview Prep/REST API Authentication Methods.md",
     "{83289A2E-3DF1-4003-8389-26C48AB69B96}.png",
