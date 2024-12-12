@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/API Gateway.md",
+                "file": "Kubernetes/Kubernetes.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "API Gateway"
+              "title": "Kubernetes"
             }
           }
         ]
@@ -181,7 +181,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 407.5
+    "width": 407.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -198,8 +199,17 @@
       "smart-connections:Open: Smart Chat Conversation": false
     }
   },
-  "active": "5393ec9ce544d4a8",
+  "active": "b4904ce9751ea41b",
   "lastOpenFiles": [
+    "Kubernetes/Microservices.md",
+    "Pasted image 20240603131241.png",
+    "Inbox.md",
+    "Pasted image 20240604102843.png",
+    "Pasted image 20240622221813.png",
+    "Pasted image 20240625174445.png",
+    "Untitled.canvas",
+    "Interview Prep/Authentication vs Authorization.md",
+    "Interview Prep/API Gateway.md",
     "Interview Prep/Improve API performance.md",
     "Interview Prep/WebSocket.md",
     "Interview Prep/What happens when you type a URL into your browser.md",
@@ -222,10 +232,6 @@
     "Interview Prep/Challenges faced while working with Kafka.md",
     "Interview Prep/CDN.md",
     "Interview Prep/CAP Theorem.md",
-    "Interview Prep/AWS Services.md",
-    "Interview Prep/AWS S3.md",
-    "Interview Prep/AWS Lambda.md",
-    "Interview Prep/AWS Interview Topics.md",
     "{40406506-B515-4027-9F76-E876EFFF6A52}.png",
     "{83C64CEA-B5C9-46DD-8E6D-5E3D6C0BDC22}.png",
     "{8A8DDE8D-1119-4ABC-AF90-4B4C908F4D7D}.png",
@@ -233,15 +239,10 @@
     "{FB486C91-55BB-4F7F-84C2-B312B5B4ABA2}.png",
     "{83289A2E-3DF1-4003-8389-26C48AB69B96}.png",
     "smart-chats",
-    "Untitled.canvas",
-    "Pasted image 20240625174445.png",
-    "Excalidraw/Drawing 2024-06-24 21.46.15.excalidraw.png",
-    "Pasted image 20240622221813.png",
     "Excalidraw",
     "Untitled 1.canvas",
     "00 Tasks",
     "LLD",
-    "Pasted image 20240614101653.png",
     "System Design",
     "AA 7 June 2024 ko 24 lpa ka offer aaya hai",
     "Java",

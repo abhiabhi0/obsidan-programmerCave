@@ -1,6 +1,5 @@
 ---
-tags:
-  - Kubernetes
+tags: []
 ---
 Kubernetes is an open-source container orchestration platform originally developed by Google and now maintained by the Cloud Native Computing Foundation (CNCF). It ==automates the deployment, scaling, and management of containerized applications==. Here are some key aspects of Kubernetes:
 
