@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/SQL vs NoSQL.md",
+                "file": "Interview Prep/WebSocket.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SQL vs NoSQL"
+              "title": "WebSocket"
             }
           }
         ]
@@ -201,6 +201,8 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Interview Prep/Types of load balancing algorithms.md",
+    "Interview Prep/SQL vs NoSQL.md",
     "Interview Prep/Software Architectural Patterns.md",
     "Interview Prep/REST API Authentication Methods.md",
     "Interview Prep/REST.md",
@@ -226,11 +228,9 @@
     "Interview Prep/Authentication vs Authorization.md",
     "Interview Prep/API Gateway.md",
     "{40406506-B515-4027-9F76-E876EFFF6A52}.png",
-    "Kubernetes/API Gateway.md",
     "{83C64CEA-B5C9-46DD-8E6D-5E3D6C0BDC22}.png",
     "{8A8DDE8D-1119-4ABC-AF90-4B4C908F4D7D}.png",
     "{6B34DB5F-7646-477A-8243-1E8BA8A8C0BB}.png",
-    "Interview Prep/JSON Web Token (JWT).md",
     "{FB486C91-55BB-4F7F-84C2-B312B5B4ABA2}.png",
     "{83289A2E-3DF1-4003-8389-26C48AB69B96}.png",
     "smart-chats",
