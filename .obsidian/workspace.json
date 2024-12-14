@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Graphs/(Dijkstra's Algorithm) Find Minimum Time for All Bunks to Burn.md",
+                "file": "DSA/Graphs/Floyd-Warshall Algorithm.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "(Dijkstra's Algorithm) Find Minimum Time for All Bunks to Burn"
+              "title": "Floyd-Warshall Algorithm"
             }
           }
         ]
@@ -167,8 +167,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "DSA/Graphs/(BFS) Extroverts Doing Party (People with at least K friends can enter).md",
     "DSA/Graphs/(Dijkstra's Algorithm) Find Minimum Time for All Bunks to Burn.md",
+    "DSA/Graphs/Floyd-Warshall Algorithm.md",
+    "DSA/Graphs/(BFS) Extroverts Doing Party (People with at least K friends can enter).md",
     "DSA/Graphs/(DFS) Map of conflicted Area.md",
     "DSA/Graphs/(DFS) Count Number of Islands.md",
     "DSA/Graphs/(BFS) Check if node can be visited from Source to Destination.md",
@@ -199,7 +200,6 @@
     "Interview Prep/Redis.md",
     "Interview Prep/PostgreSQL vs SQL Server.md",
     "Interview Prep/Questions on Resume 1.0.md",
-    "Interview Prep/Kafka.md",
     "{40406506-B515-4027-9F76-E876EFFF6A52}.png",
     "{83C64CEA-B5C9-46DD-8E6D-5E3D6C0BDC22}.png",
     "{8A8DDE8D-1119-4ABC-AF90-4B4C908F4D7D}.png",
