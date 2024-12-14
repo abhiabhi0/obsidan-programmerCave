@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Graphs/Shortest Path in a Matrix Using BFS.md",
+                "file": "DSA/Graphs/Find Minimum Distance from Hospital for Every House Using BFS.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Shortest Path in a Matrix Using BFS"
+              "title": "Find Minimum Distance from Hospital for Every House Using BFS"
             }
           }
         ]
@@ -167,8 +167,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "DSA/Graphs/Find Minimum Length from Source to Destination Using BFS.md",
     "DSA/Graphs/Shortest Path in a Matrix Using BFS.md",
+    "DSA/Graphs/Find Minimum Distance from Hospital for Every House Using BFS.md",
+    "DSA/Graphs/Find Minimum Length from Source to Destination Using BFS.md",
     "DSA/Graphs/Check if node can be visited from Source to Destination (BFS).md",
     "Kubernetes/Kubernetes.md",
     "DSA/Graphs",
@@ -198,7 +199,6 @@
     "Interview Prep/DevOps Engineer.md",
     "Interview Prep/DB connection pool.md",
     "Interview Prep/Database Sharding.md",
-    "Interview Prep/Database Concurrency in PostgreSQL.md",
     "{40406506-B515-4027-9F76-E876EFFF6A52}.png",
     "{83C64CEA-B5C9-46DD-8E6D-5E3D6C0BDC22}.png",
     "{8A8DDE8D-1119-4ABC-AF90-4B4C908F4D7D}.png",
