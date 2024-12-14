@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Graphs/(DFS) Map of conflicted Area.md",
+                "file": "DSA/Graphs/(BFS) Extroverts Doing Party (People with at least K friends can enter).md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "(DFS) Map of conflicted Area"
+              "title": "(BFS) Extroverts Doing Party (People with at least K friends can enter)"
             }
           }
         ]
@@ -167,8 +167,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "DSA/Graphs/(DFS) Count Number of Islands.md",
     "DSA/Graphs/(DFS) Map of conflicted Area.md",
+    "DSA/Graphs/(BFS) Extroverts Doing Party (People with at least K friends can enter).md",
+    "DSA/Graphs/(DFS) Count Number of Islands.md",
     "DSA/Graphs/(BFS) Check if node can be visited from Source to Destination.md",
     "DSA/Graphs/BFS",
     "DSA/Graphs/(DFS) Depth First Search.md",
@@ -199,7 +200,6 @@
     "Interview Prep/Questions on Resume 1.0.md",
     "Interview Prep/Kafka.md",
     "Interview Prep/Internals of Indexing.md",
-    "Interview Prep/Golang Interview Questions.md",
     "{40406506-B515-4027-9F76-E876EFFF6A52}.png",
     "{83C64CEA-B5C9-46DD-8E6D-5E3D6C0BDC22}.png",
     "{8A8DDE8D-1119-4ABC-AF90-4B4C908F4D7D}.png",
