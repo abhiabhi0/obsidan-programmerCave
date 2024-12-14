@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Bit Manipulation/Find X Such That A XOR X is Minimum and X Has Exactly B Set Bits.md",
+                "file": "DSA/Maths/Count Number of Pairs Whose Sum is Divisible by M.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Find X Such That A XOR X is Minimum and X Has Exactly B Set Bits"
+              "title": "Count Number of Pairs Whose Sum is Divisible by M"
             }
           }
         ]
@@ -167,8 +167,11 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "DSA/Bit Manipulation/Sum of XOR of All Pairs in an Array.md",
     "DSA/Bit Manipulation/Find X Such That A XOR X is Minimum and X Has Exactly B Set Bits.md",
+    "DSA/Maths/Count Number of Pairs Whose Sum is Divisible by M.md",
+    "DSA/Maths",
+    "DSA/Untitled.md",
+    "DSA/Bit Manipulation/Sum of XOR of All Pairs in an Array.md",
     "DSA/Bit Manipulation/Sum of Number of Different Bits in Pairs of Array.md",
     "DSA/Graphs/Floyd-Warshall Algorithm.md",
     "DSA/Bit Manipulation",
@@ -199,8 +202,6 @@
     "Interview Prep/Types of load balancing algorithms.md",
     "Interview Prep/SQL vs NoSQL.md",
     "Interview Prep/Software Architectural Patterns.md",
-    "Interview Prep/REST API Authentication Methods.md",
-    "Interview Prep/REST.md",
     "{40406506-B515-4027-9F76-E876EFFF6A52}.png",
     "{83C64CEA-B5C9-46DD-8E6D-5E3D6C0BDC22}.png",
     "{8A8DDE8D-1119-4ABC-AF90-4B4C908F4D7D}.png",
@@ -213,7 +214,6 @@
     "00 Tasks",
     "LLD",
     "System Design",
-    "AA 7 June 2024 ko 24 lpa ka offer aaya hai",
-    "Java"
+    "AA 7 June 2024 ko 24 lpa ka offer aaya hai"
   ]
 }
