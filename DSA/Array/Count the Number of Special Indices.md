@@ -2,6 +2,8 @@
 
 A special index is an index in an array such that if the element at that index is removed, the sum of elements at even indices equals the sum of elements at odd indices.
 
+**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeguONkEKW8t7peoPiTduSnPyrjO8zvK2Bww69fPGD1MOgffKqrUJGU6ah9pmujHPnVteB3JnG93QRwBonmNz0RZ3w2xg-ChpWbKoCoZC5KPEiJgVg3sY8g1UXPCgEljg2pjlgPEG0HPz7wBAge6c_9qoi8?key=5htWp-2xX_egQvU14bcQKA)**
+
 ---
 
 ### Key Concepts:
