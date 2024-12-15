@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Design Patterns.md",
+                "file": "Golang/Function Literals, Naked Returns, Variadic Functions, Init Functions.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Design Patterns"
+              "title": "Function Literals, Naked Returns, Variadic Functions, Init Functions"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 441.50418853759766
+    "width": 257.50418853759766
   },
   "right": {
     "id": "107f5edfe773bdb6",
@@ -152,8 +152,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b4904ce9751ea41b",
+  "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Golang/Function Closures.md",
+    "Golang/Function as a Value.md",
+    "Golang/Error Control.md",
+    "Golang/Design Patterns.md",
     "Golang/Defer, Panic, and Recover.md",
     "Golang/Context.md",
     "Golang/Concurrency Patterns.md",
@@ -179,11 +183,7 @@
     "DSA/Hashing",
     "DSA/Two Pointers/3Sum.md",
     "DSA/Array",
-    "DSA/Binary Search/Kth Missing positive number.md",
     "DSA/Two Pointers",
-    "DSA/Binary Search/Exchange two elements in two arrays so that sum of both array becomes equal.md",
-    "DSA/Binary Search/Aggressive Cows.md",
-    "DSA/Binary Search/Given array of positive numbers. Find max length K such that there is no subarray of length K with sum ge B.md",
     "DSA/Binary Search",
     "DSA/Heap",
     "DSA/Subset and Subsequence",
