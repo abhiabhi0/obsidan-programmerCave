@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Trees/Vertical Order Traversal.md",
+                "file": "DSA/Trees/Construct Binary Tree from Inorder and Preorder.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Vertical Order Traversal"
+              "title": "Construct Binary Tree from Inorder and Preorder"
             }
           }
         ]
@@ -167,8 +167,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "Python/queue and dequeue.md",
     "DSA/Trees/Vertical Order Traversal.md",
+    "DSA/Trees/Construct Binary Tree from Inorder and Preorder.md",
+    "Python/queue and dequeue.md",
     "Python/Dict and defaultdict.md",
     "DSA/Trees/Invert Binary Tree.md",
     "DSA/String/Longest Common Prefix.md",
@@ -200,7 +201,6 @@
     "DSA/Graphs/(DFS) Depth First Search.md",
     "DSA/Graphs/(BFS) Find Minimum Distance from Hospital for Every House.md",
     "DSA/Graphs/(BFS) Shortest Path in a Matrix.md",
-    "DSA/Graphs/(BFS) Find Minimum Length from Source to Destination.md",
     "DSA/Graphs",
     "Pasted image 20240603131241.png",
     "Pasted image 20240604102843.png",
