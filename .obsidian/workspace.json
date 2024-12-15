@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Trees/Invert Binary Tree.md",
+                "file": "Python/Dict and defaultdict.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Invert Binary Tree"
+              "title": "Dict and defaultdict"
             }
           }
         ]
@@ -167,8 +167,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "DSA/String/Longest Common Prefix.md",
     "DSA/Trees/Invert Binary Tree.md",
+    "Python/Dict and defaultdict.md",
+    "DSA/String/Longest Common Prefix.md",
     "DSA/Trees",
     "DSA/Untitled.md",
     "DSA/String/Length of Largest Palindromic Substring.md",
@@ -202,7 +203,6 @@
     "DSA/Graphs",
     "Kubernetes/Microservices.md",
     "Pasted image 20240603131241.png",
-    "Inbox.md",
     "Pasted image 20240604102843.png",
     "Pasted image 20240622221813.png",
     "Pasted image 20240625174445.png",
