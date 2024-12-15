@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Array/Count the Number of Special Indices.md",
+                "file": "DSA/Array/Rainwater Trapping.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Count the Number of Special Indices"
+              "title": "Rainwater Trapping"
             }
           }
         ]
@@ -154,8 +154,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "DSA/Array/Smallest Subarray Containing Both Max and Min.md",
     "DSA/Array/Count the Number of Special Indices.md",
+    "DSA/Array/Rainwater Trapping.md",
+    "DSA/Array/Smallest Subarray Containing Both Max and Min.md",
     "DSA/Array/Equilibrium Index.md",
     "DSA/Dynamic Programming/Minimum Number of Perfect Squares Needed to Get Sum K.md",
     "DSA/Dynamic Programming/Number of Ways to Reach the Nth Step.md",
@@ -187,7 +188,6 @@
     "DSA/Binary Search Tree",
     "DSA/Trees/Top View of a Binary Tree.md",
     "DSA/Trees/Construct Binary Tree from Inorder and Preorder.md",
-    "DSA/Trees/Vertical Order Traversal.md",
     "DSA/Trees",
     "DSA/String",
     "Pasted image 20240603131241.png",
