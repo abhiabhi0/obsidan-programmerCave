@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Subset and Subsequence/Sum of All Subsets' Sum.md",
+                "file": "DSA/Subset and Subsequence/Sum of Maximum of Every Subsequence.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Sum of All Subsets' Sum"
+              "title": "Sum of Maximum of Every Subsequence"
             }
           }
         ]
@@ -167,8 +167,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "DSA/Subset and Subsequence/Find Subsets Using Bit Masking.md",
     "DSA/Subset and Subsequence/Sum of All Subsets' Sum.md",
+    "DSA/Subset and Subsequence/Sum of Maximum of Every Subsequence.md",
+    "DSA/Subset and Subsequence/Find Subsets Using Bit Masking.md",
     "DSA/Binary Search Tree/Check if a Binary Tree is a BST.md",
     "DSA/Subset and Subsequence",
     "DSA/Trees/Check if a Binary Tree is Complete.md",
@@ -201,7 +202,6 @@
     "DSA/Bit Manipulation",
     "DSA/Graphs/(Dijkstra's Algorithm) Find Minimum Time for All Bunks to Burn.md",
     "DSA/Graphs/(BFS) Extroverts Doing Party (People with at least K friends can enter).md",
-    "DSA/Graphs/(DFS) Map of conflicted Area.md",
     "DSA/Graphs/BFS",
     "Pasted image 20240603131241.png",
     "Pasted image 20240604102843.png",
