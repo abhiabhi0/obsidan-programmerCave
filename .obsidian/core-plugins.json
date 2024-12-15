@@ -6,11 +6,11 @@
   "backlink": true,
   "canvas": true,
   "outgoing-link": true,
-  "tag-pane": true,
+  "tag-pane": false,
   "properties": false,
   "page-preview": true,
   "daily-notes": false,
-  "templates": true,
+  "templates": false,
   "note-composer": true,
   "command-palette": true,
   "slash-command": true,
@@ -20,11 +20,11 @@
   "zk-prefixer": false,
   "random-note": false,
   "outline": true,
-  "word-count": true,
+  "word-count": false,
   "slides": false,
   "audio-recorder": false,
   "workspaces": false,
   "file-recovery": true,
   "publish": false,
-  "sync": true
+  "sync": false
 }

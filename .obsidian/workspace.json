@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Heap/Finding the Ath Largest Element in Subarrays.md",
+                "file": "DSA/Binary Search/Allocate Books.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Finding the Ath Largest Element in Subarrays"
+              "title": "Allocate Books"
             }
           }
         ]
@@ -89,19 +89,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5f69249ebce3dba5",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "alphabeticalReverse",
-                "useHierarchy": true
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
             "id": "7d2ecce46f77ae15",
             "type": "leaf",
             "state": {
@@ -147,7 +134,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -167,8 +154,10 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "DSA/Heap/Converting an Array into a Min Heap.md",
     "DSA/Heap/Finding the Ath Largest Element in Subarrays.md",
+    "DSA/Binary Search/Allocate Books.md",
+    "DSA/Binary Search",
+    "DSA/Heap/Converting an Array into a Min Heap.md",
     "DSA/Subset and Subsequence/Sum of Maximum of Every Subsequence.md",
     "DSA/Heap",
     "DSA/Subset and Subsequence/Sum of All Subsets' Sum.md",
@@ -201,8 +190,6 @@
     "DSA/Maths",
     "DSA/Bit Manipulation/Sum of XOR of All Pairs in an Array.md",
     "DSA/Bit Manipulation/Sum of Number of Different Bits in Pairs of Array.md",
-    "DSA/Graphs/Floyd-Warshall Algorithm.md",
-    "DSA/Bit Manipulation",
     "Pasted image 20240603131241.png",
     "Pasted image 20240604102843.png",
     "Pasted image 20240622221813.png",
