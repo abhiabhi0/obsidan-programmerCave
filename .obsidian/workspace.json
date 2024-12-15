@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Python/Dict and defaultdict.md",
+                "file": "DSA/Trees/Vertical Order Traversal.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dict and defaultdict"
+              "title": "Vertical Order Traversal"
             }
           }
         ]
@@ -167,8 +167,10 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "DSA/Trees/Invert Binary Tree.md",
+    "Python/queue and dequeue.md",
+    "DSA/Trees/Vertical Order Traversal.md",
     "Python/Dict and defaultdict.md",
+    "DSA/Trees/Invert Binary Tree.md",
     "DSA/String/Longest Common Prefix.md",
     "DSA/Trees",
     "DSA/Untitled.md",
@@ -199,9 +201,7 @@
     "DSA/Graphs/(BFS) Find Minimum Distance from Hospital for Every House.md",
     "DSA/Graphs/(BFS) Shortest Path in a Matrix.md",
     "DSA/Graphs/(BFS) Find Minimum Length from Source to Destination.md",
-    "Kubernetes/Kubernetes.md",
     "DSA/Graphs",
-    "Kubernetes/Microservices.md",
     "Pasted image 20240603131241.png",
     "Pasted image 20240604102843.png",
     "Pasted image 20240622221813.png",
