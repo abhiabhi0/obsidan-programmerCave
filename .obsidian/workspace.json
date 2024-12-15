@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Function Literals, Naked Returns, Variadic Functions, Init Functions.md",
+                "file": "Golang/Go runtime.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Function Literals, Naked Returns, Variadic Functions, Init Functions"
+              "title": "Go runtime"
             }
           }
         ]
@@ -154,6 +154,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Golang/Generics.md",
+    "Golang/Generate JWT using go.md",
+    "Golang/Function Literals, Naked Returns, Variadic Functions, Init Functions.md",
     "Golang/Function Closures.md",
     "Golang/Function as a Value.md",
     "Golang/Error Control.md",
@@ -178,10 +181,7 @@
     "DSA/Bit Manipulation/Division Using Bitwise Operators.md",
     "DSA/Dynamic Programming",
     "DSA/Hashing/Implement your own Hashmap and set.md",
-    "DSA/Hashing/Find length of longest subseq which can be rearranged to seq of consecutive numbers.md",
-    "DSA/Array/(Prefix Sum) Check if there exists subarray with sum = 0.md",
     "DSA/Hashing",
-    "DSA/Two Pointers/3Sum.md",
     "DSA/Array",
     "DSA/Two Pointers",
     "DSA/Binary Search",
