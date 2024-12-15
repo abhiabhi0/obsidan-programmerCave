@@ -1,3 +1,42 @@
+### Summary
+#### Defer (Resource Cleanup)
+- Executes a function after the surrounding function completes; often used for cleanup tasks.
+- **Key Points**:
+    - Follows **LIFO (Last In, First Out)** order.
+    - Arguments are evaluated when `defer` is declared, not executed.
+- **Example**:
+```go
+file, _ := os.Open("example.txt")
+defer file.Close() // Ensures the file gets closed
+```
+---
+#### Panic (Error Signaling)
+- Indicates unrecoverable errors, stopping execution and executing deferred functions before exiting.
+- **Key Points**:
+    - Used for non-recoverable errors like invalid arguments or logic errors.
+    - If not recovered, it terminates the program with a stack trace.
+- **Example**:
+```go
+func main() {
+    panic("An unrecoverable error")
+}
+```
+---
+#### Recover (Graceful Error Handling)
+- Used within a deferred function to regain control of a panicking goroutine.
+- **Key Points**:
+    - Must be called inside a `defer` function.
+    - Prevents the program from crashing and allows error handling.
+- **Example**:
+```go
+defer func() {
+    if r := recover(); r != nil {
+        fmt.Println("Recovered:", r)
+    }
+}()
+panic("An error occurred")
+```
+---
 ### **Defer** (Resource cleanup):
 
 1. **Definition**: "The `defer` keyword schedules a function to be executed after the surrounding function completes. It’s commonly used for cleanup tasks like closing files, unlocking resources, or releasing locks."

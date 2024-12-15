@@ -1,12 +1,8 @@
-
 ### Summary
-
-#### **Key Features**:
-
+#### Key Features:
 1. **Timeout Management**: Ensures all API requests are canceled after 5 seconds.
 2. **Cancellation Propagation**: Cancels remaining requests if the context is canceled.
-#### **How It Works**:
-
+#### How It Works:
 1. **Context Setup**:
     - `context.WithTimeout` creates a context with a timeout of `5s`.
     - `defer cancel()` ensures cleanup of resources when the timeout occurs.
@@ -15,12 +11,13 @@
     - The `http.NewRequestWithContext` ensures the request respects the context.
 3. **Result Collection**:
     - Results from all APIs are gathered and printed.
-#### **Advantages**:
+#### Advantages:
 - Graceful request handling with timeout and cancellation.
 - Efficient resource utilization in concurrent environments.
 
 Context provides a mechanism to control the lifecycle, cancellation, and propagation of requests across multiple goroutines.
 
+---
 # Example: Managing Concurrent API Requests
 
 Consider a scenario where you need to fetch data from multiple APIs concurrently. By using context, you can ensure that all the API requests are canceled if any of them exceeds a specified timeout.
