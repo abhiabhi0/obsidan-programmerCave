@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Dynamic Programming/Word Break Problem.md",
+                "file": "DSA/Dynamic Programming/Number of Ways to Reach the Nth Step.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Word Break Problem"
+              "title": "Number of Ways to Reach the Nth Step"
             }
           }
         ]
@@ -154,8 +154,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "DSA/Bit Manipulation/Division Using Bitwise Operators.md",
     "DSA/Dynamic Programming/Word Break Problem.md",
+    "DSA/Dynamic Programming/Number of Ways to Reach the Nth Step.md",
+    "DSA/Bit Manipulation/Division Using Bitwise Operators.md",
     "DSA/Dynamic Programming",
     "DSA/Hashing/Implement your own Hashmap and set.md",
     "DSA/Hashing/Find length of longest subseq which can be rearranged to seq of consecutive numbers.md",
@@ -188,7 +189,6 @@
     "DSA/Trees/Invert Binary Tree.md",
     "DSA/String/Longest Common Prefix.md",
     "DSA/Trees",
-    "DSA/Untitled.md",
     "DSA/String",
     "Pasted image 20240603131241.png",
     "Pasted image 20240604102843.png",
