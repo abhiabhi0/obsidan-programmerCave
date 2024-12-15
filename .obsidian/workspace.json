@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Array/Equilibrium Index.md",
+                "file": "DSA/Array/Count the Number of Special Indices.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Equilibrium Index"
+              "title": "Count the Number of Special Indices"
             }
           }
         ]
@@ -154,8 +154,10 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "DSA/Dynamic Programming/Minimum Number of Perfect Squares Needed to Get Sum K.md",
+    "DSA/Array/Smallest Subarray Containing Both Max and Min.md",
+    "DSA/Array/Count the Number of Special Indices.md",
     "DSA/Array/Equilibrium Index.md",
+    "DSA/Dynamic Programming/Minimum Number of Perfect Squares Needed to Get Sum K.md",
     "DSA/Dynamic Programming/Number of Ways to Reach the Nth Step.md",
     "DSA/Dynamic Programming/Word Break Problem.md",
     "DSA/Bit Manipulation/Division Using Bitwise Operators.md",
@@ -186,8 +188,6 @@
     "DSA/Trees/Top View of a Binary Tree.md",
     "DSA/Trees/Construct Binary Tree from Inorder and Preorder.md",
     "DSA/Trees/Vertical Order Traversal.md",
-    "Python/queue and dequeue.md",
-    "Python/Dict and defaultdict.md",
     "DSA/Trees",
     "DSA/String",
     "Pasted image 20240603131241.png",
