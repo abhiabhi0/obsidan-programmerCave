@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Trees/Top View of a Binary Tree.md",
+                "file": "DSA/Trees/Check if a Binary Tree is Complete.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Top View of a Binary Tree"
+              "title": "Check if a Binary Tree is Complete"
             }
           }
         ]
@@ -167,8 +167,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "DSA/Trees/Construct Binary Tree from Inorder and Preorder.md",
     "DSA/Trees/Top View of a Binary Tree.md",
+    "DSA/Trees/Check if a Binary Tree is Complete.md",
+    "DSA/Trees/Construct Binary Tree from Inorder and Preorder.md",
     "DSA/Trees/Vertical Order Traversal.md",
     "Python/queue and dequeue.md",
     "Python/Dict and defaultdict.md",
@@ -200,7 +201,6 @@
     "DSA/Graphs/(BFS) Check if node can be visited from Source to Destination.md",
     "DSA/Graphs/BFS",
     "DSA/Graphs/(DFS) Depth First Search.md",
-    "DSA/Graphs/(BFS) Find Minimum Distance from Hospital for Every House.md",
     "DSA/Graphs",
     "Pasted image 20240603131241.png",
     "Pasted image 20240604102843.png",
