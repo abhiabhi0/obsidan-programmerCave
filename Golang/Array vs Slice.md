@@ -1,14 +1,10 @@
-### Arrays vs. Slices in Go: Quick Summary
-
+### Summary
 #### Arrays:
-
 - **Fixed Size**: Defined at declaration, cannot grow/shrink.
 - **Value Type**: Assigning copies elements; passed by value.
 - **Usage**: Rare, for fixed-size collections.
 - **Example**: `var arr [5]int`
-
 #### Slices:
-
 - **Dynamic Size**: Flexible, can grow via `append`.
 - **Reference Type**: Modifies underlying array; passed by reference.
 - **Length/Capacity**: Tracks elements and available space.
@@ -16,6 +12,8 @@
 - **Example**: `slice := make([]int, 5, 10)`
 
 In Go, arrays and slices are two different types of data structures used to store collections of elements. Here’s a detailed comparison of the two:
+
+----
 ### Arrays
 1. **Fixed Size**: Arrays in Go have a fixed size, which must be specified at the time of declaration. The size is a part of the array's type.
    ```go

@@ -4,17 +4,13 @@
 - [Fan-Out](#fan-out)
 
 ### Summary
-
-#### **Boring Design Pattern**
-
+#### Boring Design Pattern
 - **Purpose**: Process multiple independent tasks concurrently.
 - **Use Cases**: I/O operations, event handling.
 - **Code Structure**:
     - Each task runs in its goroutine.
     - Channels handle task results.
-
-#### **Worker Pool Pattern**
-
+#### Worker Pool Pattern
 - **Purpose**: Efficiently manage concurrent task processing with limited workers.
 - **Use Cases**: Web servers, data processing, resource management.
 - **Key Benefits**:
@@ -22,22 +18,19 @@
     - Controlled concurrency.
 - **Code Structure**:
     - Workers fetch tasks from a job queue and push results into a result queue.
-
-#### **Fan-In Pattern**
-
+#### Fan-In Pattern
 - **Purpose**: Merge data from multiple input channels into one.
 - **Use Cases**: Aggregating data streams, web scraping.
 - **Code Structure**:
     - Multiple producers send data to separate channels.
     - A central channel merges data via goroutines.
-
-#### **Fan-Out Pattern**
-
+#### Fan-Out Pattern
 - **Purpose**: Distribute tasks to multiple worker goroutines for parallel processing.
 - **Use Cases**: Load balancing, real-time event processing.
 - **Code Structure**:
     - A task queue distributes work among workers, which process tasks concurrently.
-
+    
+---
 ### Boring Design Pattern
 
 1. **Small and Independent Tasks**: The boring design pattern is well-suited for scenarios where you have several small and independent tasks that can be executed concurrently. Each task can be encapsulated within a separate goroutine.

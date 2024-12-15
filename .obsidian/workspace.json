@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Array/Given Q queries of L and R. Find if subarray from L to R is increasing.md",
+                "file": "Golang/Concurrency Patterns.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Given Q queries of L and R. Find if subarray from L to R is increasing"
+              "title": "Concurrency Patterns"
             }
           }
         ]
@@ -154,8 +154,14 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "DSA/Array/Rainwater Trapping.md",
+    "Golang/Concurrency in Go.md",
+    "Golang/Closing a Channel.md",
+    "Golang/Call the compute function a total of 100 times, distributed among 8 goroutines.md",
+    "Golang/Array vs Slice.md",
+    "DSA/Array/Maximum Unsorted Array.md",
+    "DSA/Array/First Missing Positive Integer.md",
     "DSA/Array/Given Q queries of L and R. Find if subarray from L to R is increasing.md",
+    "DSA/Array/Rainwater Trapping.md",
     "DSA/Array/Count the Number of Special Indices.md",
     "DSA/Array/Smallest Subarray Containing Both Max and Min.md",
     "DSA/Array/Equilibrium Index.md",
@@ -179,15 +185,9 @@
     "DSA/Heap/Finding the Ath Largest Element in Subarrays.md",
     "DSA/Binary Search",
     "DSA/Heap/Converting an Array into a Min Heap.md",
-    "DSA/Subset and Subsequence/Sum of Maximum of Every Subsequence.md",
     "DSA/Heap",
-    "DSA/Subset and Subsequence/Sum of All Subsets' Sum.md",
-    "DSA/Subset and Subsequence/Find Subsets Using Bit Masking.md",
-    "DSA/Binary Search Tree/Check if a Binary Tree is a BST.md",
     "DSA/Subset and Subsequence",
-    "DSA/Trees/Check if a Binary Tree is Complete.md",
     "DSA/Binary Search Tree",
-    "DSA/Trees/Top View of a Binary Tree.md",
     "DSA/Trees",
     "DSA/String",
     "Pasted image 20240603131241.png",
