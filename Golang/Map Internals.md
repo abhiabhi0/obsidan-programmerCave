@@ -1,21 +1,15 @@
 ### Summary:
-
 1. **Map Header**: Metadata structure holding entry count, log(buckets), pointer to bucket array, and a random hash seed.
-    
 2. **Bucket Details**:
-    
     - Each bucket stores up to **8 key-value pairs**.
     - Contains an array of hash codes, key-value pairs, and an overflow pointer for extra buckets.
 3. **Insertion**:
-    
     - Hash function determines the bucket.
     - If full, a new bucket is created and linked via overflow pointer.
 4. **Growth**:
-    
     - Triggered when load factor exceeds **6.5**.
     - Buckets double, old entries redistributed incrementally.
 5. **Deletion**:
-    
     - Buckets remain; map size never shrinks.
 
 ![[Pasted image 20240603131221.png]]

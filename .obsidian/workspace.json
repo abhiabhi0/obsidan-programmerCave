@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Interface.md",
+                "file": "Golang/Method vs Function.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Interface"
+              "title": "Method vs Function"
             }
           }
         ]
@@ -154,6 +154,11 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Golang/Map Internals.md",
+    "Golang/Limit Goroutines.md",
+    "Golang/Interface example to select game for students.md",
+    "Golang/Interface Embedding.md",
+    "Golang/Interface.md",
     "Golang/How to containerize Golang Application using Docker.md",
     "Golang/Goroutine vs main().md",
     "Golang/Go Signals.md",
@@ -175,11 +180,6 @@
     "DSA/Array/Maximum Unsorted Array.md",
     "DSA/Array/First Missing Positive Integer.md",
     "DSA/Array/Given Q queries of L and R. Find if subarray from L to R is increasing.md",
-    "DSA/Array/Rainwater Trapping.md",
-    "DSA/Array/Count the Number of Special Indices.md",
-    "DSA/Array/Smallest Subarray Containing Both Max and Min.md",
-    "DSA/Array/Equilibrium Index.md",
-    "DSA/Dynamic Programming/Minimum Number of Perfect Squares Needed to Get Sum K.md",
     "DSA/Dynamic Programming",
     "DSA/Hashing",
     "DSA/Array",
