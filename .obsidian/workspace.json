@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Array/Rainwater Trapping.md",
+                "file": "DSA/Array/Given Q queries of L and R. Find if subarray from L to R is increasing.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Rainwater Trapping"
+              "title": "Given Q queries of L and R. Find if subarray from L to R is increasing"
             }
           }
         ]
@@ -154,8 +154,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "DSA/Array/Count the Number of Special Indices.md",
     "DSA/Array/Rainwater Trapping.md",
+    "DSA/Array/Given Q queries of L and R. Find if subarray from L to R is increasing.md",
+    "DSA/Array/Count the Number of Special Indices.md",
     "DSA/Array/Smallest Subarray Containing Both Max and Min.md",
     "DSA/Array/Equilibrium Index.md",
     "DSA/Dynamic Programming/Minimum Number of Perfect Squares Needed to Get Sum K.md",
@@ -187,7 +188,6 @@
     "DSA/Trees/Check if a Binary Tree is Complete.md",
     "DSA/Binary Search Tree",
     "DSA/Trees/Top View of a Binary Tree.md",
-    "DSA/Trees/Construct Binary Tree from Inorder and Preorder.md",
     "DSA/Trees",
     "DSA/String",
     "Pasted image 20240603131241.png",
