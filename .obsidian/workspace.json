@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Binary Search Tree/Check if a Binary Tree is a BST.md",
+                "file": "DSA/Subset and Subsequence/Find Subsets Using Bit Masking.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Check if a Binary Tree is a BST"
+              "title": "Find Subsets Using Bit Masking"
             }
           }
         ]
@@ -167,8 +167,10 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "DSA/Trees/Check if a Binary Tree is Complete.md",
     "DSA/Binary Search Tree/Check if a Binary Tree is a BST.md",
+    "DSA/Subset and Subsequence/Find Subsets Using Bit Masking.md",
+    "DSA/Subset and Subsequence",
+    "DSA/Trees/Check if a Binary Tree is Complete.md",
     "DSA/Binary Search Tree",
     "DSA/Trees/Top View of a Binary Tree.md",
     "DSA/Trees/Construct Binary Tree from Inorder and Preorder.md",
@@ -200,9 +202,7 @@
     "DSA/Graphs/(BFS) Extroverts Doing Party (People with at least K friends can enter).md",
     "DSA/Graphs/(DFS) Map of conflicted Area.md",
     "DSA/Graphs/(DFS) Count Number of Islands.md",
-    "DSA/Graphs/(BFS) Check if node can be visited from Source to Destination.md",
     "DSA/Graphs/BFS",
-    "DSA/Graphs",
     "Pasted image 20240603131241.png",
     "Pasted image 20240604102843.png",
     "Pasted image 20240622221813.png",
