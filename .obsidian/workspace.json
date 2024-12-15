@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Dynamic Programming/Minimum Number of Perfect Squares Needed to Get Sum K.md",
+                "file": "DSA/Array/Equilibrium Index.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Minimum Number of Perfect Squares Needed to Get Sum K"
+              "title": "Equilibrium Index"
             }
           }
         ]
@@ -154,8 +154,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "DSA/Dynamic Programming/Number of Ways to Reach the Nth Step.md",
     "DSA/Dynamic Programming/Minimum Number of Perfect Squares Needed to Get Sum K.md",
+    "DSA/Array/Equilibrium Index.md",
+    "DSA/Dynamic Programming/Number of Ways to Reach the Nth Step.md",
     "DSA/Dynamic Programming/Word Break Problem.md",
     "DSA/Bit Manipulation/Division Using Bitwise Operators.md",
     "DSA/Dynamic Programming",
@@ -187,7 +188,6 @@
     "DSA/Trees/Vertical Order Traversal.md",
     "Python/queue and dequeue.md",
     "Python/Dict and defaultdict.md",
-    "DSA/Trees/Invert Binary Tree.md",
     "DSA/Trees",
     "DSA/String",
     "Pasted image 20240603131241.png",
