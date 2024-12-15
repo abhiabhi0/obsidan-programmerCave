@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Subset and Subsequence/Find Subsets Using Bit Masking.md",
+                "file": "DSA/Subset and Subsequence/Sum of All Subsets' Sum.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Find Subsets Using Bit Masking"
+              "title": "Sum of All Subsets' Sum"
             }
           }
         ]
@@ -167,8 +167,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "DSA/Binary Search Tree/Check if a Binary Tree is a BST.md",
     "DSA/Subset and Subsequence/Find Subsets Using Bit Masking.md",
+    "DSA/Subset and Subsequence/Sum of All Subsets' Sum.md",
+    "DSA/Binary Search Tree/Check if a Binary Tree is a BST.md",
     "DSA/Subset and Subsequence",
     "DSA/Trees/Check if a Binary Tree is Complete.md",
     "DSA/Binary Search Tree",
@@ -201,7 +202,6 @@
     "DSA/Graphs/(Dijkstra's Algorithm) Find Minimum Time for All Bunks to Burn.md",
     "DSA/Graphs/(BFS) Extroverts Doing Party (People with at least K friends can enter).md",
     "DSA/Graphs/(DFS) Map of conflicted Area.md",
-    "DSA/Graphs/(DFS) Count Number of Islands.md",
     "DSA/Graphs/BFS",
     "Pasted image 20240603131241.png",
     "Pasted image 20240604102843.png",
