@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DSA/Two Pointers/3Sum.md",
+                "file": "DSA/Array/(Prefix Sum) Check if there exists subarray with sum = 0.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3Sum"
+              "title": "(Prefix Sum) Check if there exists subarray with sum = 0"
             }
           }
         ]
@@ -154,8 +154,10 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "DSA/Binary Search/Kth Missing positive number.md",
     "DSA/Two Pointers/3Sum.md",
+    "DSA/Array/(Prefix Sum) Check if there exists subarray with sum = 0.md",
+    "DSA/Array",
+    "DSA/Binary Search/Kth Missing positive number.md",
     "DSA/Two Pointers",
     "DSA/Binary Search/Exchange two elements in two arrays so that sum of both array becomes equal.md",
     "DSA/Binary Search/Aggressive Cows.md",
@@ -187,9 +189,7 @@
     "DSA/Sorting/Number of Pairs such that.md",
     "DSA/Stack",
     "DSA/Sorting/Rearrange Array Around a Pivot Element.md",
-    "SQL/ROW_NUMBER vs. RANK vs. DENSE_RANK.md",
     "DSA/Sorting",
-    "Untitled",
     "Pasted image 20240603131241.png",
     "Pasted image 20240604102843.png",
     "Pasted image 20240622221813.png",
