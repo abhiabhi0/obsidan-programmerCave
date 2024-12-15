@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Method vs Function.md",
+                "file": "Golang/Recover from panic in Go.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Method vs Function"
+              "title": "Recover from panic in Go"
             }
           }
         ]
@@ -154,6 +154,12 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Golang/Reading from Console.md",
+    "Golang/Print table of N using go routine.md",
+    "Golang/Print N integers using odd and even thread.md",
+    "Golang/Pointers.md",
+    "Golang/Palindrome of Chinese string.md",
+    "Golang/Method vs Function.md",
     "Golang/Map Internals.md",
     "Golang/Limit Goroutines.md",
     "Golang/Interface example to select game for students.md",
@@ -174,12 +180,6 @@
     "Golang/Context.md",
     "Golang/Concurrency Patterns.md",
     "Golang/Concurrency in Go.md",
-    "Golang/Closing a Channel.md",
-    "Golang/Call the compute function a total of 100 times, distributed among 8 goroutines.md",
-    "Golang/Array vs Slice.md",
-    "DSA/Array/Maximum Unsorted Array.md",
-    "DSA/Array/First Missing Positive Integer.md",
-    "DSA/Array/Given Q queries of L and R. Find if subarray from L to R is increasing.md",
     "DSA/Dynamic Programming",
     "DSA/Hashing",
     "DSA/Array",
