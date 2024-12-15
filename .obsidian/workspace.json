@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Go runtime.md",
+                "file": "Golang/Interface.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Go runtime"
+              "title": "Interface"
             }
           }
         ]
@@ -154,6 +154,10 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Golang/How to containerize Golang Application using Docker.md",
+    "Golang/Goroutine vs main().md",
+    "Golang/Go Signals.md",
+    "Golang/Go runtime.md",
     "Golang/Generics.md",
     "Golang/Generate JWT using go.md",
     "Golang/Function Literals, Naked Returns, Variadic Functions, Init Functions.md",
@@ -176,11 +180,7 @@
     "DSA/Array/Smallest Subarray Containing Both Max and Min.md",
     "DSA/Array/Equilibrium Index.md",
     "DSA/Dynamic Programming/Minimum Number of Perfect Squares Needed to Get Sum K.md",
-    "DSA/Dynamic Programming/Number of Ways to Reach the Nth Step.md",
-    "DSA/Dynamic Programming/Word Break Problem.md",
-    "DSA/Bit Manipulation/Division Using Bitwise Operators.md",
     "DSA/Dynamic Programming",
-    "DSA/Hashing/Implement your own Hashmap and set.md",
     "DSA/Hashing",
     "DSA/Array",
     "DSA/Two Pointers",
