@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/GRPC/00 - Introduction.md",
+                "file": "Interview Prep/GRPC/02 - Main Components of a gRPC Service.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00 - Introduction"
+              "title": "02 - Main Components of a gRPC Service"
             }
           }
         ]
@@ -154,8 +154,10 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "Golang/Why Go is the fastest language.md",
+    "Interview Prep/GRPC/01 - gRPC vs. RESTful APIs.md",
+    "Interview Prep/GRPC/02 - Main Components of a gRPC Service.md",
     "Interview Prep/GRPC/00 - Introduction.md",
+    "Golang/Why Go is the fastest language.md",
     "Interview Prep/GRPC",
     "Golang/What is ORM in Go (Golang).md",
     "Golang/Value Receiver vs Pointer receiver.md",
@@ -179,8 +181,6 @@
     "Golang/Interface Embedding.md",
     "Golang/Interface.md",
     "Golang/How to containerize Golang Application using Docker.md",
-    "Golang/Goroutine vs main().md",
-    "Golang/Go Signals.md",
     "DSA/Dynamic Programming",
     "DSA/Hashing",
     "DSA/Array",
