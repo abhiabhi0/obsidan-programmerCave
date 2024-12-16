@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/GRPC/02 - Main Components of a gRPC Service.md",
+                "file": "Interview Prep/GRPC/04 - unary, server streaming, client streaming, and bidirectional streaming.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02 - Main Components of a gRPC Service"
+              "title": "04 - unary, server streaming, client streaming, and bidirectional streaming"
             }
           }
         ]
@@ -154,8 +154,10 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "Interview Prep/GRPC/01 - gRPC vs. RESTful APIs.md",
+    "Interview Prep/GRPC/03 - What are Protocol Buffers (ProtoBuf).md",
+    "Interview Prep/GRPC/04 - unary, server streaming, client streaming, and bidirectional streaming.md",
     "Interview Prep/GRPC/02 - Main Components of a gRPC Service.md",
+    "Interview Prep/GRPC/01 - gRPC vs. RESTful APIs.md",
     "Interview Prep/GRPC/00 - Introduction.md",
     "Golang/Why Go is the fastest language.md",
     "Interview Prep/GRPC",
@@ -179,8 +181,6 @@
     "Golang/Limit Goroutines.md",
     "Golang/Interface example to select game for students.md",
     "Golang/Interface Embedding.md",
-    "Golang/Interface.md",
-    "Golang/How to containerize Golang Application using Docker.md",
     "DSA/Dynamic Programming",
     "DSA/Hashing",
     "DSA/Array",
