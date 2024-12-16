@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/GRPC/06 - What Are Interceptors in gRPC.md",
+                "file": "Interview Prep/GRPC/07 - What Are gRPC Stubs.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06 - What Are Interceptors in gRPC"
+              "title": "07 - What Are gRPC Stubs"
             }
           }
         ]
@@ -154,8 +154,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "Interview Prep/GRPC/05 - How Errors Work in gRPC.md",
     "Interview Prep/GRPC/06 - What Are Interceptors in gRPC.md",
+    "Interview Prep/GRPC/07 - What Are gRPC Stubs.md",
+    "Interview Prep/GRPC/05 - How Errors Work in gRPC.md",
     "Interview Prep/GRPC/04 - unary, server streaming, client streaming, and bidirectional streaming.md",
     "Interview Prep/GRPC/03 - What are Protocol Buffers (ProtoBuf).md",
     "Interview Prep/GRPC/02 - Main Components of a gRPC Service.md",
@@ -180,7 +181,6 @@
     "Golang/Palindrome of Chinese string.md",
     "Golang/Method vs Function.md",
     "Golang/Map Internals.md",
-    "Golang/Limit Goroutines.md",
     "DSA/Dynamic Programming",
     "DSA/Hashing",
     "DSA/Array",
