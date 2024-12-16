@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Recover from panic in Go.md",
+                "file": "Interview Prep/GRPC/00 - Introduction.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Recover from panic in Go"
+              "title": "00 - Introduction"
             }
           }
         ]
@@ -154,6 +154,19 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Golang/Why Go is the fastest language.md",
+    "Interview Prep/GRPC/00 - Introduction.md",
+    "Interview Prep/GRPC",
+    "Golang/What is ORM in Go (Golang).md",
+    "Golang/Value Receiver vs Pointer receiver.md",
+    "Golang/Use of empty struct.md",
+    "Golang/URL shortner.md",
+    "Golang/Type conversion.md",
+    "Golang/Thread Safe Stack Implementation.md",
+    "Golang/Thread Safe Map Implementation.md",
+    "Golang/Strings.md",
+    "Golang/Slice Internals.md",
+    "Golang/Recover from panic in Go.md",
     "Golang/Reading from Console.md",
     "Golang/Print table of N using go routine.md",
     "Golang/Print N integers using odd and even thread.md",
@@ -168,18 +181,6 @@
     "Golang/How to containerize Golang Application using Docker.md",
     "Golang/Goroutine vs main().md",
     "Golang/Go Signals.md",
-    "Golang/Go runtime.md",
-    "Golang/Generics.md",
-    "Golang/Generate JWT using go.md",
-    "Golang/Function Literals, Naked Returns, Variadic Functions, Init Functions.md",
-    "Golang/Function Closures.md",
-    "Golang/Function as a Value.md",
-    "Golang/Error Control.md",
-    "Golang/Design Patterns.md",
-    "Golang/Defer, Panic, and Recover.md",
-    "Golang/Context.md",
-    "Golang/Concurrency Patterns.md",
-    "Golang/Concurrency in Go.md",
     "DSA/Dynamic Programming",
     "DSA/Hashing",
     "DSA/Array",
@@ -189,7 +190,6 @@
     "DSA/Subset and Subsequence",
     "DSA/Binary Search Tree",
     "DSA/Trees",
-    "DSA/String",
     "Pasted image 20240603131241.png",
     "Pasted image 20240604102843.png",
     "Pasted image 20240622221813.png",
