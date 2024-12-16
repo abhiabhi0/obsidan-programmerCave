@@ -1,23 +1,15 @@
 A **gRPC stub** is auto-generated code that acts as a bridge between your application code and the gRPC server. It provides ready-to-use methods that match the service methods defined in your `.proto` file.
-
 #### **Roles of gRPC Stubs**
-
 1. **Abstract Communication**:  
     Stubs handle all the complex details of sending and receiving data over the network (e.g., HTTP/2), so you don’t have to worry about them.
-    
 2. **Act Like Local Methods**:  
     From the client’s perspective, calling a remote gRPC method using a stub feels just like calling a local method in your code.
-    
 3. **Ensure Type Safety**:  
     Stubs enforce the correct data types for requests and responses, ensuring that everything matches the service definition in the `.proto` file.
-    
-
 ---
-
 ### **What Are gRPC Clients?**
 
 A **gRPC client** is the application code that uses the stub to talk to the gRPC server. It’s responsible for:
-
 - Setting up the connection with the server.
 - Using the stub to call the server’s methods.
 - Sending requests and processing responses.
@@ -97,12 +89,10 @@ A **gRPC client** is the application code that uses the stub to talk to the gRPC
 ### **Key Takeaways**
 
 - **Stub**:
-    
     - Generated code that directly interacts with the server.
     - Matches the methods defined in the `.proto` file.
     - Handles serialization (converting objects to binary) and deserialization (binary to objects).
 - **Client**:
-    
     - Your application code.
     - Uses the stub to call the server's methods.
     - Handles server responses and integrates them into your app.
