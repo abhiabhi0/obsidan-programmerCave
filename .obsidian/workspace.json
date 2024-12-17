@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/AWS S3.md",
+                "file": "Interview Prep/AWS Services.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AWS S3"
+              "title": "AWS Services"
             }
           }
         ]
@@ -154,6 +154,7 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Interview Prep/AWS S3.md",
     "Interview Prep/AWS Lambda.md",
     "Interview Prep/GRPC/12 - How does gRPC handle service versioning and backward compatibility.md",
     "Interview Prep/AWS Interview Topics.md",
@@ -180,7 +181,6 @@
     "Golang/Thread Safe Map Implementation.md",
     "Golang/Strings.md",
     "Golang/Slice Internals.md",
-    "Golang/Recover from panic in Go.md",
     "DSA/Dynamic Programming",
     "DSA/Hashing",
     "DSA/Array",
