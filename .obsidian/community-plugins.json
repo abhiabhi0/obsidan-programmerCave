@@ -7,5 +7,9 @@
   "obsidian-excalidraw-plugin",
   "oz-clear-unused-images",
   "obsidian-latex-suite",
-  "copy-as-latex"
+  "copy-as-latex",
+  "obsidian-hider",
+  "obsidian-paste-image-rename",
+  "painter",
+  "obsidian-custom-frames"
 ]

@@ -1,15 +1,15 @@
 ### Summary
 
 - **AWS Lambda**:
-    - Serverless compute service, no server management.
-    - Event-driven execution: triggers like S3, DynamoDB changes, HTTP requests.
-    - Automatic scaling, pay-per-use pricing.
+    - <mark class="hltr-g">Serverless compute service</mark>, no server management.
+    - <mark class="hltr-o">Event-driven execution</mark>: triggers like S3, DynamoDB changes, HTTP requests.
+    - <mark class="hltr-b">Automatic scaling</mark>, pay-per-use pricing.
 - **Lambda Function**:
     - Code deployed on AWS Lambda, executed via events.
     - Components:
-        - Handler function: processes events.
-        - Event source: triggers the function.
-        - Execution role: defines permissions for AWS services.
+        - <mark class="hltr-g">Handler function</mark>: processes events.
+        - <mark class="hltr-o">Event source</mark>: triggers the function.
+        - <mark class="hltr-b">Execution role</mark>: defines permissions for AWS services.
 - **Key Features**:
     - Automatic scaling, event-driven, cost-efficient.
 - **Lambda vs Lambda Function**:
@@ -31,6 +31,7 @@
     - Keep functions small and single-purpose.
     - Use environment variables for configuration.
     - Monitor with AWS CloudWatch Logs.
+---
 ### What is AWS Lambda?
 
 - AWS Lambda is a **serverless compute service** provided by Amazon Web Services (AWS).
