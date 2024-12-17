@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/AWS Services.md",
+                "file": "Interview Prep/GRPC/Untitled.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AWS Services"
+              "title": "Untitled"
             }
           }
         ]
@@ -154,6 +154,10 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Interview Prep/GRPC/03 - What are Protocol Buffers (ProtoBuf).md",
+    "Interview Prep/GRPC/Untitled.md",
+    "Interview Prep/How to deploy in production such that background jobs are not stopped.md",
+    "Interview Prep/AWS Services.md",
     "Interview Prep/AWS S3.md",
     "Interview Prep/AWS Lambda.md",
     "Interview Prep/GRPC/12 - How does gRPC handle service versioning and backward compatibility.md",
@@ -166,7 +170,6 @@
     "Interview Prep/GRPC/06 - What Are Interceptors in gRPC.md",
     "Interview Prep/GRPC/05 - How Errors Work in gRPC.md",
     "Interview Prep/GRPC/04 - unary, server streaming, client streaming, and bidirectional streaming.md",
-    "Interview Prep/GRPC/03 - What are Protocol Buffers (ProtoBuf).md",
     "Interview Prep/GRPC/02 - Main Components of a gRPC Service.md",
     "Interview Prep/GRPC/01 - gRPC vs. RESTful APIs.md",
     "Interview Prep/GRPC/00 - Introduction.md",
@@ -178,9 +181,6 @@
     "Golang/URL shortner.md",
     "Golang/Type conversion.md",
     "Golang/Thread Safe Stack Implementation.md",
-    "Golang/Thread Safe Map Implementation.md",
-    "Golang/Strings.md",
-    "Golang/Slice Internals.md",
     "DSA/Dynamic Programming",
     "DSA/Hashing",
     "DSA/Array",
