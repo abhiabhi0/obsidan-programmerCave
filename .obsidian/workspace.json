@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/GRPC/Untitled.md",
+                "file": "Interview Prep/GRPC/Why protobuf is fast.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Why protobuf is fast"
             }
           }
         ]
@@ -154,8 +154,9 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
+    "Interview Prep/GRPC/Why grpc is fastest.md",
+    "Interview Prep/GRPC/Why protobuf is fast.md",
     "Interview Prep/GRPC/03 - What are Protocol Buffers (ProtoBuf).md",
-    "Interview Prep/GRPC/Untitled.md",
     "Interview Prep/How to deploy in production such that background jobs are not stopped.md",
     "Interview Prep/AWS Services.md",
     "Interview Prep/AWS S3.md",
@@ -180,7 +181,6 @@
     "Golang/Use of empty struct.md",
     "Golang/URL shortner.md",
     "Golang/Type conversion.md",
-    "Golang/Thread Safe Stack Implementation.md",
     "DSA/Dynamic Programming",
     "DSA/Hashing",
     "DSA/Array",
