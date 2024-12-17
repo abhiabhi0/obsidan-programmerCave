@@ -1,11 +1,6 @@
-To understand why Protobuf is fast and how it works internally, let’s delve into its core design principles and internal mechanics:
-
----
-
 ### 1. **Compact Size**: Efficient Binary Serialization
 
 Protobuf serializes data into a **binary format**, which is significantly smaller than text-based formats like JSON or XML.
-
 #### How Protobuf Achieves Compactness:
 
 - **Tag-Based Encoding**:
