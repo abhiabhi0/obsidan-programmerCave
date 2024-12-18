@@ -2,7 +2,6 @@
   "obsidian-git",
   "obsidian-minimal-settings",
   "obsidian-plugin-toc",
-  "omnisearch",
   "highlightr-plugin",
   "obsidian-excalidraw-plugin",
   "oz-clear-unused-images",
@@ -11,5 +10,6 @@
   "obsidian-hider",
   "obsidian-paste-image-rename",
   "painter",
-  "obsidian-custom-frames"
+  "obsidian-custom-frames",
+  "omnisearch"
 ]
