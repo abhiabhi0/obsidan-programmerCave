@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/01 - Resume Questions/03 - Kafka Producer and Consumer Questions.md",
+                "file": "Interview Prep/Kafka/01 - Why Kafka Was Chosen for Message Processing.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03 - Kafka Producer and Consumer Questions"
+              "title": "01 - Why Kafka Was Chosen for Message Processing"
             }
           }
         ]
@@ -127,10 +127,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interview Prep/01 - Resume Questions/03 - Kafka Producer and Consumer Questions.md"
+                "file": "Interview Prep/Kafka/01 - Why Kafka Was Chosen for Message Processing.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 03 - Kafka Producer and Consumer Questions"
+              "title": "Outline of 01 - Why Kafka Was Chosen for Message Processing"
             }
           }
         ],
@@ -154,8 +154,10 @@
   },
   "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "Interview Prep/01 - Resume Questions/02 - gRPC Service Questions.md",
     "Interview Prep/01 - Resume Questions/03 - Kafka Producer and Consumer Questions.md",
+    "Interview Prep/Kafka/01 - Why Kafka Was Chosen for Message Processing.md",
+    "Interview Prep/Kafka",
+    "Interview Prep/01 - Resume Questions/02 - gRPC Service Questions.md",
     "Interview Prep/GRPC/13 - Challenges Faced While Implementing the gRPC Service.md",
     "Interview Prep/JSON Web Token (JWT).md",
     "Untitled.md",
@@ -180,7 +182,6 @@
     "Interview Prep/GRPC/05 - How Errors Work in gRPC.md",
     "Interview Prep/GRPC/04 - unary, server streaming, client streaming, and bidirectional streaming.md",
     "Interview Prep/GRPC/02 - Main Components of a gRPC Service.md",
-    "Interview Prep/GRPC/01 - gRPC vs. RESTful APIs.md",
     "Interview Prep/GRPC",
     "DSA/Dynamic Programming",
     "DSA/Hashing",
@@ -189,7 +190,6 @@
     "DSA/Binary Search",
     "DSA/Heap",
     "DSA/Subset and Subsequence",
-    "DSA/Binary Search Tree",
     "Pasted image 20240603131241.png",
     "Pasted image 20240604102843.png",
     "Pasted image 20240622221813.png",
