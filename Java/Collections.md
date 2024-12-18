@@ -91,7 +91,3 @@ public class CollectionsExample {
     }
 }
 ```
-
-### 5. Summary
-
-The Java Collections Framework provides a comprehensive set of interfaces and classes for working with groups of objects. The key interfaces (Collection, List, Set, Queue, Deque, and Map) define the main collection types, and the framework includes various implementations to meet different performance and usage requirements. Utility classes like Collections and Arrays offer additional functionality for manipulating collections and arrays.
