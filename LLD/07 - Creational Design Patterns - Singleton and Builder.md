@@ -1,5 +1,5 @@
 **Design Pattern**
-- is a general, reusable solution to a commonly occurring problem within a given context in software design. 
+- is a <mark class="hltr-b">general, reusable solution to a commonly occurring problem</mark> within a given context in software design. 
 - are formalized best practices that the programmer can use to solve common problems when designing an application or system.
 
 **Creational Design Patterns**
@@ -25,10 +25,10 @@
 
 ### Solution
 
-- is a **creational design pattern** that lets you ensure that a class has only one instance, while providing a global access point to this instance. 
+- is a **creational design pattern** that lets you <mark class="hltr-g">ensure that a class has only one instance, while providing a global access point to this instance</mark>. 
 - To implement the Singleton patter, the following steps are required:
   - **Constructor hiding**: 
-	- The constructor of the singleton class should be private or protected. 
+	- The <mark class="hltr-o">constructor of the singleton class should be private or protected</mark>. 
 	- This will prevent other classes from instantiating the singleton class.
   - **Global access point**:
 	- The singleton class should provide a global access point to get the instance of the singleton class. 

@@ -1,5 +1,5 @@
 ## Liskov Substitution Principle
-- states that objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program
+- <mark class="hltr-g">states that objects in a program should be replaceable with instances of their subtypes without altering the correctness of that program</mark>
 - Let us take a look at our final version of the `Bird` class from [[05 - SOLID - Single Responsibility, Open-Closed Principle]]
 - We started with a `Bird` class which had SRP and OCP violations. We now have a `Bird` abstract class which can be extended by the `Eagle`, `Penguin` and `Parrot` subclasses.
 
@@ -182,7 +182,7 @@ classDiagram
 - Prefer using interfaces over abstract classes to implement behaviour since abstract classes tend to tie behaviour to the class hierarchy.
 ---
 ## Interface Segregation Principle
-- states that many client-specific interfaces are better than one general-purpose interface. 
+- states that many <mark class="hltr-g">client-specific interfaces are better than one general-purpose interface.</mark> 
 - Clients should not be forced to implement a function they do no need. 
 - Declaring methods in an interface that the client doesn’t need pollutes the interface and leads to a “bulky” or “fat” interface
 - A fat interface is an interface that has too many methods. 
@@ -200,8 +200,8 @@ public interface Flyable {
 ---
 
 ## Dependency Inversion Principle
-- refers to the decoupling of software modules. This way, instead of high-level modules depending on low-level modules, both will depend on abstractions.
-- High-level modules, which provide complex logic, should be easily reusable and unaffected by changes in low-level modules, which provide utility features. 
+- refers to the <mark class="hltr-g">decoupling of software modules</mark>. This way, instead of high-level modules depending on low-level modules, both will depend on abstractions.
+- <mark class="hltr-o">High-level modules, which provide complex logic, should be easily reusable and unaffected by changes in low-level modules, which provide utility features</mark>. 
 - To achieve that, you need to introduce an abstraction that decouples the high-level and low-level modules from each other.
 - Our `Bird` class looks pretty neat now. We have separated the behaviour into different lean interfaces which are implemented by the classes that need them. When we add new sub-classes we identify an issue. For birds that have the same behaviour, we have to implement the same behaviour multiple times.
 ```java
