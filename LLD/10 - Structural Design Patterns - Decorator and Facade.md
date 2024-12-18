@@ -1,5 +1,5 @@
 **Decorator**
- - structural design pattern that allows adding new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors.
+ - structural design pattern that <mark class="hltr-b">allows adding new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors</mark>.
 
 **Facade**
 * structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
