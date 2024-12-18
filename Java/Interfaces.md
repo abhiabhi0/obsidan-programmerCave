@@ -39,7 +39,7 @@ public class Rectangle implements Shape {
 
 ### 3. Using Interfaces
 
-Once you have defined an interface and one or more classes that implement it, you can use objects of the interface type to hold references to instances of any class that implements the interface.
+Once you have defined an interface and one or more classes that implement it, <mark class="hltr-o">you can use objects of the interface type to hold references to instances of any class that implements the interface.</mark>
 
 ```java
 public class Main {

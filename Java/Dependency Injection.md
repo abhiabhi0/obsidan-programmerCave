@@ -1,4 +1,4 @@
-Instead of a class creating its own dependencies, they are provided to the class, making the system more modular, testable, and maintainable.
+<mark class="hltr-g">Instead of a class creating its own dependencies, they are provided to the class, making the system more modular, testable, and maintainable.</mark>
 
 ### Without DI
 ```java
