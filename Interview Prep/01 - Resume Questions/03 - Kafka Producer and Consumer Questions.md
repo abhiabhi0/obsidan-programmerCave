@@ -26,6 +26,7 @@
     - Configured the producer with `acks=all` to ensure messages were acknowledged by all Kafka replicas.
     - Used retries with backoff to handle temporary failures.
     - Monitored the producer for errors and implemented fallback mechanisms for undeliverable messages.
+    - Ref [[02 - Message Delivery Guarantees in Kafka]]
 
 ---
 

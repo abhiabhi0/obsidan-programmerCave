@@ -28,17 +28,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/Kafka/01 - Why Kafka Was Chosen for Message Processing.md",
+                "file": "Interview Prep/Kafka/02 - Message Delivery Guarantees in Kafka.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Why Kafka Was Chosen for Message Processing"
+              "title": "02 - Message Delivery Guarantees in Kafka"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -143,10 +142,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interview Prep/Kafka/01 - Why Kafka Was Chosen for Message Processing.md"
+                "file": "Interview Prep/01 - Resume Questions/03 - Kafka Producer and Consumer Questions.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 01 - Why Kafka Was Chosen for Message Processing"
+              "title": "Outline of 03 - Kafka Producer and Consumer Questions"
             }
           }
         ],
@@ -168,10 +167,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4af8bbacb5c7b7c4",
+  "active": "5393ec9ce544d4a8",
   "lastOpenFiles": [
-    "Interview Prep/01 - Resume Questions/03 - Kafka Producer and Consumer Questions.md",
+    "Interview Prep/Kafka/02 - Message Delivery Guarantees in Kafka.md",
     "Interview Prep/Kafka/01 - Why Kafka Was Chosen for Message Processing.md",
+    "Interview Prep/01 - Resume Questions/03 - Kafka Producer and Consumer Questions.md",
     "Interview Prep/Kafka",
     "Interview Prep/01 - Resume Questions/02 - gRPC Service Questions.md",
     "Interview Prep/GRPC/13 - Challenges Faced While Implementing the gRPC Service.md",
@@ -197,7 +197,6 @@
     "Interview Prep/GRPC/06 - What Are Interceptors in gRPC.md",
     "Interview Prep/GRPC/05 - How Errors Work in gRPC.md",
     "Interview Prep/GRPC/04 - unary, server streaming, client streaming, and bidirectional streaming.md",
-    "Interview Prep/GRPC/02 - Main Components of a gRPC Service.md",
     "Interview Prep/GRPC",
     "DSA/Dynamic Programming",
     "DSA/Hashing",
