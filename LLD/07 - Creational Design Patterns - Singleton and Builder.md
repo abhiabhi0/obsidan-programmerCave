@@ -214,7 +214,7 @@ func GetInstanceUsingSync() *connectionPool {
 
 ### Problems
 - **Complex object creation**
-	- There are multiple ways to create an object, but constructors are the primary technique used for creating instances of a class. However, constructors become unmanageable when there is a need to create an object with many parameters. This is known as the **telescoping constructor anti-pattern. 
+	- There are multiple ways to create an object, but constructors are the primary technique used for creating instances of a class. However, <mark class="hltr-o">constructors become unmanageable when there is a need to create an object with many parameters</mark>. This is known as the **telescoping constructor anti-pattern. 
 	- The telescoping constructor anti-pattern is a code smell that indicates that the class has too many constructors. This is a code smell because it is difficult to maintain and extend the class.
 	
 - **Validation and failing object creation**
@@ -258,7 +258,7 @@ class DatabaseParameters {
 - Similarly, if we even want to change a single parameter name, we have to open the database class for modification.
 -  Instead, we should move the destructuring of the parameter class and validation logic to the Parameter class. 
 - This will require creating a Database constructor with all the fields. Again, why would developers not just want to use the constructor instead? - So we need a way to allow the parameter class to create the Database object while not exposing a constructor.
--This can be done using an inner class. This inner class is known as the **builder class**.
+ -This can be done using an inner class. This inner class is known as the **builder class**.
 
 ```java
 public class Database {
