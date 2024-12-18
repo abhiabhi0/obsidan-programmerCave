@@ -1,5 +1,5 @@
 ## Single Responsibility Principle
-- states that a class should do one thing, and therefore it should have only a single reason to change.
+- states that <mark class="hltr-b">a class should do one thing</mark>, and therefore it should have only a single reason to change.
 ![[Pasted image 20240625174445.png]]
 
 ### Case study - Design a bird
@@ -91,7 +91,7 @@ public saveToDatabase() {
 ---
 ## Open/Closed Principle
 
-- states that a class should be open for extension but closed for modification. This means that we should be able to **add new functionality to the class without changing the existing code**.
+- states that a class should be open for extension but closed for modification. This means that we should be able to <mark class="hltr-b">add new functionality to the class without changing the existing code.</mark>
 ```java
 public void fly() {
 	if (type.equals("eagle")) {
