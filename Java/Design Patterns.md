@@ -1,4 +1,3 @@
-
 1. **Singleton Pattern**:
    - **Explanation**: Ensures that a class has only one instance and provides a global point of access to that instance.
    - **Example**: A logger class that needs to be instantiated only once throughout the application.

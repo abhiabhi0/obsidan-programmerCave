@@ -6,10 +6,10 @@
 - provide various object creation mechanisms, which increase flexibility and reuse of existing code.
 
 **Singleton**
-- is a software design pattern that restricts the instantiation of a class to one object.
+- is a software design pattern that <mark class="hltr-g">restricts the instantiation of a class to one object</mark>.
 
 **Builder**
--  lets you construct complex objects step by step.
+- <mark class="hltr-g">lets you construct complex objects step by step</mark>.
 - allows you to produce different types and representations of an object using the same construction code.
 
 ---

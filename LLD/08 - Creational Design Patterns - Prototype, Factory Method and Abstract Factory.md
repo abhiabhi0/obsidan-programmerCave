@@ -1,7 +1,7 @@
 **Prototype**
-- is a creational design pattern that can be used to create objects that are similar to each other. 
-- The pattern is used to avoid the cost of creating new objects by cloning an
-existing object and avoiding dependencies on the class of the object that needs to be cloned.
+- is a creational design pattern that can be <mark class="hltr-g">used to create objects that are similar to each other</mark>. 
+- The pattern is used to avoid the cost of <mark class="hltr-o">creating new objects by cloning an</mark>
+<mark class="hltr-o">existing object and avoiding dependencies on the class of the object that needs to be cloned</mark>.
 
 **Factory**
 - is a creational design pattern that can be used to create objects without specifying the exact class of the object that will be created. 
