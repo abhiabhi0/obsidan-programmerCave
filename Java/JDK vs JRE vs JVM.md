@@ -1,7 +1,7 @@
 In the context of Java development, the terms JDK, JRE, and JVM are crucial, each serving a distinct purpose within the Java ecosystem. Here's a breakdown of each term:
 
 ### 1. **JDK (Java Development Kit)**
-The JDK is a comprehensive software development kit provided by Oracle and other vendors, essential for developing Java applications. It includes:
+The JDK is a <mark class="hltr-b">comprehensive software development kit</mark> provided by Oracle and other vendors, essential for developing Java applications. It includes:
 
 - **Java Compiler (javac)**: Converts Java source code (.java files) into bytecode (.class files).
 - **Java Standard Library**: A set of pre-written classes and functions used in Java programs.
@@ -12,7 +12,7 @@ The JDK is a comprehensive software development kit provided by Oracle and other
 In essence, the JDK provides all the tools necessary for Java development, from writing and compiling code to debugging and packaging applications.
 
 ### 2. **JRE (Java Runtime Environment)**
-The JRE is a subset of the JDK, focusing on what is needed to run Java applications. It includes:
+The JRE is a <mark class="hltr-b">subset of the JDK, focusing on what is needed to run Java applications</mark>. It includes:
 
 - **JVM (Java Virtual Machine)**: Executes Java bytecode on any platform, enabling Java's "write once, run anywhere" capability.
 - **Java Class Libraries**: Essential libraries for running Java programs.
@@ -21,7 +21,7 @@ The JRE is a subset of the JDK, focusing on what is needed to run Java applicati
 The JRE is used by end-users who want to run Java applications but do not need to develop them. It lacks development tools like the compiler and debugger found in the JDK.
 
 ### 3. **JVM (Java Virtual Machine)**
-The JVM is a crucial part of both the JDK and JRE. It is an abstract machine that:
+The JVM is a crucial part of both the JDK and JRE. It is an <mark class="hltr-b">abstract machine that</mark>:
 
 - **Executes Java Bytecode**: The JVM interprets or compiles bytecode into machine code, making the program platform-independent.
 - **Memory Management**: Manages memory through a sophisticated garbage collection mechanism.

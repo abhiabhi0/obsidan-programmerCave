@@ -1,9 +1,9 @@
-In the context of Java and software development, **IoC** stands for **Inversion of Control**. It is a design principle used to decouple the execution of tasks from their implementation. This principle is fundamental in achieving a more modular, testable, and maintainable codebase. IoC is often implemented through frameworks such as Spring, which provide the infrastructure for managing dependencies and configuring application components.
+In the context of Java and software development, **IoC** stands for **Inversion of Control**. It is a <mark class="hltr-g">design principle used to decouple the execution of tasks from their implementation</mark>. This principle is fundamental in <mark class="hltr-o">achieving a more modular, testable, and maintainable codebase</mark>. IoC is often implemented through frameworks such as Spring, which provide the infrastructure for managing dependencies and configuring application components.
 
 ### Key Concepts of IoC
 
 1. **Dependency Injection (DI)**:
-   - **Dependency Injection** is the most common way to implement IoC. It involves providing an object with its dependencies rather than allowing the object to create them itself. Dependencies are injected into the object by an external entity (like a framework or a container).
+   - **Dependency Injection** is the most common way to implement IoC. It <mark class="hltr-g">involves providing an object with its dependencies rather than allowing the object to create them itself</mark>. Dependencies are injected into the object by an external entity (like a framework or a container).
    - **Types of Dependency Injection**:
      - **Constructor Injection**: Dependencies are provided through the class constructor.
      - **Setter Injection**: Dependencies are provided through setter methods.
@@ -13,7 +13,7 @@ In the context of Java and software development, **IoC** stands for **Inversion 
    - Another way to achieve IoC is the **Service Locator Pattern**, where objects request their dependencies from a central registry or locator. This pattern, however, is less favored compared to DI due to its complexity and tight coupling to the service locator.
 
 3. **Event-Driven Architectures**:
-   - IoC can also be seen in event-driven architectures where components communicate via events. Components are loosely coupled since they only respond to specific events without knowing the details of event producers.
+   - <mark class="hltr-b">IoC can also be seen in event-driven architectures where components communicate via events. Components are loosely coupled since they only respond to specific events without knowing the details of event producers</mark>.
 
 ### Benefits of IoC
 
