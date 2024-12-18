@@ -58,6 +58,7 @@
     - Implemented error handling for message deserialization issues.
     - Used dead-letter queues (DLQs) to store messages that couldn’t be processed.
     - Added retries for transient failures like database connectivity issues.
+    - Ref - [[03 - How the Consumer Handled Failures Gracefully]]
 
 ---
 
