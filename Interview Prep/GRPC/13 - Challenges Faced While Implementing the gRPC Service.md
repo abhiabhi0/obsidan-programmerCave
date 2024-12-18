@@ -5,7 +5,7 @@
 - **Details:**
     - **Versioning:** As the application evolved, new fields and methods needed to be added without breaking existing clients. Ensuring backward compatibility while evolving the schema was tricky.
     - **Default Values:** Fields added later in `.proto` could cause issues if clients didn’t handle default values correctly.
-    - **Cross-Team Collaboration:** Multiple teams consuming the service required clear documentation and alignment on schema updates.
+    - **Cross-Team Collaboration:** <mark class="hltr-g">Multiple teams consuming the service required clear documentation and alignment on schema updates.</mark>
 
 ---
 
@@ -93,9 +93,3 @@
 - **Details:**
     - Ensured messages produced by the gRPC service adhered to Kafka topic schemas.
     - Handled failures gracefully when the Kafka broker was unavailable, implementing fallback mechanisms to queue messages.
-
----
-
-### **Takeaways**
-
-These challenges highlighted the importance of good design, rigorous testing, and careful coordination when building and deploying gRPC services in a production environment. Each challenge was an opportunity to enhance the system's resilience and reliability.
