@@ -1,6 +1,6 @@
-The "diamond problem" is a term often associated with multiple inheritance in object-oriented programming languages. It arises when a class inherits from two or more classes that have a common ancestor. This can lead to ambiguity in the inheritance hierarchy, particularly when the common ancestor's methods or attributes are overridden or have conflicting implementations.
+The "diamond problem" is a term often associated with multiple inheritance in object-oriented programming languages. It arises <mark class="hltr-b">when a class inherits from two or more classes that have a common ancestor</mark>. This can lead to ambiguity in the inheritance hierarchy, particularly when the common ancestor's methods or attributes are overridden or have conflicting implementations.
 
-In Java, the diamond problem does not occur with classes, because Java does not support multiple inheritance of classes. However, it can occur with interfaces due to the ability to implement multiple interfaces.
+<mark class="hltr-g">In Java, the diamond problem does not occur with classes, because Java does not support multiple inheritance of classes</mark>. However, it <mark class="hltr-o">can occur with interfaces due to the ability to implement multiple interfaces</mark>.
 
 Consider the following scenario:
 
