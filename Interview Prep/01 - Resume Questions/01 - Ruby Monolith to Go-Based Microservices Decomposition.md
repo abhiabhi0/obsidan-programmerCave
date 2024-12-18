@@ -43,6 +43,8 @@
     - Utilized caching layers to reduce frequent database lookups across services.
 
 #### **7. Can you describe a specific service you worked on during the decomposition?**
+- I was working in plus team, so I have made changes from Plus team's perspective in other teams repo.
+- We wanted to show different plus upsell based on user's subscription status, the current amount of basket etc..
 
 #### **8. How did you ensure collaboration across cross-functional teams?**
 
