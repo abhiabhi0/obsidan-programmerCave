@@ -1,8 +1,5 @@
 **6. Why did you choose Kafka for message processing?**
-
-- **Answer:**
-    - Kafka provides high throughput, low latency, and durability, making it ideal for real-time message streaming.
-    - It supports partitioning for horizontal scalability, ensuring messages can be processed in parallel.
+[[01 - Why Kafka Was Chosen for Message Processing]]
 
 ---
 
