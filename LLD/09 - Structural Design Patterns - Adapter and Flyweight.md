@@ -1,5 +1,5 @@
 **Structural Patterns**
-- design patterns that ease the design by identifying a simple way to realize relationships between entities.
+- design patterns that <mark class="hltr-b">ease the design by identifying a simple way to realize relationships between entities</mark>.
 - concerned with how classes and objects are composed to form larger structures.
 
 **Adapter**
