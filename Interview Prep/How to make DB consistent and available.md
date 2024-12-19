@@ -82,8 +82,9 @@ The **CAP theorem** states that in a distributed system, you can only guarantee 
 - **SQL Databases**: Prioritize consistency over availability.
 - **NoSQL Databases**: Often prioritize availability and partition tolerance over immediate consistency (eventual consistency).
 
----
+Ref: [[CAP Theorem]]
 
+---
 ### **Ensuring Both Consistency and Availability**
 
 1. **Strongly Consistent Systems**:
@@ -128,7 +129,3 @@ The **CAP theorem** states that in a distributed system, you can only guarantee 
 3. **"How do eventual consistency systems ensure data accuracy?"**
     
     - Use techniques like vector clocks, conflict-free replicated data types (CRDTs), or timestamp-based reconciliation.
-
----
-
-Let me know if you'd like more examples or further clarification!
