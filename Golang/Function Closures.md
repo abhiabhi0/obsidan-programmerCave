@@ -98,5 +98,3 @@ func main() {
 1. When you need to maintain state between function calls.
 2. For implementing callback-like behavior or encapsulated logic.
 3. For creating factory functions or generating unique functionality.
-
-Would you like me to add this to your Obsidian notes with examples?
