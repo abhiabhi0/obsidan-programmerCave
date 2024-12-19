@@ -328,13 +328,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Context.md",
+                "file": "Golang/Handle Memory leak in Go.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Context"
+              "title": "Handle Memory leak in Go"
             }
           },
           {
@@ -650,10 +650,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Golang/Context.md"
+                "file": "Golang/Handle Memory leak in Go.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Context"
+              "title": "Outline of Handle Memory leak in Go"
             }
           },
           {
@@ -662,7 +662,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Golang/Context.md",
+                "file": "Golang/Handle Memory leak in Go.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -672,7 +672,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Context"
+              "title": "Backlinks for Handle Memory leak in Go"
             }
           },
           {
@@ -681,12 +681,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Golang/Context.md",
+                "file": "Golang/Handle Memory leak in Go.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Context"
+              "title": "Outgoing links from Handle Memory leak in Go"
             }
           }
         ]
@@ -706,8 +706,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "846cf53ff19fec75",
+  "active": "2da4353472dcd09b",
   "lastOpenFiles": [
+    "Golang/Context.md",
+    "Golang/Handle Memory leak in Go.md",
     "Interview Prep/What happens when you type a URL into your browser.md",
     "Interview Prep/Microservice Architecture/Improve API performance.md",
     "Interview Prep/Types of load balancing algorithms.md",
@@ -733,8 +735,6 @@
     "Java/String.md",
     "Java/IOC.md",
     "Java/Interfaces.md",
-    "Java/Find even number in list using Stream API.md",
-    "Java/Features of Java 8.md",
     "Interview Prep/Kafka",
     "Interview Prep/01 - Resume Questions",
     "Interview Prep/GRPC",
