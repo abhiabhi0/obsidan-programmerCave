@@ -1,13 +1,12 @@
-| Index | SQL                                                                                                  | NoSQL                                                                                                                                                       |
-| ----- | ---------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1)    | Databases are categorized as Relational Database Management System (RDBMS).                          | NoSQL databases are categorized as Non-relational or distributed database system.                                                                           |
-| 2)    | SQL databases have fixed or static or predefined schema.                                             | NoSQL databases have dynamic schema.                                                                                                                        |
-| 3)    | SQL databases display data in form of tables so it is known as table-based database.                 | NoSQL databases display data as collection of key-value pair, documents, graph databases or wide-column stores.                                             |
-| 4)    | SQL databases are vertically scalable.                                                               | NoSQL databases are horizontally scalable.                                                                                                                  |
-| 5)    | SQL databases use a powerful language "Structured Query Language" to define and manipulate the data. | In NoSQL databases, collection of documents are used to query the data. It is also called unstructured query language. It varies from database to database. |
-| 6)    | SQL databases are best suited for complex queries.                                                   | NoSQL databases are not so good for complex queries because these are not as powerful as SQL queries.                                                       |
-| 7)    | SQL databases are not best suited for hierarchical data storage.                                     | NoSQL databases are best suited for hierarchical data storage.                                                                                              |
-| 8)    | MySQL, Oracle, Sqlite, PostgreSQL and MS-SQL etc. are the example of SQL database.                   | MongoDB, BigTable, Redis, RavenDB, Cassandra, Hbase, Neo4j, CouchDB etc. are the example of nosql database                                                  |
+| Index | SQL                                                                                                        | NoSQL                                                                                                                                                       |
+| ----- | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1)    | Databases are categorized as Relational Database Management System (RDBMS).                                | NoSQL databases are categorized as Non-relational or distributed database system.                                                                           |
+| 2)    | SQL databases have <mark class="hltr-g">fixed or static or predefined schema</mark>.                       | NoSQL databases have dynamic schema.                                                                                                                        |
+| 3)    | SQL databases display data in form of tables so it is known as table-based database.                       | NoSQL databases <mark class="hltr-o">display data as collection of key-value pair, documents, graph databases or wide-column stores</mark>.                 |
+| 4)    | SQL databases are <mark class="hltr-g">vertically scalable</mark>.(adding more resources to single server) | NoSQL databases are horizontally scalable.                                                                                                                  |
+| 5)    | SQL databases use a powerful language "Structured Query Language" to define and manipulate the data.       | In NoSQL databases, collection of documents are used to query the data. It is also called unstructured query language. It varies from database to database. |
+| 6)    | SQL databases are <mark class="hltr-g">best suited for complex queries</mark>.                             | NoSQL databases are not so good for complex queries because these are not as powerful as SQL queries.                                                       |
+| 7)    | MySQL, Oracle, Sqlite, PostgreSQL and MS-SQL etc. are the example of SQL database.                         | MongoDB, BigTable, Redis, RavenDB, Cassandra, Hbase, Neo4j, CouchDB etc. are the example of nosql database                                                  |
 Here's a concise summary to help you answer "SQL vs NoSQL" in interviews:
 
 ---
@@ -19,7 +18,7 @@ Here's a concise summary to help you answer "SQL vs NoSQL" in interviews:
 3. **Query Language**: Uses SQL (Structured Query Language) for complex queries.
 4. **ACID Compliance**: Ensures high consistency (Atomicity, Consistency, Isolation, Durability).
 5. **Scaling**: Vertically scalable (e.g., adding more CPU/RAM to one server).
-6. **Use Cases**: Best for transactional systems (e.g., banking, e-commerce).
+6. **Use Cases**: <mark class="hltr-b">Best for transactional systems</mark> (e.g., banking, e-commerce).
 
 ---
 
@@ -30,19 +29,7 @@ Here's a concise summary to help you answer "SQL vs NoSQL" in interviews:
 3. **Query Language**: Flexible, often uses APIs or native query methods.
 4. **BASE Model**: Focuses on availability and partition tolerance (eventual consistency).
 5. **Scaling**: Horizontally scalable (e.g., adding more servers to a cluster).
-6. **Use Cases**: Real-time analytics, IoT, and applications with varying data structures (e.g., social media).
-
----
-
-### **Key Differences**
-
-|Feature|SQL|NoSQL|
-|---|---|---|
-|Schema|Fixed schema|Flexible schema|
-|Consistency|Strong (ACID)|Eventual (BASE)|
-|Scalability|Vertical|Horizontal|
-|Querying|SQL|NoSQL APIs/Queries|
-|Best For|Transactional systems|Big data and unstructured data|
+6. **Use Cases**: <mark class="hltr-b">Real-time analytics</mark>, IoT, and applications with varying data structures (e.g., social media).
 
 ---
 
