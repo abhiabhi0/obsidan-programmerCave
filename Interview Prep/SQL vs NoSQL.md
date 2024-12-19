@@ -110,7 +110,7 @@ BASE stands for **Basically Available, Soft state, Eventually consistent**:
     - Cost-effective: Commodity servers are cheaper than high-end hardware.
     - High fault tolerance and redundancy.
 - **Disadvantages**:
-    - Complex to manage (data sharding, replica synchronization).
+    - <mark class="hltr-g">Complex to manage (data sharding, replica synchronization</mark>).
     - May lead to eventual consistency issues.
 
 ---
