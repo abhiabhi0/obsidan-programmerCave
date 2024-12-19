@@ -9,7 +9,7 @@ Java String literal is created by using double quotes. For Example:
 
 1. String s="welcome";  
 
-Each time you create a string literal, the JVM checks the "string constant pool" first. If the string already exists in the pool, a reference to the pooled instance is returned. If the string doesn't exist in the pool, a new string instance is created and placed in the pool. For example:
+Each time you create a string literal, the <mark class="hltr-o">JVM checks the "string constant pool" first</mark>. If the string already exists in the pool, a reference to the pooled instance is returned. If the string doesn't exist in the pool, a new string instance is created and placed in the pool. For example:
 
 1. String s1="Welcome";  
 2. String s2="Welcome";//It doesn't create a new instance
@@ -26,7 +26,7 @@ To make Java more memory efficient (because no new objects are created if it exi
 
 1. String s=new String("Welcome");//creates two objects and one reference variable  
 
-In such case, [JVM](https://www.javatpoint.com/jvm-java-virtual-machine) will create a new string object in normal (non-pool) heap memory, and the literal "Welcome" will be placed in the string constant pool. The variable s will refer to the object in a heap (non-pool).
+In such case, [JVM](https://www.javatpoint.com/jvm-java-virtual-machine) will <mark class="hltr-o">create a new string object in normal (non-pool) heap memory, and the literal "Welcome" will be placed in the string constant pool.</mark> The variable s will refer to the object in a heap (non-pool).
 
 ### Immutable
 
@@ -69,9 +69,9 @@ As the String object is immutable we don't have to take care of the synchronizat
 The immutability of String helps to minimize the usage in the heap memory. When we try to declare a new String object, the JVM checks whether the value already exists in the String pool or not. If it exists, the same value is assigned to the new object. This feature allows Java to use the heap space efficiently.
 
 ### StringBuffer & StringBuilder
-Since String is immutable in Java, whenever we do String manipulation like concatenation, substring, etc. it generates a new String and discards the older String for garbage collection. These are heavy operations and generate a lot of garbage in heap. So Java has provided StringBuffer and StringBuilder classes that should be used for String manipulation. StringBuffer and StringBuilder are mutable objects in Java. They provide append(), insert(), delete(), and substring() methods for String manipulation.
+Since String is immutable in Java, whenever we do String manipulation like concatenation, substring, etc. it generates a new String and discards the older String for garbage collection. These are heavy operations and generate a lot of garbage in heap. So Java has provided StringBuffer and StringBuilder classes that should be used for String manipulation. <mark class="hltr-g">StringBuffer and StringBuilder are mutable objects in Java.</mark> They provide append(), insert(), delete(), and substring() methods for String manipulation.
 
-StringBuffer was the only choice for String manipulation until Java 1.4. But, it has one disadvantage that all of its public methods are synchronized. StringBuffer provides Thread safety but at a performance cost. In most of the scenarios, we don’t use String in a multithreaded environment. So Java 1.5 introduced a new class StringBuilder, which is similar to StringBuffer except for thread-safety and synchronization.
+StringBuffer was the only choice for String manipulation until Java 1.4. But, it has one disadvantage that all of its public methods are synchronized. <mark class="hltr-o">StringBuffer provides Thread safety but at a performance cost.</mark> In most of the scenarios, we don’t use String in a multithreaded environment. So Java 1.5 introduced a new class <mark class="hltr-o">StringBuilder, which is similar to StringBuffer except for thread-safety and synchronization</mark>.
 
 If you are in a single-threaded environment or don’t care about thread safety, you should use StringBuilder. Otherwise, use StringBuffer for thread-safe operations.
 

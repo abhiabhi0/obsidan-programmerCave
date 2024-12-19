@@ -29,7 +29,7 @@ Spring Boot is an extension of the Spring Framework that simplifies the setup an
 5. **Command-Line Interface (CLI)**: Allows for rapid prototyping with Groovy scripts.
 
 #### Usage
-Spring Boot is used to quickly bootstrap and develop Spring-based applications with minimal configuration. It is ideal for microservices, RESTful APIs, and other types of web applications. Spring Boot applications typically require far less setup and boilerplate code compared to traditional Spring applications.
+<mark class="hltr-g">Spring Boot is used to quickly bootstrap and develop Spring-based applications with minimal configuration</mark>. It is ideal for microservices, RESTful APIs, and other types of web applications. Spring Boot applications typically <mark class="hltr-o">require far less setup and boilerplate code compared to traditional Spring applications.</mark>
 
 ### Comparison
 

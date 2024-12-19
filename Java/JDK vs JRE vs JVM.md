@@ -23,7 +23,7 @@ The JRE is used by end-users who want to run Java applications but do not need t
 ### 3. **JVM (Java Virtual Machine)**
 The JVM is a crucial part of both the JDK and JRE. It is an <mark class="hltr-b">abstract machine that</mark>:
 
-- **Executes Java Bytecode**: The JVM interprets or compiles bytecode into machine code, making the program platform-independent.
+- **Executes Java Bytecode**: The <mark class="hltr-g">JVM interprets or compiles bytecode into machine code, making the program platform-independent.</mark>
 - **Memory Management**: Manages memory through a sophisticated garbage collection mechanism.
 - **Security**: Provides a secure execution environment for Java programs by enforcing runtime constraints.
 
