@@ -22,7 +22,7 @@ Consistency means the <mark class="hltr-b">database is always in a valid state w
     - Use transactions for operations that span multiple queries. This ensures partial updates don't corrupt the database.
 5. **Distributed Databases**:
     
-    - Employ distributed transaction protocols like **2PC (Two-Phase Commit)** to maintain consistency across nodes.
+    - Employ distributed transaction protocols like **2PC (Two-Phase Commit)** to maintain consistency across nodes. [[2PC (Two-Phase Commit)]]
 6. **Eventual Consistency (for NoSQL/Distributed Systems)**:
     
     - Some systems prioritize availability and partition tolerance over immediate consistency.
