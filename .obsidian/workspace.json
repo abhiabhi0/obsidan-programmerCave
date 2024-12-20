@@ -163,13 +163,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Goroutines vs Threads.md",
+                "file": "Golang/Internal Details of Goroutines in Go.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Goroutines vs Threads"
+              "title": "Internal Details of Goroutines in Go"
             }
           }
         ],
@@ -245,10 +245,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Golang/Goroutines vs Threads.md"
+                "file": "Golang/Internal Details of Goroutines in Go.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Goroutines vs Threads"
+              "title": "Outline of Internal Details of Goroutines in Go"
             }
           },
           {
@@ -303,8 +303,9 @@
   },
   "active": "0be7470d5fba18e9",
   "lastOpenFiles": [
-    "Golang/Concurrency vs Parallelism.md",
     "Golang/Goroutines vs Threads.md",
+    "Golang/Internal Details of Goroutines in Go.md",
+    "Golang/Concurrency vs Parallelism.md",
     "Interview Prep/How to deploy in production such that background jobs are not stopped.md",
     "System Design/Design Image chat application.md",
     "Interview Prep/Microservice Architecture/Reduce DB read timeout.md",
@@ -328,7 +329,6 @@
     "Golang/Interface Embedding.md",
     "Golang/Interface example to select game for students.md",
     "Golang/Limit Goroutines.md",
-    "Golang/Map Internals.md",
     "Interview Prep/Microservice Architecture",
     "Interview Prep/Kafka",
     "Interview Prep/01 - Resume Questions",
