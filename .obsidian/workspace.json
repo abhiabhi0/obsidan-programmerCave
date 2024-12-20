@@ -133,13 +133,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLD/10 - Structural Design Patterns - Decorator and Facade.md",
+                "file": "System Design/Design Image chat application.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "10 - Structural Design Patterns - Decorator and Facade"
+              "title": "Design Image chat application"
             }
           }
         ],
@@ -215,10 +215,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLD/10 - Structural Design Patterns - Decorator and Facade.md"
+                "file": "System Design/Design Image chat application.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 10 - Structural Design Patterns - Decorator and Facade"
+              "title": "Outline of Design Image chat application"
             }
           },
           {
@@ -273,6 +273,9 @@
   },
   "active": "276a002690d3d10d",
   "lastOpenFiles": [
+    "Interview Prep/Microservice Architecture/Reduce DB read timeout.md",
+    "System Design/Design Image chat application.md",
+    "LLD/10 - Structural Design Patterns - Decorator and Facade.md",
     "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
     "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
     "System Design/TrueCaller.md",
@@ -296,9 +299,6 @@
     "Golang/Thread Safe Map Implementation.md",
     "Golang/Thread Safe Stack Implementation.md",
     "Golang/Use of empty struct.md",
-    "Golang/Type conversion.md",
-    "Golang/Recover from panic in Go.md",
-    "Golang/Reading from Console.md",
     "Interview Prep/Microservice Architecture",
     "Interview Prep/Kafka",
     "Interview Prep/01 - Resume Questions",
