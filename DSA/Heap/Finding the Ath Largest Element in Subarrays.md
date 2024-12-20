@@ -2,12 +2,12 @@
 
 1. **Problem Description**:
     
-    - For every subarray starting from index 1 to each index ii (1-based indexing), find the AAth largest element.
-    - If the subarray length <A< A, return `-1`.
+    - For every subarray starting from index 1 to each index i (1-based indexing), find the Ath largest element.
+    - If the subarray length <A, return `-1`.
 2. **Approach**:
     
-    - Use a **Min Heap** to maintain the AA largest elements in the current subarray.
-    - The **top of the min heap** will always give the AAth largest element.
+    - Use a **Min Heap** to maintain the A largest elements in the current subarray.
+    - The **top of the min heap** will always give the Ath largest element.
     - Ensure the size of the heap remains AA throughout.
 3. **Steps**:
     
@@ -25,7 +25,7 @@
 
 #### Input:
 
-Array = [4, 6, 2, 3, 7, 5, 1, 8], A=3A = 3
+Array = [4, 6, 2, 3, 7, 5, 1, 8], A=3
 
 #### Process:
 
