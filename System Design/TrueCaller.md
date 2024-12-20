@@ -8,7 +8,7 @@ Come up with application that can perform
 
 ### Use cases
 
-[](https://github.com/gopalbala/truecaller#use-cases)
+[ref](https://github.com/gopalbala/truecaller#use-cases)
 
 1. Users should be able to register - so they need an Account, means Account class
 2. Users should be able to add contacts
