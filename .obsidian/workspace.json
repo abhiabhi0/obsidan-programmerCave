@@ -163,17 +163,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Internal Details of Goroutines in Go.md",
+                "file": "Golang/For range vs For i on string.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Internal Details of Goroutines in Go"
+              "title": "For range vs For i on string"
+            }
+          },
+          {
+            "id": "9c0b5529fc2f9ea8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Golang/Ping-Pong Example.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ping-Pong Example"
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -245,10 +260,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Golang/Internal Details of Goroutines in Go.md"
+                "file": "Golang/Ping-Pong Example.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Internal Details of Goroutines in Go"
+              "title": "Outline of Ping-Pong Example"
             }
           },
           {
@@ -301,10 +316,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "0be7470d5fba18e9",
+  "active": "9c0b5529fc2f9ea8",
   "lastOpenFiles": [
-    "Golang/Goroutines vs Threads.md",
+    "Golang/For range vs For i on string.md",
+    "Golang/Reverse and IsPalindrome for non-english string.md",
+    "Golang/String and Rune.md",
     "Golang/Internal Details of Goroutines in Go.md",
+    "Golang/Goroutines vs Threads.md",
     "Golang/Concurrency vs Parallelism.md",
     "Interview Prep/How to deploy in production such that background jobs are not stopped.md",
     "System Design/Design Image chat application.md",
@@ -326,9 +344,6 @@
     "Golang/Goroutine vs main().md",
     "Golang/Handle Memory leak in Go.md",
     "Golang/Interface.md",
-    "Golang/Interface Embedding.md",
-    "Golang/Interface example to select game for students.md",
-    "Golang/Limit Goroutines.md",
     "Interview Prep/Microservice Architecture",
     "Interview Prep/Kafka",
     "Interview Prep/01 - Resume Questions",
