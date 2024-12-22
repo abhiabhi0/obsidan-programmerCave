@@ -1,5 +1,7 @@
 A [load balancer](https://www.cloudflare.com/load-balancing/) is a software or hardware device that keeps any one server from becoming overloaded. A load balancing algorithm is the logic that a load balancer uses to distribute network traffic between servers (an algorithm is a set of predefined rules).
 
+![[{75CD20CE-7902-4C4D-952E-4F9EE2F1A76E}.png]]
+
 #### Dynamic load balancing algorithms
 
 - _Least connection:_ Checks which servers have the fewest connections open at the time and sends traffic to those servers. This assumes all connections require roughly equal processing power.
