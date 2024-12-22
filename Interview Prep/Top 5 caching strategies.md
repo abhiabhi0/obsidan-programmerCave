@@ -1,3 +1,5 @@
+![[{B91EFF56-5391-4176-951B-9B0C64048469}.png]]
+
 ### **1. Cache-Aside (Lazy Loading)**
 
 - **How it works**:
