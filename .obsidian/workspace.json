@@ -113,6 +113,21 @@
             }
           },
           {
+            "id": "e82828d7e3caf235",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview Prep/DB/Internals of Indexing.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Internals of Indexing"
+            }
+          },
+          {
             "id": "336c7e11b18ef64e",
             "type": "leaf",
             "state": {
@@ -178,17 +193,47 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Ping-Pong Example.md",
+                "file": "DSA/Sorting/Merge Sort.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ping-Pong Example"
+              "title": "Merge Sort"
+            }
+          },
+          {
+            "id": "5f6ede511c239983",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Golang/What is Middleware.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "What is Middleware"
+            }
+          },
+          {
+            "id": "cbdfd07071ec76f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview Prep/SQL Queries/Find the count of employees whose number of leaves in the last month is greater than 5.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Find the count of employees whose number of leaves in the last month is greater than 5"
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 14
       }
     ],
     "direction": "vertical"
@@ -260,10 +305,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Golang/Ping-Pong Example.md"
+                "file": "Interview Prep/SQL Queries/Find the count of employees whose number of leaves in the last month is greater than 5.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Ping-Pong Example"
+              "title": "Outline of Find the count of employees whose number of leaves in the last month is greater than 5"
             }
           },
           {
@@ -316,8 +361,27 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "9c0b5529fc2f9ea8",
+  "active": "cbdfd07071ec76f5",
   "lastOpenFiles": [
+    "Interview Prep/Untitled.md",
+    "Interview Prep/SQL Queries/Find the count of employees whose number of leaves in the last month is greater than 5.md",
+    "Interview Prep/SQL Queries",
+    "Interview Prep/Go vs. Python for REST APIs.md",
+    "Interview Prep/Microservice Architecture/JSON Web Token (JWT).md",
+    "Golang/What is Middleware.md",
+    "Interview Prep/DB/Types of Indexing in Databases.md",
+    "Interview Prep/DB/Internals of Indexing.md",
+    "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
+    "System Design/TrueCaller.md",
+    "System Design/Snake and Ladder.md",
+    "System Design/LRU Cache.md",
+    "System Design/Bill Sharing.md",
+    "DSA/Heap/Finding the Ath Largest Element in Subarrays.md",
+    "DSA/Heap/Converting an Array into a Min Heap.md",
+    "Interview Prep/DB",
+    "DSA/Sorting/Merge Sort.md",
+    "DSA/Sorting/Bubble Sort.md",
+    "Golang/Ping-Pong Example.md",
     "Golang/For range vs For i on string.md",
     "Golang/Reverse and IsPalindrome for non-english string.md",
     "Golang/String and Rune.md",
@@ -327,23 +391,6 @@
     "Interview Prep/How to deploy in production such that background jobs are not stopped.md",
     "System Design/Design Image chat application.md",
     "Interview Prep/Microservice Architecture/Reduce DB read timeout.md",
-    "LLD/10 - Structural Design Patterns - Decorator and Facade.md",
-    "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
-    "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
-    "System Design/TrueCaller.md",
-    "System Design/Snake and Ladder.md",
-    "System Design/LRU Cache.md",
-    "System Design/Bill Sharing.md",
-    "DSA/Heap/Finding the Ath Largest Element in Subarrays.md",
-    "DSA/Heap/Converting an Array into a Min Heap.md",
-    "Golang/Defer, Panic, and Recover.md",
-    "Golang/Generics.md",
-    "Golang/Go runtime.md",
-    "Golang/Go Signals.md",
-    "Golang/Go’s Static Typing and Single Binary Deployment.md",
-    "Golang/Goroutine vs main().md",
-    "Golang/Handle Memory leak in Go.md",
-    "Golang/Interface.md",
     "Interview Prep/Microservice Architecture",
     "Interview Prep/Kafka",
     "Interview Prep/01 - Resume Questions",
@@ -352,8 +399,6 @@
     "DSA/Hashing",
     "DSA/Array",
     "DSA/Two Pointers",
-    "DSA/Binary Search",
-    "DSA/Heap",
     "Pasted image 20240603131241.png",
     "Pasted image 20240604102843.png",
     "Pasted image 20240622221813.png",

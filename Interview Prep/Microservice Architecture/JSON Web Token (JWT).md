@@ -1,10 +1,7 @@
-![[{FB486C91-55BB-4F7F-84C2-B312B5B4ABA2}.png]]
-
-
 ### What is JWT?
 
 - JSON Web Token (JWT) is an open standard (RFC 7519) for securely transmitting information between parties as a JSON object.
-- The token is **self-contained**, meaning it contains all the information needed to verify its authenticity.
+- The token is <mark class="hltr-g">self-contained</mark>, meaning it contains all the information needed to verify its authenticity.
 
 ---
 
@@ -12,7 +9,7 @@
 JWT consists of three parts, separated by dots (`.`):
 
 1. **Header**:
-    - Contains metadata about the token, including the type (JWT) and the signing algorithm (e.g., HMAC, RSA).
+    - Contains <mark class="hltr-o">metadata</mark> about the token, including the type (JWT) and the <mark class="hltr-o">signing algorithm</mark> (e.g., HMAC, RSA).
     - Example:
         ```json
         {
@@ -22,7 +19,7 @@ JWT consists of three parts, separated by dots (`.`):
         ```
         
 2. **Payload**:
-    - Contains the claims, which are statements about an entity (e.g., user) and additional metadata.
+    - Contains the <mark class="hltr-g">claims</mark>, which are statements about an entity (e.g., user) and additional metadata.
     - Claims can be:
         - **Registered Claims**: Predefined claims (e.g., `iss`, `exp`, `sub`, `aud`).
         - **Public Claims**: Custom claims defined by the user.
@@ -38,7 +35,7 @@ JWT consists of three parts, separated by dots (`.`):
         
 3. **Signature**:
     - Ensures the integrity of the token and that it hasn't been tampered with.
-    - Created by encoding the header and payload and signing them with a secret or private key.
+    - <mark class="hltr-g">Created by encoding the header and payload and signing them with a secret or private key</mark>.
     - Example:
         ```
         HMACSHA256(
