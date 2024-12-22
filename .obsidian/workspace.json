@@ -223,17 +223,32 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/SQL Queries/Find the count of employees whose number of leaves in the last month is greater than 5.md",
+                "file": "Golang/Garbage Collector in Go.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Find the count of employees whose number of leaves in the last month is greater than 5"
+              "title": "Garbage Collector in Go"
+            }
+          },
+          {
+            "id": "a302b2efb6c51b49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview Prep/DB/SQL vs NoSQL.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SQL vs NoSQL"
             }
           }
         ],
-        "currentTab": 14
+        "currentTab": 15
       }
     ],
     "direction": "vertical"
@@ -305,10 +320,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interview Prep/SQL Queries/Find the count of employees whose number of leaves in the last month is greater than 5.md"
+                "file": "Interview Prep/DB/SQL vs NoSQL.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Find the count of employees whose number of leaves in the last month is greater than 5"
+              "title": "Outline of SQL vs NoSQL"
             }
           },
           {
@@ -361,10 +376,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cbdfd07071ec76f5",
+  "active": "b4904ce9751ea41b",
   "lastOpenFiles": [
-    "Interview Prep/Untitled.md",
+    "Golang/Garbage Collector in Go.md",
+    "Golang/reflect package.md",
+    "Golang/atomic package.md",
+    "Golang/sync.Pool in Go.md",
     "Interview Prep/SQL Queries/Find the count of employees whose number of leaves in the last month is greater than 5.md",
+    "Interview Prep/Untitled.md",
     "Interview Prep/SQL Queries",
     "Interview Prep/Go vs. Python for REST APIs.md",
     "Interview Prep/Microservice Architecture/JSON Web Token (JWT).md",
@@ -387,10 +406,6 @@
     "Golang/String and Rune.md",
     "Golang/Internal Details of Goroutines in Go.md",
     "Golang/Goroutines vs Threads.md",
-    "Golang/Concurrency vs Parallelism.md",
-    "Interview Prep/How to deploy in production such that background jobs are not stopped.md",
-    "System Design/Design Image chat application.md",
-    "Interview Prep/Microservice Architecture/Reduce DB read timeout.md",
     "Interview Prep/Microservice Architecture",
     "Interview Prep/Kafka",
     "Interview Prep/01 - Resume Questions",
