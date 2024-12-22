@@ -1,4 +1,4 @@
-In Go, the **context** package provides a way to pass deadlines, cancelation signals, and other request-scoped values across API boundaries and between processes. It is widely used in server-side applications to manage request lifecycles and resource control.
+In Go, the **context** package <mark class="hltr-g">provides a way to pass deadlines, cancelation signals, and other request-scoped values across API boundaries and between processes</mark>. It is widely used in server-side applications to manage request lifecycles and resource control.
 
 ---
 ### **Why is Context Needed?**
