@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System Design/Bill Sharing.md",
+                "file": "System Design/01 - Splitwise.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bill Sharing"
+              "title": "01 - Splitwise"
             }
           },
           {
@@ -323,7 +323,7 @@
             }
           }
         ],
-        "currentTab": 20
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -395,10 +395,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interview Prep/Why do we need message brokers.md"
+                "file": "System Design/01 - Splitwise.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Why do we need message brokers"
+              "title": "Outline of 01 - Splitwise"
             }
           },
           {
@@ -451,11 +451,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "66f6eb25968bd30b",
+  "active": "85a78b6eed9a3691",
   "lastOpenFiles": [
+    "Splitwise-design-diagram.png",
+    "System Design/Bill Sharing.md",
+    "System Design/01 - Splitwise.md",
+    "System Design/Design Image chat application.md",
+    "Interview Prep/Why do we need message brokers.md",
     "{9AB602BF-E198-43A8-9912-55E72504950A}.png",
     "Interview Prep/Top 7 Most-Used Distributed System Patterns.md",
-    "Interview Prep/Why do we need message brokers.md",
     "{149CA686-468A-41CD-BF7D-165CAE2A013D}.png",
     "Interview Prep/Where do we cache data.md",
     "{BDA84EDB-31D0-4325-B755-B132BF47513A}.png",
@@ -476,7 +480,6 @@
     "{1BB17EC0-9998-412E-9530-1A4456ECA5EB}.png",
     "Interview Prep/Cookies vs Session.md",
     "Interview Prep/API architecture styles.md",
-    "{A9660ADF-58E7-4F9D-9D9E-683F3CD6A9B9}.png",
     "Interview Prep/Microservice Architecture/18 Key Design Patterns Every Developer Should Know.md",
     "Interview Prep/Microservice Architecture/Best practices for developing microservices.md",
     "Kubernetes/API Gateway.md",
@@ -486,9 +489,6 @@
     "Interview Prep/How Do Go, C++, Java, Python Work.md",
     "Golang/Handle Memory leak in Go.md",
     "Golang/Context.md",
-    "Interview Prep/DB/SQL vs NoSQL.md",
-    "Golang/Garbage Collector in Go.md",
-    "Golang/reflect package.md",
     "Interview Prep/SQL Queries",
     "Interview Prep/DB",
     "Interview Prep/Microservice Architecture",
