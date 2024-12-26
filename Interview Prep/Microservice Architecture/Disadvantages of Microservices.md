@@ -1,0 +1,5 @@
+- Microservices has all the associated complexities of the distributed system.
+- There is a higher chance of failure during communication between different services.
+- Difficult to manage a large number of services.
+- The developer needs to solve the problem, such as network latency and load balancing.
+- Complex testing over a distributed environment.

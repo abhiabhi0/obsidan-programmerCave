@@ -4,159 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "65d330eecb2e3451",
-        "type": "split",
+        "id": "c48bf60e5478db02",
+        "type": "tabs",
         "children": [
           {
-            "id": "dc3596a6cebbafa1",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "5e9d98fe7aba16d4",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Golang/Ping-Pong Example.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Ping-Pong Example"
-                }
+            "id": "eef0debaadb548b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Golang/Goroutines Examples/Given a list of 100 random numbers, count how many are even and how many are odd using goroutines.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               },
-              {
-                "id": "0d00387869020fed",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Golang/Concurrency in Go.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Concurrency in Go"
-                }
-              },
-              {
-                "id": "10d87f87737a97ef",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Golang/Concurrency Patterns.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Concurrency Patterns"
-                }
-              },
-              {
-                "id": "4a18fe4f72610079",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Golang/Concurrency vs Parallelism.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Concurrency vs Parallelism"
-                }
-              },
-              {
-                "id": "a62ffc8fac1ed25e",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "Golang/Goroutines/Lifecycle and Scheduling of a Goroutine.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "Lifecycle and Scheduling of a Goroutine"
-                }
-              },
-              {
-                "id": "3fed1497aab2d449",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "System Design/01 - Splitwise.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "01 - Splitwise"
-                }
-              },
-              {
-                "id": "b006b82d909fabac",
-                "type": "leaf",
-                "state": {
-                  "type": "image",
-                  "state": {
-                    "file": "zimages/{1BB17EC0-9998-412E-9530-1A4456ECA5EB}.png"
-                  },
-                  "icon": "lucide-image",
-                  "title": "{1BB17EC0-9998-412E-9530-1A4456ECA5EB}"
-                },
-                "group": "664585b80508b6ae"
-              },
-              {
-                "id": "c74241c56842bfe8",
-                "type": "leaf",
-                "state": {
-                  "type": "image",
-                  "state": {
-                    "file": "zimages/{1BB17EC0-9998-412E-9530-1A4456ECA5EB}.png"
-                  },
-                  "icon": "lucide-image",
-                  "title": "{1BB17EC0-9998-412E-9530-1A4456ECA5EB}"
-                }
-              }
-            ],
-            "currentTab": 7
-          },
-          {
-            "id": "b78fb5e72b98db7c",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "83df01da76c7ae59",
-                "type": "leaf",
-                "state": {
-                  "type": "backlink",
-                  "state": {
-                    "file": "zimages/{1BB17EC0-9998-412E-9530-1A4456ECA5EB}.png",
-                    "collapseAll": false,
-                    "extraContext": false,
-                    "sortOrder": "alphabetical",
-                    "showSearch": false,
-                    "searchQuery": "",
-                    "backlinkCollapsed": false,
-                    "unlinkedCollapsed": true
-                  },
-                  "icon": "links-coming-in",
-                  "title": "Backlinks for {1BB17EC0-9998-412E-9530-1A4456ECA5EB}"
-                },
-                "group": "664585b80508b6ae"
-              }
-            ]
+              "icon": "lucide-file",
+              "title": "Given a list of 100 random numbers, count how many are even and how many are odd using goroutines"
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -228,10 +94,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "zimages/{1BB17EC0-9998-412E-9530-1A4456ECA5EB}.png"
+                "file": "Golang/Goroutines Examples/Given a list of 100 random numbers, count how many are even and how many are odd using goroutines.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of {1BB17EC0-9998-412E-9530-1A4456ECA5EB}"
+              "title": "Outline of Given a list of 100 random numbers, count how many are even and how many are odd using goroutines"
             }
           },
           {
@@ -240,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Golang/Defer, Panic, and Recover.md",
+                "file": "Golang/Goroutines Examples/Given a list of 100 random numbers, count how many are even and how many are odd using goroutines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -250,7 +116,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Defer, Panic, and Recover"
+              "title": "Backlinks for Given a list of 100 random numbers, count how many are even and how many are odd using goroutines"
             }
           },
           {
@@ -267,7 +133,8 @@
               "title": "Outgoing links from 10 - Structural Design Patterns - Decorator and Facade"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -284,8 +151,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b4904ce9751ea41b",
+  "active": "eef0debaadb548b2",
   "lastOpenFiles": [
+    "Golang/Untitled 1.md",
+    "Golang/Goroutines Examples/Given a list of 100 random numbers, count how many are even and how many are odd using goroutines.md",
+    "Golang/Goroutines Examples",
+    "Golang/Defer, Panic, and Recover.md",
+    "zimages/Defer-unreachable-example.png",
+    "Interview Prep/Microservice Architecture/Disadvantages of Microservices.md",
+    "zimages/{1BB17EC0-9998-412E-9530-1A4456ECA5EB}.png",
     "System Design/01 - Splitwise.md",
     "zimages/01 - Splitwise-class-diagram.png",
     "Golang/Goroutines/Lifecycle and Scheduling of a Goroutine.md",
@@ -317,12 +191,7 @@
     "Interview Prep/DB/Types of DB.md",
     "zimages/{BDA29B48-8A0C-424C-9631-1E57FA77FD47}.png",
     "Kubernetes/Kubernetes.md",
-    "zimages/{8EF46AC2-4003-47F7-95E7-1228DC21FF3D}.png",
     "Interview Prep/Top 5 caching strategies.md",
-    "zimages/{B91EFF56-5391-4176-951B-9B0C64048469}.png",
-    "Interview Prep/What is the difference between Process and Thread.md",
-    "Interview Prep/Microservice Architecture/Untitled.md",
-    "Interview Prep/Git Merge vs. Rebase.md",
     "Interview Prep/SQL Queries",
     "Interview Prep/DB",
     "Interview Prep/Microservice Architecture",
@@ -330,7 +199,6 @@
     "Interview Prep/01 - Resume Questions",
     "Interview Prep/GRPC",
     "DSA/Dynamic Programming",
-    "DSA/Hashing",
     "zimages/Untitled.canvas",
     "Untitled 1.canvas"
   ]

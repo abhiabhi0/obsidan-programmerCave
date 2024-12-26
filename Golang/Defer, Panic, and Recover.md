@@ -9,6 +9,19 @@
 file, _ := os.Open("example.txt")
 defer file.Close() // Ensures the file gets closed
 ```
+
+```go
+func main() {
+	for i := 0; i < 5; i++ {
+		defer fmt.Print(i, " ")
+	}
+}
+//OP - 4, 3, 2, 1, 0
+```
+
+![[Defer-unreachable-example.png]]
+- last defer statement is unreachable
+
 ---
 #### Panic (Error Signaling)
 - Indicates unrecoverable errors, stopping execution and executing deferred functions before exiting.
