@@ -1,479 +1,336 @@
-## Features
+### **1. Key Features**
 
-### 1. User Management
-- **Create User**
-- **Add/Remove User**
+#### **Group Management**
+- **Create Group**: Allow users to create groups for expense sharing.
+- **Add/Remove Members**: Enable dynamic management of group participants.
+- **Track Group Expenses**: Maintain a record of all expenses linked to the group.
 
-### 2. Group Management
-- **Create Group**
-- **Add/Remove Members**
-- **Track Group Expenses**
-
-### 3. Expense Management
-- **Add Expense**
-- **Split Expense (Equally, Unequally, by Percentage)**
-- **View Balances**
-
-### 4. Settlement
-- **Settle Balances**
+#### **Expense Management**
+- **Add Expense**: Users can add expenses specifying participants and amounts.
+- **Split Expense**:
+    - Equally
+    - Unequally
+    - By percentage
+- **View Balances**: Show current balances for all users in a group.
+#### **Settlement**
+- **Settle Balances**: Clear debts between users by recording payments.
 
 ---
 
-## Design Patterns Involved
+### **2. Advanced Design Patterns**
 
-### 1. Singleton Pattern
-Used for a centralized **UserManager** to manage user-related operations.
+#### **Factory Pattern**
+- **Purpose**: Simplifies creating different types of expenses dynamically.
+- **Implementation**:
+    - `ExpenseFactory` creates objects such as `EqualExpense`, `UnequalExpense`, or `PercentageExpense`.
 
-### 2. Factory Pattern
-Used to create different types of expenses (e.g., `EqualExpense`, `UnequalExpense`, `PercentageExpense`).
+#### **Observer Pattern**
+- **Purpose**: Notify users/groups of changes, like new expenses or settlements.
+- **Implementation**:
+    - A central notification system subscribes users to relevant updates.
 
-### 3. Observer Pattern
-Used to notify users or groups about changes in expenses or settlements.
-
-### 4. Strategy Pattern
-Used for splitting expenses based on the desired approach (e.g., equally, unequally, or by percentage).
-
-### 5. Command Pattern
-Encapsulates expense operations like adding or modifying expenses.
-
-### 6. Facade Pattern
-Provides a simplified interface for managing users, expenses, and settlements.
+#### **Strategy Pattern**
+- **Purpose**: Abstracts splitting logic for flexibility and cleaner code.
+- **Implementation**:
+    - Strategies include `EqualSplit`, `UnequalSplit`, or `PercentageSplit`.
 
 ---
 
-## High-Level Architecture Diagram (HLD)
+### **3. Class Diagram**
 
-![[01 - Splitwise-hld.png]]
+![[01 - Splitwise-class-diagram.png]]
+
 ---
 
-## Sequence Diagram
+### **4. Code Implementation**
 
-![[01 - Splitwise-sequence-diagram.png]]
----
+#### **Python Code**
 
-## Python Implementation
+Here’s a Python implementation integrating both beginner-friendly and advanced design patterns.
 
 ```python
-from abc import ABC, abstractmethod
-from typing import List, Dict
-
-# Singleton Pattern
-class UserManager:
-    _instance = None
-
-    def __new__(cls, *args, **kwargs):
-        if not cls._instance:
-            cls._instance = super(UserManager, cls).__new__(cls, *args, **kwargs)
-            cls._instance.users = {}
-        return cls._instance
-
-    def add_user(self, user):
-        self.users[user.user_id] = user
-
-    def get_user(self, user_id):
-        return self.users.get(user_id)
-
 class User:
-    def __init__(self, user_id, name):
+    def __init__(self, user_id, name, email):
         self.user_id = user_id
         self.name = name
+        self.email = email
+        self.groups = []
+    
+    def notify(self, message):
+        print(f"Notification for {self.name}: {message}")
 
-# Factory Pattern
-class ExpenseFactory(ABC):
-    @abstractmethod
-    def create_expense(self, total_amount, participants, extra_data=None):
-        pass
 
-class EqualExpenseFactory(ExpenseFactory):
-    def create_expense(self, total_amount, participants, extra_data=None):
-        return EqualExpense(total_amount, participants)
-
-class UnequalExpenseFactory(ExpenseFactory):
-    def create_expense(self, total_amount, participants, extra_data=None):
-        return UnequalExpense(total_amount, participants, extra_data)
-
-class PercentageExpenseFactory(ExpenseFactory):
-    def create_expense(self, total_amount, participants, extra_data=None):
-        return PercentageExpense(total_amount, participants, extra_data)
-
-# Observer Pattern
-class Observer(ABC):
-    @abstractmethod
-    def update(self):
-        pass
-
-class ExpenseObserver(Observer):
-    def update(self):
-        print("Expenses updated for all users/groups.")
-
-# Strategy Pattern
-class SplitStrategy(ABC):
-    @abstractmethod
-    def split_expense(self, total_amount, participants, extra_data=None):
-        pass
-
-class EqualSplitStrategy(SplitStrategy):
-    def split_expense(self, total_amount, participants, extra_data=None):
-        split = total_amount / len(participants)
-        return {user: split for user in participants}
-
-class UnequalSplitStrategy(SplitStrategy):
-    def split_expense(self, total_amount, participants, extra_data=None):
-        return {user: amount for user, amount in zip(participants, extra_data)}
-
-class PercentageSplitStrategy(SplitStrategy):
-    def split_expense(self, total_amount, participants, extra_data=None):
-        return {user: (percentage / 100) * total_amount for user, percentage in zip(participants, extra_data)}
-
-# Command Pattern
-class ExpenseCommand(ABC):
-    @abstractmethod
-    def execute(self):
-        pass
-
-class AddExpenseCommand(ExpenseCommand):
-    def __init__(self, expense):
-        self.expense = expense
-
-    def execute(self):
-        self.expense.calculate_shares()
-
-# Facade Pattern
-class SplitwiseFacade:
-    def __init__(self):
-        self.user_manager = UserManager()
+class Group:
+    def __init__(self, group_id, group_name):
+        self.group_id = group_id
+        self.group_name = group_name
+        self.users = []
         self.expenses = []
-        self.observers = []
 
-    def add_user(self, user):
-        self.user_manager.add_user(user)
+    def add_member(self, user):
+        self.users.append(user)
 
-    def add_observer(self, observer):
-        self.observers.append(observer)
+    def remove_member(self, user):
+        self.users.remove(user)
 
-    def notify_observers(self):
-        for observer in self.observers:
-            observer.update()
 
-    def add_expense(self, factory, total_amount, participants, extra_data=None):
-        expense = factory.create_expense(total_amount, participants, extra_data)
-        command = AddExpenseCommand(expense)
-        command.execute()
-        self.expenses.append(expense)
-        self.notify_observers()
-        return expense.shares
+class Split:
+    def __init__(self, user, amount):
+        self.user = user
+        self.amount = amount
 
-# Expense Classes
-class Expense(ABC):
-    def __init__(self, total_amount, participants, strategy, extra_data=None):
-        self.total_amount = total_amount
-        self.participants = participants
-        self.strategy = strategy
-        self.extra_data = extra_data
-        self.shares = {}
 
-    @abstractmethod
-    def calculate_shares(self):
+class Expense:
+    def __init__(self, expense_id, description, paid_by, amount):
+        self.expense_id = expense_id
+        self.description = description
+        self.paid_by = paid_by
+        self.amount = amount
+        self.splits = []
+
+    def calculate_splits(self):
         pass
+
 
 class EqualExpense(Expense):
-    def __init__(self, total_amount, participants):
-        super().__init__(total_amount, participants, EqualSplitStrategy())
+    def calculate_splits(self, users):
+        split_amount = self.amount / len(users)
+        self.splits = [Split(user, split_amount) for user in users]
 
-    def calculate_shares(self):
-        self.shares = self.strategy.split_expense(self.total_amount, self.participants)
 
 class UnequalExpense(Expense):
-    def __init__(self, total_amount, participants, extra_data):
-        super().__init__(total_amount, participants, UnequalSplitStrategy(), extra_data)
+    def calculate_splits(self, amounts):
+        self.splits = [Split(user, amount) for user, amount in amounts.items()]
 
-    def calculate_shares(self):
-        self.shares = self.strategy.split_expense(self.total_amount, self.participants, self.extra_data)
 
 class PercentageExpense(Expense):
-    def __init__(self, total_amount, participants, extra_data):
-        super().__init__(total_amount, participants, PercentageSplitStrategy(), extra_data)
+    def calculate_splits(self, percentages):
+        self.splits = [
+            Split(user, self.amount * percentages[user] / 100) for user in percentages
+        ]
 
-    def calculate_shares(self):
-        self.shares = self.strategy.split_expense(self.total_amount, self.participants, self.extra_data)
 
-# Main Method with Examples
-if __name__ == "__main__":
-    # Create SplitwiseFacade and Observers
-    splitwise = SplitwiseFacade()
-    observer = ExpenseObserver()
-    splitwise.add_observer(observer)
+class ExpenseFactory:
+    @staticmethod
+    def create_expense(type, *args):
+        if type == "equal":
+            return EqualExpense(*args)
+        elif type == "unequal":
+            return UnequalExpense(*args)
+        elif type == "percentage":
+            return PercentageExpense(*args)
+        else:
+            raise ValueError("Invalid expense type")
 
-    # Add Users
-    user1 = User("1", "Alice")
-    user2 = User("2", "Bob")
-    user3 = User("3", "Charlie")
-    splitwise.add_user(user1)
-    splitwise.add_user(user2)
-    splitwise.add_user(user3)
 
-    # Example: Equal Split
-    print("Equal Split:")
-    shares = splitwise.add_expense(EqualExpenseFactory(), 120.0, [user1, user2, user3])
-    print(shares)
+class NotificationService:
+    def __init__(self):
+        self.subscribers = []
 
-    # Example: Unequal Split
-    print("\nUnequal Split:")
-    shares = splitwise.add_expense(UnequalExpenseFactory(), 150.0, [user1, user2, user3], [60.0, 40.0, 50.0])
-    print(shares)
+    def subscribe(self, user):
+        self.subscribers.append(user)
 
-    # Example: Percentage Split
-    print("\nPercentage Split:")
-    shares = splitwise.add_expense(PercentageExpenseFactory(), 200.0, [user1, user2, user3], [50, 30, 20])
-    print(shares)
+    def unsubscribe(self, user):
+        self.subscribers.remove(user)
 
+    def notify_all(self, message):
+        for user in self.subscribers:
+            user.notify(message)
+
+# Example Usage
+group = Group("G1", "Trip to Paris")
+user1 = User("U1", "Alice", "alice@example.com")
+user2 = User("U2", "Bob", "bob@example.com")
+
+group.add_member(user1)
+group.add_member(user2)
+
+expense = ExpenseFactory.create_expense("equal", "E1", "Lunch", user1, 100)
+expense.calculate_splits(group.users)
+
+notification_service = NotificationService()
+notification_service.subscribe(user1)
+notification_service.subscribe(user2)
+
+notification_service.notify_all("New expense added!")
 ```
 
 ---
 
-## Go Implementation
+#### Golang Code
 
 ```go
 package main
 
 import (
+	"errors"
 	"fmt"
-	"sync"
 )
 
-// Singleton Pattern
-type UserManager struct {
-	users map[string]*User
-}
-
-var instance *UserManager
-var once sync.Once
-
-func GetUserManager() *UserManager {
-	once.Do(func() {
-		instance = &UserManager{users: make(map[string]*User)}
-	})
-	return instance
-}
-
-func (um *UserManager) AddUser(user *User) {
-	um.users[user.ID] = user
-}
-
-func (um *UserManager) GetUser(userID string) *User {
-	return um.users[userID]
-}
-
+// User represents a user in the system
 type User struct {
-	ID   string
-	Name string
+	UserID string
+	Name   string
+	Email  string
 }
 
-func NewUser(id, name string) *User {
-	return &User{ID: id, Name: name}
+func (u *User) Notify(message string) {
+	fmt.Printf("Notification for %s: %s\n", u.Name, message)
 }
 
-// Factory Pattern
-type ExpenseFactory interface {
-	CreateExpense(totalAmount float64, participants []*User, extraData []float64) Expense
+// Group represents a group of users
+type Group struct {
+	GroupID   string
+	GroupName string
+	Users     []*User
+	Expenses  []Expense
 }
 
-type EqualExpenseFactory struct{}
-
-func (f *EqualExpenseFactory) CreateExpense(totalAmount float64, participants []*User, extraData []float64) Expense {
-	return &EqualExpense{totalAmount: totalAmount, participants: participants}
+func (g *Group) AddMember(user *User) {
+	g.Users = append(g.Users, user)
 }
 
-type UnequalExpenseFactory struct{}
-
-func (f *UnequalExpenseFactory) CreateExpense(totalAmount float64, participants []*User, extraData []float64) Expense {
-	return &UnequalExpense{totalAmount: totalAmount, participants: participants, extraData: extraData}
-}
-
-type PercentageExpenseFactory struct{}
-
-func (f *PercentageExpenseFactory) CreateExpense(totalAmount float64, participants []*User, extraData []float64) Expense {
-	return &PercentageExpense{totalAmount: totalAmount, participants: participants, extraData: extraData}
-}
-
-// Observer Pattern
-type Observer interface {
-	Update()
-}
-
-type ExpenseObserver struct{}
-
-func (eo *ExpenseObserver) Update() {
-	fmt.Println("Expenses updated for all users/groups.")
-}
-
-// Strategy Pattern
-type SplitStrategy interface {
-	SplitExpense(totalAmount float64, participants []*User, extraData []float64) map[*User]float64
-}
-
-type EqualSplitStrategy struct{}
-
-func (s *EqualSplitStrategy) SplitExpense(totalAmount float64, participants []*User, extraData []float64) map[*User]float64 {
-	shares := make(map[*User]float64)
-	share := totalAmount / float64(len(participants))
-	for _, user := range participants {
-		shares[user] = share
-	}
-	return shares
-}
-
-type UnequalSplitStrategy struct{}
-
-func (s *UnequalSplitStrategy) SplitExpense(totalAmount float64, participants []*User, extraData []float64) map[*User]float64 {
-	shares := make(map[*User]float64)
-	for i, user := range participants {
-		shares[user] = extraData[i]
-	}
-	return shares
-}
-
-type PercentageSplitStrategy struct{}
-
-func (s *PercentageSplitStrategy) SplitExpense(totalAmount float64, participants []*User, extraData []float64) map[*User]float64 {
-	shares := make(map[*User]float64)
-	for i, user := range participants {
-		shares[user] = (extraData[i] / 100) * totalAmount
-	}
-	return shares
-}
-
-// Command Pattern
-type ExpenseCommand interface {
-	Execute()
-}
-
-type AddExpenseCommand struct {
-	expense Expense
-}
-
-func (cmd *AddExpenseCommand) Execute() {
-	cmd.expense.CalculateShares()
-}
-
-// Facade Pattern
-type SplitwiseFacade struct {
-	userManager *UserManager
-	expenses    []Expense
-	observers   []Observer
-}
-
-func NewSplitwiseFacade() *SplitwiseFacade {
-	return &SplitwiseFacade{
-		userManager: GetUserManager(),
-		expenses:    []Expense{},
-		observers:   []Observer{},
+func (g *Group) RemoveMember(user *User) {
+	for i, u := range g.Users {
+		if u == user {
+			g.Users = append(g.Users[:i], g.Users[i+1:]...)
+			break
+		}
 	}
 }
 
-func (sf *SplitwiseFacade) AddUser(user *User) {
-	sf.userManager.AddUser(user)
+// Split represents a share of an expense
+type Split struct {
+	User   *User
+	Amount float64
 }
 
-func (sf *SplitwiseFacade) AddObserver(observer Observer) {
-	sf.observers = append(sf.observers, observer)
-}
-
-func (sf *SplitwiseFacade) NotifyObservers() {
-	for _, observer := range sf.observers {
-		observer.Update()
-	}
-}
-
-func (sf *SplitwiseFacade) AddExpense(factory ExpenseFactory, totalAmount float64, participants []*User, extraData []float64) map[*User]float64 {
-	expense := factory.CreateExpense(totalAmount, participants, extraData)
-	command := &AddExpenseCommand{expense: expense}
-	command.Execute()
-	sf.expenses = append(sf.expenses, expense)
-	sf.NotifyObservers()
-	return expense.GetShares()
-}
-
-// Expense Classes
+// Expense is the base struct for all types of expenses
 type Expense interface {
-	CalculateShares()
-	GetShares() map[*User]float64
+	CalculateSplits(users []*User) []Split
 }
 
+// BaseExpense contains common fields for all expenses
 type BaseExpense struct {
-	totalAmount  float64
-	participants []*User
-	shares       map[*User]float64
-	strategy     SplitStrategy
-	extraData    []float64
+	ExpenseID  string
+	Description string
+	PaidBy      *User
+	Amount      float64
 }
 
-func (e *BaseExpense) GetShares() map[*User]float64 {
-	return e.shares
-}
-
+// EqualExpense splits the expense equally among users
 type EqualExpense struct {
 	BaseExpense
 }
 
-func (e *EqualExpense) CalculateShares() {
-	e.strategy = &EqualSplitStrategy{}
-	e.shares = e.strategy.SplitExpense(e.totalAmount, e.participants, nil)
+func (e *EqualExpense) CalculateSplits(users []*User) []Split {
+	splitAmount := e.Amount / float64(len(users))
+	var splits []Split
+	for _, user := range users {
+		splits = append(splits, Split{User: user, Amount: splitAmount})
+	}
+	return splits
 }
 
+// UnequalExpense splits the expense unequally
 type UnequalExpense struct {
 	BaseExpense
+	Amounts map[*User]float64
 }
 
-func (e *UnequalExpense) CalculateShares() {
-	e.strategy = &UnequalSplitStrategy{}
-	e.shares = e.strategy.SplitExpense(e.totalAmount, e.participants, e.extraData)
+func (e *UnequalExpense) CalculateSplits(users []*User) []Split {
+	var splits []Split
+	for user, amount := range e.Amounts {
+		splits = append(splits, Split{User: user, Amount: amount})
+	}
+	return splits
 }
 
+// PercentageExpense splits the expense by percentages
 type PercentageExpense struct {
 	BaseExpense
+	Percentages map[*User]float64
 }
 
-func (e *PercentageExpense) CalculateShares() {
-	e.strategy = &PercentageSplitStrategy{}
-	e.shares = e.strategy.SplitExpense(e.totalAmount, e.participants, e.extraData)
+func (e *PercentageExpense) CalculateSplits(users []*User) []Split {
+	var splits []Split
+	for user, percentage := range e.Percentages {
+		splits = append(splits, Split{User: user, Amount: e.Amount * percentage / 100})
+	}
+	return splits
 }
 
-// Main Function with Examples
+// ExpenseFactory creates expenses based on type
+type ExpenseFactory struct{}
+
+func (ef *ExpenseFactory) CreateExpense(expenseType string, base BaseExpense, params interface{}) (Expense, error) {
+	switch expenseType {
+	case "equal":
+		return &EqualExpense{BaseExpense: base}, nil
+	case "unequal":
+		return &UnequalExpense{BaseExpense: base, Amounts: params.(map[*User]float64)}, nil
+	case "percentage":
+		return &PercentageExpense{BaseExpense: base, Percentages: params.(map[*User]float64)}, nil
+	default:
+		return nil, errors.New("invalid expense type")
+	}
+}
+
+// NotificationService handles user notifications
+type NotificationService struct {
+	Subscribers []*User
+}
+
+func (ns *NotificationService) Subscribe(user *User) {
+	ns.Subscribers = append(ns.Subscribers, user)
+}
+
+func (ns *NotificationService) Unsubscribe(user *User) {
+	for i, u := range ns.Subscribers {
+		if u == user {
+			ns.Subscribers = append(ns.Subscribers[:i], ns.Subscribers[i+1:]...)
+			break
+		}
+	}
+}
+
+func (ns *NotificationService) NotifyAll(message string) {
+	for _, user := range ns.Subscribers {
+		user.Notify(message)
+	}
+}
+
+// Main function to demonstrate usage
 func main() {
-	// Create SplitwiseFacade and Observers
-	splitwise := NewSplitwiseFacade()
-	observer := &ExpenseObserver{}
-	splitwise.AddObserver(observer)
+	// Create users
+	user1 := &User{UserID: "U1", Name: "Alice", Email: "alice@example.com"}
+	user2 := &User{UserID: "U2", Name: "Bob", Email: "bob@example.com"}
 
-	// Add Users
-	user1 := NewUser("1", "Alice")
-	user2 := NewUser("2", "Bob")
-	user3 := NewUser("3", "Charlie")
-	splitwise.AddUser(user1)
-	splitwise.AddUser(user2)
-	splitwise.AddUser(user3)
+	// Create a group
+	group := &Group{GroupID: "G1", GroupName: "Trip to Paris"}
+	group.AddMember(user1)
+	group.AddMember(user2)
 
-	// Example: Equal Split
-	fmt.Println("Equal Split:")
-	shares := splitwise.AddExpense(&EqualExpenseFactory{}, 120.0, []*User{user1, user2, user3}, nil)
-	for user, share := range shares {
-		fmt.Printf("%s owes %.2f\n", user.Name, share)
+	// Create an expense using the factory
+	factory := &ExpenseFactory{}
+	base := BaseExpense{ExpenseID: "E1", Description: "Lunch", PaidBy: user1, Amount: 100}
+
+	equalExpense, _ := factory.CreateExpense("equal", base, nil)
+	splits := equalExpense.CalculateSplits(group.Users)
+
+	// Print the splits
+	fmt.Println("Splits for Equal Expense:")
+	for _, split := range splits {
+		fmt.Printf("User: %s, Amount: %.2f\n", split.User.Name, split.Amount)
 	}
 
-	// Example: Unequal Split
-	fmt.Println("\nUnequal Split:")
-	shares = splitwise.AddExpense(&UnequalExpenseFactory{}, 150.0, []*User{user1, user2, user3}, []float64{60.0, 40.0, 50.0})
-	for user, share := range shares {
-		fmt.Printf("%s owes %.2f\n", user.Name, share)
-	}
+	// Notify users about the new expense
+	notificationService := &NotificationService{}
+	notificationService.Subscribe(user1)
+	notificationService.Subscribe(user2)
 
-	// Example: Percentage Split
-	fmt.Println("\nPercentage Split:")
-	shares = splitwise.AddExpense(&PercentageExpenseFactory{}, 200.0, []*User{user1, user2, user3}, []float64{50, 30, 20})
-	for user, share := range shares {
-		fmt.Printf("%s owes %.2f\n", user.Name, share)
-	}
+	notificationService.NotifyAll("New expense added!")
 }
 
 ```
+
