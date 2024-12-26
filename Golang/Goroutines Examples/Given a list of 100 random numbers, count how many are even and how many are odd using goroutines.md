@@ -80,3 +80,5 @@ func main() {
 3. The closure goroutine waits for all workers (`wg.Wait()`).
 4. Once all workers are done, the closure goroutine closes both channels.
 5. Closing the channels terminates the loops in the main goroutine, as there are no more values to receive.
+
+[[Worker Pool Implementation]]

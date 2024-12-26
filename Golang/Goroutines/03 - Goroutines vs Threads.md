@@ -198,7 +198,3 @@ In this comparison:
 
 - Python's threads are limited by OS constraints and higher overhead.
 - Go's goroutines handle 1000 concurrent tasks efficiently with minimal resource usage.
-
----
-
-Would you like a specific example or deeper exploration of goroutines in Go?

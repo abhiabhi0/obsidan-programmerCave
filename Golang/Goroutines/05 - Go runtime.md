@@ -1,11 +1,11 @@
 ### Summary
 The Go runtime is a critical framework that supports Go programs with essential services like memory management, concurrency handling, system abstraction, and debugging tools. Key components include:
 
-1. **Memory Management**: Features garbage collection (concurrent mark-and-sweep) and efficient memory allocation for heap and stack.
-2. **Concurrency Management**: Lightweight goroutines are scheduled using an M:N scheduler with work-stealing for load balancing.
+1. **Memory Management**: Features garbage collection (concurrent mark-and-sweep) and efficient memory allocation for heap and stack. [[Memory Management in Go]] [[Handle Memory leak in Go]]
+2. **Concurrency Management**: Lightweight goroutines are scheduled using an M:N scheduler with work-stealing for load balancing. [[01 - Concurrency in Go]] [[04 - Concurrency Patterns]]
 3. **Networking and I/O**: Supports asynchronous I/O with scalable handling of concurrent operations.
 4. **System Interface**: Abstracts OS-level details, ensuring portability and consistent system interaction.
-5. **Reflection and Type Information**: Enables runtime inspection and manipulation of types using the `reflect` package.
+5. **Reflection and Type Information**: Enables runtime inspection and manipulation of types using the `reflect` package. [[reflect package]]
 6. **Profiling and Debugging**: Includes tools like `pprof`, a race detector, and tracing for performance optimization and issue diagnosis.
 7. **Error Handling**: Supports robust panic and recover mechanisms for managing unexpected errors.
 8. **Concurrency Tools**: Provides channels for safe communication and the `sync` package for advanced synchronization.

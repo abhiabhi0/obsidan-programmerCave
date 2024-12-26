@@ -13,16 +13,212 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Goroutines Examples/Given a list of 100 random numbers, count how many are even and how many are odd using goroutines.md",
+                "file": "Golang/Goroutines/Read after closing Channel.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Given a list of 100 random numbers, count how many are even and how many are odd using goroutines"
+              "title": "Read after closing Channel"
+            }
+          },
+          {
+            "id": "85e9f7c88feaa5d0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Golang/Goroutines Examples/Call the compute function a total of 100 times, distributed among 8 goroutines.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Call the compute function a total of 100 times, distributed among 8 goroutines"
+            }
+          },
+          {
+            "id": "4c15ed0e48808321",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Golang/Goroutines/01 - Concurrency in Go.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01 - Concurrency in Go"
+            }
+          },
+          {
+            "id": "75a1d90fd5557f8d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Golang/Go Signals.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Go Signals"
+            }
+          },
+          {
+            "id": "5e75f16ecee1219a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Golang/Goroutines Examples/Print table of N using go routine.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Print table of N using go routine"
+            }
+          },
+          {
+            "id": "d92becd2e5ca54d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Golang/Goroutines/02 - Lifecycle and Scheduling of a Goroutine.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02 - Lifecycle and Scheduling of a Goroutine"
+            }
+          },
+          {
+            "id": "7ad807b0e7d4e0b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Golang/Goroutines/Limit Goroutines.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Limit Goroutines"
+            }
+          },
+          {
+            "id": "fb592ecd9c018c34",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Golang/Goroutines Examples/Goroutine vs main().md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Goroutine vs main()"
+            }
+          },
+          {
+            "id": "7137542d0650003b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Golang/Goroutines/03 - Goroutines vs Threads.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03 - Goroutines vs Threads"
+            }
+          },
+          {
+            "id": "831912116c285e7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Golang/Goroutines Examples/Worker Pool Implementation.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Worker Pool Implementation"
+            }
+          },
+          {
+            "id": "7a0b794de16d59fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Golang/Goroutines/04 - Concurrency Patterns.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "04 - Concurrency Patterns"
+            }
+          },
+          {
+            "id": "2c96f1d3329a7d90",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Golang/Goroutines/05 - Go runtime.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "05 - Go runtime"
+            }
+          },
+          {
+            "id": "eb330e585342de51",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Golang/Goroutines/Closing a Channel.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Closing a Channel"
+            }
+          },
+          {
+            "id": "174544156ccd532f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Golang/Goroutines Examples/Print N integers using odd and even thread.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Print N integers using odd and even thread"
             }
           }
-        ]
+        ],
+        "currentTab": 12
       }
     ],
     "direction": "vertical"
@@ -94,10 +290,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Golang/Goroutines Examples/Given a list of 100 random numbers, count how many are even and how many are odd using goroutines.md"
+                "file": "Golang/Goroutines/Closing a Channel.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Given a list of 100 random numbers, count how many are even and how many are odd using goroutines"
+              "title": "Outline of Closing a Channel"
             }
           },
           {
@@ -106,7 +302,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Golang/Goroutines Examples/Given a list of 100 random numbers, count how many are even and how many are odd using goroutines.md",
+                "file": "Golang/Goroutines/Closing a Channel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +312,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Given a list of 100 random numbers, count how many are even and how many are odd using goroutines"
+              "title": "Backlinks for Closing a Channel"
             }
           },
           {
@@ -133,7 +329,8 @@
               "title": "Outgoing links from 10 - Structural Design Patterns - Decorator and Facade"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -150,10 +347,25 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "846cf53ff19fec75",
+  "active": "b4904ce9751ea41b",
   "lastOpenFiles": [
-    "Golang/Untitled 1.md",
+    "Golang/Goroutines/Read after closing Channel.md",
+    "Golang/Goroutines Examples/Print N integers using odd and even thread.md",
+    "Golang/Goroutines/Closing a Channel.md",
+    "Golang/Goroutines/05 - Go runtime.md",
+    "Golang/Goroutines/Limit Goroutines.md",
+    "Golang/Goroutines/02 - Lifecycle and Scheduling of a Goroutine.md",
+    "Golang/Goroutines/03 - Goroutines vs Threads.md",
+    "Golang/Goroutines/04 - Concurrency Patterns.md",
+    "Golang/Goroutines Examples/Goroutine vs main().md",
+    "Golang/Goroutines/01 - Concurrency in Go.md",
+    "Golang/Goroutines/Internal Details of Goroutines in Go.md",
+    "Golang/Goroutines Examples/Print table of N using go routine.md",
+    "Golang/Go Signals.md",
+    "Golang/Goroutines Examples/Call the compute function a total of 100 times, distributed among 8 goroutines.md",
     "Golang/Goroutines Examples/Given a list of 100 random numbers, count how many are even and how many are odd using goroutines.md",
+    "Golang/Goroutines Examples/Worker Pool Implementation.md",
+    "Golang/Untitled 1.md",
     "Golang/Goroutines Examples",
     "Golang/Defer, Panic, and Recover.md",
     "zimages/Defer-unreachable-example.png",
@@ -161,36 +373,21 @@
     "zimages/{1BB17EC0-9998-412E-9530-1A4456ECA5EB}.png",
     "System Design/01 - Splitwise.md",
     "zimages/01 - Splitwise-class-diagram.png",
-    "Golang/Goroutines/Lifecycle and Scheduling of a Goroutine.md",
     "zimages",
     "Golang/Untitled.md",
     "Golang/Goroutines",
-    "Golang/Go runtime.md",
-    "Golang/Concurrency vs Parallelism.md",
-    "Golang/Concurrency Patterns.md",
-    "Golang/Concurrency in Go.md",
-    "Golang/Ping-Pong Example.md",
+    "Golang/Goroutines/06 - Concurrency vs Parallelism.md",
+    "Golang/Goroutines Examples/Ping-Pong Example.md",
     "Golang/Handle Memory leak in Go.md",
     "Golang/Garbage Collector in Go.md",
     "Golang/Memory Management in Go.md",
-    "LLD/11 - Behavioural Design Patterns - Observer and Strategy.md",
-    "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
-    "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
     "zimages/01 - Splitwise-sequence-diagram.png",
     "zimages/01 - Splitwise-hld.png",
     "zimages/Splitwise-design-diagram.png",
-    "System Design/Bill Sharing.md",
-    "System Design/Design Image chat application.md",
-    "Interview Prep/Why do we need message brokers.md",
     "zimages/{9AB602BF-E198-43A8-9912-55E72504950A}.png",
-    "Interview Prep/Top 7 Most-Used Distributed System Patterns.md",
     "zimages/{149CA686-468A-41CD-BF7D-165CAE2A013D}.png",
-    "Interview Prep/Where do we cache data.md",
     "zimages/{BDA84EDB-31D0-4325-B755-B132BF47513A}.png",
-    "Interview Prep/DB/Types of DB.md",
     "zimages/{BDA29B48-8A0C-424C-9631-1E57FA77FD47}.png",
-    "Kubernetes/Kubernetes.md",
-    "Interview Prep/Top 5 caching strategies.md",
     "Interview Prep/SQL Queries",
     "Interview Prep/DB",
     "Interview Prep/Microservice Architecture",

@@ -83,10 +83,11 @@ Processor P Management:
 +-----------+       +-----------+       +-----------+
 ```
 
----
-### Expanded Details for Specific Sections
+[[03 - Goroutines vs Threads]]
+[[04 - Concurrency Patterns]]
 
 ---
+### Expanded Details for Specific Sections
 
 ### **1. Global Queue and Local Run Queues**
 
