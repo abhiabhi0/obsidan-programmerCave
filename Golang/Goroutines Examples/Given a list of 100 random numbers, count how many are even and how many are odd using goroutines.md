@@ -70,3 +70,13 @@ func main() {
 }
 
 ```
+
+### **Flow of Execution in the Code**
+
+1. Worker goroutines process their chunks and send results to the channels.
+2. The main goroutine starts two loops:
+    - One to accumulate values from `evenCount`.
+    - Another to accumulate values from `oddCount`.
+3. The closure goroutine waits for all workers (`wg.Wait()`).
+4. Once all workers are done, the closure goroutine closes both channels.
+5. Closing the channels terminates the loops in the main goroutine, as there are no more values to receive.

@@ -133,8 +133,7 @@
               "title": "Outgoing links from 10 - Structural Design Patterns - Decorator and Facade"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -151,7 +150,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "eef0debaadb548b2",
+  "active": "846cf53ff19fec75",
   "lastOpenFiles": [
     "Golang/Untitled 1.md",
     "Golang/Goroutines Examples/Given a list of 100 random numbers, count how many are even and how many are odd using goroutines.md",
