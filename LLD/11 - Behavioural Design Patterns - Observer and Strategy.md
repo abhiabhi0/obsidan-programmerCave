@@ -162,12 +162,12 @@ public class Client {
 ---
 ## Strategy Design Pattern
 
-	⁃	(also known as the policy pattern) is a software design pattern that enables an algorithm's behavior to be selected at runtime. 
-	⁃	The strategy pattern encapsulates alternative algorithms (or strategies) for a specific task and supports their interchangeable use. 
-	⁃	The strategy pattern lets the algorithm vary independently from clients that use it.
+⁃	(also known as the policy pattern) is a software design pattern that <mark class="hltr-g">enables an algorithm's behavior to be selected at runtime</mark>. 
+⁃	The strategy pattern encapsulates alternative algorithms (or strategies) for a specific task and supports their interchangeable use. 
+⁃	The strategy pattern <mark class="hltr-g">lets the algorithm vary independently from clients that use it</mark>.
 
-	•	Today we are building a navigation system for a car. The navigation system should be able to calculate the shortest route between two points and tell the driver how to get there. 
-	•	We start with a simple implementation that only supports driving on roads and hence we design a simple `RoadNavigation` class that calculates the shortest route between two points on a road.
+•	Today we are building a navigation system for a car. The navigation system should be able to calculate the shortest route between two points and tell the driver how to get there. 
+•	We start with a simple implementation that only supports driving on roads and hence we design a simple `RoadNavigation` class that calculates the shortest route between two points on a road.
 
 ```java
 public class Navigator {
@@ -177,7 +177,7 @@ public class Navigator {
 }
 ```
 
-	•	In order to support various types of navigation we introduce a new ModeType enum that defines the different types of navigation.
+•	In order to support various types of navigation we introduce a new `ModeType enum` that defines the different types of navigation.
 
 ```java
 public class Navigator {
@@ -193,19 +193,21 @@ public class Navigator {
 }
 ```
 
-	•	This works but it is not very flexible. If we want to add a new type of navigation we have to modify the navigate method. This is an example of a violation of the open-closed principle. 
-	•	Similarly, the method has multiple reasons to change, and we have to test it for all the different types of navigation.
+•	This works but it is not very flexible. If we want to add a new type of navigation we have to modify the navigate method. This is an example of a violation of the open-closed principle. 
+•	Similarly, the method has multiple reasons to change, and we have to test it for all the different types of navigation.
 
-	•	We could create an interface and have a separate class for each type of navigation. 
-	•	This would solve the problem of having to modify the `navigate` method, but inheritance is static and we cannot change the behavior of the navigate method at runtime. Also code duplication is a problem. This is where the strategy pattern comes in. 
-	•	The **strategy pattern** allows us to encapsulate the different types of navigation in separate classes and select the appropriate one at runtime.
-	•	The Strategy pattern suggests that you take a class that does something specific in a lot of different ways and extract all of these algorithms into separate classes called strategies. 
-	•	The original class, called context, must have a field for storing a reference to one of the strategies. 
-	•	The context delegates the work to a linked strategy object instead of executing it on its own.
+•	We could <mark class="hltr-g">create an interface and have a separate class for each type of navigation</mark>. 
+•	This would solve the problem of having to modify the `navigate` method, <mark class="hltr-o">but inheritance is static and we cannot change the behavior of the navigate method at runtime</mark>. Also code duplication is a problem. This is where the strategy pattern comes in. 
+
+•	The **strategy pattern** allows us to encapsulate the different types of navigation in separate classes and select the appropriate one at runtime.
+
+•	The Strategy pattern suggests that you take a class that does something specific in a lot of different ways and extract all of these algorithms into separate classes called strategies. 
+•	The original class, called context, must have a field for storing a reference to one of the strategies. 
+•	The context delegates the work to a linked strategy object instead of executing it on its own.
 
 ### Implementation
 
-	0.	**Strategy interface** - defines an algorithm interface common to all supported versions.
+1.	**Strategy interface** - defines an algorithm interface common to all supported versions.
 
 ```java
 public interface NavigationStrategy {
@@ -213,7 +215,7 @@ public interface NavigationStrategy {
 }
 ```
 
-	0.	**Concrete Strategy classes** - implement the algorithms using the Strategy interface.
+2.	**Concrete Strategy classes** - implement the algorithms using the Strategy interface.
 
 ```java
 public class RoadNavigation implements NavigationStrategy {
@@ -224,7 +226,7 @@ public class RoadNavigation implements NavigationStrategy {
 }
 ```
 
-	0.	**Context class** - maintains a reference to a Strategy object and defines an interface that lets the strategy access its data.
+3.	**Context class** - maintains a reference to a Strategy object and defines an interface that lets the strategy access its data.
 
 ```java
 public class Navigator {
@@ -240,7 +242,7 @@ public class Navigator {
 }
 ```
 
-	0.	Client - creates and configures the context and the strategy objects.
+4.	Client - creates and configures the context and the strategy objects.
 
 ```java
 public class Main {
@@ -255,11 +257,11 @@ To create a strategy object we can also use a factory method.
 
 Recap
 
-	•	The strategy pattern encapsulates alternative algorithms (or strategies) for a specific task and supports their interchangeable use.
-	•	Implementing it in place violates the open-closed principle and makes the code harder to maintain.
-	•	Inheritance is static, and we cannot change the behavior of the system at runtime.
-	•	To use the strategy pattern we create a strategy interface and a set of classes that implement it.
-	•	The context class maintains a reference to a strategy object and delegates the work to it.
+•	The strategy pattern encapsulates alternative algorithms (or strategies) for a specific task and supports their interchangeable use.
+•	Implementing it in place violates the open-closed principle and makes the code harder to maintain.
+•	Inheritance is static, and we cannot change the behavior of the system at runtime.
+•	To use the strategy pattern we create a strategy interface and a set of classes that implement it.
+•	The context class maintains a reference to a strategy object and delegates the work to it.
 
 
 

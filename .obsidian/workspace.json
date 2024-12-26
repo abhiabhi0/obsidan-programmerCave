@@ -53,6 +53,51 @@
             }
           },
           {
+            "id": "88c0ef314ccaf15d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "System Design/01 - Splitwise.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01 - Splitwise"
+            }
+          },
+          {
+            "id": "dec0af68ad6bee1d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LLD/11 - Behavioural Design Patterns - Observer and Strategy.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "11 - Behavioural Design Patterns - Observer and Strategy"
+            }
+          },
+          {
+            "id": "1463654a05d2e4ba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Golang/Garbage Collector in Go.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Garbage Collector in Go"
+            }
+          },
+          {
             "id": "3b1eeb5cb68bbcca",
             "type": "leaf",
             "state": {
@@ -110,21 +155,6 @@
               },
               "icon": "lucide-file",
               "title": "07 - Creational Design Patterns - Singleton and Builder"
-            }
-          },
-          {
-            "id": "e82828d7e3caf235",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/DB/Internals of Indexing.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Internals of Indexing"
             }
           },
           {
@@ -323,7 +353,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -395,10 +425,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md"
+                "file": "Golang/Garbage Collector in Go.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory"
+              "title": "Outline of Garbage Collector in Go"
             }
           },
           {
@@ -451,9 +481,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "336c7e11b18ef64e",
+  "active": "1463654a05d2e4ba",
   "lastOpenFiles": [
+    "LLD/11 - Behavioural Design Patterns - Observer and Strategy.md",
     "System Design/01 - Splitwise.md",
+    "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
+    "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
     "01 - Splitwise-class-diagram.png",
     "01 - Splitwise-sequence-diagram.png",
     "01 - Splitwise-hld.png",
@@ -486,8 +519,6 @@
     "Interview Prep/DB/Database Sharding.md",
     "Interview Prep/Best ways to test system functionality.md",
     "Interview Prep/How Do Go, C++, Java, Python Work.md",
-    "Golang/Handle Memory leak in Go.md",
-    "Golang/Context.md",
     "Interview Prep/SQL Queries",
     "Interview Prep/DB",
     "Interview Prep/Microservice Architecture",
