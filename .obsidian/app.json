@@ -3,5 +3,6 @@
   "promptDelete": false,
   "showUnsupportedFiles": true,
   "showLineNumber": false,
-  "readableLineLength": true
+  "readableLineLength": true,
+  "attachmentFolderPath": "zimages"
 }

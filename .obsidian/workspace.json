@@ -4,86 +4,159 @@
     "type": "split",
     "children": [
       {
-        "id": "dc3596a6cebbafa1",
-        "type": "tabs",
+        "id": "65d330eecb2e3451",
+        "type": "split",
         "children": [
           {
-            "id": "5e9d98fe7aba16d4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Ping-Pong Example.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+            "id": "dc3596a6cebbafa1",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "5e9d98fe7aba16d4",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Golang/Ping-Pong Example.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Ping-Pong Example"
+                }
               },
-              "icon": "lucide-file",
-              "title": "Ping-Pong Example"
-            }
+              {
+                "id": "0d00387869020fed",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Golang/Concurrency in Go.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Concurrency in Go"
+                }
+              },
+              {
+                "id": "10d87f87737a97ef",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Golang/Concurrency Patterns.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Concurrency Patterns"
+                }
+              },
+              {
+                "id": "4a18fe4f72610079",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Golang/Concurrency vs Parallelism.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Concurrency vs Parallelism"
+                }
+              },
+              {
+                "id": "a62ffc8fac1ed25e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Golang/Goroutines/Lifecycle and Scheduling of a Goroutine.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "Lifecycle and Scheduling of a Goroutine"
+                }
+              },
+              {
+                "id": "3fed1497aab2d449",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "System Design/01 - Splitwise.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "01 - Splitwise"
+                }
+              },
+              {
+                "id": "b006b82d909fabac",
+                "type": "leaf",
+                "state": {
+                  "type": "image",
+                  "state": {
+                    "file": "zimages/{1BB17EC0-9998-412E-9530-1A4456ECA5EB}.png"
+                  },
+                  "icon": "lucide-image",
+                  "title": "{1BB17EC0-9998-412E-9530-1A4456ECA5EB}"
+                },
+                "group": "664585b80508b6ae"
+              },
+              {
+                "id": "c74241c56842bfe8",
+                "type": "leaf",
+                "state": {
+                  "type": "image",
+                  "state": {
+                    "file": "zimages/{1BB17EC0-9998-412E-9530-1A4456ECA5EB}.png"
+                  },
+                  "icon": "lucide-image",
+                  "title": "{1BB17EC0-9998-412E-9530-1A4456ECA5EB}"
+                }
+              }
+            ],
+            "currentTab": 7
           },
           {
-            "id": "0d00387869020fed",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Concurrency in Go.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Concurrency in Go"
-            }
-          },
-          {
-            "id": "10d87f87737a97ef",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Concurrency Patterns.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Concurrency Patterns"
-            }
-          },
-          {
-            "id": "4a18fe4f72610079",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Concurrency vs Parallelism.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Concurrency vs Parallelism"
-            }
-          },
-          {
-            "id": "a62ffc8fac1ed25e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Goroutines/Lifecycle and Scheduling of a Goroutine.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Lifecycle and Scheduling of a Goroutine"
-            }
+            "id": "b78fb5e72b98db7c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "83df01da76c7ae59",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "zimages/{1BB17EC0-9998-412E-9530-1A4456ECA5EB}.png",
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  },
+                  "icon": "links-coming-in",
+                  "title": "Backlinks for {1BB17EC0-9998-412E-9530-1A4456ECA5EB}"
+                },
+                "group": "664585b80508b6ae"
+              }
+            ]
           }
         ],
-        "currentTab": 4
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -155,10 +228,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Golang/Goroutines/Lifecycle and Scheduling of a Goroutine.md"
+                "file": "zimages/{1BB17EC0-9998-412E-9530-1A4456ECA5EB}.png"
               },
               "icon": "lucide-list",
-              "title": "Outline of Lifecycle and Scheduling of a Goroutine"
+              "title": "Outline of {1BB17EC0-9998-412E-9530-1A4456ECA5EB}"
             }
           },
           {
@@ -211,10 +284,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a62ffc8fac1ed25e",
+  "active": "b4904ce9751ea41b",
   "lastOpenFiles": [
-    "Golang/Untitled.md",
+    "System Design/01 - Splitwise.md",
+    "zimages/01 - Splitwise-class-diagram.png",
     "Golang/Goroutines/Lifecycle and Scheduling of a Goroutine.md",
+    "zimages",
+    "Golang/Untitled.md",
     "Golang/Goroutines",
     "Golang/Go runtime.md",
     "Golang/Concurrency vs Parallelism.md",
@@ -225,31 +301,28 @@
     "Golang/Garbage Collector in Go.md",
     "Golang/Memory Management in Go.md",
     "LLD/11 - Behavioural Design Patterns - Observer and Strategy.md",
-    "System Design/01 - Splitwise.md",
     "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
     "LLD/07 - Creational Design Patterns - Singleton and Builder.md",
-    "01 - Splitwise-class-diagram.png",
-    "01 - Splitwise-sequence-diagram.png",
-    "01 - Splitwise-hld.png",
-    "Splitwise-design-diagram.png",
+    "zimages/01 - Splitwise-sequence-diagram.png",
+    "zimages/01 - Splitwise-hld.png",
+    "zimages/Splitwise-design-diagram.png",
     "System Design/Bill Sharing.md",
     "System Design/Design Image chat application.md",
     "Interview Prep/Why do we need message brokers.md",
-    "{9AB602BF-E198-43A8-9912-55E72504950A}.png",
+    "zimages/{9AB602BF-E198-43A8-9912-55E72504950A}.png",
     "Interview Prep/Top 7 Most-Used Distributed System Patterns.md",
-    "{149CA686-468A-41CD-BF7D-165CAE2A013D}.png",
+    "zimages/{149CA686-468A-41CD-BF7D-165CAE2A013D}.png",
     "Interview Prep/Where do we cache data.md",
-    "{BDA84EDB-31D0-4325-B755-B132BF47513A}.png",
+    "zimages/{BDA84EDB-31D0-4325-B755-B132BF47513A}.png",
     "Interview Prep/DB/Types of DB.md",
-    "{BDA29B48-8A0C-424C-9631-1E57FA77FD47}.png",
+    "zimages/{BDA29B48-8A0C-424C-9631-1E57FA77FD47}.png",
     "Kubernetes/Kubernetes.md",
-    "{8EF46AC2-4003-47F7-95E7-1228DC21FF3D}.png",
+    "zimages/{8EF46AC2-4003-47F7-95E7-1228DC21FF3D}.png",
     "Interview Prep/Top 5 caching strategies.md",
-    "{B91EFF56-5391-4176-951B-9B0C64048469}.png",
+    "zimages/{B91EFF56-5391-4176-951B-9B0C64048469}.png",
     "Interview Prep/What is the difference between Process and Thread.md",
     "Interview Prep/Microservice Architecture/Untitled.md",
     "Interview Prep/Git Merge vs. Rebase.md",
-    "Kubernetes/Top 4 Kubernetes Service Types.md",
     "Interview Prep/SQL Queries",
     "Interview Prep/DB",
     "Interview Prep/Microservice Architecture",
@@ -258,8 +331,7 @@
     "Interview Prep/GRPC",
     "DSA/Dynamic Programming",
     "DSA/Hashing",
-    "DSA/Array",
-    "Untitled.canvas",
+    "zimages/Untitled.canvas",
     "Untitled 1.canvas"
   ]
 }
