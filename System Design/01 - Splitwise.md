@@ -23,6 +23,7 @@
 - **Purpose**: Simplifies creating different types of expenses dynamically.
 - **Implementation**:
     - `ExpenseFactory` creates objects such as `EqualExpense`, `UnequalExpense`, or `PercentageExpense`.
+Ref: [[08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory]]
 
 #### **Observer Pattern**
 - **Purpose**: Notify users/groups of changes, like new expenses or settlements.
@@ -33,7 +34,7 @@
 - **Purpose**: Abstracts splitting logic for flexibility and cleaner code.
 - **Implementation**:
     - Strategies include `EqualSplit`, `UnequalSplit`, or `PercentageSplit`.
-
+Ref:  [[11 - Behavioural Design Patterns - Observer and Strategy]]
 ---
 
 ### **3. Class Diagram**

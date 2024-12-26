@@ -4,7 +4,7 @@
 <mark class="hltr-o">existing object and avoiding dependencies on the class of the object that needs to be cloned</mark>.
 
 **Factory**
-- is a creational design pattern that can be used to create objects without specifying the exact class of the object that will be created. 
+- is a creational design pattern that can be <mark class="hltr-g">used to create objects without specifying the exact class of the object that will be created</mark>. 
 - The pattern is used to avoid dependencies on the class of the object that needs to be created.
 
 ---
@@ -308,7 +308,7 @@ func (r *ModelRegistry) GetModel(modelType ModelType) *MLModel {
 ## Factory
 - is a creational pattern that uses factory methods to deal with the problem of creating objects without having to specify the exact class of the object that will be created. 
 - This is done by creating objects by calling a factory method—either specified in an interface and implemented by child classes, or implemented in a base class and optionally overridden by derived classes—rather than by calling a constructor.
-- The client code can request an object from a factory object without having to know the class of the object that will be returned. The factory object can create the object and return it to the client code.
+- The <mark class="hltr-g">client code can request an object from a factory object without having to know the class of the object that will be returned</mark>. The factory object can create the object and return it to the client code.
 
 ### Simple Factory
 - is a creational pattern that provides a static method for creating objects.

@@ -323,7 +323,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -395,10 +395,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System Design/01 - Splitwise.md"
+                "file": "LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 01 - Splitwise"
+              "title": "Outline of 08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory"
             }
           },
           {
@@ -451,14 +451,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "85a78b6eed9a3691",
+  "active": "336c7e11b18ef64e",
   "lastOpenFiles": [
+    "System Design/01 - Splitwise.md",
     "01 - Splitwise-class-diagram.png",
     "01 - Splitwise-sequence-diagram.png",
     "01 - Splitwise-hld.png",
     "Splitwise-design-diagram.png",
     "System Design/Bill Sharing.md",
-    "System Design/01 - Splitwise.md",
     "System Design/Design Image chat application.md",
     "Interview Prep/Why do we need message brokers.md",
     "{9AB602BF-E198-43A8-9912-55E72504950A}.png",
@@ -475,7 +475,6 @@
     "Interview Prep/What is the difference between Process and Thread.md",
     "Interview Prep/Microservice Architecture/Untitled.md",
     "Interview Prep/Git Merge vs. Rebase.md",
-    "{00980DC9-0061-401A-AB8F-0AFE7B1064D7}.png",
     "Kubernetes/Top 4 Kubernetes Service Types.md",
     "Interview Prep/Types of load balancing algorithms.md",
     "Interview Prep/Cookies vs Session.md",
