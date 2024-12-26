@@ -191,5 +191,3 @@ pong 6
 3. **Can this code cause a deadlock?**
     
     - No, because the channel is always properly used to send and receive the ball, ensuring the goroutines stay synchronized.
-
-Let me know if you need further clarifications!
