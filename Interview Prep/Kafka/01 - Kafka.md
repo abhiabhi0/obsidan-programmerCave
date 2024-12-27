@@ -5,13 +5,19 @@ Apache Kafka is a distributed event streaming platform designed for high-through
     - **Producers**: Publish data to Kafka topics, select partitions via keys.
     - **Consumers**: Read data from topics, organized in consumer groups.
     - **Brokers**: Kafka servers storing data and managing requests.
-    - **Topics & Partitions**: Topics are split into partitions for scalability.
+    - **Topics & Partitions**: Topics are split into partitions for scalability. [[What is Kafka Partition]]
     - **Replication**: Ensures fault tolerance with leaders and followers.
     - **ZooKeeper**: Manages metadata and leader elections (phasing out for metadata quorum).
-2. **Data Flow**:
-    - Producers send records to partitions → Brokers replicate data → Consumers fetch records using offsets.
-    - Failures trigger leader election for partitions to maintain availability.
 
+2. **Consumer Groups**:
+    - Kafka uses consumer groups to manage message consumption.
+    - Each consumer in a consumer group is assigned one or more partitions, ensuring that each partition is consumed by only one consumer in the group.
+    
+1. **Offset Management**:
+    - Kafka tracks which messages have been read using offsets.
+    - Each consumer maintains its own offset for the partitions it consumes.
+
+[[02 - How Does Kafka Work]]
 [[02 - Message Delivery Guarantees in Kafka]]
 ### Core Components of Kafka
 
@@ -65,31 +71,3 @@ Apache Kafka is a distributed event streaming platform designed for high-through
 
 5. **High Throughput and Low Latency**:
     - Kafka’s design emphasizes high throughput and low latency, making it suitable for real-time data streaming applications.
-
-### Kafka Ecosystem
-
-1. **Kafka Connect**:
-    - A framework to stream data between Kafka and other systems, such as databases, key-value stores, search indexes, and file systems.
-    - Connectors (source and sink) are used to integrate with various systems.
-
-2. **Kafka Streams**:
-    - A stream processing library to build real-time applications that process data stored in Kafka topics.
-    - It allows for the processing of data records as they arrive and provides operations like map, filter, join, and aggregate.
-
-3. **Kafka Control Center**:
-    - A web-based tool to manage and monitor Kafka clusters.
-    - Provides insights into broker health, topic performance, consumer lag, and more.
-
-### Data Flow in Kafka
-
-1. **Producer to Broker**:
-    - Producers send records to a topic's partitions.
-    - The broker that receives the record writes it to disk and replicates it to followers.
-
-2. **Broker to Consumer**:
-    - Consumers read records from the topic partitions.
-    - The broker provides the records starting from the last committed offset for the consumer group.
-
-3. **Replication and Failover**:
-    - In case of a broker failure, followers can take over as the leader of a partition.
-    - ZooKeeper helps manage leader election and failover processes.
