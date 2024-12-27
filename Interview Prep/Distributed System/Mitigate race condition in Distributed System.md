@@ -1,115 +1,93 @@
 #### Challenges in Distributed Systems
 
-1. **Network Latency**: Communication between nodes introduces latency. Traditional locks assume low latency, unsuitable for distributed systems.
-2. **Failure Detection**: Detecting node failures accurately is difficult. A node holding a lock might crash, leaving the lock in an indeterminate state.
-3. **Scalability**: Traditional locks don’t scale across multiple nodes, limiting coordination efficiency.
-4. **Consistency**: Ensuring data consistency across nodes is challenging due to potential partitioning or independent failures.
+1. **Network Latency**: Communication between nodes introduces delays, making traditional low-latency locking mechanisms unsuitable.
+2. **Failure Detection**: Nodes might crash while holding locks, leaving resources in an indeterminate state.
+3. **Scalability**: Traditional locking doesn't scale well in distributed environments with multiple nodes.
+4. **Consistency**: Ensuring consistency is difficult due to partitioning and independent node failures.
 
-#### Race Conditions in Distributed Systems
+---
 
-- **Definition**: Occur when system behavior depends on the sequence or timing of uncontrollable events.
+### Key Concepts and Mechanisms to Address Race Conditions
+
+#### 1. **Pessimistic Locking**
+
+- **Definition**: Prevents multiple processes from simultaneously accessing a resource by locking it before updates.
+    
+- **Implementation in Distributed Systems**:
+    - Locks are maintained in a **cluster-wide lock database**.
+    - Each lock is assigned a **TTL (Time-to-Live)** or lease to automatically release if a node fails.
+    
+- **Problem**: **Stale Updates**
+    - A node may pause or fail after acquiring a lock with a TTL. Once the lease expires, other nodes can acquire the lock and modify the resource. If the original node resumes, it might overwrite newer updates.
+    
+- **Solution**: **Fence Tokens**
+    - Each lock acquisition generates a unique, incrementing token.
+    - Shared resources reject updates with tokens older than the last processed token.
+    - **Example Workflow**:
+        1. Node A acquires lock with token 10 and pauses.
+        2. Node B acquires lock with token 11 and updates the resource.
+        3. Node A resumes but is rejected because its token (10) is older than token 11.
+
+---
+
+#### 2. **Redlock Algorithm** (Distributed Locking with Redis)
+
+- A distributed locking algorithm designed for high reliability.
+- **Steps**:
+    1. **Acquire Locks Across Multiple Nodes**:
+        - Attempt to acquire a lock on at least a majority of Redis nodes.
+        - Each lock includes a unique identifier and TTL.
+    2. **Validate Lock Success**:
+        - If quorum (majority) is reached within a timeout, the lock is valid.
+        - Otherwise, release acquired locks and retry.
+    3. **Execute Critical Section**:
+        - Perform the operation while holding the lock.
+    4. **Release Locks**:
+        - Explicitly release locks after completing the operation.
+        
+- **Advantages**:
+    - Handles node failures and network partitions.
+    - Provides fault-tolerant mutual exclusion.
+    
+- **Challenges**:
+    - Precise TTL configuration is critical to avoid premature lock expiration or prolonged contention.
+    - Extended network partitions can disrupt quorum.
+    
 - **Example**:
-    1. Two customers simultaneously try to purchase the last item in stock.
-    2. Without proper locking, both transactions proceed, leading to overselling or inconsistent inventory.
 
-#### Distributed Locking Mechanisms
-
-Distributed locks control access to shared resources across nodes, preventing race conditions. Common approaches include:
-
-1. **Database Locks**:
-    - Use SQL transactions with row-level locking (`FOR UPDATE`) to ensure exclusive access to a resource.
-2. **Cache-Based Locks (e.g., Redis)**:
-    - Implemented using `SET NX` with expiration times.
-    - Example using Python:
-        
-        ```python
-        if redis_client.set(lock_key, lock_value, nx=True, px=10000):
-            try:
-                # Critical section
-            finally:
-                redis_client.delete(lock_key)
-        ```
-        
-3. **Coordination Services (e.g., ZooKeeper)**:
-    
-    - Use zNodes as locks.
-    - Example with Python and Kazoo:
-        
-        ```python
-        lock = zk.Lock("/lockpath/resource")
-        lock.acquire()
-        try:
-            # Critical section
-        finally:
-            lock.release()
-        ```
-        
-4. **Lease-Based Locks**:
-    
-    - Use time-bound leases with services like DynamoDB to automatically release locks after expiration.
-
-#### Redlock Algorithm (Detailed Explanation)
-
-The Redlock algorithm, designed for Redis, ensures reliable distributed locking. It addresses challenges of network partitions, node failures, and clock skew.
-
-**Key Steps in Redlock**:
-
-1. **Acquire Locks Across Multiple Nodes**:
-    
-    - The client attempts to acquire a lock on at least a majority of Redis nodes.
-    - Each lock request includes a unique identifier and a TTL (time-to-live).
-2. **Check Lock Success**:
-    
-    - If locks are acquired on a majority of nodes within a defined timeout, the lock is considered valid.
-    - Otherwise, the client releases any acquired locks and retries.
-3. **Perform Critical Operation**:
-    
-    - The client proceeds with its operation while holding the lock.
-4. **Release Locks**:
-    
-    - After completing the operation, the client releases the lock on all nodes.
-
-**Advantages**:
-
-- Resilience to node failures.
-- Ensures mutual exclusion with fault tolerance.
-
-**Challenges**:
-
-- Requires careful configuration of TTL and clock synchronization.
-- May not handle prolonged network partitions effectively.
-
-#### Diagram: Redlock Algorithm Workflow
-
-```
-[Client] --[Lock Request]--> [Redis Node 1]
-        --[Lock Request]--> [Redis Node 2]
-        --[Lock Request]--> [Redis Node 3]
-        --[Lock Request]--> [Redis Node 4]
-        --[Lock Request]--> [Redis Node 5]
-
-    [Redis Nodes respond with success/failure]
-
-[Client calculates quorum success or retries acquisition.]
-
-[If quorum success]: Proceed with critical operation.
-[If quorum failure]: Release acquired locks and retry.
+```python
+if redis_client.set(lock_key, lock_value, nx=True, px=10000):
+    try:
+        # Critical section
+    finally:
+        redis_client.delete(lock_key)
 ```
 
-#### Best Practices for Distributed Locks
+---
+
+#### 3. **Lease-Based Locking**
+
+- **Definition**: Automatically releases a lock if the TTL expires, enabling recovery from node failures.
+- **Limitations**:
+    - Does not prevent stale updates if a paused node resumes after its lease expires.
+- **Solution**: Combine with fencing tokens to ensure correctness.
+
+---
+
+### Best Practices for Mitigating Race Conditions
 
 1. **Minimize Lock Duration**:
-    - Hold locks for the shortest time necessary to reduce contention.
-2. **Implement Timeouts and Leases**:
-    - Ensure locks are automatically released if a client fails.
-3. **Monitor Lock Status**:
-    - Use monitoring tools to detect and resolve potential deadlocks.
-4. **Test Thoroughly**:
-    - Simulate failure scenarios to validate the locking mechanism’s reliability.
+    - Reduce lock hold time to decrease contention and improve throughput.
+2. **Set Appropriate TTLs**:
+    - Avoid indefinite locks to ensure recovery in failure scenarios.
+3. **Use Fencing Tokens**:
+    - Reject outdated updates to prevent stale writes.
+4. **Simulate Failure Scenarios**:
+    - Test for edge cases like node crashes, network partitions, and clock skew.
+5. **Monitor Lock Status**:
+    - Employ monitoring tools to detect deadlocks or contention issues.
 
-#### Example: Preventing Race Conditions in E-Commerce
-
-- **Scenario**: Two users attempt to purchase the last item in stock simultaneously.
-- **Solution**:
-    - Implement a distributed lock using Redis or ZooKeeper.
-    - Ensure only one user’s transaction updates the inventory at a time.
+Ref:
+https://medium.com/@_sidharth_m_/how-distributed-systems-avoid-race-conditions-using-pessimistic-locking-1dc112a82b5e
+https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html
+https://dzone.com/articles/distributed-locking-and-race-condition-prevention
