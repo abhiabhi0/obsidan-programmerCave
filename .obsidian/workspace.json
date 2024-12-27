@@ -148,13 +148,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/Kafka/01 - Kafka.md",
+                "file": "Interview Prep/Deadlock in Operating Systems.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 - Kafka"
+              "title": "Deadlock in Operating Systems"
             }
           },
           {
@@ -245,10 +245,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interview Prep/Kafka/01 - Kafka.md"
+                "file": "Interview Prep/Deadlock in Operating Systems.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 01 - Kafka"
+              "title": "Outline of Deadlock in Operating Systems"
             }
           },
           {
@@ -257,7 +257,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interview Prep/Kafka/01 - Kafka.md",
+                "file": "Interview Prep/Deadlock in Operating Systems.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -267,7 +267,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 01 - Kafka"
+              "title": "Backlinks for Deadlock in Operating Systems"
             }
           },
           {
@@ -303,8 +303,9 @@
   },
   "active": "cf026f80e24fb7bb",
   "lastOpenFiles": [
-    "Interview Prep/Kafka/02 - How Does Kafka Work.md",
     "Interview Prep/Kafka/01 - Kafka.md",
+    "Interview Prep/Deadlock in Operating Systems.md",
+    "Interview Prep/Kafka/02 - How Does Kafka Work.md",
     "Interview Prep/Kafka/02 - Message Delivery Guarantees in Kafka.md",
     "Interview Prep/Kafka/What is Kafka Partition.md",
     "Interview Prep/01 - Resume Questions/03 - Kafka Producer and Consumer Questions.md",
@@ -329,7 +330,6 @@
     "Golang/Goroutines/01 - Concurrency in Go.md",
     "Golang/Goroutines/Internal Details of Goroutines in Go.md",
     "Golang/Goroutines Examples/Print table of N using go routine.md",
-    "Golang/Go Signals.md",
     "Golang/Goroutines Examples",
     "zimages/Defer-unreachable-example.png",
     "zimages/{1BB17EC0-9998-412E-9530-1A4456ECA5EB}.png",
