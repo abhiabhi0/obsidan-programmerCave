@@ -4,221 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "c48bf60e5478db02",
+        "id": "a8484b39d69b31a2",
         "type": "tabs",
         "children": [
           {
-            "id": "eef0debaadb548b2",
+            "id": "b8f243afd305ca5f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Goroutines/Read after closing Channel.md",
+                "file": "Interview Prep/Distributed System/Mitigate race condition in Distributed System.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Read after closing Channel"
-            }
-          },
-          {
-            "id": "85e9f7c88feaa5d0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Goroutines Examples/Call the compute function a total of 100 times, distributed among 8 goroutines.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Call the compute function a total of 100 times, distributed among 8 goroutines"
-            }
-          },
-          {
-            "id": "4c15ed0e48808321",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Goroutines/01 - Concurrency in Go.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01 - Concurrency in Go"
-            }
-          },
-          {
-            "id": "75a1d90fd5557f8d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Go Signals.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Go Signals"
-            }
-          },
-          {
-            "id": "5e75f16ecee1219a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Goroutines Examples/Print table of N using go routine.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Print table of N using go routine"
-            }
-          },
-          {
-            "id": "d92becd2e5ca54d8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Goroutines/02 - Lifecycle and Scheduling of a Goroutine.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "02 - Lifecycle and Scheduling of a Goroutine"
-            }
-          },
-          {
-            "id": "7ad807b0e7d4e0b9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Goroutines/Limit Goroutines.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Limit Goroutines"
-            }
-          },
-          {
-            "id": "fb592ecd9c018c34",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Goroutines Examples/Goroutine vs main().md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Goroutine vs main()"
-            }
-          },
-          {
-            "id": "7137542d0650003b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Goroutines/03 - Goroutines vs Threads.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "03 - Goroutines vs Threads"
-            }
-          },
-          {
-            "id": "831912116c285e7e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Goroutines Examples/Worker Pool Implementation.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Worker Pool Implementation"
-            }
-          },
-          {
-            "id": "7a0b794de16d59fd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Goroutines/04 - Concurrency Patterns.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "04 - Concurrency Patterns"
-            }
-          },
-          {
-            "id": "2c96f1d3329a7d90",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Goroutines/05 - Go runtime.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "05 - Go runtime"
-            }
-          },
-          {
-            "id": "eb330e585342de51",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Goroutines/Closing a Channel.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Closing a Channel"
-            }
-          },
-          {
-            "id": "174544156ccd532f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Goroutines Examples/Print N integers using odd and even thread.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Print N integers using odd and even thread"
+              "title": "Mitigate race condition in Distributed System"
             }
           }
-        ],
-        "currentTab": 12
+        ]
       }
     ],
     "direction": "vertical"
@@ -302,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Golang/Goroutines/Closing a Channel.md",
+                "file": "Interview Prep/Distributed System/Mitigate race condition in Distributed System.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -312,7 +116,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Closing a Channel"
+              "title": "Backlinks for Mitigate race condition in Distributed System"
             }
           },
           {
@@ -347,11 +151,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b4904ce9751ea41b",
+  "active": "b8f243afd305ca5f",
   "lastOpenFiles": [
+    "Golang/Goroutines/Closing a Channel.md",
+    "Interview Prep/Distributed System/Mitigate race condition in Distributed System.md",
+    "Interview Prep/Distributed System",
     "Golang/Goroutines/Read after closing Channel.md",
     "Golang/Goroutines Examples/Print N integers using odd and even thread.md",
-    "Golang/Goroutines/Closing a Channel.md",
     "Golang/Goroutines/05 - Go runtime.md",
     "Golang/Goroutines/Limit Goroutines.md",
     "Golang/Goroutines/02 - Lifecycle and Scheduling of a Goroutine.md",
@@ -380,7 +186,6 @@
     "Golang/Goroutines Examples/Ping-Pong Example.md",
     "Golang/Handle Memory leak in Go.md",
     "Golang/Garbage Collector in Go.md",
-    "Golang/Memory Management in Go.md",
     "zimages/01 - Splitwise-sequence-diagram.png",
     "zimages/01 - Splitwise-hld.png",
     "zimages/Splitwise-design-diagram.png",
@@ -394,7 +199,6 @@
     "Interview Prep/Kafka",
     "Interview Prep/01 - Resume Questions",
     "Interview Prep/GRPC",
-    "DSA/Dynamic Programming",
     "zimages/Untitled.canvas",
     "Untitled 1.canvas"
   ]
