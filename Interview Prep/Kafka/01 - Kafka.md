@@ -12,6 +12,7 @@ Apache Kafka is a distributed event streaming platform designed for high-through
     - Producers send records to partitions → Brokers replicate data → Consumers fetch records using offsets.
     - Failures trigger leader election for partitions to maintain availability.
 
+[[02 - Message Delivery Guarantees in Kafka]]
 ### Core Components of Kafka
 
 1. **Producers**:
