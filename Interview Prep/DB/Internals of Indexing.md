@@ -1,6 +1,6 @@
-Indexing is the way to get an unordered table into an order that will maximize the query’s efficiency while searching.
+<mark class="hltr-b">Indexing is the way to get an unordered table into an order that will maximize the query’s efficiency while searching</mark>.
 
-An index is a <mark class="hltr-g">data structure on disk & in-memory that stores a column value(onto which index is created) along with pointers to the corresponding rows of table in heap</mark>. This data structure is usually implemented as a <mark class="hltr-o">B-tree (Balanced Tree</mark>) or it’s variation.
+An index is a <mark class="hltr-g">data structure on disk & in-memory that stores a column value (onto which index is created) along with pointers to the corresponding rows of table in heap</mark>. This data structure is usually implemented as a <mark class="hltr-o">B-tree (Balanced Tree</mark>) or it’s variation.
 
 Suppose we have table of **employee**. Below are table representation, single page representation of records and heap representation to have better understanding.
 

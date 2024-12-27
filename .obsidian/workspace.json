@@ -13,16 +13,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/Distributed System/Mitigate race condition in Distributed System.md",
+                "file": "Interview Prep/DB/Concurrency Control Mechanisms - Distributed vs. Single Systems.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mitigate race condition in Distributed System"
+              "title": "Concurrency Control Mechanisms - Distributed vs. Single Systems"
+            }
+          },
+          {
+            "id": "1b73dfea6641356e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview Prep/DB/Internals of Indexing.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Internals of Indexing"
+            }
+          },
+          {
+            "id": "3f8a776cae34a8f8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview Prep/DB/Types of Indexing in Databases.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Types of Indexing in Databases"
+            }
+          },
+          {
+            "id": "a75d46cd24fb1aa9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview Prep/DB/Database Locks - Key Concepts and Types.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Database Locks - Key Concepts and Types"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -106,7 +152,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Interview Prep/Distributed System/Mitigate race condition in Distributed System.md",
+                "file": "Interview Prep/DB/Types of Indexing in Databases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +162,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Mitigate race condition in Distributed System"
+              "title": "Backlinks for Types of Indexing in Databases"
             }
           },
           {
@@ -151,10 +197,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b8f243afd305ca5f",
+  "active": "3f8a776cae34a8f8",
   "lastOpenFiles": [
-    "Golang/Goroutines/Closing a Channel.md",
+    "Interview Prep/DB/Internals of Indexing.md",
+    "Interview Prep/DB/Concurrency Control Mechanisms - Distributed vs. Single Systems.md",
+    "Interview Prep/DB/Database Locks - Key Concepts and Types.md",
     "Interview Prep/Distributed System/Mitigate race condition in Distributed System.md",
+    "Golang/Goroutines/Closing a Channel.md",
     "Interview Prep/Distributed System",
     "Golang/Goroutines/Read after closing Channel.md",
     "Golang/Goroutines Examples/Print N integers using odd and even thread.md",
@@ -183,9 +232,6 @@
     "Golang/Untitled.md",
     "Golang/Goroutines",
     "Golang/Goroutines/06 - Concurrency vs Parallelism.md",
-    "Golang/Goroutines Examples/Ping-Pong Example.md",
-    "Golang/Handle Memory leak in Go.md",
-    "Golang/Garbage Collector in Go.md",
     "zimages/01 - Splitwise-sequence-diagram.png",
     "zimages/01 - Splitwise-hld.png",
     "zimages/Splitwise-design-diagram.png",
