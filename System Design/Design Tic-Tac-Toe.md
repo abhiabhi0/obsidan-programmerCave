@@ -228,7 +228,6 @@ classDiagram
     MoveStrategy <|-- MinimaxMoveStrategy
 ```
 
-[mermaid.live](https://mermaid.live/edit#pako:eNqtks9vgjAUx_-V5p22CQYQYSXGg-44kmW7LVwaKNhIW1OKkTn-9xUkc0Y8LFsvfd_Xbz-vP94RUplRiCAtSVU9MVIowhOBUK_RSuqXkjRUoWOXRMh-pntaoozlOUvrUje9HtZiuadvWhFNiwbxH-K0PtkZ1N1KEpXdo35a07Lf2ybiZDlVveAMhbuxWDChqcpJSpfLc3rCyZZ2e0bZV_RXIjLJb9X4JWxd1pU5EhPFPwFjJhgnhz_Tzj-XwEMCyLaliVwTxVcfc1Fs8WnbI290yzn-ALfcI7cDCzhVnLDMdGF_0wT0hnKaQGTCjKhtAolojY_UWr41IoVIq5paoGRdbCDKSVkZVe8yAxxa-Du7I-JdyrOmGdNSxUPTd1PvgegIB4j8cOrMMXYdLwgdd_7o-xY0ELnYn4ae7zsY43mI_fmsteCjxzrTMJi5LvaCwHMDD7u4_QK2aROu)
 
 **Problems so far:**
 * ~~`Huge memory consumption` - A player can play multiple games at the same time. Each will have a new `HumanPlayer` object. Each player object will have the profile image. This will consume a lot of memory.~~
