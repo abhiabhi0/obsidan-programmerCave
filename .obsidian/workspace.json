@@ -208,23 +208,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System Design/Design Tic-Tac-Toe.md",
+                "file": "Interview Prep/DB/Untitled.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Design Tic-Tac-Toe"
-            }
-          },
-          {
-            "id": "ec5fe9ff9ffee876",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Untitled"
             }
           },
           {
@@ -315,10 +305,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System Design/Design Tic-Tac-Toe.md"
+                "file": "Interview Prep/DB/Untitled.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Design Tic-Tac-Toe"
+              "title": "Outline of Untitled"
             }
           },
           {
@@ -373,8 +363,12 @@
   },
   "active": "279124635e1335b2",
   "lastOpenFiles": [
-    "System Design/Design a Pen.md",
+    "SQL/Why choose PostgreSQL.md",
+    "Interview Prep/DB/Untitled.md",
+    "SQL/ROW_NUMBER vs. RANK vs. DENSE_RANK.md",
+    "SQL/Index.md",
     "System Design/Design Tic-Tac-Toe.md",
+    "System Design/Design a Pen.md",
     "zimages/Design-a-Pen-using-abstract-class.png",
     "System Design/01 - Splitwise.md",
     "Interview Prep/Idempotent RESTful APIs.md",
@@ -396,11 +390,7 @@
     "Interview Prep/DB/Internals of Indexing.md",
     "Interview Prep/DB/Concurrency Control Mechanisms - Distributed vs. Single Systems.md",
     "Interview Prep/DB/Database Locks - Key Concepts and Types.md",
-    "Interview Prep/Distributed System/Mitigate race condition in Distributed System.md",
-    "Golang/Goroutines/Closing a Channel.md",
     "Interview Prep/Distributed System",
-    "Golang/Goroutines/Read after closing Channel.md",
-    "Golang/Goroutines/05 - Go runtime.md",
     "Golang/Goroutines Examples",
     "zimages/Defer-unreachable-example.png",
     "zimages/{1BB17EC0-9998-412E-9530-1A4456ECA5EB}.png",
