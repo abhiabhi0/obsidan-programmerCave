@@ -208,13 +208,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System Design/Design a Pen.md",
+                "file": "System Design/Design Tic-Tac-Toe.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Design a Pen"
+              "title": "Design Tic-Tac-Toe"
             }
           },
           {
@@ -315,10 +315,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System Design/Design a Pen.md"
+                "file": "System Design/Design Tic-Tac-Toe.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Design a Pen"
+              "title": "Outline of Design Tic-Tac-Toe"
             }
           },
           {
@@ -327,7 +327,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "System Design/Design a Pen.md",
+                "file": "System Design/Design Tic-Tac-Toe.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -337,7 +337,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Design a Pen"
+              "title": "Backlinks for Design Tic-Tac-Toe"
             }
           },
           {
@@ -373,9 +373,10 @@
   },
   "active": "279124635e1335b2",
   "lastOpenFiles": [
+    "System Design/Design a Pen.md",
+    "System Design/Design Tic-Tac-Toe.md",
     "zimages/Design-a-Pen-using-abstract-class.png",
     "System Design/01 - Splitwise.md",
-    "System Design/Design a Pen.md",
     "Interview Prep/Idempotent RESTful APIs.md",
     "Golang/Goroutines Examples/Print table of N using go routine.md",
     "Golang/Goroutines Examples/Using two goroutines print even and odd in natural sequence.md",
@@ -412,7 +413,6 @@
     "zimages/{9AB602BF-E198-43A8-9912-55E72504950A}.png",
     "zimages/{149CA686-468A-41CD-BF7D-165CAE2A013D}.png",
     "zimages/{BDA84EDB-31D0-4325-B755-B132BF47513A}.png",
-    "zimages/{BDA29B48-8A0C-424C-9631-1E57FA77FD47}.png",
     "Interview Prep/SQL Queries",
     "Interview Prep/DB",
     "Interview Prep/Microservice Architecture",
