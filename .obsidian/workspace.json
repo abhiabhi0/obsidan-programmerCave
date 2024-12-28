@@ -193,13 +193,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Golang/Goroutines Examples/Print table of N using go routine.md",
+                "file": "Interview Prep/Idempotent RESTful APIs.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Print table of N using go routine"
+              "title": "Idempotent RESTful APIs"
             }
           },
           {
@@ -290,10 +290,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Golang/Goroutines Examples/Print table of N using go routine.md"
+                "file": "Interview Prep/Idempotent RESTful APIs.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Print table of N using go routine"
+              "title": "Outline of Idempotent RESTful APIs"
             }
           },
           {
@@ -302,7 +302,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Golang/Goroutines Examples/Print table of N using go routine.md",
+                "file": "Interview Prep/Idempotent RESTful APIs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -312,7 +312,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Print table of N using go routine"
+              "title": "Backlinks for Idempotent RESTful APIs"
             }
           },
           {
@@ -348,6 +348,8 @@
   },
   "active": "320a542ab1fb2a51",
   "lastOpenFiles": [
+    "Golang/Goroutines Examples/Print table of N using go routine.md",
+    "Interview Prep/Idempotent RESTful APIs.md",
     "Golang/Goroutines Examples/Using two goroutines print even and odd in natural sequence.md",
     "Interview Prep/SQL Queries/DELETE vs DROP vs TRUNCATE.md",
     "Excalidraw/Polymorphism.excalidraw.md",
@@ -373,8 +375,6 @@
     "Golang/Goroutines/Limit Goroutines.md",
     "Golang/Goroutines/02 - Lifecycle and Scheduling of a Goroutine.md",
     "Golang/Goroutines/03 - Goroutines vs Threads.md",
-    "Golang/Goroutines/04 - Concurrency Patterns.md",
-    "Golang/Goroutines Examples/Goroutine vs main().md",
     "Golang/Goroutines Examples",
     "zimages/Defer-unreachable-example.png",
     "zimages/{1BB17EC0-9998-412E-9530-1A4456ECA5EB}.png",
