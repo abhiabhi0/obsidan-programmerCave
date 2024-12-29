@@ -12,3 +12,5 @@
 | **Schema Design - 2**           | **[https://github.com/anshumansingh/SQLNotes/blob/main/09-schema-design.md](https://github.com/anshumansingh/SQLNotes/blob/main/09-schema-design.md)**                         |
 | **Views & Window Functions**    | **[https://github.com/anshumansingh/SQLNotes/blob/main/10-views-and-window-function.md](https://github.com/anshumansingh/SQLNotes/blob/main/10-views-and-window-function.md)** |
 |                                 |                                                                                                                                                                                |
+|                                 |                                                                                                                                                                                |
+![[{67719E14-40B2-4314-8A13-E9416E11F82B}.png]]

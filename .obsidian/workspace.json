@@ -363,6 +363,7 @@
   },
   "active": "279124635e1335b2",
   "lastOpenFiles": [
+    "zimages/{67719E14-40B2-4314-8A13-E9416E11F82B}.png",
     "SQL/Why choose PostgreSQL.md",
     "Interview Prep/DB/Untitled.md",
     "SQL/ROW_NUMBER vs. RANK vs. DENSE_RANK.md",
@@ -389,7 +390,6 @@
     "Interview Prep/DB/Types of Indexing in Databases.md",
     "Interview Prep/DB/Internals of Indexing.md",
     "Interview Prep/DB/Concurrency Control Mechanisms - Distributed vs. Single Systems.md",
-    "Interview Prep/DB/Database Locks - Key Concepts and Types.md",
     "Interview Prep/Distributed System",
     "Golang/Goroutines Examples",
     "zimages/Defer-unreachable-example.png",
