@@ -4,401 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "a8484b39d69b31a2",
+        "id": "d0399fcfbf8898c6",
         "type": "tabs",
         "children": [
           {
-            "id": "b8f243afd305ca5f",
+            "id": "64bbb7a42772ab4a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/DB/Concurrency Control Mechanisms - Distributed vs. Single Systems.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Concurrency Control Mechanisms - Distributed vs. Single Systems"
-            }
-          },
-          {
-            "id": "1b73dfea6641356e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/DB/Internals of Indexing.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Internals of Indexing"
-            }
-          },
-          {
-            "id": "3f8a776cae34a8f8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/DB/Unqiue constraint allows NULL.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Unqiue constraint allows NULL"
-            }
-          },
-          {
-            "id": "a634520bfc66b5bc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/DB/Differences between Primary Constraint, Unique Constraint, Primary Index, and Unique Index.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Differences between Primary Constraint, Unique Constraint, Primary Index, and Unique Index"
-            }
-          },
-          {
-            "id": "081b81e24e044511",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/Kafka/04 - Why Kafka Was Chosen for Message Processing.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "04 - Why Kafka Was Chosen for Message Processing"
-            }
-          },
-          {
-            "id": "fe5a5b2e3a3543c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/01 - Resume Questions/03 - Kafka Producer and Consumer Questions.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "03 - Kafka Producer and Consumer Questions"
-            }
-          },
-          {
-            "id": "b70f403d1d4d706d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/Kafka/What is Kafka Partition.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "What is Kafka Partition"
-            }
-          },
-          {
-            "id": "04fe98be871d5d9c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/Kafka/02 - Message Delivery Guarantees in Kafka.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "02 - Message Delivery Guarantees in Kafka"
-            }
-          },
-          {
-            "id": "e851d7e3b37b39ca",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/Kafka/03 - How the Consumer Handled Failures Gracefully.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "03 - How the Consumer Handled Failures Gracefully"
-            }
-          },
-          {
-            "id": "11b31fdaa6f499af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/Kafka/02 - How Does Kafka Work.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "02 - How Does Kafka Work"
-            }
-          },
-          {
-            "id": "cf026f80e24fb7bb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Goroutines/07 - select in Golang.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "07 - select in Golang"
-            }
-          },
-          {
-            "id": "e63679a729f47982",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/SQL Queries/DELETE vs DROP vs TRUNCATE.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "DELETE vs DROP vs TRUNCATE"
-            }
-          },
-          {
-            "id": "aa82e1fd56f3aec4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Golang/Goroutines Examples/Using two goroutines print even and odd in natural sequence.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Using two goroutines print even and odd in natural sequence"
-            }
-          },
-          {
-            "id": "320a542ab1fb2a51",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/Idempotent RESTful APIs.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Idempotent RESTful APIs"
-            }
-          },
-          {
-            "id": "279124635e1335b2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/DB/00.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "00"
-            }
-          },
-          {
-            "id": "8fbdf9f9498e2a37",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/Kafka/Where and How Does Kafka Store Messages.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Where and How Does Kafka Store Messages"
-            }
-          },
-          {
-            "id": "270f4549112361cb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/Kafka/Sticky Assignor.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Sticky Assignor"
-            }
-          },
-          {
-            "id": "d08dd4f198777fd8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/Kafka/How load balancing with consumer groups is achieved.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "How load balancing with consumer groups is achieved"
-            }
-          },
-          {
-            "id": "30e2fc94ec57e593",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/Kafka/Idempotent Producers in Kafka.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Idempotent Producers in Kafka"
-            }
-          },
-          {
-            "id": "029d4fb6ee5c720a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "System Design/01 - HLD Basics.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01 - HLD Basics"
-            }
-          },
-          {
-            "id": "7972d9b235ae8999",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/Top 7 Most-Used Distributed System Patterns.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Top 7 Most-Used Distributed System Patterns"
-            }
-          },
-          {
-            "id": "440fc531de80fe51",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "System Design/00-Scaler System Design notes.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "00-Scaler System Design notes"
-            }
-          },
-          {
-            "id": "8ffc275406bfecf5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "System Design/01 - HLD Basics.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01 - HLD Basics"
-            }
-          },
-          {
-            "id": "ae5c652a669c380c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/Types of load balancing algorithms.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Types of load balancing algorithms"
-            }
-          },
-          {
-            "id": "dabe3b10f777a0a2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/Kafka/01 - Kafka.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01 - Kafka"
-            }
-          },
-          {
-            "id": "a75d46cd24fb1aa9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Interview Prep/DB/Database Locks - Key Concepts and Types.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Database Locks - Key Concepts and Types"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 22
+        ]
       }
     ],
     "direction": "vertical"
@@ -469,11 +88,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "System Design/01 - HLD Basics.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of 01 - HLD Basics"
+              "title": "Outline"
             }
           },
           {
@@ -527,39 +144,41 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8ffc275406bfecf5",
+  "active": "b4904ce9751ea41b",
   "lastOpenFiles": [
-    "System Design/00-Scaler System Design notes.md",
-    "Interview Prep/Top 7 Most-Used Distributed System Patterns.md",
-    "System Design/01 - HLD Basics.md",
-    "Interview Prep/Load Balancer.md",
-    "Interview Prep/Types of load balancing algorithms.md",
-    "Interview Prep/Consistent Hashing.md",
-    "Interview Prep/Kafka/How does Kafka guarantees message order.md",
+    "00 - Software engg/Untitled.md",
+    "00 - Software engg/LLD Examples",
+    "LLD/12 - LLD Examples",
+    "DSA/String/Longest Common Prefix.md",
+    "00 - Software engg/LLD/00 - Index.md",
+    "00 - Software engg/HLD/01 - HLD Basics.md",
+    "00 - Software engg/HLD/00 - HLD Scaler Notes links.md",
+    "00 - Software engg/Top 7 Most-Used Distributed System Patterns.md",
+    "00 - Software engg/Load Balancer.md",
+    "00 - Software engg/Types of load balancing algorithms.md",
+    "00 - Software engg/Consistent Hashing.md",
+    "00 - Software engg/Kafka/How does Kafka guarantees message order.md",
     "zimages/{D92169F8-D298-4668-BF2F-64B699E1B367}.png",
-    "Interview Prep/Kafka/02 - How Does Kafka Work.md",
-    "Interview Prep/Kafka/Where and How Does Kafka Store Messages.md",
+    "00 - Software engg/Kafka/02 - How Does Kafka Work.md",
+    "00 - Software engg/Kafka/Where and How Does Kafka Store Messages.md",
     "zimages/{C27387EA-B357-4568-9CD2-058F436D5812}.png",
-    "Interview Prep/Kafka/04 - Why Kafka Was Chosen for Message Processing.md",
-    "Interview Prep/Kafka/03 - How the Consumer Handled Failures Gracefully.md",
-    "Interview Prep/Kafka/02 - Message Delivery Guarantees in Kafka.md",
-    "Interview Prep/Kafka/01 - Kafka.md",
-    "Interview Prep/Kafka/Idempotent Producers in Kafka.md",
-    "Interview Prep/Kafka/How load balancing with consumer groups is achieved.md",
-    "Interview Prep/Kafka/Sticky Assignor.md",
-    "Interview Prep/DB/00.md",
+    "00 - Software engg/Kafka/04 - Why Kafka Was Chosen for Message Processing.md",
+    "00 - Software engg/Kafka/03 - How the Consumer Handled Failures Gracefully.md",
+    "00 - Software engg/Kafka/02 - Message Delivery Guarantees in Kafka.md",
+    "00 - Software engg/Kafka/01 - Kafka.md",
+    "00 - Software engg/Kafka/Idempotent Producers in Kafka.md",
+    "00 - Software engg/Kafka/How load balancing with consumer groups is achieved.md",
+    "00 - Software engg/Kafka/Sticky Assignor.md",
+    "00 - Software engg/DB/00.md",
     "zimages/{67719E14-40B2-4314-8A13-E9416E11F82B}.png",
     "SQL/Why choose PostgreSQL.md",
     "SQL/ROW_NUMBER vs. RANK vs. DENSE_RANK.md",
     "SQL/Index.md",
-    "System Design/Design Tic-Tac-Toe.md",
-    "System Design/Design a Pen.md",
+    "00 - Software engg/LLD Examples/Design Tic-Tac-Toe.md",
+    "00 - Software engg/LLD Examples/Design a Pen.md",
     "zimages/Design-a-Pen-using-abstract-class.png",
-    "System Design/Splitwise.md",
-    "Interview Prep/Idempotent RESTful APIs.md",
-    "Golang/Goroutines Examples/Print table of N using go routine.md",
-    "Golang/Goroutines Examples/Using two goroutines print even and odd in natural sequence.md",
-    "Interview Prep/Distributed System",
+    "00 - Software engg/LLD Examples/Splitwise.md",
+    "00 - Software engg/Distributed System",
     "Golang/Goroutines Examples",
     "zimages/Defer-unreachable-example.png",
     "zimages/{1BB17EC0-9998-412E-9530-1A4456ECA5EB}.png",
@@ -569,12 +188,10 @@
     "zimages/01 - Splitwise-sequence-diagram.png",
     "zimages/01 - Splitwise-hld.png",
     "zimages/Splitwise-design-diagram.png",
-    "Interview Prep/SQL Queries",
-    "Interview Prep/DB",
-    "Interview Prep/Microservice Architecture",
-    "Interview Prep/Kafka",
-    "Interview Prep/01 - Resume Questions",
-    "Interview Prep/GRPC",
+    "00 - Software engg/SQL Queries",
+    "00 - Software engg/DB",
+    "00 - Software engg/Microservice Architecture",
+    "00 - Software engg/Kafka",
     "zimages/Untitled.canvas",
     "Untitled 1.canvas"
   ]
