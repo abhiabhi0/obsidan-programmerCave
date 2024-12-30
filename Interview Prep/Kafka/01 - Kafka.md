@@ -16,12 +16,13 @@ Apache Kafka is a distributed event streaming platform designed for high-through
 1. **Offset Management**:
     - Kafka tracks which messages have been read using offsets.
     - Each consumer maintains its own offset for the partitions it consumes.	
-#### **Key Features**
+#### Key Features
 1. **Decoupling of Producers and Consumers**:
     - Kafka enables producers to send messages independently of consumers, allowing scalability and flexibility in microservices architectures.
     
 1. **Message Persistence**:
     - Kafka stores messages for a configurable retention period, enabling fault tolerance and allowing reprocessing.
+    - [[Where and How Does Kafka Store Messages]]
     
 1. **Load Balancing with Consumer Groups**:
     - Consumer groups enable distributed consumption of messages, ensuring efficient load balancing.
