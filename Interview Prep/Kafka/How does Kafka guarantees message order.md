@@ -35,7 +35,7 @@ Kafka guarantees **message order within a single partition**, which is critical 
     - [[Idempotent Producers in Kafka]]
 
 ---
-
+![[{D92169F8-D298-4668-BF2F-64B699E1B367}.png]]
 ### **Example of Message Order Guarantee**
 
 #### Scenario:

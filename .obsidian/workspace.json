@@ -338,7 +338,7 @@
             }
           }
         ],
-        "currentTab": 15
+        "currentTab": 19
       }
     ],
     "direction": "vertical"
@@ -410,10 +410,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interview Prep/Kafka/Where and How Does Kafka Store Messages.md"
+                "file": "Interview Prep/Kafka/How does Kafka guarantees message order.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Where and How Does Kafka Store Messages"
+              "title": "Outline of How does Kafka guarantees message order"
             }
           },
           {
@@ -466,19 +466,20 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8fbdf9f9498e2a37",
+  "active": "029d4fb6ee5c720a",
   "lastOpenFiles": [
+    "zimages/{D92169F8-D298-4668-BF2F-64B699E1B367}.png",
+    "Interview Prep/Kafka/02 - How Does Kafka Work.md",
+    "Interview Prep/Kafka/Where and How Does Kafka Store Messages.md",
     "zimages/{C27387EA-B357-4568-9CD2-058F436D5812}.png",
     "Interview Prep/Kafka/How does Kafka guarantees message order.md",
     "Interview Prep/Kafka/04 - Why Kafka Was Chosen for Message Processing.md",
     "Interview Prep/Kafka/03 - How the Consumer Handled Failures Gracefully.md",
     "Interview Prep/Kafka/02 - Message Delivery Guarantees in Kafka.md",
-    "Interview Prep/Kafka/02 - How Does Kafka Work.md",
     "Interview Prep/Kafka/01 - Kafka.md",
     "Interview Prep/Kafka/Idempotent Producers in Kafka.md",
     "Interview Prep/Kafka/How load balancing with consumer groups is achieved.md",
     "Interview Prep/Kafka/Sticky Assignor.md",
-    "Interview Prep/Kafka/Where and How Does Kafka Store Messages.md",
     "Interview Prep/DB/00.md",
     "zimages/{67719E14-40B2-4314-8A13-E9416E11F82B}.png",
     "SQL/Why choose PostgreSQL.md",
@@ -507,7 +508,6 @@
     "zimages/01 - Splitwise-hld.png",
     "zimages/Splitwise-design-diagram.png",
     "zimages/{9AB602BF-E198-43A8-9912-55E72504950A}.png",
-    "zimages/{149CA686-468A-41CD-BF7D-165CAE2A013D}.png",
     "Interview Prep/SQL Queries",
     "Interview Prep/DB",
     "Interview Prep/Microservice Architecture",
