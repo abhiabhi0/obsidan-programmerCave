@@ -238,6 +238,36 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Interview Prep/Kafka/Sticky Assignor.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Sticky Assignor"
+            }
+          },
+          {
+            "id": "d08dd4f198777fd8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview Prep/Kafka/How load balancing with consumer groups is achieved.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "How load balancing with consumer groups is achieved"
+            }
+          },
+          {
+            "id": "30e2fc94ec57e593",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Interview Prep/Kafka/01 - Kafka.md",
                 "mode": "source",
                 "backlinks": true,
@@ -263,7 +293,7 @@
             }
           }
         ],
-        "currentTab": 15
+        "currentTab": 17
       }
     ],
     "direction": "vertical"
@@ -391,10 +421,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "270f4549112361cb",
+  "active": "30e2fc94ec57e593",
   "lastOpenFiles": [
-    "Interview Prep/Kafka/Where and How Does Kafka Store Messages.md",
+    "Interview Prep/Kafka/How load balancing with consumer groups is achieved.md",
+    "Interview Prep/Kafka/Sticky Assignor.md",
     "Interview Prep/Kafka/01 - Kafka.md",
+    "Interview Prep/Kafka/Where and How Does Kafka Store Messages.md",
     "Interview Prep/DB/00.md",
     "zimages/{67719E14-40B2-4314-8A13-E9416E11F82B}.png",
     "SQL/Why choose PostgreSQL.md",
@@ -419,8 +451,6 @@
     "Interview Prep/DB/Differences between Primary Constraint, Unique Constraint, Primary Index, and Unique Index.md",
     "Interview Prep/DB/Unqiue constraint allows NULL.md",
     "Interview Prep/DB/Types of Indexing in Databases.md",
-    "Interview Prep/DB/Internals of Indexing.md",
-    "Interview Prep/DB/Concurrency Control Mechanisms - Distributed vs. Single Systems.md",
     "Interview Prep/Distributed System",
     "Golang/Goroutines Examples",
     "zimages/Defer-unreachable-example.png",

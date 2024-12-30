@@ -26,6 +26,7 @@ Apache Kafka is a distributed event streaming platform designed for high-through
     
 1. **Load Balancing with Consumer Groups**:
     - Consumer groups enable distributed consumption of messages, ensuring efficient load balancing.
+    - [[How load balancing with consumer groups is achieved]]
     
 1. **Scalability**:
     - Kafka achieves scalability through clustering by adding brokers as data volume increases.
