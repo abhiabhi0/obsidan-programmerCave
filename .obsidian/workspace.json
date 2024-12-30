@@ -298,13 +298,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/Kafka/How does Kafka guarantees message order.md",
+                "file": "Interview Prep/Consistent Hashing.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "How does Kafka guarantees message order"
+              "title": "Consistent Hashing"
             }
           },
           {
@@ -410,10 +410,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interview Prep/Kafka/How does Kafka guarantees message order.md"
+                "file": "Interview Prep/Consistent Hashing.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of How does Kafka guarantees message order"
+              "title": "Outline of Consistent Hashing"
             }
           },
           {
@@ -468,11 +468,12 @@
   },
   "active": "029d4fb6ee5c720a",
   "lastOpenFiles": [
+    "Interview Prep/Kafka/How does Kafka guarantees message order.md",
+    "Interview Prep/Consistent Hashing.md",
     "zimages/{D92169F8-D298-4668-BF2F-64B699E1B367}.png",
     "Interview Prep/Kafka/02 - How Does Kafka Work.md",
     "Interview Prep/Kafka/Where and How Does Kafka Store Messages.md",
     "zimages/{C27387EA-B357-4568-9CD2-058F436D5812}.png",
-    "Interview Prep/Kafka/How does Kafka guarantees message order.md",
     "Interview Prep/Kafka/04 - Why Kafka Was Chosen for Message Processing.md",
     "Interview Prep/Kafka/03 - How the Consumer Handled Failures Gracefully.md",
     "Interview Prep/Kafka/02 - Message Delivery Guarantees in Kafka.md",
@@ -507,7 +508,6 @@
     "zimages/01 - Splitwise-sequence-diagram.png",
     "zimages/01 - Splitwise-hld.png",
     "zimages/Splitwise-design-diagram.png",
-    "zimages/{9AB602BF-E198-43A8-9912-55E72504950A}.png",
     "Interview Prep/SQL Queries",
     "Interview Prep/DB",
     "Interview Prep/Microservice Architecture",
