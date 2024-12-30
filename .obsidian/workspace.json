@@ -298,6 +298,21 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Interview Prep/Load Balancer.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Load Balancer"
+            }
+          },
+          {
+            "id": "8ffc275406bfecf5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "System Design/01 - HLD Basics.md",
                 "mode": "source",
                 "backlinks": true,
@@ -425,10 +440,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System Design/01 - HLD Basics.md"
+                "file": "Interview Prep/Load Balancer.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 01 - HLD Basics"
+              "title": "Outline of Load Balancer"
             }
           },
           {
@@ -482,10 +497,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b4904ce9751ea41b",
+  "active": "029d4fb6ee5c720a",
   "lastOpenFiles": [
-    "Interview Prep/Types of load balancing algorithms.md",
     "System Design/01 - HLD Basics.md",
+    "Interview Prep/Load Balancer.md",
+    "Interview Prep/Types of load balancing algorithms.md",
     "System Design/00-Scaler System Design notes.md",
     "Interview Prep/Consistent Hashing.md",
     "Interview Prep/Kafka/How does Kafka guarantees message order.md",
@@ -513,7 +529,6 @@
     "Golang/Goroutines Examples/Print table of N using go routine.md",
     "Golang/Goroutines Examples/Using two goroutines print even and odd in natural sequence.md",
     "Interview Prep/SQL Queries/DELETE vs DROP vs TRUNCATE.md",
-    "Excalidraw/Polymorphism.excalidraw.md",
     "Interview Prep/Distributed System",
     "Golang/Goroutines Examples",
     "zimages/Defer-unreachable-example.png",

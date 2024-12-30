@@ -42,6 +42,7 @@
     - Health checks/heartbeats to track server availability.
     - Load balancing algorithms: Round-robin, Weighted Round-robin, IP Hashing.
     - [[Types of load balancing algorithms]]
+    - [[Load Balancer]]
 
 #### **Sharding:**
 
