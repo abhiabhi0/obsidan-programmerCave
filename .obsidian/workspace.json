@@ -298,13 +298,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Interview Prep/Consistent Hashing.md",
+                "file": "System Design/00-Scaler System Design notes.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Consistent Hashing"
+              "title": "00-Scaler System Design notes"
             }
           },
           {
@@ -410,10 +410,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interview Prep/Consistent Hashing.md"
+                "file": "System Design/00-Scaler System Design notes.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Consistent Hashing"
+              "title": "Outline of 00-Scaler System Design notes"
             }
           },
           {
@@ -453,7 +453,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 341.5
+    "width": 341.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -468,8 +469,9 @@
   },
   "active": "029d4fb6ee5c720a",
   "lastOpenFiles": [
-    "Interview Prep/Kafka/How does Kafka guarantees message order.md",
     "Interview Prep/Consistent Hashing.md",
+    "System Design/00-Scaler System Design notes.md",
+    "Interview Prep/Kafka/How does Kafka guarantees message order.md",
     "zimages/{D92169F8-D298-4668-BF2F-64B699E1B367}.png",
     "Interview Prep/Kafka/02 - How Does Kafka Work.md",
     "Interview Prep/Kafka/Where and How Does Kafka Store Messages.md",
@@ -497,7 +499,6 @@
     "Excalidraw/Polymorphism.excalidraw.md",
     "Golang/Goroutines/07 - select in Golang.md",
     "Interview Prep/Deadlock in Operating Systems.md",
-    "Interview Prep/Kafka/What is Kafka Partition.md",
     "Interview Prep/Distributed System",
     "Golang/Goroutines Examples",
     "zimages/Defer-unreachable-example.png",
