@@ -3,7 +3,6 @@
 A load balancer is a device that distributes network or application traffic across multiple servers to ensure scalability, reliability, and performance. It acts as the entry point of an application, receiving all incoming traffic and managing it effectively.
 
 ---
-
 #### **Concepts**
 
 - **Placement**: Load balancers typically sit at the edge of data centers, balancing traffic across servers.
@@ -17,23 +16,22 @@ A load balancer is a device that distributes network or application traffic acro
 #### **Why Use a Load Balancer?**
 
 1. **Scalability**:
-    
     - Handles traffic spikes by distributing requests across multiple servers.
     - Allows horizontal scaling by adding/removing servers.
-2. **Resilience**:
     
+1. **Resilience**:
     - Implements health checks to ensure only active servers handle traffic.
     - Dynamically adjusts the number of servers based on traffic thresholds.
-3. **Higher Availability**:
     
+1. **Higher Availability**:
     - Reduces downtime during deployments by staggering server updates (rolling deployment).
     - Automatically reroutes traffic if a server becomes unhealthy.
-4. **Security**:
     
+1. **Security**:
     - Acts as a barrier, protecting server IPs from exposure.
     - Can identify and block malicious requests (e.g., DDoS attacks).
-5. **Performance**:
     
+1. **Performance**:
     - Offloads SSL/TLS encryption and decryption tasks from servers.
     - Compresses traffic to enhance efficiency.
 
@@ -52,17 +50,18 @@ A load balancer is a device that distributes network or application traffic acro
 #### **How Load Balancers Work**
 
 1. **Reverse Proxy**:
-    
     - Accepts client requests, forwards them to servers, and sends back responses.
     - Hides server details by including only the proxy server's information in headers.
-2. **Health Checks**:
     
+1. **Health Checks**:
     - Regularly pings servers to ensure they are active.
     - Marks unhealthy servers as inactive.
     - Monitors inactive servers to re-enable them if they recover.
-3. **Self-Scaling**:
     
+1. **Self-Scaling**:
     - Can dynamically scale based on traffic demands (e.g., AWS load balancers scale up to 100 nodes).
+
+[[API Gateway vs Ingress]]
 
 ---
 
@@ -77,14 +76,13 @@ A load balancer is a device that distributes network or application traffic acro
 #### **Key Components of Load Balancer Configuration**
 
 1. **Listeners**:
-    
     - Defines the protocols and ports for incoming traffic (e.g., HTTP on port 80, HTTPS on port 443).
     - Specifies the destination port on the server (e.g., port 8080).
-2. **Routing**:
     
+1. **Routing**:
     - Allows conditional forwarding (e.g., admin requests go to admin servers).
-3. **Target Groups**:
     
+1. **Target Groups**:
     - Grouping of servers based on request types.
     - Enables specialized handling (e.g., static vs. dynamic content).
 
@@ -93,13 +91,12 @@ A load balancer is a device that distributes network or application traffic acro
 #### **Types of Load Balancers**
 
 1. **Application Load Balancers**:
-    
     - Operate at the application layer (HTTP/HTTPS).
-2. **DNS Load Balancers**:
     
+1. **DNS Load Balancers**:
     - Distribute traffic by resolving DNS requests to different server IPs.
-3. **Network Load Balancers**:
     
+1. **Network Load Balancers**:
     - Operate at the transport layer (TCP/UDP).
 
 ---

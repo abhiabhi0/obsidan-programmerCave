@@ -23,6 +23,7 @@ API Gateway and Ingress are both important components in managing and routing ne
 - **AWS API Gateway:** Managed service by AWS for creating, deploying, and managing APIs.
 - **NGINX:** Can be configured as an API Gateway to provide routing, security, and load balancing.
 
+[[API Gateway]]
 ### Ingress
 
 **Purpose:**

@@ -11,30 +11,38 @@
 #### **Why are Distributed Systems Needed?**
 
 1. **Initial Setup:**
-    
     - Example: Del.icio.us started as a bookmarking service on a single laptop.
     - Initial setup involves implementing simple functions like:
         - `addBookmark(userId, site_url)`
         - `getAllBookmarks(userId)`
-2. **Challenges in Scaling:**
-    
+        
+1. **Challenges in Scaling:**
     - **Domain Resolution:**
         - Domain names need to resolve to IP addresses via a system like DNS.
         - DNS maintains decentralized copies of centrally stored data to prevent single points of failure.
+        - [[What happens when you type a URL into your browser]]
+        
     - **Downtime During Deployment:**
         - Load balancers can route traffic to healthy machines and handle requests evenly during updates.
+        - [[How to deploy in production such that background jobs are not stopped]]
+        - [[0101 - Load Balancer]]
+        - [[API Gateway]]
+        - [[API Gateway vs Ingress]]
+        
     - **Storage Constraints:**
         - Sharding is used to distribute data across multiple machines when storage becomes a bottleneck.
+        - [[Database Sharding]]
+
+
+[[Top 7 Most-Used Distributed System Patterns]]
 
 ---
-
 ### **Key Concepts in Distributed Systems**
 
 #### **DNS (Domain Name System):**
 
 - Maps domain names to IP addresses.
 - DNS servers store a replicated copy of central data from ICANN and update periodically.
-
 #### **Load Balancers:**
 
 - Split traffic among multiple servers and handle failovers.
@@ -42,7 +50,6 @@
     - Health checks/heartbeats to track server availability.
     - Load balancing algorithms: Round-robin, Weighted Round-robin, IP Hashing.
     - [[Types of load balancing algorithms]]
-    - [[Load Balancer]]
 
 #### **Sharding:**
 
@@ -80,7 +87,7 @@
 - Benefits:
     - Failure of one node spreads its load across multiple other nodes, avoiding cascading failures.
     - Helps in balancing load when nodes are added/removed.
-    - [[Consistent Hashing]]
+    - [[0102 - Consistent Hashing]]
 **![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfDkjUHtWULFZ5agnplJ-gIHvHaUbNL2bA0_TxyyBpAJfj5ZyDkZTb9gwet93SQ0FZsyIyZ0_0zSp_zqK9KH_YwmJ4ONHTvza8l_4bKOVag3GvC-YuWB1eeAZ0IeT9YsmaNFh4JKLhltSEUM9IQmiRceac?key=P2WYkAHXMMX2Am3ZvvrbMg)**
 
 https://docs.google.com/document/d/1wY6rSGJwqa9uxAsoYZUQ0FumV3Sp5kRBCknUQPT3gcM/edit?tab=t.0
