@@ -83,3 +83,4 @@
     - [[Consistent Hashing]]
 **![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfDkjUHtWULFZ5agnplJ-gIHvHaUbNL2bA0_TxyyBpAJfj5ZyDkZTb9gwet93SQ0FZsyIyZ0_0zSp_zqK9KH_YwmJ4ONHTvza8l_4bKOVag3GvC-YuWB1eeAZ0IeT9YsmaNFh4JKLhltSEUM9IQmiRceac?key=P2WYkAHXMMX2Am3ZvvrbMg)**
 
+https://docs.google.com/document/d/1wY6rSGJwqa9uxAsoYZUQ0FumV3Sp5kRBCknUQPT3gcM/edit?tab=t.0

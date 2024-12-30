@@ -119,3 +119,5 @@ A load balancer is a device that distributes network or application traffic acro
 4. **Configuration Examples**:
     
     - Refer to [NGINX Load Balancer Documentation](https://docs.nginx.com/nginx/admin-guide/load-balancer/http-load-balancer/) for configuration details.
+
+https://docs.google.com/document/d/1DxQzLpu1XPe_mRWsewNWtKL6E4uwKHQhBp7GX6Sg7qI/edit?tab=t.0#heading=h.fzwcs020kou5
