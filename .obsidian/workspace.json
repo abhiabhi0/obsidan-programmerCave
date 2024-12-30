@@ -338,7 +338,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -410,10 +410,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interview Prep/Kafka/03 - How the Consumer Handled Failures Gracefully.md"
+                "file": "Interview Prep/Kafka/04 - Why Kafka Was Chosen for Message Processing.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 03 - How the Consumer Handled Failures Gracefully"
+              "title": "Outline of 04 - Why Kafka Was Chosen for Message Processing"
             }
           },
           {
@@ -466,8 +466,9 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "e851d7e3b37b39ca",
+  "active": "081b81e24e044511",
   "lastOpenFiles": [
+    "Interview Prep/Kafka/03 - How the Consumer Handled Failures Gracefully.md",
     "Interview Prep/Kafka/02 - Message Delivery Guarantees in Kafka.md",
     "Interview Prep/Kafka/02 - How Does Kafka Work.md",
     "Interview Prep/Kafka/01 - Kafka.md",
@@ -495,7 +496,6 @@
     "Interview Prep/Kafka/What is Kafka Partition.md",
     "Interview Prep/01 - Resume Questions/03 - Kafka Producer and Consumer Questions.md",
     "Interview Prep/Kafka/04 - Why Kafka Was Chosen for Message Processing.md",
-    "Interview Prep/DB/Differences between Primary Constraint, Unique Constraint, Primary Index, and Unique Index.md",
     "Interview Prep/Distributed System",
     "Golang/Goroutines Examples",
     "zimages/Defer-unreachable-example.png",

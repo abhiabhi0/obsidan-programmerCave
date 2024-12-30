@@ -41,9 +41,9 @@ To ensure reliable processing and recovery from failures, the consumer was desig
     Some messages might repeatedly fail processing (e.g., invalid data or unexpected application states). Processing such messages continuously could disrupt the system.
     
 - **Solution:**
-    
     - Implemented DLQs to store problematic messages for later inspection and reprocessing.
     - Configured the consumer to send messages to a separate Kafka topic (DLQ) after exceeding the retry threshold.
+    
 - **Benefits of DLQs:**
     
     - Prevents message loss while avoiding the blocking of normal message processing.
