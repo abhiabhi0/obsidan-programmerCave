@@ -33,6 +33,7 @@ Apache Kafka is a distributed event streaming platform designed for high-through
     
 1. **Message Order Guarantee**:
     - Kafka guarantees message order within a single partition, critical for applications requiring strict sequencing.
+    - [[How does Kafka guarantees message order]]
     
 1. **Distributed System Capabilities**:
     - Kafka operates in distributed environments, supporting high availability and fault tolerance.

@@ -68,6 +68,7 @@ Kafka provides three types of message delivery guarantees to ensure that data is
     
 - **Idempotent Producer:**  
     Enables the producer to avoid duplicate message production even during retries.
+    [[Idempotent Producers in Kafka]]
     
     ```go
     producerConfig["enable.idempotence"] = true
