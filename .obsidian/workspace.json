@@ -338,7 +338,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 15
       }
     ],
     "direction": "vertical"
@@ -410,10 +410,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Interview Prep/Kafka/04 - Why Kafka Was Chosen for Message Processing.md"
+                "file": "Interview Prep/Kafka/Where and How Does Kafka Store Messages.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 04 - Why Kafka Was Chosen for Message Processing"
+              "title": "Outline of Where and How Does Kafka Store Messages"
             }
           },
           {
@@ -466,13 +466,15 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "081b81e24e044511",
+  "active": "8fbdf9f9498e2a37",
   "lastOpenFiles": [
+    "zimages/{C27387EA-B357-4568-9CD2-058F436D5812}.png",
+    "Interview Prep/Kafka/How does Kafka guarantees message order.md",
+    "Interview Prep/Kafka/04 - Why Kafka Was Chosen for Message Processing.md",
     "Interview Prep/Kafka/03 - How the Consumer Handled Failures Gracefully.md",
     "Interview Prep/Kafka/02 - Message Delivery Guarantees in Kafka.md",
     "Interview Prep/Kafka/02 - How Does Kafka Work.md",
     "Interview Prep/Kafka/01 - Kafka.md",
-    "Interview Prep/Kafka/How does Kafka guarantees message order.md",
     "Interview Prep/Kafka/Idempotent Producers in Kafka.md",
     "Interview Prep/Kafka/How load balancing with consumer groups is achieved.md",
     "Interview Prep/Kafka/Sticky Assignor.md",
@@ -494,8 +496,6 @@
     "Golang/Goroutines/07 - select in Golang.md",
     "Interview Prep/Deadlock in Operating Systems.md",
     "Interview Prep/Kafka/What is Kafka Partition.md",
-    "Interview Prep/01 - Resume Questions/03 - Kafka Producer and Consumer Questions.md",
-    "Interview Prep/Kafka/04 - Why Kafka Was Chosen for Message Processing.md",
     "Interview Prep/Distributed System",
     "Golang/Goroutines Examples",
     "zimages/Defer-unreachable-example.png",

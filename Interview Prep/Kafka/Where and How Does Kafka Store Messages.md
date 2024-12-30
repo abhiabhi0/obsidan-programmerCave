@@ -17,7 +17,7 @@ Kafka stores messages in a **distributed log system**. These logs are stored on 
     - Each partition is represented as a directory containing log files and metadata.
 
 ---
-
+![[{C27387EA-B357-4568-9CD2-058F436D5812}.png]]
 ### How?
 
 Kafka uses **segmented log files** and an **append-only log structure** for efficient storage and retrieval.
