@@ -60,8 +60,11 @@ Caching is the process of storing frequently accessed data closer to the system 
     - **LRU**: Remove the least recently accessed entries.
     - **MRU**: Remove the most recently accessed entries.
     - **LIFO**: Remove the newest entries.
+    - [[0202 - Scaling with Redis - Eviction Policies and Cluster Mode]]
 
 #### **2.4 Caching Case Studies**
+
+[[0201 - Caching Case Studies]]
 
 1. **Facebook Newsfeed**:
     - Stores recent posts in HDD (e.g., last 30 days) for fast retrieval.
