@@ -1,3 +1,5 @@
+**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXecuKwmFyuAHlDrss_eqM4yPNJXScMlQdunouChh1gnZLVoi2nKeXlLXY-UNxoFFElB-N1zulus5tRplG0a_S84FlNxDluS3vhGXNJ7OhG21vG8t1dh6m1VI654Zei2i4cxPxaFXw1eT3bexhEQc-OsjhMF?key=nGlj-zBP0XZbusbrWTyXUw)**
+
 #### 1. **Key Characteristics of Python**
 - **Dynamically Typed**: No need to declare variable types explicitly; they are determined at runtime.
 - **Interpreted Language**: Python code is executed line-by-line, making it slower compared to compiled languages like C++ and Java.
