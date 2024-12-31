@@ -28,47 +28,137 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Software engg/HLD/0200 - Caching.md",
+                "file": "02 - Python/0200 - How Python Program is Run on a Machine.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0200 - Caching"
+              "title": "0200 - How Python Program is Run on a Machine"
             }
           },
           {
-            "id": "7d3e8f8e69f9fb66",
+            "id": "580dbaec339597ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Software engg/HLD/0000 - HLD Scaler Notes links.md",
+                "file": "02 - Python/0300 - First-Class Citizens in Python.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0000 - HLD Scaler Notes links"
+              "title": "0300 - First-Class Citizens in Python"
             }
           },
           {
-            "id": "af83db05c450b737",
+            "id": "72e53dd0d1d8b6c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Software engg/HLD/0201 - Caching Case Studies.md",
+                "file": "02 - Python/0400 - Tuple vs List.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0201 - Caching Case Studies"
+              "title": "0400 - Tuple vs List"
+            }
+          },
+          {
+            "id": "188d3c51d887a64a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 - Python/0500 - OOPs in Python.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0500 - OOPs in Python"
+            }
+          },
+          {
+            "id": "09ac27b9ba041967",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 - Python/0600 - Garbage Collector.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0600 - Garbage Collector"
+            }
+          },
+          {
+            "id": "411ad569c32cbd06",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 - Python/Polymorphism.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Polymorphism"
+            }
+          },
+          {
+            "id": "e450a0c0b0dcdd86",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 - Python/0700 - GIL and Multithreading.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0700 - GIL and Multithreading"
+            }
+          },
+          {
+            "id": "d8bf085e85703f3e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 - Python/0800 - Generators.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0800 - Generators"
+            }
+          },
+          {
+            "id": "bc1cc442a8f0f788",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02 - Python/1000 - Memory Management in Python.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "1000 - Memory Management in Python"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -197,13 +287,24 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "53584e9e5b338564",
+  "active": "bc1cc442a8f0f788",
   "lastOpenFiles": [
-    "00 - Software engg/HLD/0202 - Scaling with Redis - Eviction Policies and Cluster Mode.md",
+    "02 - Python/0900 - Shallow Copy vs Deep Copy.md",
+    "02 - Python/1000 - Memory Management in Python.md",
+    "02 - Python/0800 - Generators.md",
+    "02 - Python/0700 - GIL and Multithreading.md",
+    "02 - Python/Polymorphism.md",
+    "02 - Python/0600 - Garbage Collector.md",
+    "02 - Python/0500 - OOPs in Python.md",
+    "02 - Python/0100 - Basic Notes.md",
+    "02 - Python/0400 - Tuple vs List.md",
+    "00 - Software engg/HLD/0000 - HLD Scaler Notes links.md",
+    "02 - Python/0300 - First-Class Citizens in Python.md",
+    "02 - Python/0200 - How Python Program is Run on a Machine.md",
     "00 - Software engg/HLD/0200 - Caching.md",
+    "00 - Software engg/HLD/0202 - Scaling with Redis - Eviction Policies and Cluster Mode.md",
     "00 - Software engg/HLD/0201 - Caching Case Studies.md",
     "00 - Software engg/HLD/0100 - HLD Basics.md",
-    "00 - Software engg/HLD/0000 - HLD Scaler Notes links.md",
     "00 - Software engg/Distributed System/Mitigate race condition in Distributed System.md",
     "00 - Software engg/DB/Concurrency Control Mechanisms - Distributed vs. Single Systems.md",
     "00 - Software engg/DB/00 - Scaler Notes Links.md",
@@ -214,17 +315,6 @@
     "00 - Software engg/Kubernetes/AutoScale if API call increases.md",
     "00 - Software engg/Kubernetes/Auth0 vs JWT.md",
     "00 - Software engg/Kubernetes/Architecture.md",
-    "00 - Software engg/Kubernetes/API Gateway vs Ingress.md",
-    "00 - Software engg/Microservice Architecture/API Gateway.md",
-    "00 - Software engg/Distributed System/Top 7 Most-Used Distributed System Patterns.md",
-    "00 - Software engg/Software Architectural Patterns.md",
-    "00 - Software engg/How to deploy in production such that background jobs are not stopped.md",
-    "01 - Golang/Golang Interview Questions.md",
-    "00 - Software engg/Deadlock in Operating Systems.md",
-    "00 - Software engg/Concurrency Control Protocol.md",
-    "00 - Software engg/Best ways to test system functionality.md",
-    "00 - Software engg/What happens when you type a URL into your browser.md",
-    "00 - Software engg/Why do we need message brokers.md",
     "00 - Software engg/LLD Examples",
     "LLD/12 - LLD Examples",
     "zimages/{D92169F8-D298-4668-BF2F-64B699E1B367}.png",
