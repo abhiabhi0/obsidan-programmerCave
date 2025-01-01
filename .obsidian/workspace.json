@@ -4,191 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "af7c73852cb3d512",
+        "id": "eed52f0f7b588e0b",
         "type": "tabs",
         "children": [
           {
-            "id": "392a2bc0332d9628",
+            "id": "61bb31c6fd48572e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Software engg/HLD/0202 - Scaling with Redis - Eviction Policies and Cluster Mode.md",
+                "file": "03 - Django/2300 - Advanced Django - WSGI, Docker, and Deployment.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0202 - Scaling with Redis - Eviction Policies and Cluster Mode"
-            }
-          },
-          {
-            "id": "53584e9e5b338564",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0200 - How Python Program is Run on a Machine.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0200 - How Python Program is Run on a Machine"
-            }
-          },
-          {
-            "id": "580dbaec339597ad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0300 - First-Class Citizens in Python.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0300 - First-Class Citizens in Python"
-            }
-          },
-          {
-            "id": "72e53dd0d1d8b6c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0400 - Tuple vs List.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0400 - Tuple vs List"
-            }
-          },
-          {
-            "id": "188d3c51d887a64a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0500 - OOPs in Python.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0500 - OOPs in Python"
-            }
-          },
-          {
-            "id": "09ac27b9ba041967",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0600 - Garbage Collector.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0600 - Garbage Collector"
-            }
-          },
-          {
-            "id": "411ad569c32cbd06",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/Polymorphism.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Polymorphism"
-            }
-          },
-          {
-            "id": "e450a0c0b0dcdd86",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0700 - GIL and Multithreading.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0700 - GIL and Multithreading"
-            }
-          },
-          {
-            "id": "d8bf085e85703f3e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0800 - Generators.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0800 - Generators"
-            }
-          },
-          {
-            "id": "bc1cc442a8f0f788",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/1000 - Memory Management in Python.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1000 - Memory Management in Python"
-            }
-          },
-          {
-            "id": "7a7d5373ca634c09",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0502 - Polymorphism in Python.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0502 - Polymorphism in Python"
-            }
-          },
-          {
-            "id": "f5557748ed27bb99",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00 - Software engg/HLD/0301 - Scaling Databases - Master-Slave Replication.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0301 - Scaling Databases - Master-Slave Replication"
+              "title": "2300 - Advanced Django - WSGI, Docker, and Deployment"
             }
           }
-        ],
-        "currentTab": 11
+        ]
       }
     ],
     "direction": "vertical"
@@ -314,37 +148,39 @@
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "command-palette:Open command palette": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false
+      "obsidian-excalidraw-plugin:Create new drawing": false,
+      "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "f5557748ed27bb99",
+  "active": "61bb31c6fd48572e",
   "lastOpenFiles": [
-    "00 - Software engg/HLD/0300 - CAP Theorem, PACELC Theorem, and Master-Slave Systems.md",
-    "00 - Software engg/HLD/0301 - Scaling Databases - Master-Slave Replication.md",
-    "00 - Software engg/HLD/0000 - HLD Scaler Notes links.md",
-    "02 - Python/0502 - Polymorphism in Python.md",
-    "02 - Python/1500 - Package vs Module.md",
-    "02 - Python/1400 - Finalization in Python.md",
-    "02 - Python/0501 - Inheritance in Python.md",
-    "02 - Python/1300 - Argument Passing in Python.md",
-    "02 - Python/1200 - Pickling and Unpickling.md",
-    "02 - Python/1100 - Set and Frozen Set.md",
-    "02 - Python/0100 - Basic Notes.md",
-    "02 - Python/1000 - Memory Management in Python.md",
-    "02 - Python/0900 - Shallow Copy vs Deep Copy.md",
-    "02 - Python/0800 - Generators.md",
-    "02 - Python/0700 - GIL and Multithreading.md",
-    "02 - Python/Polymorphism.md",
+    "03 - Django/2200 - Advanced Django - Prefetching and Indexing.md",
+    "03 - Django/2300 - Advanced Django - WSGI, Docker, and Deployment.md",
+    "03 - Django/2100 - Advanced Django - Optimizing Queries.md",
+    "03 - Django/2000 - Advanced Django - Deep Dive into Django ORM.md",
+    "03 - Django/1900 - Advanced Django - Django Admin and Permissions.md",
+    "03 - Django/1800 - Advanced Django - Creating Custom Middleware.md",
+    "03 - Django/1700 - Django Project - Signals and Middlewares.md",
+    "03 - Django/1600 - Django Project - Celery, Redis, and Object Level Permissions.md",
+    "03 - Django/1500 - Django Project - ViewSet and Class Architecture.md",
+    "03 - Django/1400 - Django Project - Filters in GET Queries.md",
+    "03 - Django/1300 - Django Project - Serializer Context and API Design.md",
+    "03 - Django/1200 - Django Project - API Views and Mixins.md",
+    "03 - Django/1100 - Django Project - Refactoring Controllers and CRUD APIs.md",
+    "03 - Django/1000 - Django Project - REST APIs and Idempotency.md",
+    "03 - Django/0900 - Authentication and JWT.md",
+    "03 - Django/0800 - Django REST Framework.md",
+    "03 - Django/0700 - Django Forms.md",
+    "03 - Django/0600 - Server-Side Rendering vs Client-Side Rendering.md",
+    "03 - Django/0500 - Django Templates.md",
+    "03 - Django/0400 - Django Views.md",
+    "03 - Django/0300 - Models in Django.md",
+    "03 - Django/0200 - Setting Up Views, Models, and Templates in Django.md",
+    "03 - Django/0100 - Introduction to Django.md",
     "02 - Python/0600 - Garbage Collector.md",
-    "02 - Python/0500 - OOPs in Python.md",
-    "02 - Python/0400 - Tuple vs List.md",
-    "02 - Python/0300 - First-Class Citizens in Python.md",
-    "02 - Python/0200 - How Python Program is Run on a Machine.md",
-    "00 - Software engg/HLD/0200 - Caching.md",
-    "00 - Software engg/HLD/0202 - Scaling with Redis - Eviction Policies and Cluster Mode.md",
-    "00 - Software engg/HLD/0201 - Caching Case Studies.md",
-    "00 - Software engg/HLD/0100 - HLD Basics.md",
-    "00 - Software engg/Distributed System/Mitigate race condition in Distributed System.md",
+    "03 - Django",
+    "02 - Python/Polymorphism.md",
+    "00 - Software engg/HLD/0301 - Scaling Databases - Master-Slave Replication.md",
     "00 - Software engg/LLD Examples",
     "LLD/12 - LLD Examples",
     "zimages/{D92169F8-D298-4668-BF2F-64B699E1B367}.png",
@@ -364,7 +200,6 @@
     "00 - Software engg/SQL Queries",
     "00 - Software engg/DB",
     "00 - Software engg/Microservice Architecture",
-    "00 - Software engg/Kafka",
     "zimages/Untitled.canvas",
     "Untitled 1.canvas"
   ]
