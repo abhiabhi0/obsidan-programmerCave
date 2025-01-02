@@ -1,12 +1,5 @@
 
 ```go
-package main
-
-import (
-	"fmt"
-	"sync"
-)
-
 // ItemType - The type of item in the stack.
 type ItemType interface{}
 
@@ -128,5 +121,4 @@ func main() {
 	fmt.Println(stack.All())
 	stack.Pop()
 	fmt.Println(stack.All())
-
 }

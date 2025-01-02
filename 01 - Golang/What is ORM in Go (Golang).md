@@ -6,29 +6,28 @@ In Go, ORM libraries provide a way to manage database operations such as creatin
 ### How ORM Works in Go?
 
 1. **Mapping Go Structs to Database Tables**:
-    
     - ORM libraries allow you to define Go structs that correspond to database tables.
     - Each field in the Go struct corresponds to a column in the table.
     - The Go struct may include tags that specify how the struct fields map to table columns, including column names and types.
-2. **Database Operations Using Go Structs**:
     
+1. **Database Operations Using Go Structs**:
     - ORM libraries provide methods for common database operations such as `Insert()`, `Update()`, `Delete()`, and `Select()`, which work directly on Go structs.
     - You don’t need to write SQL queries for these operations.
-3. **Automatic SQL Generation**:
     
+1. **Automatic SQL Generation**:
     - The ORM generates the appropriate SQL statements based on the Go struct and the operation you want to perform.
     - This can include `SELECT`, `INSERT`, `UPDATE`, and `DELETE` SQL statements.
-4. **Database Connection Management**:
     
+1. **Database Connection Management**:
     - ORM libraries often abstract away connection management, allowing you to focus on database operations without worrying about managing the connection or query execution.
-5. **Query Builders**:
     
+1. **Query Builders**:
     - ORM libraries may also provide query builder features, which allow you to build dynamic SQL queries using Go code, avoiding raw SQL syntax.
-6. **Data Retrieval**:
     
+1. **Data Retrieval**:
     - Data retrieved from the database is automatically mapped to Go structs, so you can work with native Go types (like strings, integers, etc.) instead of database-specific types.
-7. **Relations and Associations**:
     
+1. **Relations and Associations**:
     - ORMs support relationships between entities (such as one-to-many or many-to-many). You can define relationships in Go structs, and the ORM will generate the necessary SQL to handle joins and foreign keys.
 
 ### Example of ORM in Go
@@ -82,8 +81,8 @@ In Go, ORM libraries provide a way to manage database operations such as creatin
     - **`AutoMigrate`**: This method automatically creates the database tables based on the struct definitions.
     - **`Create`**: Inserts a new record into the database.
     - **`First`**: Fetches the first record matching the given condition (in this case, the user with ID 1).
-3. **Query Operations**: GORM allows various other operations like:
     
+1. **Query Operations**: GORM allows various other operations like:
     - **Find**: Retrieves multiple records.
     - **Update**: Updates existing records.
     - **Delete**: Deletes records.

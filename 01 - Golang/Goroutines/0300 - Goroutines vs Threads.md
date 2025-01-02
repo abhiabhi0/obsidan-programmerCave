@@ -1,15 +1,12 @@
 Goroutines and threads are both mechanisms to achieve concurrency and parallelism in programming, but they have distinct characteristics. Let's break this down conceptually and in terms of Go's implementation.
 
 ---
-
 ## **1. What are Threads?**
 
 ### **Threads Overview:**
-
 - A thread is the smallest unit of execution in a CPU.
 - It is part of a process, and each process can have multiple threads.
 - Threads share the process's memory space but have their own stack and registers.
-
 ### **Characteristics of Threads:**
 
 1. **OS Managed:** Threads are created and managed by the operating system (OS).
@@ -38,7 +35,6 @@ thread.join()
 ### **Goroutines Overview:**
 
 - A **goroutine** is a lightweight abstraction for a thread, managed by the Go runtime instead of the OS.
-	
 ### **Characteristics of Goroutines:**
 
 1. **Runtime Managed:** The Go runtime schedules goroutines on available threads using a user-space scheduler.
@@ -88,22 +84,19 @@ func main() {
 ## **4. Goroutines in Go: How They Work**
 
 1. **Small Stack:**
-    
     - Each goroutine starts with a 2 KB stack, which grows dynamically as needed.
     - Contrast this with threads, which allocate a large stack upfront (e.g., 1 MB).
-2. **M:N Scheduling:**
-    
+
+1. **M:N Scheduling:**    
     - The Go runtime uses an M:N scheduling model, mapping **M** goroutines to **N** OS threads.
     - The scheduler ensures efficient use of threads by multiplexing goroutines onto threads.
-    
     **Example:**
-    
     - If there are 10,000 goroutines and 4 CPU cores, the runtime efficiently distributes them across the cores.
-3. **Work-Stealing Scheduler:**
     
+1. **Work-Stealing Scheduler:**
     - Go’s scheduler uses a work-stealing algorithm, where idle threads "steal" work (goroutines) from busy threads.
-4. **Blocking Operations:**
     
+1. **Blocking Operations:**
     - If a goroutine performs a blocking operation (e.g., I/O, system call), the runtime parks the goroutine and schedules another one, ensuring no thread remains idle.
 
 ---
@@ -111,17 +104,13 @@ func main() {
 ## **5. Advantages of Goroutines Over Threads**
 
 1. **Lightweight and Scalable:**
-    
     - Goroutines can be spawned in millions without significant memory or CPU overhead.
     - Threads, in contrast, are limited in number due to their high resource cost.
 2. **Simplified Concurrency:**
-    
     - Goroutines, combined with channels, provide a structured way to manage concurrency, avoiding common pitfalls like deadlocks.
 3. **Efficient Scheduling:**
-    
     - The Go runtime scheduler is optimized for goroutines, reducing the overhead compared to thread context switching.
 4. **Dynamic Stack Management:**
-    
     - Goroutines start with a small stack and grow/shrink as needed, allowing efficient memory utilization.
 
 ---
@@ -129,13 +118,10 @@ func main() {
 ## **6. Practical Limitations of Goroutines**
 
 1. **Non-Preemptive Scheduling:**
-    
     - Long-running goroutines can block others if they don’t yield, potentially causing performance issues.
 2. **Garbage Collection Impact:**
-    
     - A large number of goroutines can increase the pressure on Go's garbage collector.
 3. **Debugging Challenges:**
-    
     - Debugging goroutines can be more complex due to their lightweight nature and user-space scheduling.
 
 ---
