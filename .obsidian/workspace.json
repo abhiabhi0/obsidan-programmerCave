@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "29690ed259c4354c",
+        "id": "6cc96bab27649f2c",
         "type": "tabs",
         "children": [
           {
-            "id": "c543cdf4003a88e0",
+            "id": "0b4851c0a3f52e19",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,276 +20,6 @@
               },
               "icon": "lucide-file",
               "title": "00 - Index"
-            }
-          },
-          {
-            "id": "21775fb3eab74de5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/Goroutines/0100 - Goroutines.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0100 - Goroutines"
-            }
-          },
-          {
-            "id": "fcbcd21580490427",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/Goroutines/0101 - Concurrency in Go.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0101 - Concurrency in Go"
-            }
-          },
-          {
-            "id": "171c70a02c407726",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/Goroutines/0200 - Lifecycle and Scheduling of a Goroutine.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0200 - Lifecycle and Scheduling of a Goroutine"
-            }
-          },
-          {
-            "id": "6cc93c0c3963ec49",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/Goroutines/0400 - Concurrency Patterns.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0400 - Concurrency Patterns"
-            }
-          },
-          {
-            "id": "9c9dbb8cc3a64d8a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/Goroutines/0500 - Go runtime.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0500 - Go runtime"
-            }
-          },
-          {
-            "id": "0863ed296cb709bd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/Goroutines/0600 - Concurrency vs Parallelism.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0600 - Concurrency vs Parallelism"
-            }
-          },
-          {
-            "id": "38f5747b8e70d3d9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/Goroutines/0700 - select in Golang.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0700 - select in Golang"
-            }
-          },
-          {
-            "id": "935194e5bf178776",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/Goroutines/0300 - Goroutines vs Threads.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0300 - Goroutines vs Threads"
-            }
-          },
-          {
-            "id": "4cd3aab98682e6aa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/What is ORM in Go (Golang).md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "What is ORM in Go (Golang)"
-            }
-          },
-          {
-            "id": "20b0c864de3f5958",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/0703 - Thread Safe Stack Implementation.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0703 - Thread Safe Stack Implementation"
-            }
-          },
-          {
-            "id": "5c6b7353bba0fd29",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/URL shortner.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "URL shortner"
-            }
-          },
-          {
-            "id": "5d5216a72ff88a35",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/Palindrome of Chinese string.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Palindrome of Chinese string"
-            }
-          },
-          {
-            "id": "1ad370749e1b572f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/Use of Empty Structs in Go.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Use of Empty Structs in Go"
-            }
-          },
-          {
-            "id": "134efcdf020c3ae0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/Goroutines Examples/Call the compute function a total of 100 times, distributed among 8 goroutines.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Call the compute function a total of 100 times, distributed among 8 goroutines"
-            }
-          },
-          {
-            "id": "83441ee0ad544c4e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/Goroutines Examples/Worker Pool Pattern Implementation.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Worker Pool Pattern Implementation"
-            }
-          },
-          {
-            "id": "38de1579ee69757f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/0101 - What are Packages in Go.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0101 - What are Packages in Go"
-            }
-          },
-          {
-            "id": "082c8b5c8b6b7898",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/0102 - Function Closures.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0102 - Function Closures"
-            }
-          },
-          {
-            "id": "117c3b65a675ca00",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/0103 - Function Literals, Naked Returns, Variadic Functions, Init Functions.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0103 - Function Literals, Naked Returns, Variadic Functions, Init Functions"
             }
           }
         ]
@@ -421,8 +151,10 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "c543cdf4003a88e0",
+  "active": "0b4851c0a3f52e19",
   "lastOpenFiles": [
+    "01 - Golang/Context Package.md",
+    "01 - Golang/00 - Index.md",
     "01 - Golang/Goroutines/0700 - select in Golang.md",
     "01 - Golang/Goroutines/0600 - Concurrency vs Parallelism.md",
     "01 - Golang/Goroutines/0500 - Go runtime.md",
@@ -430,7 +162,6 @@
     "01 - Golang/Goroutines/0200 - Lifecycle and Scheduling of a Goroutine.md",
     "01 - Golang/Goroutines/0101 - Concurrency in Go.md",
     "01 - Golang/Goroutines/0100 - Goroutines.md",
-    "01 - Golang/00 - Index.md",
     "01 - Golang/Goroutines/0300 - Goroutines vs Threads.md",
     "01 - Golang/What is ORM in Go (Golang).md",
     "01 - Golang/URL shortner.md",
@@ -448,7 +179,6 @@
     "01 - Golang/Goroutines Examples/Call the compute function a total of 100 times, distributed among 8 goroutines.md",
     "01 - Golang/0702 - Thread Safe Map Implementation.md",
     "01 - Golang/How to containerize Golang Application using Docker.md",
-    "01 - Golang/Recover from panic in Go.md",
     "03 - Django",
     "00 - Software engg/LLD Examples",
     "LLD/12 - LLD Examples",
