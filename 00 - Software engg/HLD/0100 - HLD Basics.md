@@ -27,7 +27,7 @@
         - [[How to deploy in production such that background jobs are not stopped]]
         - [[0101 - Load Balancer]]
         - [[API Gateway]]
-        - [[API Gateway vs Ingress]]
+        - [[0201 - API Gateway vs Ingress]]
         
     - **Storage Constraints:**
         - Sharding is used to distribute data across multiple machines when storage becomes a bottleneck.

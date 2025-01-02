@@ -1,6 +1,6 @@
-### [[Kubernetes]]:
+### [[0105 - Kubernetes]]:
 
-1. **[[Architecture]]**:
+1. **[[0100 - Architecture]]**:
     - master nodes, worker nodes, etcd, kubelet, kube-proxy, etc.
     - Learn about Kubernetes components such as Pods, Deployments, Services, and Ingresses.
 2. **Deployment and Management**:

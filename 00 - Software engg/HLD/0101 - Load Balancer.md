@@ -61,7 +61,7 @@ A load balancer is a device that distributes network or application traffic acro
 1. **Self-Scaling**:
     - Can dynamically scale based on traffic demands (e.g., AWS load balancers scale up to 100 nodes).
 
-[[API Gateway vs Ingress]]
+[[0201 - API Gateway vs Ingress]]
 
 ---
 

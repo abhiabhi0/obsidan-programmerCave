@@ -9,4 +9,4 @@ Steps 6 and 7 - Now that the request has passed basic checks, the API gateway fi
 Step 8 - The API gateway transforms the request into the appropriate protocol and sends it to backend microservices.
 Steps 9-12: The API gateway can handle errors properly, and deals with faults if the error takes a longer time to recover (circuit break). It can also leverage ELK (Elastic-Logstash-Kibana) stack for logging and monitoring. We sometimes cache data in the API gateway.
 
-[[API Gateway vs Ingress]]
+[[0201 - API Gateway vs Ingress]]

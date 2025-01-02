@@ -1,5 +1,3 @@
-Certainly! Here's a detailed workflow from writing a feature to deploying it in a production environment using Docker, Helm, and FluxCD:
-
 ### 1. **Writing a Feature**
 - **Developer writes the code:** A developer writes a new feature or makes changes to the existing code in a feature branch.
 - **Local Testing:** The developer tests the feature locally to ensure it works as expected.
