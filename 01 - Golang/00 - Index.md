@@ -2,6 +2,7 @@
 - [[0400 - Defer, Panic, and Recover]]
 - [[0500 - Go runtime]]
 - [[01 - Golang/How to containerize Golang Application using Docker|How to containerize Golang Application using Docker]]
+- [[0701 - Implement Cache]]
 ### 02 - Goroutine
 - [[0100 - Goroutines]]
 #### Goroutine Examples
