@@ -1,6 +1,7 @@
 - [[0100 - Why Go is the fastest language|Why Go is the fastest language]]
 - [[0400 - Defer, Panic, and Recover|Defer, Panic, and Recover]]
 - [[0500 - Go runtime|Go runtime]]
+- [[0800 - Map Internals|Map Internals]]
 - [[01 - Golang/How to containerize Golang Application using Docker|How to containerize Golang Application using Docker]]
 - [[0701 - Implement Cache]] 
 - [[0704 - LRU Cache Implementation]]
@@ -12,6 +13,7 @@
 - [[What is ORM in Go (Golang)]]
 - [[Context Package]]
 - [[What is Middleware |Middleware Implementation in Go]]
+- [[for range vs for i on string]]
 ### 02 - Goroutine
 - [[0100 - Goroutines]]
 - [[0300 - Goroutines vs Threads]]

@@ -1,162 +1,220 @@
+Design patterns are essential tools in software development that provide standard solutions to common problems. In Go, design patterns can be implemented effectively due to the language's features like interfaces, goroutines, and channels. Below is an overview of some common design patterns in Go, along with brief explanations and examples.
 
-Go (Golang) supports many design patterns that are commonly used in software engineering. Here, I'll illustrate a few key design patterns using Go: Singleton, Factory, and Observer.
+### 1. Creational Patterns
 
-### Singleton Pattern
+These patterns deal with object creation mechanisms, trying to create objects in a manner suitable to the situation.
 
+#### **Singleton Pattern**
 The Singleton pattern ensures that a class has only one instance and provides a global point of access to it.
 
+**Example:**
 ```go
 package main
 
 import (
-	"fmt"
-	"sync"
+    "fmt"
+    "sync"
 )
 
-type Singleton struct {
-}
+type singleton struct{}
 
-var instance *Singleton
+var instance *singleton
 var once sync.Once
 
-func GetInstance() *Singleton {
-	once.Do(func() {
-		instance = &Singleton{}
-	})
-	return instance
+func GetInstance() *singleton {
+    once.Do(func() {
+        instance = &singleton{}
+    })
+    return instance
 }
 
 func main() {
-	s1 := GetInstance()
-	s2 := GetInstance()
-
-	if s1 == s2 {
-		fmt.Println("Singleton works, both variables contain the same instance.")
-	} else {
-		fmt.Println("Singleton failed, variables contain different instances.")
-	}
+    for i := 0; i < 10; i++ {
+        go func() {
+            fmt.Println(GetInstance())
+        }()
+    }
 }
 ```
-- `once` is a variable of type `sync.Once` from the `sync` package. It is used to ensure that the initialization of the `Singleton` instance happens only once.
-- Inside this function, we use `once.Do` to ensure that the block of code inside it runs only once.
-    - `once.Do` takes a function as an argument. In this case, the function creates a new `Singleton` and assigns its address to the `instance` variable.
-- After `once.Do` is called, the `instance` is returned. This means any subsequent calls to `GetInstance` will return the same `instance`.
-### Factory Pattern
 
-The Factory pattern provides a way to create objects without specifying the exact class of object that will be created.
+#### **Factory Method**
+This pattern provides an interface for creating objects in a superclass but allows subclasses to alter the type of objects that will be created.
 
+**Example:**
 ```go
 package main
 
 import "fmt"
 
-// Shape is the interface that all concrete shapes implement
 type Shape interface {
-	Draw()
+    Draw()
 }
 
-// Circle is a concrete shape that implements Shape
 type Circle struct{}
 
-func (c Circle) Draw() {
-	fmt.Println("Drawing Circle")
+func (c *Circle) Draw() {
+    fmt.Println("Drawing a Circle")
 }
 
-// Square is a concrete shape that implements Shape
 type Square struct{}
 
-func (s Square) Draw() {
-	fmt.Println("Drawing Square")
+func (s *Square) Draw() {
+    fmt.Println("Drawing a Square")
 }
 
-// ShapeFactory is the factory that creates shapes
-type ShapeFactory struct{}
-
-func (sf ShapeFactory) GetShape(shapeType string) Shape {
-	if shapeType == "Circle" {
-		return Circle{}
-	} else if shapeType == "Square" {
-		return Square{}
-	}
-	return nil
+func ShapeFactory(shapeType string) Shape {
+    if shapeType == "circle" {
+        return &Circle{}
+    }
+    return &Square{}
 }
 
 func main() {
-	factory := ShapeFactory{}
+    shape1 := ShapeFactory("circle")
+    shape1.Draw()
 
-	shape1 := factory.GetShape("Circle")
-	shape1.Draw()
-
-	shape2 := factory.GetShape("Square")
-	shape2.Draw()
+    shape2 := ShapeFactory("square")
+    shape2.Draw()
 }
 ```
 
-### Observer Pattern
+#### **Builder Pattern**
+The Builder pattern separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
 
-The Observer pattern is used to notify a list of objects about a change in the state of another object.
-
+**Example:**
 ```go
 package main
 
 import "fmt"
 
-// Subject is the subject that is being observed
+type Car struct {
+    Make  string
+    Model string
+}
+
+type CarBuilder struct {
+    car Car
+}
+
+func (b *CarBuilder) SetMake(make string) *CarBuilder {
+    b.car.Make = make
+    return b
+}
+
+func (b *CarBuilder) SetModel(model string) *CarBuilder {
+    b.car.Model = model
+    return b
+}
+
+func (b *CarBuilder) Build() Car {
+    return b.car
+}
+
+func main() {
+    builder := &CarBuilder{}
+    car := builder.SetMake("Toyota").SetModel("Corolla").Build()
+    
+    fmt.Printf("Car Make: %s, Model: %s\n", car.Make, car.Model)
+}
+```
+
+### 2. Structural Patterns
+
+These patterns deal with object composition and typically help ensure that if one part of a system changes, the entire system doesn't need to change.
+
+#### **Adapter Pattern**
+The Adapter pattern allows incompatible interfaces to work together by wrapping an existing class with a new interface.
+
+**Example:**
+```go
+package main
+
+import "fmt"
+
+type OldSystem struct{}
+
+func (o *OldSystem) OldMethod() {
+    fmt.Println("Old method called")
+}
+
+type NewSystem interface {
+    NewMethod()
+}
+
+type Adapter struct {
+    oldSystem *OldSystem
+}
+
+func (a *Adapter) NewMethod() {
+    a.oldSystem.OldMethod()
+}
+
+func main() {
+    old := &OldSystem{}
+    adapter := &Adapter{oldSystem: old}
+    
+    adapter.NewMethod() // Outputs: Old method called
+}
+```
+
+### 3. Behavioral Patterns
+
+These patterns deal with object interaction and responsibility.
+
+#### **Observer Pattern**
+The Observer pattern defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
+
+**Example:**
+```go
+package main
+
+import "fmt"
+
+type Observer interface {
+	Update(string)
+}
+
 type Subject struct {
 	observers []Observer
-	state     int
+	state     string
 }
 
-// Observer is the interface for all observers
-type Observer interface {
-	Update(state int)
+func (s *Subject) Attach(o Observer) {
+	s.observers = append(s.observers, o)
 }
 
-// Attach adds an observer to the subject
-func (s *Subject) Attach(observer Observer) {
-	s.observers = append(s.observers, observer)
-}
-
-// SetState changes the state of the subject and notifies observers
-func (s *Subject) SetState(state int) {
-	s.state = state
-	s.notifyAllObservers()
-}
-
-// notifyAllObservers notifies all attached observers of a state change
-func (s *Subject) notifyAllObservers() {
+func (s *Subject) Notify() {
 	for _, observer := range s.observers {
 		observer.Update(s.state)
 	}
 }
 
-// ConcreteObserverA is a concrete observer that implements the Observer interface
-type ConcreteObserverA struct {
-	name string
+func (s *Subject) SetState(state string) {
+	s.state = state
+	s.Notify()
 }
 
-func (coa ConcreteObserverA) Update(state int) {
-	fmt.Printf("Observer %s: State changed to %d\n", coa.name, state)
+type ConcreteObserver struct{}
+
+func (c *ConcreteObserver) Update(state string) {
+	fmt.Printf("Observer updated with state: %s\n", state)
 }
 
 func main() {
 	subject := &Subject{}
+	observer := &ConcreteObserver{}
 
-	observer1 := ConcreteObserverA{name: "A"}
-	observer2 := ConcreteObserverA{name: "B"}
-
-	subject.Attach(observer1)
-	subject.Attach(observer2)
-
-	subject.SetState(1)
-	subject.SetState(2)
+	subject.Attach(observer)
+	subject.SetState("New State") // Outputs: Observer updated with state: New State
 }
 ```
 
-### Summary
+### Conclusion
 
-- **Singleton Pattern**: Ensures only one instance of a class exists and provides a global access point.
-- **Factory Pattern**: Creates objects without specifying the exact class of object to be created.
-- **Observer Pattern**: Notifies a list of observers about changes in the state of another object.
+These examples illustrate how various design patterns can be implemented in Go. Each pattern serves a specific purpose and can help improve code organization, reusability, and maintainability. Understanding these patterns can significantly enhance your ability to design robust applications in Go.
 
-These examples demonstrate how you can implement these design patterns in Go. Each pattern addresses different aspects of software design, promoting code reuse and flexibility.
+Citations:
+[1] https://refactoring.guru/design-patterns/go
+[2] https://dwarvesf.hashnode.dev/common-design-patterns-in-golang-part-1
+[3] https://dev.to/krpmuruga/golang-design-patterns-2lo
+[4] https://www.linkedin.com/pulse/go-8-essential-design-patterns-every-programmer-must-know-nitin-singh-rw2bc
