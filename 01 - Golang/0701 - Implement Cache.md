@@ -1,7 +1,6 @@
 ### Implementation of Cache with TTL
 
 ```go
-
 // CacheItem represents an item in the cache with its expiration time.
 type CacheItem struct {
     Value      string

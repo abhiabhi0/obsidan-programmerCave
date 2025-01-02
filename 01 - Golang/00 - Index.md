@@ -2,8 +2,9 @@
 - [[0400 - Defer, Panic, and Recover]]
 - [[0500 - Go runtime]]
 - [[01 - Golang/How to containerize Golang Application using Docker|How to containerize Golang Application using Docker]]
-- [[0701 - Implement Cache]]
+- [[0701 - Implement Cache]] [[0704 - LRU Cache Implementation]]
 - [[0103 - Function Literals, Naked Returns, Variadic Functions, Init Functions]]
+- [[Use of empty struct]]
 ### 02 - Goroutine
 - [[0100 - Goroutines]]
 #### Goroutine Examples
