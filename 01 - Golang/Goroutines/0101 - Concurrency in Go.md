@@ -1,6 +1,6 @@
 ### Quick Summary
 #### Goroutines:
-- **Lightweight Threads**: Managed by Go runtime. [[05 - Go runtime]]
+- **Lightweight Threads**: Managed by Go runtime. [[0500 - Go runtime]]
 - **Synchronization**: Use `sync.WaitGroup` to wait for goroutines to finish.
     - **Example**:
 ```go
@@ -27,7 +27,7 @@ func updateData() {
 }
 ```
 
- [[02 - Lifecycle and Scheduling of a Goroutine]]
+ [[0200 - Lifecycle and Scheduling of a Goroutine]]
  
 ---
  

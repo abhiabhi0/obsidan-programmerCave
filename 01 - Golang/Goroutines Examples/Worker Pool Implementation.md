@@ -1,4 +1,4 @@
-[[04 - Concurrency Patterns]]
+[[0400 - Concurrency Patterns]]
 
 ```go
 // Job represents the task to be executed by a worker

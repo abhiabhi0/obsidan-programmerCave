@@ -5,15 +5,14 @@ The `reflect` package in Go provides functionality to inspect and manipulate var
 ### **Key Concepts**
 
 1. **Types**:
-    
     - The `reflect.Type` interface represents the type of a variable.
     - Used to inspect a variable's type, kind, and other properties.
-2. **Values**:
     
+1. **Values**:
     - The `reflect.Value` interface represents the value of a variable.
     - Used to access and manipulate the underlying data.
-3. **Kind**:
     
+1. **Kind**:
     - Represents the specific kind of type, such as `int`, `string`, `struct`, or `slice`.
 
 ---

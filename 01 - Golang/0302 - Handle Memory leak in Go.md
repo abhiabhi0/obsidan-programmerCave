@@ -1,7 +1,6 @@
-[[Memory Management in Go]]
-[[Garbage Collector in Go]]
+[[0300 - Memory Management in Go]]
+[[0301 - Garbage Collector in Go]]
 #### What Are Memory Leaks?
-
 - **Definition**: Memory leaks occur when a program allocates memory but fails to release it, even when it is no longer needed.
 - **Impact**:
     - Leads to increased memory consumption over time.
@@ -10,7 +9,6 @@
 #### How Memory Leaks Happen in Go
 
 1. **Long-Lived References**:
-    
     - Objects with active references cannot be garbage collected, even if no longer needed.
     - Example:
         
@@ -29,13 +27,11 @@
             select {} // Prevent exit
         }
         ```
-        
     - Issue: Data is added to the cache without a removal strategy.
-2. **Goroutines**:
-    
+
+2. **Goroutines**:    
     - Goroutines that are blocked or never terminate can lead to memory leaks.
     - Example:
-        
         ```go
         func leakyFunc(c chan int) {
             val := <-c
@@ -51,13 +47,11 @@
         ```
         
 3. **Caching Without Bounds**:
-    
     - Indefinitely growing caches consume memory unless an eviction strategy is implemented.
-4. **Cgo or Unsafe Code**:
     
+1. **Cgo or Unsafe Code**:
     - Improper usage can bypass the garbage collector.
     - Example:
-        
         ```go
         // #include <stdlib.h>
         import "C"
@@ -83,11 +77,9 @@
 #### Preventing Memory Leaks in Go
 
 1. **Mind Your References**:
-    
     - Dereference objects when they are no longer needed.
     - Avoid unintended references in global variables, maps, or channels.
     - Example with cache eviction:
-        
         ```go
         var cache = map[string]struct {
             data      []byte
@@ -123,14 +115,12 @@
         ```
         
 2. **Use Bounded Caches**:
-    
     - Implement eviction strategies like LRU (Least Recently Used) or TTL (Time To Live).
-3. **Monitor Goroutines**:
     
+1. **Monitor Goroutines**:
     - Ensure goroutines terminate properly.
     - Use `runtime.NumGoroutine()` to monitor active goroutines.
     - Example:
-        
         ```go
         func worker(ctx context.Context, ch chan int) {
             for {
@@ -154,7 +144,6 @@
         ```
         
 4. **Avoid Finalizers**:
-    
     - Finalizers delay memory reclamation and can introduce unexpected behavior.
 
 #### Summary

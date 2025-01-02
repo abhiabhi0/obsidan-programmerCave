@@ -1,12 +1,9 @@
-
-#### **1. Key Components in Go Scheduler**
-
+#### 1. Key Components in Go Scheduler
 - **G (Goroutine):** Lightweight concurrent threads of execution.
 - **M (Machine):** Represents OS threads.
 - **P (Processor):** Logical processors that manage goroutines and enable parallelism.
 
-#### **2. Go Scheduler:**
-
+#### 2. Go Scheduler:
 - **M:N Scheduler:**
     - M goroutines are mapped to N OS threads.
     - Executes at most `GOMAXPROCS` threads simultaneously.
@@ -17,7 +14,7 @@
 
 ---
 
-#### **3. Lifecycle of a Goroutine**
+#### 3. Lifecycle of a Goroutine
 
 1. **Creation:** Added to the Local Run Queue of a P.
 2. **Execution:** Executed by an M assigned to a P.
@@ -27,7 +24,7 @@
 
 ---
 
-#### **4. Scheduling Algorithm**
+#### 4. Scheduling Algorithm
 
 1. Look for a runnable goroutine:
     - **Global Queue:** Checked 1/61 of the time for fairness.
@@ -40,14 +37,14 @@
 
 ---
 
-#### **5. Work Sharing vs. Work Stealing**
+#### 5. Work Sharing vs. Work Stealing
 
 - **Work Sharing:** Proactively distributes new threads to underutilized processors.
 - **Work Stealing:** Underutilized processors actively fetch work from others (used in Go since version 1.1).
 
 ---
 
-#### **6. Optimizations in the Scheduler**
+#### 6. Optimizations in the Scheduler
 
 - **Minimized Handoff:** Reduces latency and overhead by avoiding frequent thread handoff.
 - **Spinning Threads:** Ensures no runnable goroutine is left idle without significant CPU overhead.
@@ -83,15 +80,15 @@ Processor P Management:
 +-----------+       +-----------+       +-----------+
 ```
 
-[[03 - Goroutines vs Threads]]
-[[04 - Concurrency Patterns]]
+[[0300 - Goroutines vs Threads]]
+[[0400 - Concurrency Patterns]]
 
 ---
-### Expanded Details for Specific Sections
+## Expanded Details for Specific Sections
 
-### **1. Global Queue and Local Run Queues**
+### 1. Global Queue and Local Run Queues
 
-#### **Global Queue:**
+#### Global Queue:
 
 - **Purpose:** Holds goroutines waiting for execution when they are not assigned to a specific P (Processor).
 - **Behavior:**
@@ -99,7 +96,7 @@ Processor P Management:
     - Acts as a fallback when local run queues are empty.
     - Ensures fairness by allowing goroutines created by different Ps to have a chance of being executed across the system.
 
-#### **Local Run Queues:**
+#### Local Run Queues:
 
 - **Purpose:** Each P maintains its own queue of runnable goroutines, which is the primary source for scheduling.
 - **Behavior:**
@@ -109,21 +106,20 @@ Processor P Management:
 
 ---
 
-### **2. Lifecycle of a Goroutine**
+### 2. Lifecycle of a Goroutine
 
 1. **Creation:**
-    
     - A new goroutine is created using the `go` keyword.
     - It is added to the local run queue of the P associated with the creating M.
-2. **Execution:**
     
+1. **Execution:**
     - The scheduler assigns an M (OS thread) to the P holding the goroutine.
     - The goroutine runs on the assigned M until:
         - It completes execution.
         - It encounters a blocking operation.
         - It is preempted by the scheduler for fairness or resource management.
-3. **Blocking:**
-    
+        
+1. **Blocking:**
     - Happens when a goroutine waits for external resources, such as:
         - Network I/O.
         - File I/O.
@@ -132,20 +128,19 @@ Processor P Management:
         - The M associated with the P may also block (e.g., during a syscall).
         - The scheduler detaches the M from the P and parks the M.
         - The P is freed to schedule another runnable goroutine.
-4. **Unblocking:**
-    
+2. **Unblocking:**
     - Once the blocking operation completes, the goroutine is marked as runnable.
     - It is added back to the local run queue of the P (or the global queue if necessary).
-5. **Termination:**
     
+1. **Termination:**
     - A goroutine completes execution when its function returns.
     - The resources associated with the goroutine are released.
 
 ---
 
-### **3. Handling Idle and Spinning Threads**
+### 3. Handling Idle and Spinning Threads
 
-#### **Spinning Threads:**
+#### Spinning Threads:
 
 - **Purpose:** Minimize preemption and latency while balancing CPU resource usage.
 - **When Threads Spin:**
@@ -155,25 +150,22 @@ Processor P Management:
 - **Limits:**
     - At most `GOMAXPROCS` spinning Ms are allowed at any time to control CPU usage.
 
-#### **Idle Threads:**
-
+#### Idle Threads:
 - Idle threads are parked to save CPU resources when:
     - No work is available in the queues.
     - All runnable goroutines are currently blocked or being executed.
 
 ---
 
-### **4. Optimizations in the Scheduler**
+### 4. Optimizations in the Scheduler
 
-#### **Minimized Handoff:**
-
+#### Minimized Handoff:
 - **Purpose:** Reduces latency and overhead by avoiding frequent movement of runnable goroutines between threads.
 - **How It Works:**
     - A goroutine runs on the same P-M pairing whenever possible.
     - Handoff (switching threads) is only done when absolutely necessary (e.g., work stealing or syscall blocking).
 
-#### **Spinning Threads Optimization:**
-
+#### Spinning Threads Optimization:
 - **Advantages:**
     - Keeps CPUs active to ensure no runnable goroutines are left idle.
     - Balances power efficiency by limiting the number of spinning threads.

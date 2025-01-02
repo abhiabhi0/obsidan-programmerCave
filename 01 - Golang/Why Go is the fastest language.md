@@ -1,8 +1,0 @@
-- **Eliminating cycles in Go dependencies graph**: 
-- **Efficient Compiler Design keeping compilation speed in mind**:
-- **Efficient Dependency Analysis**:
-- **Eliminating unused dependencies**:
-- All imports must be listed at the beginning of source file, so the compiler does not have to read the entire file to determine the dependencies.
-- **Compiled Language**: Go is a statically typed, compiled language.
-- **Efficient Garbage Collection**:
-- **Native Machine Code**: Since Go compiles to native machine code, it can take full advantage of the hardware, resulting in faster execution compared to languages that run on a virtual machine (VM) like Java.

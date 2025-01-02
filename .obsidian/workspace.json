@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "eed52f0f7b588e0b",
+        "id": "9c4aed218c582571",
         "type": "tabs",
         "children": [
           {
-            "id": "61bb31c6fd48572e",
+            "id": "13f927f42712bfa5",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -23,18 +23,48 @@
             }
           },
           {
-            "id": "a1471b47a702d1ea",
+            "id": "a5db8410e7ef6536",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Golang/Goroutines Examples/Print table of N using go routine.md",
+                "file": "01 - Golang/Goroutines Examples/Using two goroutines print even and odd in natural sequence.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Print table of N using go routine"
+              "title": "Using two goroutines print even and odd in natural sequence"
+            }
+          },
+          {
+            "id": "ad392f214f6b2336",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Golang/Goroutines/0500 - Go runtime.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0500 - Go runtime"
+            }
+          },
+          {
+            "id": "0cc4a214716a00a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Golang/reflect package.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "reflect package"
             }
           }
         ],
@@ -94,7 +124,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 707.5041885375977
+    "width": 597.5041885375977
   },
   "right": {
     "id": "107f5edfe773bdb6",
@@ -110,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 - Software engg/HLD/0200 - Caching.md"
+                "file": "01 - Golang/Goroutines Examples/Using two goroutines print even and odd in natural sequence.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0200 - Caching"
+              "title": "Outline of Using two goroutines print even and odd in natural sequence"
             }
           },
           {
@@ -153,8 +183,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 341.5,
-    "collapsed": true
+    "width": 341.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -168,35 +197,35 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "a1471b47a702d1ea",
+  "active": "a5db8410e7ef6536",
   "lastOpenFiles": [
     "01 - Golang/00 - Index.md",
+    "01 - Golang/Goroutines/0500 - Go runtime.md",
+    "01 - Golang/reflect package.md",
+    "01 - Golang/0400 - Defer, Panic, and Recover.md",
+    "01 - Golang/Goroutines/How to make goroutines run on same thread.md",
+    "01 - Golang/0100 - Why Go is the fastest language.md",
+    "01 - Golang/Go’s Static Typing and Single Binary Deployment.md",
+    "01 - Golang/0302 - Handle Memory leak in Go.md",
+    "01 - Golang/0301 - Garbage Collector in Go.md",
+    "01 - Golang/0300 - Memory Management in Go.md",
+    "01 - Golang/Goroutines/0100 - Goroutines.md",
+    "01 - Golang/Goroutines/0700 - select in Golang.md",
+    "01 - Golang/Goroutines/0600 - Concurrency vs Parallelism.md",
+    "01 - Golang/Goroutines/0400 - Concurrency Patterns.md",
+    "01 - Golang/Goroutines/0300 - Goroutines vs Threads.md",
+    "01 - Golang/Goroutines/0200 - Lifecycle and Scheduling of a Goroutine.md",
+    "01 - Golang/Goroutines/0101 - Concurrency in Go.md",
+    "01 - Golang/Design Patterns.md",
+    "01 - Golang/Interface example to select game for students.md",
+    "01 - Golang/Goroutines Examples/Print table of N using Goroutine.md",
     "03 - Django/2300 - Advanced Django - WSGI, Docker, and Deployment.md",
     "03 - Django/2200 - Advanced Django - Prefetching and Indexing.md",
     "03 - Django/2100 - Advanced Django - Optimizing Queries.md",
     "03 - Django/2000 - Advanced Django - Deep Dive into Django ORM.md",
     "03 - Django/1900 - Advanced Django - Django Admin and Permissions.md",
     "03 - Django/1800 - Advanced Django - Creating Custom Middleware.md",
-    "03 - Django/1700 - Django Project - Signals and Middlewares.md",
-    "03 - Django/1600 - Django Project - Celery, Redis, and Object Level Permissions.md",
-    "03 - Django/1500 - Django Project - ViewSet and Class Architecture.md",
-    "03 - Django/1400 - Django Project - Filters in GET Queries.md",
-    "03 - Django/1300 - Django Project - Serializer Context and API Design.md",
-    "03 - Django/1200 - Django Project - API Views and Mixins.md",
-    "03 - Django/1100 - Django Project - Refactoring Controllers and CRUD APIs.md",
-    "03 - Django/1000 - Django Project - REST APIs and Idempotency.md",
-    "03 - Django/0900 - Authentication and JWT.md",
-    "03 - Django/0800 - Django REST Framework.md",
-    "03 - Django/0700 - Django Forms.md",
-    "03 - Django/0600 - Server-Side Rendering vs Client-Side Rendering.md",
-    "03 - Django/0500 - Django Templates.md",
-    "03 - Django/0400 - Django Views.md",
-    "03 - Django/0300 - Models in Django.md",
-    "03 - Django/0200 - Setting Up Views, Models, and Templates in Django.md",
-    "03 - Django/0100 - Introduction to Django.md",
-    "02 - Python/0600 - Garbage Collector.md",
     "03 - Django",
-    "02 - Python/Polymorphism.md",
     "00 - Software engg/LLD Examples",
     "LLD/12 - LLD Examples",
     "zimages/{D92169F8-D298-4668-BF2F-64B699E1B367}.png",

@@ -1,12 +1,5 @@
-Sure, here is a basic example of how you might create an interface in Go to allow students to select various games in a school setting:
 
 ```go
-package main
-
-import (
-	"fmt"
-)
-
 // GameSelector interface defines the method for selecting games
 type GameSelector interface {
 	SelectGame() string
@@ -69,21 +62,93 @@ func main() {
 	fmt.Printf("%s selected %s\n", student3.Name, student3.Game.SelectGame())
 }
 ```
+## Diagram 1: Structure Overview
 
-### Explanation:
+### Class Diagram
 
-1. **Interfaces and Structs**:
-   - `GameSelector` is an interface with a method `SelectGame` that returns a string.
-   - `Basketball`, `Soccer`, and `Volleyball` are structs that implement the `GameSelector` interface by defining the `SelectGame` method.
+This diagram represents the relationships between the structs and the interface in your code.
 
-2. **Student Struct**:
-   - `Student` struct has fields `Name` and `Game`. The `Game` field is of type `GameSelector`, meaning it can hold any value that implements the `GameSelector` interface.
-   - `ChooseGame` method allows a `Student` to select a game by setting the `Game` field.
+```plaintext
++-------------------+
+|   GameSelector    |<-------------------+
++-------------------+                    |
+| + SelectGame()    |                    |
++-------------------+                    |
+         ^                               |
+         |                               |
+         |                               |
++-------------------+        +-------------------+        +-------------------+
+|   Basketball      |        |     Soccer        |        |   Volleyball      |
++-------------------+        +-------------------+        +-------------------+
+| + SelectGame()    |        | + SelectGame()    |        | + SelectGame()    |
++-------------------+        +-------------------+        +-------------------+
 
-3. **Main Function**:
-   - Instances of the games (`basketball`, `soccer`, and `volleyball`) are created.
-   - Instances of students (`student1`, `student2`, and `student3`) are created with names.
-   - Each student selects a game using the `ChooseGame` method.
-   - The selected game for each student is printed using the `SelectGame` method from the `GameSelector` interface.
+```
+## Diagram 2: Student Interaction
 
-This code provides a basic demonstration of using interfaces in Go to handle different types of games and how students can select among them.
+### Sequence Diagram
+
+This diagram illustrates how students interact with games through the `ChooseGame` method.
+
+```plaintext
+Student 1                  GameSelector (Basketball)
+   |                                 |
+   | ChooseGame(basketball) ------> |
+   |                                 |
+   |                                 |
+   | <------- SelectGame() ---------|
+   |                                 |
+   | Print: "Alice selected Basketball"
+```
+
+```plaintext
+Student 2                  GameSelector (Soccer)
+   |                                 |
+   | ChooseGame(soccer) ----------> |
+   |                                 |
+   |                                 |
+   | <------- SelectGame() ---------|
+   |                                 |
+   | Print: "Bob selected Soccer"
+```
+
+```plaintext
+Student 3                  GameSelector (Volleyball)
+   |                                 |
+   | ChooseGame(volleyball) -------> |
+   |                                 |
+   |                                 |
+   | <------- SelectGame() ---------|
+   |                                 |
+   | Print: "Charlie selected Volleyball"
+```
+
+## Diagram 3: Overall Flow in Main Function
+
+### Activity Diagram
+
+This diagram shows the overall flow of execution in the `main` function.
+
+```plaintext
+Start
+  ↓
+Create Game Instances
+  ↓
+Create Student Instances
+  ↓
+┌─────────────────────────────────┐
+│ student1.ChooseGame(basketball) │
+└─────────────────────────────────┘
+  ↓
+┌─────────────────────────────────┐
+│ student2.ChooseGame(soccer)     │
+└─────────────────────────────────┘
+  ↓
+┌──────────────────────────────────┐
+│ student3.ChooseGame(volleyball)  │
+└──────────────────────────────────┘
+  ↓
+Print Selected Games for Each Student
+  ↓
+End
+```

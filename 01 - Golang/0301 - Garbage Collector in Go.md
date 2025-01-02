@@ -1,13 +1,10 @@
-[[Memory Management in Go]]
+[[0300 - Memory Management in Go]]
 #### Overview of Garbage Collection in Go
-
 - Go’s garbage collector (GC) uses a **concurrent, tri-color, mark-sweep** approach.
 - Designed for minimal disruption to application performance while ensuring efficient memory management.
 
 #### Key Features of Go’s Garbage Collector
-
 1. **Concurrent**:
-    
     - **Definition**: The GC operates alongside the application, avoiding a full "stop-the-world" phase.
     - **Advantages**:
         - Reduces noticeable pauses.
@@ -15,8 +12,8 @@
     - **Implementation**:
         - Most garbage collection work is done in the background, interleaved with application execution.
         - Shorter stop-the-world pauses enhance application latency.
-2. **Tri-color Marking Algorithm**:
-    
+        
+1. **Tri-color Marking Algorithm**:
     - **Color States**:
         - **White**: Objects not yet processed; candidates for garbage collection.
         - **Grey**: Objects discovered as reachable but whose descendants are not yet processed.
@@ -34,8 +31,8 @@
     - **Advantages**:
         - Segregates objects by reachability.
         - Efficiently identifies and reclaims memory.
-3. **Mark-Sweep Phases**:
     
+1. **Mark-Sweep Phases**:
     - **Mark Phase**:
         - Traverses the object graph starting from roots.
         - Uses the tri-color algorithm to identify reachable objects.
@@ -46,7 +43,9 @@
     - **Benefits**:
         - Balances performance with memory usage.
         - Eliminates large memory clean-up pauses.
+[[0302 - Handle Memory leak in Go]]
 
+---
 #### Tri-color Mark and Sweep Algorithm
 
 - **Marking**:
@@ -76,5 +75,3 @@
 - **Efficient Memory Reclamation**: Tri-color marking ensures accurate identification of unused objects.
 - **Safe Concurrency**: Write barriers maintain correctness during program execution.
 - **Scalability**: Suitable for real-time and high-throughput applications due to its non-disruptive design.
-
-[[Handle Memory leak in Go]]
