@@ -97,8 +97,7 @@
               "title": "0103 - Function Literals, Naked Returns, Variadic Functions, Init Functions"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -170,10 +169,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Golang/0103 - Function Literals, Naked Returns, Variadic Functions, Init Functions.md"
+                "file": "01 - Golang/00 - Index.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0103 - Function Literals, Naked Returns, Variadic Functions, Init Functions"
+              "title": "Outline of 00 - Index"
             }
           },
           {
@@ -227,8 +226,9 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "117c3b65a675ca00",
+  "active": "c543cdf4003a88e0",
   "lastOpenFiles": [
+    "01 - Golang/0103 - Function Literals, Naked Returns, Variadic Functions, Init Functions.md",
     "01 - Golang/0102 - Function Closures.md",
     "01 - Golang/0101 - What are Packages in Go.md",
     "01 - Golang/Goroutines/How to limit number of goroutines.md",
@@ -254,7 +254,6 @@
     "01 - Golang/Goroutines/How to make goroutines run on same thread.md",
     "01 - Golang/0100 - Why Go is the fastest language.md",
     "01 - Golang/Go’s Static Typing and Single Binary Deployment.md",
-    "01 - Golang/0302 - Handle Memory leak in Go.md",
     "03 - Django",
     "00 - Software engg/LLD Examples",
     "LLD/12 - LLD Examples",

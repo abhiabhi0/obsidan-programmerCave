@@ -3,6 +3,7 @@
 - [[0500 - Go runtime]]
 - [[01 - Golang/How to containerize Golang Application using Docker|How to containerize Golang Application using Docker]]
 - [[0701 - Implement Cache]]
+- [[0103 - Function Literals, Naked Returns, Variadic Functions, Init Functions]]
 ### 02 - Goroutine
 - [[0100 - Goroutines]]
 #### Goroutine Examples
