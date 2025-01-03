@@ -83,6 +83,23 @@ public class FactoryMethodExample {
 - **Abstract Factory Pattern**
   - Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
   - Useful when the system needs to be independent of how its objects are created.
+```java
+interface AbstractFactory {
+    Product createProduct();
+}
+
+class FactoryA implements AbstractFactory {
+    public Product createProduct() {
+        return new ConcreteProductA();
+    }
+}
+
+class FactoryB implements AbstractFactory {
+    public Product createProduct() {
+        return new ConcreteProductB();
+    }
+}
+```
 
 - **Builder Pattern**
   - Separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
