@@ -156,9 +156,24 @@
               "icon": "lucide-file",
               "title": "09 - What is the role of gRPC server in a client-server architecture"
             }
+          },
+          {
+            "id": "88d52f9c1669a91e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Software engg/GRPC/10 - How can you handle authentication and authorization in gRPC services.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "10 - How can you handle authentication and authorization in gRPC services"
+            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -230,10 +245,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 - Software engg/GRPC/09 - What is the role of gRPC server in a client-server architecture.md"
+                "file": "00 - Software engg/GRPC/10 - How can you handle authentication and authorization in gRPC services.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 09 - What is the role of gRPC server in a client-server architecture"
+              "title": "Outline of 10 - How can you handle authentication and authorization in gRPC services"
             }
           },
           {
@@ -287,8 +302,9 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "0abd375145a7e9fe",
+  "active": "88d52f9c1669a91e",
   "lastOpenFiles": [
+    "00 - Software engg/GRPC/09 - What is the role of gRPC server in a client-server architecture.md",
     "00 - Software engg/GRPC/08 - How can you secure a gRPC connection.md",
     "00 - Software engg/GRPC/07 - What Are gRPC Stubs.md",
     "00 - Software engg/GRPC/06 - What Are Interceptors in gRPC.md",
@@ -314,7 +330,6 @@
     "00 - Software engg/Kubernetes/0102 - What is a Pod in Kubernetes.md",
     "00 - Software engg/Kubernetes/0200 - What is Ingress in Kubernetes.md",
     "00 - Software engg/Kubernetes/Ingress.md",
-    "00 - Software engg/Kubernetes/How to containerize Golang application using Docker.md",
     "zimages/Kubernetes-Architecture.png",
     "03 - Django",
     "00 - Software engg/LLD Examples",
