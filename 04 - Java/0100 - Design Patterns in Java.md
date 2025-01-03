@@ -5,6 +5,14 @@ Creational patterns deal with object creation mechanisms, trying to create objec
   - Ensures that a class has only one instance and provides a global point of access to it.
   - Useful in scenarios where a single object is needed to coordinate actions across the system.
   - Implementation involves a private constructor and a static method for obtaining the instance.
+```mermaid
+classDiagram
+    class Singleton {
+        -instance: Singleton
+        +getInstance(): Singleton
+    }
+```
+
 ```java
 class Singleton {
     private static Singleton instance;
@@ -24,6 +32,34 @@ class Singleton {
   - Defines an interface for creating an object but lets subclasses alter the type of created objects.
   - Promotes loose coupling by eliminating the need for the client to know about concrete classes.
   - [[08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory]]
+
+```mermaid
+classDiagram
+    class Product {
+        + use()
+    }
+    class ConcreteProductA {
+        + use()
+    }
+    class ConcreteProductB {
+        + use()
+    }
+    class Creator {
+        + factoryMethod(): Product
+    }
+    class ConcreteCreatorA {
+        + factoryMethod(): Product
+    }
+    class ConcreteCreatorB {
+        + factoryMethod(): Product
+    }
+
+    Creator <|-- ConcreteCreatorA
+    Creator <|-- ConcreteCreatorB
+    Product <|-- ConcreteProductA
+    Product <|-- ConcreteProductB
+```
+
 ```java
 // Abstract Product
 abstract class Product {
@@ -83,6 +119,37 @@ public class FactoryMethodExample {
 - **Abstract Factory Pattern**
   - Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
   - Useful when the system needs to be independent of how its objects are created.
+  - [[08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory]]
+```mermaid
+classDiagram
+    class AbstractFactory {
+        + createProduct(): Product
+    }
+    class FactoryA {
+        + createProduct(): Product
+    }
+    class FactoryB {
+        + createProduct(): Product
+    }
+    
+    class Product {
+        + use()
+    }
+    
+    class ConcreteProductA {
+        + use()
+    }
+    
+    class ConcreteProductB {
+        + use()
+    }
+
+    AbstractFactory <|-- FactoryA
+    AbstractFactory <|-- FactoryB
+    Product <|-- ConcreteProductA
+    Product <|-- ConcreteProductB
+```
+
 ```java
 interface AbstractFactory {
     Product createProduct();
