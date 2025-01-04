@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04 - Java/0100 - Design Patterns in Java.md",
+                "file": "01 - System Design/Design Examples/01 - Design a unique ID generator.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0100 - Design Patterns in Java"
+              "title": "01 - Design a unique ID generator"
             }
           },
           {
@@ -109,10 +109,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - Java/0100 - Design Patterns in Java.md"
+                "file": "01 - System Design/Design Examples/01 - Design a unique ID generator.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0100 - Design Patterns in Java"
+              "title": "Outline of 01 - Design a unique ID generator"
             }
           },
           {
@@ -168,9 +168,12 @@
   },
   "active": "4050b0f2b8b89e9f",
   "lastOpenFiles": [
-    "00 - Software engg/LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
     "04 - Java/0100 - Design Patterns in Java.md",
-    "00 - Software engg/LLD/0001 - Design Patterns Summarized.md",
+    "01 - System Design/Design Examples/01 - Design a unique ID generator.md",
+    "01 - System Design/Design Examples",
+    "01 - System Design",
+    "01 - System Design/LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
+    "01 - System Design/LLD/0001 - Design Patterns Summarized.md",
     "01 - Golang/00 - Index.md",
     "01 - Golang/1102 - Slice concept based question - Append and Equal.md",
     "01 - Golang/1101 - Array vs Slice.md",
@@ -194,10 +197,9 @@
     "00 - Software engg/Kubernetes/Top 4 Kubernetes Service Types.md",
     "00 - Software engg/Kubernetes/0108 - Kubernetes Secrets.md",
     "00 - Software engg/Kubernetes/0105 - Kubernetes.md",
-    "00 - Software engg/Kubernetes/Kubernetes Interview Topics.md",
     "zimages/Kubernetes-Architecture.png",
     "03 - Django",
-    "00 - Software engg/LLD Examples",
+    "01 - System Design/LLD Examples",
     "LLD/12 - LLD Examples",
     "zimages/{D92169F8-D298-4668-BF2F-64B699E1B367}.png",
     "zimages/{C27387EA-B357-4568-9CD2-058F436D5812}.png",
@@ -212,8 +214,6 @@
     "01 - Golang/Goroutines",
     "zimages/01 - Splitwise-sequence-diagram.png",
     "zimages/01 - Splitwise-hld.png",
-    "00 - Software engg/SQL Queries",
-    "00 - Software engg/DB",
     "zimages/Untitled.canvas",
     "Untitled 1.canvas"
   ]
