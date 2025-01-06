@@ -13,13 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Golang/1501 - Implement Document Service.md",
+                "file": "01 - Golang/Goroutines Examples/0101 - Schedule N Queries.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1501 - Implement Document Service"
+              "title": "0101 - Schedule N Queries"
+            }
+          },
+          {
+            "id": "10af7cc3959f6972",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Golang/00 - Index.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "00 - Index"
             }
           },
           {
@@ -37,7 +52,8 @@
               "title": "08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -109,10 +125,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Golang/1501 - Implement Document Service.md"
+                "file": "01 - Golang/00 - Index.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 1501 - Implement Document Service"
+              "title": "Outline of 00 - Index"
             }
           },
           {
@@ -166,10 +182,11 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "4050b0f2b8b89e9f",
+  "active": "10af7cc3959f6972",
   "lastOpenFiles": [
-    "01 - System Design/Design Examples/01 - Design a unique ID generator.md",
+    "01 - Golang/Goroutines Examples/0101 - Schedule N Queries.md",
     "01 - Golang/1501 - Implement Document Service.md",
+    "01 - System Design/Design Examples/01 - Design a unique ID generator.md",
     "04 - Java/0100 - Design Patterns in Java.md",
     "01 - System Design/Design Examples",
     "01 - System Design",
@@ -196,7 +213,6 @@
     "00 - Software engg/GRPC/00 - Introduction.md",
     "00 - Software engg/Kubernetes/Workflow of JWT.md",
     "00 - Software engg/Kubernetes/Top 4 Kubernetes Service Types.md",
-    "00 - Software engg/Kubernetes/0108 - Kubernetes Secrets.md",
     "zimages/Kubernetes-Architecture.png",
     "03 - Django",
     "01 - System Design/LLD Examples",
