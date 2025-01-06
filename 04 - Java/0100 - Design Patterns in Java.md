@@ -171,56 +171,515 @@ class FactoryB implements AbstractFactory {
 - **Builder Pattern**
   - Separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
   - Particularly useful for constructing objects with many optional parameters.
+```mermaid
+classDiagram
+    class Product {
+        - partA: String
+        - partB: String
+        + setPartA(partA: String)
+        + setPartB(partB: String)
+    }
+
+    class Builder {
+        - product: Product
+        + buildPartA(part: String): Builder
+        + buildPartB(part: String): Builder
+        + build(): Product
+    }
+
+```
+```java
+class Product {
+    private String partA;
+    private String partB;
+
+    public void setPartA(String partA) { this.partA = partA; }
+    public void setPartB(String partB) { this.partB = partB; }
+}
+
+class Builder {
+    private Product product = new Product();
+
+    public Builder buildPartA(String part) {
+        product.setPartA(part);
+        return this;
+    }
+
+    public Builder buildPartB(String part) {
+        product.setPartB(part);
+        return this;
+    }
+
+    public Product build() {
+        return product;
+    }
+}
+```
 
 - **Prototype Pattern**
   - Creates new objects by copying an existing object, known as the prototype.
   - Useful when object creation is costly or complex.
+```mermaid
+classDiagram
+    class Prototype {
+        + clone(): Prototype
+    }
 
+    class ConcretePrototype {
+        + clone(): Prototype
+    }
+
+    Prototype <|-- ConcretePrototype
+```
+```java
+abstract class Prototype implements Cloneable {
+    abstract Prototype clone();
+}
+
+class ConcretePrototype extends Prototype {
+    @Override
+    Prototype clone() {
+        return new ConcretePrototype();
+    }
+}
+```
 ### **2. Structural Patterns**
 Structural patterns deal with object composition and typically help ensure that if one part of a system changes, the entire system doesn’t need to change.
 
 - **Adapter Pattern**
   - Allows incompatible interfaces to work together by converting the interface of a class into another interface that clients expect.
   - Useful when you want to use an existing class but its interface does not match what you need.
+```mermaid
+classDiagram
+    class Target {
+        + request()
+    }
+
+    class Adaptee {
+        + specificRequest()
+    }
+
+    class Adapter {
+        - adaptee: Adaptee
+        + request()
+    }
+
+    Target <|-- Adapter 
+```
+```java
+interface Target {
+    void request();
+}
+
+class Adaptee {
+    void specificRequest() {
+        System.out.println("Specific request");
+    }
+}
+
+class Adapter implements Target {
+    private Adaptee adaptee;
+
+    Adapter(Adaptee adaptee) {
+        this.adaptee = adaptee;
+    }
+
+    public void request() {
+        adaptee.specificRequest();
+    }
+}
+```
 
 - **Decorator Pattern**
   - Adds new functionality to an existing object without altering its structure.
   - Useful for adhering to the Single Responsibility Principle by allowing functionality to be divided into classes with unique concerns.
+```mermaid
+classDiagram
+    class Component {
+        + operation()
+    }
+
+    class ConcreteComponent {
+        + operation()
+    }
+
+    class Decorator {
+        - component: Component
+        + operation()
+    }
+
+    Component <|-- ConcreteComponent 
+    Component <|-- Decorator 
+```
+```java
+interface Component {
+    void operation();
+}
+
+class ConcreteComponent implements Component {
+    public void operation() {
+        System.out.println("Operation of Concrete Component");
+    }
+}
+
+class Decorator implements Component {
+    protected Component component;
+
+    Decorator(Component component) {
+        this.component = component;
+    }
+
+    public void operation() {
+        component.operation();
+        System.out.println("Operation of Decorator");
+    }
+}
+```
 
 - **Facade Pattern**
   - Provides a simplified interface to a complex subsystem.
   - Helps reduce dependencies on external code and simplifies interactions with complex systems.
+```mermaid
+classDiagram
+   class SubsystemA {
+       + operationA()
+   }
+
+   class SubsystemB {
+       + operationB()
+   }
+
+   class Facade {
+       - subsystemA: SubsystemA 
+       - subsystemB: SubsystemB 
+       + operation()
+   }
+
+   Facade --> SubsystemA : uses >
+   Facade --> SubsystemB : uses >
+```
+```java
+class SubsystemA {
+    void operationA() { System.out.println("Subsystem A operation"); }
+}
+
+class SubsystemB {
+    void operationB() { System.out.println("Subsystem B operation"); }
+}
+
+class Facade {
+    private SubsystemA subsystemA = new SubsystemA();
+    private SubsystemB subsystemB = new SubsystemB();
+
+    public void operation() {
+        subsystemA.operationA();
+        subsystemB.operationB();
+    }
+}
+```
 
 - **Composite Pattern**
   - Composes objects into tree structures to represent part-whole hierarchies.
   - Enables clients to treat individual objects and compositions uniformly.
+```mermaid
+classDiagram 
+   class Component { 
+       + operation() 
+   } 
+
+   class Leaf { 
+       + operation() 
+   } 
+
+   class Composite { 
+       - children: List<Component> 
+       + add(component: Component) 
+       + operation() 
+   } 
+
+   Component <|-- Leaf 
+   Component <|-- Composite 
+```
+```java
+interface Component {
+   void operation();
+}
+
+class Leaf implements Component {
+   public void operation() { System.out.println("Leaf operation"); }
+}
+
+class Composite implements Component {
+   private List<Component> children = new ArrayList<>();
+
+   public void add(Component component) { children.add(component); }
+
+   public void operation() { 
+       for (Component child : children) child.operation(); 
+   }
+}
+```
 
 - **Proxy Pattern**
   - Provides a surrogate or placeholder for another object to control access to it.
   - Useful for lazy initialization, access control, logging, etc.
+```mermaid
+classDiagram 
+   class Subject { 
+       + request() 
+   } 
 
+   class RealSubject { 
+       + request() 
+   } 
+
+   class Proxy { 
+       - realSubject: RealSubject 
+       + request() 
+   } 
+
+   Subject <|-- RealSubject 
+   Subject <|-- Proxy 
+```
+```java
+interface Subject {
+   void request();
+}
+
+class RealSubject implements Subject {
+   public void request() { System.out.println("Real subject request"); }
+}
+
+class Proxy implements Subject {
+   private RealSubject realSubject;
+
+   public void request() { 
+       if (realSubject == null) realSubject = new RealSubject(); 
+       realSubject.request(); 
+   }
+}
+```
 ### **3. Behavioral Patterns**
 Behavioral patterns focus on communication between objects, what goes on between objects and how they operate together.
 
 - **Observer Pattern**
   - Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
   - Commonly used in event handling systems.
+```mermaid
+classDiagram 
+   class Subject { 
+       - observers: List<Observer> 
+       + attach(observer: Observer) 
+       + detach(observer: Observer) 
+       + notify() 
+   } 
+
+   class Observer { 
+       + update(message: String) 
+   } 
+
+   Subject "1" --> "0..*" Observer : notifies >
+```
+```java
+interface Observer {
+   void update(String message);
+}
+
+class ConcreteObserver implements Observer {
+   public void update(String message) { System.out.println("Received: " + message); }
+}
+
+class Subject {
+   private List<Observer> observers = new ArrayList<>();
+
+   public void attach(Observer observer) { observers.add(observer); }
+
+   public void notifyObservers(String message) { 
+       for (Observer observer : observers) observer.update(message); 
+   }
+}
+```
 
 - **Strategy Pattern**
   - Defines a family of algorithms, encapsulates each one, and makes them interchangeable. The strategy lets the algorithm vary independently from clients that use it.
   - Useful for situations where multiple algorithms can be applied based on varying conditions.
+```mermaid
+classDiagram 
+   class Context { 
+       - strategy: Strategy 
+       + setStrategy(strategy: Strategy) 
+       + execute()  
+   } 
+
+   class Strategy { 
+       + algorithm()  
+   } 
+
+   class ConcreteStrategyA { 
+       + algorithm()  
+   } 
+
+   class ConcreteStrategyB { 
+       + algorithm()  
+   } 
+
+   Context --> Strategy : uses >
+```
+```java
+interface Strategy {
+   int execute(int a, int b);
+}
+
+class Addition implements Strategy { 
+   public int execute(int a, int b) { return a + b; } 
+}
+
+class Context { 
+   private Strategy strategy; 
+
+   Context(Strategy strategy) { this.strategy = strategy; } 
+
+   int executeStrategy(int a, int b) { return strategy.execute(a, b); } 
+}
+```
 
 - **Command Pattern**
   - Encapsulates a request as an object, thereby allowing users to parameterize clients with queues, requests, and operations.
   - Facilitates undoable operations by storing commands as objects.
+```mermaid
+classDiagram  
+  class Command {  
+      + execute()  
+  }  
+
+  class LightOnCommand {  
+      - light: Light  
+      + execute()  
+  }  
+
+  class RemoteControl {  
+      - command: Command  
+      + setCommand(command: Command)  
+      + pressButton()  
+  }  
+
+  Command <|-- LightOnCommand   
+```
+```java
+interface Command { 
+   void execute(); 
+}
+
+class LightOnCommand implements Command { 
+   private Light light; 
+
+   LightOnCommand(Light light) { this.light = light; } 
+
+   public void execute() { light.turnOn(); } 
+}
+
+// Invoker class
+class RemoteControl { 
+   private Command command; 
+
+   public void setCommand(Command command) { this.command = command; } 
+
+   public void pressButton() { command.execute(); } 
+}
+```
 
 - **State Pattern**
   - Allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
   - Useful for implementing finite state machines.
+```mermaid
+classDiagram  
+  class State {  
+      + handle()  
+  }  
+
+  class Context {  
+      - state: State  
+      + setState(state: State)  
+      + request()  
+  }  
+
+  class ConcreteStateA {  
+      + handle()  
+  }  
+
+  class ConcreteStateB {  
+      + handle()  
+  }  
+
+  Context --> State : uses >
+```
+```java
+interface State { 
+   void handle(); 
+}
+
+class Context { 
+   private State state; 
+
+   public void setState(State state) { this.state = state; } 
+
+   public void request() { state.handle(); } 
+}
+
+// Example states
+class ConcreteStateA implements State { 
+   public void handle() { System.out.println("Handling State A"); } 
+}
+
+class ConcreteStateB implements State { 
+   public void handle() { System.out.println("Handling State B"); } 
+}
+```
 
 - **Template Method Pattern**
   - Defines the skeleton of an algorithm in a method, deferring some steps to subclasses. Template Method lets subclasses redefine certain steps without changing the algorithm's structure.
-  
+```mermaid
+classDiagram  
+  class AbstractClass {  
+      final templateMethod()   
+      abstract stepOne()   
+      abstract stepTwo()   
+      final stepThree()   
+  }  
+
+  class ConcreteClass {  
+      stepOne()   
+      stepTwo()   
+  }  
+
+  AbstractClass <|-- ConcreteClass   
+```
+```java
+abstract class AbstractClass { 
+   // Template method
+   final void templateMethod() { 
+       stepOne(); 
+       stepTwo(); 
+       stepThree(); 
+   }
+
+   abstract void stepOne(); // Steps to be implemented by subclasses
+
+   abstract void stepTwo();
+
+   final void stepThree() { System.out.println("Common Step"); } // Fixed implementation
+}
+
+// Example subclass
+class ConcreteClass extends AbstractClass { 
+   @Override 
+   void stepOne() { System.out.println("Step One Implementation"); }
+
+   @Override 
+   void stepTwo() { System.out.println("Step Two Implementation"); } 
+}
+```
+
 ### **Conclusion**
 Understanding these design patterns is crucial for Java developers as they provide proven solutions that can enhance code maintainability and scalability. Familiarity with these patterns will also help you articulate your design decisions more effectively during interviews.
 
