@@ -18,7 +18,7 @@
 - [[1501 - Implement Document Service]] **Imp**
 ### 02 - Goroutine
 - [[0100 - Goroutines]]
-- [[0300 - Goroutines vs Threads]]
+- [[0300 - Goroutines vs Threads]] **Imp**
 - [[0200 - Lifecycle and Scheduling of a Goroutine]]
 #### Goroutine Examples
 - [[Print table of N using Goroutine]]
