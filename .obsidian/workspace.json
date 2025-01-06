@@ -73,13 +73,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04 - Java/String.md",
+                "file": "04 - Java/0010 - Java Interview Questions.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "String"
+              "title": "0010 - Java Interview Questions"
             }
           },
           {
@@ -170,10 +170,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - Java/String.md"
+                "file": "04 - Java/0010 - Java Interview Questions.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of String"
+              "title": "Outline of 0010 - Java Interview Questions"
             }
           },
           {
@@ -229,6 +229,8 @@
   },
   "active": "3ef9d92a71bc26f1",
   "lastOpenFiles": [
+    "04 - Java/String.md",
+    "04 - Java/0010 - Java Interview Questions.md",
     "04 - Java/Anonymous Class.md",
     "01 - Golang/Goroutines/0300 - Goroutines vs Threads.md",
     "01 - Golang/00 - Index.md",
@@ -256,8 +258,6 @@
     "00 - Software engg/GRPC/04 - unary, server streaming, client streaming, and bidirectional streaming.md",
     "00 - Software engg/GRPC/03 - What are Protocol Buffers (ProtoBuf).md",
     "00 - Software engg/GRPC/02 - Main Components of a gRPC Service.md",
-    "00 - Software engg/GRPC/01 - gRPC vs. RESTful APIs.md",
-    "00 - Software engg/GRPC/00 - Introduction.md",
     "zimages/Kubernetes-Architecture.png",
     "03 - Django",
     "01 - System Design/LLD Examples",
