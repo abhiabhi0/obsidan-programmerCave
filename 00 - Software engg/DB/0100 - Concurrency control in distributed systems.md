@@ -50,6 +50,7 @@ Concurrency control mechanisms in distributed systems are critical for managing 
      3. The client releases the lock by sending `DEL` commands to all Redis instances where it acquired the lock using its unique identifier.
    - **Advantages**: Provides high availability and fault tolerance by relying on majority consensus across multiple nodes.
    - **Disadvantages**: Network latency can introduce delays; clock synchronization issues may affect lock expiration.
+   - [[0104 - Redlock Algorithm]]
 
 ### Conclusion
 
