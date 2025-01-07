@@ -21,6 +21,7 @@ In a single system (or centralized) environment, concurrency control focuses on 
 3. **Multi-Version Concurrency Control (MVCC)**:
    - MVCC allows multiple versions of a data item to exist, enabling read operations to access the most recent committed version without waiting for write locks.
    - This method enhances performance by reducing contention among transactions[5][6].
+   - [[0101 - Multi-Version Concurrency Control (MVCC)]]
 
 4. **Validation Concurrency Control**:
    - Transactions are executed optimistically without locking resources but are validated before committing to ensure no conflicts have occurred during execution[1][3].
@@ -42,7 +43,7 @@ In distributed systems, where databases are spread across multiple nodes, concur
    - This approach enhances scalability but requires more sophisticated protocols to maintain consistency.
 
 3. **Pessimistic vs. Optimistic Concurrency Control**:
-   - **Pessimistic Concurrency Control (PCC)** assumes that conflicts will occur and locks resources proactively.
+   - **Pessimistic Concurrency Control (PCC)** assumes that conflicts will occur and locks resources proactively. [[0102 - Pessimistic Concurrency Control (PCC) in Distributed Systems]]
    - **Optimistic Concurrency Control (OCC)** allows transactions to proceed without locking resources initially, checking for conflicts only at commit time[4][5].
 
 ### Importance of Distributed Concurrency Control
