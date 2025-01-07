@@ -9,7 +9,7 @@ PostgreSQL is designed to excel in handling complex queries and large datasets. 
 2. **Multi-Version Concurrency Control (MVCC)**: As previously discussed, MVCC allows multiple transactions to occur simultaneously without locking the entire database. This enhances performance in environments with high read/write activity, as readers do not block writers and vice versa.
 
 3. **Indexing Options**: PostgreSQL supports various indexing methods, including B-tree, Hash, GiST, GIN, and BRIN indexes. These options allow for optimized data retrieval based on specific query patterns, significantly improving performance for complex searches.
-	[[Internals of Indexing]]
+	[[0301 - Internals of Indexing]]
 
 5. **Table Partitioning**: PostgreSQL supports table partitioning, allowing large tables to be divided into smaller, more manageable pieces. This can lead to improved query performance as smaller partitions can be scanned more quickly than a single large table.
 

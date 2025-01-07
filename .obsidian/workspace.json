@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Software engg/DB/Internals of Indexing.md",
+                "file": "00 - Software engg/DB/0301 - Internals of Indexing.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Internals of Indexing"
+              "title": "0301 - Internals of Indexing"
             }
           },
           {
@@ -58,13 +58,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00 - Software engg/DB/Types of Indexing in Databases.md",
+                "file": "00 - Software engg/DB/0302 - Types of Indexing in Databases.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Types of Indexing in Databases"
+              "title": "0302 - Types of Indexing in Databases"
             }
           },
           {
@@ -83,7 +83,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -155,10 +155,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 - Software engg/DB/Types of Indexing in Databases.md"
+                "file": "00 - Software engg/DB/0201 - MySQL vs PostgreSQL.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Types of Indexing in Databases"
+              "title": "Outline of 0201 - MySQL vs PostgreSQL"
             }
           },
           {
@@ -212,9 +212,10 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "0387a042a04e38c5",
+  "active": "e535acb8bb23f54f",
   "lastOpenFiles": [
-    "00 - Software engg/DB/Internals of Indexing.md",
+    "00 - Software engg/DB/0302 - Types of Indexing in Databases.md",
+    "00 - Software engg/DB/0301 - Internals of Indexing.md",
     "00 - Software engg/DB/0205 - Performance and Scalability in PostgreSQL and MySQL.md",
     "00 - Software engg/DB/0201 - MySQL vs PostgreSQL.md",
     "00 - Software engg/DB/0204 - MVCC in PostgreSQL vs MySQL.md",
@@ -239,7 +240,6 @@
     "00 - Software engg/DB/0104 - Redlock Algorithm.md",
     "00 - Software engg/DB/0100 - Concurrency control in single systems.md",
     "00 - Software engg/DB/0103 - Optimistic Concurrency Control (OCC) in Distributed Systems.md",
-    "00 - Software engg/DB/0102 - Pessimistic Concurrency Control (PCC) in Distributed Systems.md",
     "01 - System Design/Design Examples",
     "01 - System Design",
     "05 - Design APIs and Data modes",

@@ -22,4 +22,4 @@ In this scenario, the database query optimiser will assess the query, table data
 
 In this scenario, the database query optimiser will assess the most effective approach for handling this query. Given the absence of an index on the table, it will select a full table scan strategy. This strategy involves examining the entire table using the query’s specified value. While this approach is acceptable for smaller tables, it becomes inefficient for larger datasets. Mostly, database might internally optimize the process and conduct a parallel table scan using multiple threads.
 
-[[Types of Indexing in Databases]]
+[[0302 - Types of Indexing in Databases]]
