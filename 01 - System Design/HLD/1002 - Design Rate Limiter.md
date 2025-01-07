@@ -76,28 +76,20 @@ Throttling refers to controlling API usage by clients during a specified time pe
     Approximate rate limiting by overlapping consecutive buckets and using percentages to calculate request rates.
     
 - **Example**:
-    
     - Timeline divided into buckets of size 50 (e.g., `1-50`, `51-100`, `101-150`).
-        
     - Requests:
-        
         - 60 in `51-100`.
         - 40 in the first half of `101-150` (`101-120`).
     - Percentage of the interval `(101-120)` covered:  
         `(20/50) * 100% = 40%`.
-        
     - Approximate count for the remaining 60% of the interval using the previous bucket:  
         `60% of 60 = 36`.
-        
     - Total approximate count for `101-150`:  
         `36 (from prev) + 40 (current) = 76`.
         
 - **Advantages**:
-    
     - Significantly reduces metadata storage.
-        
     - Instead of tracking all requests (as in the deque solution), only maintain:
-        
         - `prev_bucket` count
         - `cur_bucket` count.
     - Data structure: `map<string, pair<int, int>>`.
@@ -116,7 +108,6 @@ Throttling refers to controlling API usage by clients during a specified time pe
     - Easy to implement.
     - Suffers from edge-case inaccuracies (e.g., boundary requests).
 3. **Sliding Window Counter**:
-    
     - Best solution for large-scale systems.
     - Combines accuracy with minimal resource usage.
 https://docs.google.com/document/d/1s-XVwY2NfyvIH-kEpQOixml72SqBRJr9nUMNycTqwgc/edit?tab=t.0#heading=h.3znysh7
