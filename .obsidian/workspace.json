@@ -193,13 +193,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - System Design/HLD/0403 - NoSQL.md",
+                "file": "01 - System Design/HLD/1002 - Design Rate Limiter.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0403 - NoSQL"
+              "title": "1002 - Design Rate Limiter"
             }
           }
         ],
@@ -275,10 +275,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - System Design/Design Examples/01 - Design a unique ID generator.md"
+                "file": "01 - System Design/HLD/1002 - Design Rate Limiter.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 01 - Design a unique ID generator"
+              "title": "Outline of 1002 - Design Rate Limiter"
             }
           },
           {
@@ -332,8 +332,11 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "b4904ce9751ea41b",
+  "active": "4f021422103b4f49",
   "lastOpenFiles": [
+    "01 - System Design/HLD/1001 - Design an Unique ID Generator.md",
+    "01 - System Design/HLD/1002 - Design Rate Limiter.md",
+    "01 - System Design/Design Examples/01 - Design a unique ID generator.md",
     "01 - System Design/HLD/0403 - NoSQL.md",
     "01 - System Design/HLD/0402 - SQL and NoSQL.md",
     "01 - System Design/HLD/0401 - SQL vs NoSQL Databases.md",
@@ -357,9 +360,6 @@
     "01 - Golang/Goroutines/0700 - select in Golang.md",
     "00 - Software engg/DB/How to make DB consistent and available.md",
     "00 - Software engg/2PC (Two-Phase Commit).md",
-    "00 - Software engg/Microservice Architecture/Circuit Breaker Pattern.md",
-    "01 - Golang/0300 - Memory Management in Go.md",
-    "01 - Golang/Goroutines/0800 - Preemptive Scheduling.md",
     "01 - System Design/Design Examples",
     "01 - System Design",
     "05 - Design APIs and Data modes",
