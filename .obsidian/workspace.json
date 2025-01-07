@@ -111,9 +111,99 @@
               "icon": "lucide-file",
               "title": "Mitigate race condition in Distributed System"
             }
+          },
+          {
+            "id": "edc96320dbbcba70",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - System Design/HLD/0301 - Scaling Databases - Master-Slave Replication.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0301 - Scaling Databases - Master-Slave Replication"
+            }
+          },
+          {
+            "id": "baf85f913deed6e5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Software engg/DB/Database Normalization.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Database Normalization"
+            }
+          },
+          {
+            "id": "528afb07da172568",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Software engg/DB/Differences Between Atomicity and Consistency.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Differences Between Atomicity and Consistency"
+            }
+          },
+          {
+            "id": "a86e60d56324e1ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Software engg/DB/Isolation Levels in ACID Properties.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Isolation Levels in ACID Properties"
+            }
+          },
+          {
+            "id": "cdc6134cfa8710f7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - System Design/HLD/0401 - SQL vs NoSQL Databases.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0401 - SQL vs NoSQL Databases"
+            }
+          },
+          {
+            "id": "4f021422103b4f49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - System Design/HLD/0403 - NoSQL.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0403 - NoSQL"
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 12
       }
     ],
     "direction": "vertical"
@@ -185,10 +275,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 - Software engg/Distributed System/Mitigate race condition in Distributed System.md"
+                "file": "01 - System Design/Design Examples/01 - Design a unique ID generator.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Mitigate race condition in Distributed System"
+              "title": "Outline of 01 - Design a unique ID generator"
             }
           },
           {
@@ -242,8 +332,17 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "50b0b4ce772d3398",
+  "active": "b4904ce9751ea41b",
   "lastOpenFiles": [
+    "01 - System Design/HLD/0403 - NoSQL.md",
+    "01 - System Design/HLD/0402 - SQL and NoSQL.md",
+    "01 - System Design/HLD/0401 - SQL vs NoSQL Databases.md",
+    "00 - Software engg/DB/Isolation Levels in ACID Properties.md",
+    "00 - Software engg/DB/Differences Between Atomicity and Consistency.md",
+    "00 - Software engg/DB/Database Normalization.md",
+    "01 - System Design/HLD/0000 - HLD Scaler Notes links.md",
+    "01 - System Design/HLD/0301 - Scaling Databases - Master-Slave Replication.md",
+    "00 - Software engg/Distributed System/Mitigate race condition in Distributed System.md",
     "00 - Software engg/DB/0110 - Database Locks.md",
     "00 - Software engg/DB/0100 - Concurrency control in distributed systems.md",
     "00 - Software engg/DB/0104 - Redlock Algorithm.md",
@@ -261,15 +360,6 @@
     "00 - Software engg/Microservice Architecture/Circuit Breaker Pattern.md",
     "01 - Golang/0300 - Memory Management in Go.md",
     "01 - Golang/Goroutines/0800 - Preemptive Scheduling.md",
-    "04 - Java/Design Patterns.md",
-    "04 - Java/Collections.md",
-    "04 - Java/Dependency Injection.md",
-    "04 - Java/0010 - Java Interview Questions.md",
-    "04 - Java/0209 - String vs StringBuilder vs StringBuffer in Java.md",
-    "04 - Java/0207 - Immutable Classes in Java.md",
-    "04 - Java/0208 - Inversion of Control (IoC) in Java.md",
-    "04 - Java/0206 - Internal Implementation of HashMap in Java.md",
-    "04 - Java/0203 - Threads in Java.md",
     "01 - System Design/Design Examples",
     "01 - System Design",
     "05 - Design APIs and Data modes",
