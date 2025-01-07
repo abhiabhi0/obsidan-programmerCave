@@ -17,6 +17,7 @@ When comparing MySQL and PostgreSQL, it's essential to understand their fundamen
 ## Performance and Scalability
 - **PostgreSQL**: Excels in handling complex queries and large datasets. It supports horizontal scaling through sharding and replication but may be slower for simple read operations compared to MySQL[1][3].
 - **MySQL**: Known for its efficiency in read-heavy workloads, making it a popular choice for applications that require high-speed read operations. However, its replication can be challenging in terms of consistency[2][3].
+- [[0205 - Performance and Scalability in PostgreSQL and MySQL]]
 
 ## Data Types
 - **PostgreSQL**: Supports a broader range of data types including arrays, hstore (key-value pairs), JSONB (binary JSON), and geometric types. This versatility makes it suitable for applications requiring complex data structures[5][7].
