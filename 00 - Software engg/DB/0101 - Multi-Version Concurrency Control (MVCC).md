@@ -43,6 +43,7 @@ Multi-Version Concurrency Control (MVCC) is a sophisticated technique used in da
 
 - **PostgreSQL**: PostgreSQL employs MVCC as its primary concurrency control mechanism, allowing it to achieve ANSI-standard isolation levels while maintaining high performance in multi-user environments[1][2].
 - **Microsoft SQL Server**: SQL Server also implements MVCC principles to enhance concurrency and manage transactional integrity effectively[1].
+- [[0204 - MVCC in PostgreSQL vs MySQL]]
 
 ### Conclusion
 

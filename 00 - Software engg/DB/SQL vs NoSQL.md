@@ -7,6 +7,8 @@
 | 5)    | SQL databases use a powerful language "Structured Query Language" to define and manipulate the data.       | In NoSQL databases, collection of documents are used to query the data. It is also called unstructured query language. It varies from database to database. |
 | 6)    | SQL databases are <mark class="hltr-g">best suited for complex queries</mark>.                             | NoSQL databases are not so good for complex queries because these are not as powerful as SQL queries.                                                       |
 | 7)    | MySQL, Oracle, Sqlite, PostgreSQL and MS-SQL etc. are the example of SQL database.                         | MongoDB, BigTable, Redis, RavenDB, Cassandra, Hbase, Neo4j, CouchDB etc. are the example of nosql database                                                  |
+[[0401 - SQL vs NoSQL Databases]]
+
 Here's a concise summary to help you answer "SQL vs NoSQL" in interviews:
 
 ---
