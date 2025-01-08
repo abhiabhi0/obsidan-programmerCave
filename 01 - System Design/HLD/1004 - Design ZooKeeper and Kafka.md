@@ -1,20 +1,16 @@
 #### Problem Statement 1: State Tracking in a Master-Slave Architecture
-
 - **Goal**: Ensure clients know the current master and automatically sync when the master changes.
-
 ##### Naïve Approach:
-
 - Use a dedicated machine to track the master.
 - Issues:
     1. **Single Point of Failure**: If the machine goes down, writes cannot happen.
     2. **Additional Hop**: Every request introduces an extra hop to get master info.
+    **![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdezP5d7jXALh_7Q1wrEPk804iC9iVtI2pfzHbAAqBdFIjb6Zn86xYPc2Ang4qeQ93vxqcW9E82YpWDbfQRQItGzk9InvLc7P2zbkGzIEocBjYhKPYDISr31tbf8wjLU4FgjnsRmiZwy0EuxeqVgzY9fgc?key=RcMDqZ96s0ud-MH2iUfptA)**
+**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcvzEdDAm_S6FojEwDNbcpqrBtK8fqGnJyiWqRhbht6bauJZuh05QJkqdPuKEU_Upgd3lVyXDISWJ9DQbsSrOL0QfXwkc2zdTE4J2YtSfakBMkdUwnzscAi3dke5xNhE2HaT65AP4W-OUMaEIotPzet2ZA?key=RcMDqZ96s0ud-MH2iUfptA)**
 
 ##### Improved Solution: ZooKeeper (ZK)
-
 - **ZooKeeper** is a system that maintains strongly consistent data and helps in distributed coordination.
-
 ##### ZK Storage Model:
-
 - Structured like a **file system** with directories and files called **ZK Nodes**.
 - Types of ZK Nodes:
     1. **Ephemeral Nodes**:
@@ -24,7 +20,7 @@
     2. **Persistent Nodes**:
         - Remain until explicitly deleted.
         - Example Use Cases: Storing configuration data.
-
+**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc8biUDhwFxCtNf8fk8iYunCSq29IRkX6Y6GCblRYMzhmWVA4QxJpIcl4P1MlvNPulKHeRQVwRtry7MSS2wb9eKk7kiZveEUAyq3uscs4aaopoitg8MGBRMXO6kP_g1Mkx0wozVLJN2uelg6G0vElHR3ho?key=RcMDqZ96s0ud-MH2iUfptA)**
 ##### ZK for Master Election:
 
 1. Storage machines try to write their IP address to an **ephemeral node** (e.g., `/clusterx/master_ip`).
