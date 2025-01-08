@@ -22,21 +22,19 @@
         - Example Use Cases: Storing configuration data.
 **![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc8biUDhwFxCtNf8fk8iYunCSq29IRkX6Y6GCblRYMzhmWVA4QxJpIcl4P1MlvNPulKHeRQVwRtry7MSS2wb9eKk7kiZveEUAyq3uscs4aaopoitg8MGBRMXO6kP_g1Mkx0wozVLJN2uelg6G0vElHR3ho?key=RcMDqZ96s0ud-MH2iUfptA)**
 ##### ZK for Master Election:
-
 1. Storage machines try to write their IP address to an **ephemeral node** (e.g., `/clusterx/master_ip`).
     - Only one write will succeed, and the IP address of the new master is stored.
     - The successful machine is now the **master**.
 2. Other machines and app servers read the master’s IP address from this node.
+**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdWDDOOUU1wp54TP6v9QXgN7kyhW-q6u4YYlTjA5ovGGQckT3km69U8013Lks29JutRlb10BXf1QOEsaa3R5zF9XQFTZIdxxUFKxRrctBeASri6LRaz3FibuAWkinIXnwwhxw8GErq5MzQMuF8mhLXxMq78?key=RcMDqZ96s0ud-MH2iUfptA)****![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdAQVgShKRIX2sqkTfe7VFjTdbv2HyD8AyAid3oPzuosM9PgYri9Lbk96BiPyVgkJ1ownrxpJ9GUqbeyPZBj89bGG-PUtFNoxtyC9oYktiPFuSnxICw6qygbU-PCGhCEyC7DBNUigVxXzBY2U-Nq1EFSsA?key=RcMDqZ96s0ud-MH2iUfptA)**
 
 ##### ZK Watches:
-
 - **Watch Mechanism**:
     - Clients subscribe to updates on a node.
     - ZK notifies clients when the node's data changes or is deleted.
     - Reduces redundant queries and offloads work from ZK.
 
 ##### ZK Architecture:
-
 1. **Cluster of Machines**:
     - Uses an odd number of machines to prevent split-brain issues.
     - A leader is elected for coordinating writes.
@@ -47,8 +45,8 @@
     - Ensures consistency by requiring a majority for successful writes.
     - Prevents split-brain scenarios (e.g., two conflicting masters).
 
+**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcMG3ASC4gaeeijvHBufxi4unh12Kc-eq6jaamjMU6deTBnUkMV9dl42xMbyqJDc40kSFUT9tUrW8sgHiibfdaYlNIieyXrrdiJUNWAWOhL3MHIYUSe_6pxb1C2SiqZ1FUrcnRGYGQBQBQp_locmoo3PXDy?key=RcMDqZ96s0ud-MH2iUfptA)**
 ##### Master Failure:
-
 1. When the master fails, it stops sending heartbeats to ZK.
 2. The ephemeral node `/clusterx/master_ip` is deleted.
 3. Subscribers are notified, and slaves compete to become the new master by writing their IP.
@@ -85,9 +83,7 @@
 ---
 
 #### Kafka: High-Throughput Persistent Queue
-
 ##### Key Terminologies:
-
 1. **Producer**: Publishes events to topics.
 2. **Consumer**: Consumes events from topics.
 3. **Broker**: A Kafka machine that stores published events.
@@ -98,9 +94,10 @@
 6. **Consumer Group**:
     - Multiple consumers working in parallel.
     - Each consumer gets exclusive access to specific partitions.
+**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdP-zs5Z7-j2ftuo7-mmkvjiWRLTOI4u4RgwfPvwUnAjZDJiSv0bg8UvPKxqNgq4PG2PPfFbjpsoWQogxJtTSpqjcTXnrIfaAdwnOF0sf0zOKTDYLK3pGomn1XouUg-wpppc5Rnke0IXNxGfMQD4hjTuwqa?key=RcMDqZ96s0ud-MH2iUfptA)**
 
+[[01 - Kafka]]
 ##### Kafka Features:
-
 1. **Scalability**:
     - Partitions allow sharding of topics across brokers.
     - Consumer groups enable parallel processing of events.
