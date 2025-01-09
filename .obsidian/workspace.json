@@ -128,6 +128,21 @@
             }
           },
           {
+            "id": "4c5212e2617e5fff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - System Design/LLD/0100 - Factory Method from Head First Design.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0100 - Factory Method from Head First Design"
+            }
+          },
+          {
             "id": "96595b23f1ddcec3",
             "type": "leaf",
             "state": {
@@ -173,7 +188,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -245,10 +260,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "04 - Java/0100 - Design Patterns in Java.md"
+                "file": "01 - System Design/LLD/0100 - Factory Method from Head First Design.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0100 - Design Patterns in Java"
+              "title": "Outline of 0100 - Factory Method from Head First Design"
             }
           },
           {
@@ -302,8 +317,12 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "20985b2f6726035a",
+  "active": "4c5212e2617e5fff",
   "lastOpenFiles": [
+    "zimages/{EF3E6DC6-B51A-4E5A-AB94-9785E183DD24}.png",
+    "01 - System Design/LLD/08 - Creational Design Patterns - Prototype, Factory Method and Abstract Factory.md",
+    "01 - System Design/LLD/0100 - Factory Method from Head First Design.md",
+    "04 - Java/0100 - Design Patterns in Java.md",
     "Scaler - Interview preparation strategy.md",
     "01 - System Design/HLD/1004 - Design ZooKeeper and Kafka.md",
     "01 - System Design/HLD/0000 - HLD Scaler Notes links.md",
@@ -326,10 +345,6 @@
     "01 - System Design/HLD/0402 - SQL and NoSQL.md",
     "01 - System Design/HLD/0401 - SQL vs NoSQL Databases.md",
     "00 - Software engg/DB/Isolation Levels in ACID Properties.md",
-    "00 - Software engg/DB/Differences Between Atomicity and Consistency.md",
-    "00 - Software engg/DB/Database Normalization.md",
-    "01 - System Design/HLD/0301 - Scaling Databases - Master-Slave Replication.md",
-    "00 - Software engg/Distributed System/Mitigate race condition in Distributed System.md",
     "01 - System Design/Design Examples",
     "01 - System Design",
     "05 - Design APIs and Data modes",
