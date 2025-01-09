@@ -65,7 +65,3 @@
     - Easy to add new types without changing existing code.
 3. **Decoupling:**
     - Clients rely on abstract types (interfaces or abstract classes) instead of specific implementations.
-
----
-
-Let me know if you'd like detailed Python or Go examples to better understand these concepts!
