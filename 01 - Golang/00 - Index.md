@@ -29,3 +29,8 @@
 - [[0301 - Garbage Collector in Go]]
 ### Interface
 - [[0501 - Interface example to select game for students]]
+
+## Resources:
+https://dave.cheney.net/practical-go
+https://go101.org/
+https://www.perplexity.ai/search/advanced-golang-book-to-unders-1QrrwWNsQM6GzYdL5xZcDw
