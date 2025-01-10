@@ -40,3 +40,4 @@ https://go101.org/
 https://www.perplexity.ai/search/advanced-golang-book-to-unders-1QrrwWNsQM6GzYdL5xZcDw
 https://www.calhoun.io/guide-to-go
 https://bitfieldconsulting.com/posts/best-go-books
+https://quii.gitbook.io/learn-go-with-tests
