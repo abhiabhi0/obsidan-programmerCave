@@ -41,7 +41,10 @@
     
     - The loop variable `salutation` is reused in each iteration.
     - Goroutines reference the same memory address for `salutation`. By the time the goroutines run, the loop has completed, and `salutation` holds its final value.
-
+    - Closures in Go are lexically scoped. This means that any variables referenced within the closure from the "outer" scope are not a copy but are in fact a reference.
+    
+_This is not the case now. It was till Go 1.22_
+https://go.dev/doc/faq#closures_and_goroutines
 #### How Go Manages Memory for Closures
 
 5. **Heap Allocation for Closure Variables**:
@@ -114,3 +117,5 @@
     | "good day" -> goroutine (copy: "good day") |
     +-------------------------------------+
     ```
+
+Ref: Concurrency in Go (p40-p43)
