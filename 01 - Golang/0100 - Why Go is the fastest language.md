@@ -22,6 +22,8 @@
 - Go is known for its rapid compile times, which can significantly speed up the development process. This allows developers to iterate quickly and test their applications without long wait times [4][6].
 - [[Go’s Static Typing and Single Binary Deployment]]
 
+https://web.stanford.edu/class/ee380/Abstracts/100428-pike-stanford.pdf
+
 Citations:
 [1] https://www.orientsoftware.com/blog/golang-performance/
 [2] https://www.scalefocus.com/blog/why-you-should-go-with-go-for-your-next-software-project
