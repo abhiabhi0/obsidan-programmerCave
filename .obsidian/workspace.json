@@ -193,13 +193,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Golang/Goroutines/0104 - Memory Efficiency and Context Switching in Goroutines.md",
+                "file": "01 - Golang/Goroutines/0104 - sync, WaitGroup, RWMutex.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0104 - Memory Efficiency and Context Switching in Goroutines"
+              "title": "0104 - sync, WaitGroup, RWMutex"
             }
           },
           {
@@ -335,10 +335,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Golang/Goroutines/0104 - Memory Efficiency and Context Switching in Goroutines.md"
+                "file": "01 - Golang/Goroutines/0104 - sync, WaitGroup, RWMutex.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0104 - Memory Efficiency and Context Switching in Goroutines"
+              "title": "Outline of 0104 - sync, WaitGroup, RWMutex"
             }
           },
           {
@@ -394,8 +394,9 @@
   },
   "active": "a5a60e37eafaf779",
   "lastOpenFiles": [
-    "01 - Golang/Goroutines/0103 - Memory Behavior of Goroutines with Closures.md",
     "01 - Golang/Goroutines/0104 - Memory Efficiency and Context Switching in Goroutines.md",
+    "01 - Golang/Goroutines/0104 - sync, WaitGroup, RWMutex.md",
+    "01 - Golang/Goroutines/0103 - Memory Behavior of Goroutines with Closures.md",
     "01 - Golang/Goroutines/0100 - Goroutines.md",
     "zimages/{A1933F55-D743-44B3-96F7-A281DDE9ED60}.png",
     "01 - Golang/Goroutines/0102 - When to Use sync.Mutex vs. Channels in Go.md",
@@ -422,7 +423,6 @@
     "00 - Software engg/DB/0101 - Multi-Version Concurrency Control (MVCC).md",
     "00 - Software engg/DB/0203 - Create Custom Datatypes in PostgreSQL.md",
     "00 - Software engg/DB/0202 - Inheritance in PostgreSQL.md",
-    "00 - Software engg/DB/SQL vs NoSQL.md",
     "01 - System Design/Design Examples",
     "01 - System Design",
     "05 - Design APIs and Data modes",
