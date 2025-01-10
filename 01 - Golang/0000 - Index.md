@@ -16,6 +16,8 @@
 - [[for range vs for i on string]]
 - [[1102 - Slice concept based question - Append and Equal|Slice concept based question - Append and Equal]]
 - [[1501 - Implement Document Service]] **Imp**
+### Slice:
+- [[0201 - Slices]]
 ### 02 - Goroutine
 - [[0100 - Goroutines]]
 - [[0300 - Goroutines vs Threads]] **Imp**
