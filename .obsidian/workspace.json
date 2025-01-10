@@ -233,7 +233,7 @@
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 10
       }
     ],
     "direction": "vertical"
@@ -305,10 +305,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Golang/0100 - Why Go is the fastest language.md"
+                "file": "01 - Golang/0000 - Index.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0100 - Why Go is the fastest language"
+              "title": "Outline of 0000 - Index"
             }
           },
           {
@@ -362,8 +362,9 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "82cbdeb8ef74d369",
+  "active": "ff424af1c43229a8",
   "lastOpenFiles": [
+    "01 - Golang/0100 - Why Go is the fastest language.md",
     "01 - Golang/0000 - Index.md",
     "01 - Golang/0201 - Slices.md",
     "01 - System Design/LLD/0100 - Factory Method from Head First Design.md",
@@ -390,7 +391,6 @@
     "01 - System Design/Design Examples/01 - Design a unique ID generator.md",
     "01 - System Design/HLD/0403 - NoSQL.md",
     "01 - System Design/HLD/0402 - SQL and NoSQL.md",
-    "01 - System Design/HLD/0401 - SQL vs NoSQL Databases.md",
     "01 - System Design/Design Examples",
     "01 - System Design",
     "05 - Design APIs and Data modes",

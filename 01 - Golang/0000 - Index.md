@@ -35,5 +35,6 @@
 ## Resources:
 https://dave.cheney.net/practical-go
 https://go.dev/blog/
+https://go.dev/doc/effective_go
 https://go101.org/
 https://www.perplexity.ai/search/advanced-golang-book-to-unders-1QrrwWNsQM6GzYdL5xZcDw
