@@ -184,7 +184,4 @@
     ```
     
     - Using `sync.Pool` for connection reuse can significantly reduce the time per operation.
-
----
-
-These notes provide a comprehensive summary of the key points from the text, with practical examples and explanations for each concept. Let me know if you need further details or additional notes on any specific part.
+    
