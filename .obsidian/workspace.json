@@ -193,13 +193,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01 - Golang/Goroutines/0109 - Preventing Goroutine Leaks.md",
+                "file": "01 - Golang/0601 - Pointers in Go.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0109 - Preventing Goroutine Leaks"
+              "title": "0601 - Pointers in Go"
             }
           },
           {
@@ -335,10 +335,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Golang/Goroutines/0109 - Preventing Goroutine Leaks.md"
+                "file": "01 - Golang/0601 - Pointers in Go.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0109 - Preventing Goroutine Leaks"
+              "title": "Outline of 0601 - Pointers in Go"
             }
           },
           {
@@ -394,8 +394,9 @@
   },
   "active": "a5a60e37eafaf779",
   "lastOpenFiles": [
-    "01 - Golang/Goroutines/0108 - Nil Channel.md",
     "01 - Golang/Goroutines/0109 - Preventing Goroutine Leaks.md",
+    "01 - Golang/0601 - Pointers in Go.md",
+    "01 - Golang/Goroutines/0108 - Nil Channel.md",
     "01 - Golang/Goroutines/0107 - Buffered Channels.md",
     "01 - Golang/Goroutines/0106 - Unbuffered Channels.md",
     "01 - Golang/Goroutines/0105 - Cond, Once and Pool.md",
@@ -422,7 +423,6 @@
     "01 - System Design/HLD/1003 - Design Messenger.md",
     "00 - Software engg/DB/0201 - MySQL vs PostgreSQL.md",
     "00 - Software engg/DB/0302 - Types of Indexing in Databases.md",
-    "00 - Software engg/DB/0301 - Internals of Indexing.md",
     "01 - System Design/Design Examples",
     "01 - System Design",
     "05 - Design APIs and Data modes",
