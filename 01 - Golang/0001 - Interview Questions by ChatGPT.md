@@ -118,3 +118,80 @@ Common use cases for `defer` include:
 
 One important caveat is that deferred functions capture the values of their arguments at the time the `defer` statement is executed, which can lead to unexpected behavior if you're not careful."
 
+---
+
+### What are Go interfaces, and how are they used? Can you explain their significance with an example?
+
+#### **Feedback on Your Answer**:
+1. **Essence of Interfaces**:
+    - You've correctly stated that interfaces define a set of methods that any type must implement. However, it's worth mentioning that Go uses **structural typing**, meaning a type implements an interface implicitly by defining the required methods. There is no need for explicit declarations like in some other languages.
+2. **Significance**:
+    - It would be helpful to explain why interfaces are important:
+        - They enable polymorphism, allowing functions to work with any type that satisfies an interface.
+        - They promote decoupling by allowing implementations to vary independently of the code that uses them.
+3. **Example**:
+    - Providing a practical example would make the concept clearer. You could show how an interface can be used to write flexible and reusable code.
+4. **Use Cases**:
+    - Mentioning some common use cases, like mocking in tests or defining behavior for different types, could make your answer more comprehensive.
+#### **Suggested Improved Answer**:
+"In Go, an interface is a type that specifies a set of method signatures. Any type that implements those methods satisfies the interface. Go uses **structural typing**, meaning a type satisfies an interface simply by implementing the required methods—no explicit declaration is needed.
+
+Interfaces are significant because they:
+- Enable polymorphism, allowing functions to accept different types as long as they satisfy the interface.
+- Promote decoupling, making code more flexible and easier to maintain.
+
+Common use cases for interfaces include abstracting dependencies, mocking in tests, and defining shared behavior for different types."
+### **Code Example**:
+
+```go
+package main
+
+import "fmt"
+
+// Define an interface
+type Shape interface {
+	Area() float64
+	Perimeter() float64
+}
+
+// Implement the interface with a struct
+type Rectangle struct {
+	Width, Height float64
+}
+
+func (r Rectangle) Area() float64 {
+	return r.Width * r.Height
+}
+
+func (r Rectangle) Perimeter() float64 {
+	return 2 * (r.Width + r.Height)
+}
+
+type Circle struct {
+	Radius float64
+}
+
+func (c Circle) Area() float64 {
+	return 3.14 * c.Radius * c.Radius
+}
+
+func (c Circle) Perimeter() float64 {
+	return 2 * 3.14 * c.Radius
+}
+
+// A function that works with any Shape
+func printShapeDetails(s Shape) {
+	fmt.Printf("Area: %.2f, Perimeter: %.2f\n", s.Area(), s.Perimeter())
+}
+
+func main() {
+	r := Rectangle{Width: 5, Height: 3}
+	c := Circle{Radius: 4}
+
+	printShapeDetails(r) // Works with Rectangle
+	printShapeDetails(c) // Works with Circle
+}
+```
+
+1. **Defining and Implementing Interfaces**: Both `Rectangle` and `Circle` implement the `Shape` interface by defining the required methods (`Area` and `Perimeter`).
+2. **Polymorphism**: The `printShapeDetails` function accepts any type that satisfies the `Shape` interface, demonstrating flexibility.
