@@ -24,6 +24,21 @@
    - The Ingress Controller receives these requests and evaluates them against the defined rules.
    - Based on matching criteria (host/path), the controller routes the requests to the appropriate backend service (which consists of Pods).
 
+### How Ingress Controllers Work
+
+- **Ingress Controller**: An Ingress Controller is a component that implements the rules defined in the Ingress resource. It acts as a reverse proxy, managing incoming requests and directing them to the appropriate backend services based on the defined routing rules.
+- **Operation**:
+    
+    1. The user defines an Ingress resource with specific routing rules.
+    2. The Ingress Controller watches for changes in Ingress resources.
+    3. Upon detecting changes, it updates its configuration to route traffic according to the specified rules.
+    
+- **Popular Ingress Controllers**:
+    
+    - NGINX Ingress Controller
+    - Traefik
+    - HAProxy
+
 ### Example Use Case
 
 Suppose you have two services running in your cluster:

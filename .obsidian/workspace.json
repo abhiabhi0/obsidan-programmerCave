@@ -66,9 +66,54 @@
               "icon": "lucide-file",
               "title": "0001 - Interview Questions from ChatGPT"
             }
+          },
+          {
+            "id": "3ee0cd1023e4c3cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 - Kubernetes/0108 - Kubernetes Secrets.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0108 - Kubernetes Secrets"
+            }
+          },
+          {
+            "id": "f0868aec5613bca9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 - Kubernetes/0107 - Kubernetes Objects- Namespace, Nodes, and Pods, Nodes, Pod.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0107 - Kubernetes Objects- Namespace, Nodes, and Pods, Nodes, Pod"
+            }
+          },
+          {
+            "id": "495d1c22cd0221ea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 - Kubernetes/0200 - What is Ingress in Kubernetes.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0200 - What is Ingress in Kubernetes"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -140,10 +185,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06 - Kubernetes/0001 - Interview Questions from ChatGPT.md"
+                "file": "06 - Kubernetes/0108 - Kubernetes Secrets.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0001 - Interview Questions from ChatGPT"
+              "title": "Outline of 0108 - Kubernetes Secrets"
             }
           },
           {
@@ -197,10 +242,12 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "535c035c16630aaf",
+  "active": "3ee0cd1023e4c3cf",
   "lastOpenFiles": [
-    "06 - Kubernetes/0300 - Deployments, ReplicaSets, StatefulSets, DaemonSets.md",
     "06 - Kubernetes/0001 - Interview Questions from ChatGPT.md",
+    "06 - Kubernetes/0107 - Kubernetes Objects- Namespace, Nodes, and Pods, Nodes, Pod.md",
+    "06 - Kubernetes/0200 - What is Ingress in Kubernetes.md",
+    "06 - Kubernetes/0300 - Deployments, ReplicaSets, StatefulSets, DaemonSets.md",
     "06 - Kubernetes/0302 - Kubernetes Service Types - ClusterIP, NodePort, and LoadBalancer.md",
     "06 - Kubernetes/0204 - Load Balancing in Kubernetes.md",
     "06 - Kubernetes/0100 - Architecture.md",
@@ -224,8 +271,6 @@
     "01 - Golang/Goroutines/0105 - Cond, Once and Pool.md",
     "01 - Golang/Goroutines/0104 - sync, WaitGroup, RWMutex.md",
     "01 - Golang/Goroutines/0104 - Memory Efficiency and Context Switching in Goroutines.md",
-    "01 - Golang/Goroutines/0103 - Memory Behavior of Goroutines with Closures.md",
-    "01 - Golang/Goroutines/0100 - Goroutines.md",
     "zimages/{A1933F55-D743-44B3-96F7-A281DDE9ED60}.png",
     "zimages/{FCB2B997-BA1A-4169-8519-B6D0E87C7FBE}.png",
     "zimages/{EF3E6DC6-B51A-4E5A-AB94-9785E183DD24}.png",

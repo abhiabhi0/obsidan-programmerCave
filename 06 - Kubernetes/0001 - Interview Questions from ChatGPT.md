@@ -161,3 +161,128 @@ The HPA adjusts the number of pods based on the defined metric thresholds, helpi
 - **Efficient Resource Utilization**: Ensures resources are efficiently used by automatically scaling applications based on real-time load.
 - **Cost Efficiency**: Helps to save resources and reduce costs by scaling down unused resources during low traffic periods.
 - **Improved User Experience**: By scaling up resources during high traffic, the system ensures that applications remain responsive even under heavy load.
+---
+## What is Kubernetes Ingress, and how does it differ from a Service?
+Can you explain how Ingress controllers work and give an example of a basic Ingress resource configuration for routing HTTP traffic to different services?
+[[0200 - What is Ingress in Kubernetes]]
+[[0302 - Kubernetes Service Types - ClusterIP, NodePort, and LoadBalancer]]
+
+**Ingress** is an API object in Kubernetes that manages external HTTP and HTTPS access to services within a cluster. It acts as a reverse proxy and provides HTTP routing, SSL termination, and URL path-based routing, among other features. Ingress allows you to expose multiple services under a single IP address, making it easier to manage traffic routing and SSL/TLS termination.
+### How Ingress Differs from a **Service**:
+- **Service**: A Kubernetes Service exposes a set of pods to internal or external clients. Services allow communication within the cluster and can be exposed externally via types like `ClusterIP`, `NodePort`, or `LoadBalancer`.
+- **Ingress**: In contrast, an Ingress resource manages external HTTP/S traffic to the services. It provides a layer of routing at the HTTP/S level, including features like path-based routing, host-based routing, SSL termination, and load balancing for HTTP traffic.
+While a Service routes traffic at the TCP level (L4), Ingress operates at the HTTP(S) level (L7), offering more complex routing capabilities like host-based and path-based routing.
+### How **Ingress Controllers** Work:
+An **Ingress controller** is a component that listens for Ingress resources and implements their routing rules. It’s responsible for fulfilling the rules defined in the Ingress resource by configuring external access and managing HTTP/S traffic routing.
+
+There are several Ingress controllers available, such as:
+- **NGINX Ingress Controller**
+- **Traefik**
+- **HAProxy**
+- **Envoy**
+The Ingress controller monitors the Ingress resources within the cluster and configures itself to route traffic accordingly.
+### Example of a Basic **Ingress** Resource Configuration:
+Here’s an example where HTTP traffic is routed to two different services based on the URL path:
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-app-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: my-app.example.com
+    http:
+      paths:
+      - path: /service1
+        pathType: Prefix
+        backend:
+          service:
+            name: service1
+            port:
+              number: 80
+      - path: /service2
+        pathType: Prefix
+        backend:
+          service:
+            name: service2
+            port:
+              number: 80
+```
+### Explanation:
+- **host**: The domain name used to access the services (e.g., `my-app.example.com`).
+- **path**: Specifies URL paths (e.g., `/service1` and `/service2`) that map to the respective services.
+- **backend**: The backend service to route traffic to, defined by the service name (`service1`, `service2`) and the port.
+
+In this example, traffic hitting `my-app.example.com/service1` will be forwarded to the `service1` service, and traffic to `/service2` will be forwarded to the `service2` service.
+### Why Use **Ingress**?
+- **Centralized Routing**: Ingress allows you to expose multiple services through a single external IP and port, simplifying traffic management.
+- **SSL/TLS Termination**: Ingress can manage SSL termination, freeing your services from the complexity of handling HTTPS.
+- **Advanced Traffic Management**: Provides powerful routing capabilities like path-based and host-based routing, redirects, and load balancing.
+---
+## What are Kubernetes Namespaces, and how do they help with organizing resources within a cluster?
+Can you provide examples of scenarios where using namespaces would be beneficial?
+[[0107 - Kubernetes Objects- Namespace, Nodes, and Pods, Nodes, Pod]]
+
+A **Namespace** in Kubernetes is a logical partition within a Kubernetes cluster that allows you to organize and isolate resources. It’s essentially a way to divide a cluster into multiple virtual clusters, allowing you to manage and organize resources more effectively.
+
+Namespaces are commonly used to:
+- **Group related resources** for easier management.
+- **Provide isolation** between different environments (e.g., development, staging, production).
+- **Control access and security** using Kubernetes RBAC (Role-Based Access Control) to limit what users or services can access within a particular namespace.
+### How Namespaces Help with Organizing Resources:
+1. **Resource Organization**: You can group related resources such as Pods, Services, Deployments, and ConfigMaps into different namespaces. For example, resources for a `dev` environment can be kept separate from those for a `prod` environment.
+2. **Access Control and RBAC**: Namespaces allow fine-grained access control by enabling Role-Based Access Control (RBAC). You can define who has access to what resources in each namespace.
+3. **Resource Quotas**: By using namespaces, you can enforce resource limits (e.g., CPU, memory) for each environment. This ensures that no single namespace can consume all the resources in a cluster.
+4. **Environment Segmentation**: It’s easy to create and manage multiple environments (such as `dev`, `staging`, and `prod`) within a single cluster.
+### Example Use Cases for **Namespaces**:
+1. **Environment Segmentation (Development, Staging, Production)**:  
+    You can create different namespaces for each environment to keep resources isolated:
+    ```bash
+    kubectl create namespace dev
+    kubectl create namespace staging
+    kubectl create namespace production
+    ```
+This helps ensure that the resources in `prod` are isolated from `dev` and `staging`, reducing the risk of accidental changes or conflicts.
+    
+2. **Multi-Tenant Systems**:  
+    If you have multiple teams or projects using the same cluster, namespaces can be used to isolate their resources:
+    ```bash
+    kubectl create namespace team-a
+    kubectl create namespace team-b
+    ```
+This ensures that resources from one team don’t interfere with another, and it also allows for separate resource quotas.
+    
+3. **Service Isolation**:  
+    If you're running multiple versions of the same service, you could create namespaces for each version:    
+    ```bash
+    kubectl create namespace v1
+    kubectl create namespace v2
+    ```    
+This allows you to manage multiple versions of the service in parallel without interference.
+### Practical Example of Using a Namespace:
+Here’s an example where we create a namespace for the `dev` environment and deploy a simple pod within that namespace:
+```bash
+kubectl create namespace dev
+```
+
+Then, you can deploy a pod into the `dev` namespace by specifying the namespace in the pod definition:
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dev-pod
+  namespace: dev
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+```
+
+To list all resources in the `dev` namespace:
+```bash
+kubectl get all -n dev
+```
+---
+
