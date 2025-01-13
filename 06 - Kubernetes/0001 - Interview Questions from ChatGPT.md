@@ -349,3 +349,85 @@ Kubernetes supports various types of Persistent Volumes, depending on the storag
 6. **Azure Disk**: Managed disk storage in Microsoft Azure.
 7. **GlusterFS**: A distributed file system for data storage.
 ---
+## What is Kubernetes NetworkPolicy, and how does it help manage network security within a cluster?
+Can you explain the concept of ingress and egress rules in a NetworkPolicy and provide an example of how to define a NetworkPolicy that restricts traffic to a specific pod?
+[[0205 - Kubernetes Network Policy]]
+
+A **NetworkPolicy** is a Kubernetes resource that allows you to control the traffic flow between pods and/or services within a Kubernetes cluster. It defines rules to specify which pods can communicate with each other based on labels and other attributes, providing a mechanism to secure network communication. By default, all pod-to-pod communication is allowed unless explicitly restricted, and NetworkPolicies help restrict or control that traffic.
+
+NetworkPolicies allow you to define rules around:
+- **Ingress traffic**: Incoming traffic to a pod.
+- **Egress traffic**: Outgoing traffic from a pod.
+### Key Components of a NetworkPolicy:
+1. **Ingress Rules**:
+    - Define the allowed incoming traffic to a pod.
+    - You can specify which pods or services can send traffic to the pod.
+2. **Egress Rules**:
+    - Define the allowed outgoing traffic from a pod.
+    - You can specify which destinations the pod can communicate with.
+3. **Pod Selector**:
+    - NetworkPolicies use labels to target specific pods for applying the rules.
+    - You define selectors based on pod labels to apply policies only to specific groups of pods.
+4. **Namespace Selector**:
+    - You can apply policies to pods across specific namespaces by using the namespace selector.
+5. **Policy Types**:
+    - Defines whether the policy affects **Ingress**, **Egress**, or both.
+### How Ingress and Egress Work in a NetworkPolicy:
+- **Ingress Rules** control incoming traffic to pods:
+    - For example, you can define a policy that only allows traffic to a specific pod from other pods in the same namespace or from specific IP ranges.
+- **Egress Rules** control outgoing traffic from pods:
+    - You can restrict pods from making network connections to external services, or you can allow them to communicate only with specific IP addresses or services.
+### Example of a NetworkPolicy:
+Let’s say you have two sets of pods:
+- **App Pods**: Pods labeled with `role=app`.
+- **Database Pods**: Pods labeled with `role=db`.
+You want to allow only pods with the label `role=app` to communicate with the `role=db` pods and deny any other access.
+#### Step 1: Define the NetworkPolicy to restrict Ingress traffic:
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-app-to-db
+spec:
+  podSelector:
+    matchLabels:
+      role: db  # Apply this policy to db pods
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          role: app  # Only allow traffic from pods labeled role=app
+  policyTypes:
+  - Ingress  # Apply to incoming traffic
+```
+In this policy:
+- The **podSelector** with the label `role=db` selects the pods where the policy is applied (i.e., database pods).
+- The **ingress rule** specifies that only pods labeled `role=app` are allowed to send traffic to the database pods.
+- **policyTypes** set to `Ingress` ensures the rule only applies to incoming traffic.
+#### Step 2: Define the NetworkPolicy to restrict Egress traffic:
+If you want to restrict the `app` pods from communicating with anything outside the cluster, you can create a NetworkPolicy for egress.
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: restrict-app-egress
+spec:
+  podSelector:
+    matchLabels:
+      role: app  # Apply this policy to app pods
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          role: db  # Allow app pods to connect to db pods only
+  policyTypes:
+  - Egress  # Apply to outgoing traffic
+```
+In this policy:
+- The **podSelector** targets the app pods (i.e., pods with `role=app`).
+- The **egress rule** only allows the app pods to communicate with the db pods.
+- **policyTypes** set to `Egress` applies the policy to outgoing traffic.
+### How It Differs from Default Behavior:
+- **Default behavior**: Without a NetworkPolicy, all pods in a Kubernetes cluster can communicate freely with each other. No traffic is restricted.
+- **With NetworkPolicy**: When a NetworkPolicy is applied, it starts restricting traffic according to the defined rules. If no NetworkPolicy exists, all traffic is allowed by default. But once you create a policy that restricts traffic, only the allowed traffic flows according to the policy’s rules.
+---
