@@ -73,13 +73,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 - Kubernetes/0108 - Kubernetes Secrets.md",
+                "file": "06 - Kubernetes/0303 - Kubernetes Persistent Volume (PV).md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0108 - Kubernetes Secrets"
+              "title": "0303 - Kubernetes Persistent Volume (PV)"
             }
           },
           {
@@ -185,10 +185,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06 - Kubernetes/0108 - Kubernetes Secrets.md"
+                "file": "06 - Kubernetes/0303 - Kubernetes Persistent Volume (PV).md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0108 - Kubernetes Secrets"
+              "title": "Outline of 0303 - Kubernetes Persistent Volume (PV)"
             }
           },
           {
@@ -244,7 +244,11 @@
   },
   "active": "3ee0cd1023e4c3cf",
   "lastOpenFiles": [
+    "06 - Kubernetes/0110 - ConfigMap vs Secrets in Kubernetes.md",
+    "06 - Kubernetes/0303 - Kubernetes Persistent Volume (PV).md",
     "06 - Kubernetes/0001 - Interview Questions from ChatGPT.md",
+    "06 - Kubernetes/0109 - Kubernetes ConfigMap.md",
+    "06 - Kubernetes/0108 - Kubernetes Secrets.md",
     "06 - Kubernetes/0107 - Kubernetes Objects- Namespace, Nodes, and Pods, Nodes, Pod.md",
     "06 - Kubernetes/0200 - What is Ingress in Kubernetes.md",
     "06 - Kubernetes/0300 - Deployments, ReplicaSets, StatefulSets, DaemonSets.md",
@@ -267,10 +271,6 @@
     "01 - Golang/Goroutines/0109 - Preventing Goroutine Leaks.md",
     "01 - Golang/Goroutines/0108 - Nil Channel.md",
     "01 - Golang/Goroutines/0107 - Buffered Channels.md",
-    "01 - Golang/Goroutines/0106 - Unbuffered Channels.md",
-    "01 - Golang/Goroutines/0105 - Cond, Once and Pool.md",
-    "01 - Golang/Goroutines/0104 - sync, WaitGroup, RWMutex.md",
-    "01 - Golang/Goroutines/0104 - Memory Efficiency and Context Switching in Goroutines.md",
     "zimages/{A1933F55-D743-44B3-96F7-A281DDE9ED60}.png",
     "zimages/{FCB2B997-BA1A-4169-8519-B6D0E87C7FBE}.png",
     "zimages/{EF3E6DC6-B51A-4E5A-AB94-9785E183DD24}.png",

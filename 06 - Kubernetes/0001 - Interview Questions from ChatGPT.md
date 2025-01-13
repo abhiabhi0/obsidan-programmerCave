@@ -1,3 +1,5 @@
+https://chatgpt.com/share/6784d090-1078-800b-89fd-526f9229f5de
+(admin: google account - atmanam viddhi)
 ## What is the role of a Kubernetes control plane, and can you explain its main components and their responsibilities?
 
 The **Kubernetes control plane** is the central management entity responsible for maintaining the desired state of a Kubernetes cluster. It makes global decisions about the cluster, such as scheduling pods, and detects/responds to cluster events (e.g., a pod crashing). Let’s break down its primary components:
@@ -284,5 +286,35 @@ To list all resources in the `dev` namespace:
 ```bash
 kubectl get all -n dev
 ```
+---
+## What is Kubernetes ConfigMap, and how does it differ from Secrets?
+Can you also explain a scenario where you would use a ConfigMap and another where you would use a Secret?
+[[0109 - Kubernetes ConfigMap]]
+[[0108 - Kubernetes Secrets]]
+[[0110 - ConfigMap vs Secrets in Kubernetes]]
+
+A **ConfigMap** is an API object in Kubernetes that allows you to store non-sensitive, configuration data for your applications. It is used to decouple configuration artifacts from application code, making it easier to manage and modify configurations independently of the codebase.
+
+You can store a wide variety of configuration data in a ConfigMap, such as:
+- Environment variables
+- Configuration files
+- Command-line arguments for your application
+- Application-specific settings
+
+ConfigMaps can be consumed by containers in a Kubernetes pod as environment variables, command-line arguments, or mounted as files in a volume.
+
+A **Secret** is another Kubernetes API object that is specifically designed to store sensitive data such as passwords, API keys, SSH keys, or TLS certificates. Secrets are intended to store information that should be kept private and not exposed in plain text in your configuration files.
+
+Unlike ConfigMaps, which are designed for non-sensitive data, Secrets provide a mechanism for storing sensitive data securely and can be encoded (typically base64) to avoid plaintext exposure.
+### Key Differences Between **ConfigMap** and **Secret**:
+
+|Feature|**ConfigMap**|**Secret**|
+|---|---|---|
+|**Use Case**|For non-sensitive configuration data.|For sensitive data (e.g., passwords, tokens).|
+|**Data Storage**|Plaintext configuration data.|Encoded or encrypted data (typically base64).|
+|**Access Control**|No special access control for sensitive data.|Access is often tightly controlled using RBAC.|
+|**Mounting**|Can be mounted as files or environment variables.|Can be mounted as files or environment variables, but data is often encoded.|
+|**Security**|Not encrypted (plain text).|Sensitive data can be encrypted or encoded for security.|
+
 ---
 
