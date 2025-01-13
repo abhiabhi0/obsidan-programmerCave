@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 - Kubernetes/0301 - DaemonSets in Kubernetes.md",
+                "file": "06 - Kubernetes/0203 - Service Discovery in Kubernetes.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0301 - DaemonSets in Kubernetes"
+              "title": "0203 - Service Discovery in Kubernetes"
             }
           },
           {
@@ -43,13 +43,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 - Kubernetes/0100 - Architecture.md",
+                "file": "06 - Kubernetes/0302 - Kubernetes Service Types - ClusterIP, NodePort, and LoadBalancer.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0100 - Architecture"
+              "title": "0302 - Kubernetes Service Types - ClusterIP, NodePort, and LoadBalancer"
             }
           },
           {
@@ -67,7 +67,8 @@
               "title": "0001 - Interview Questions from ChatGPT"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -139,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06 - Kubernetes/0301 - DaemonSets in Kubernetes.md"
+                "file": "06 - Kubernetes/0001 - Interview Questions from ChatGPT.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0301 - DaemonSets in Kubernetes"
+              "title": "Outline of 0001 - Interview Questions from ChatGPT"
             }
           },
           {
@@ -196,12 +197,15 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "3e1d2118364ea329",
+  "active": "535c035c16630aaf",
   "lastOpenFiles": [
-    "06 - Kubernetes/0001 - Interview Questions from ChatGPT.md",
-    "06 - Kubernetes/0301 - DaemonSets in Kubernetes.md",
     "06 - Kubernetes/0300 - Deployments, ReplicaSets, StatefulSets, DaemonSets.md",
+    "06 - Kubernetes/0001 - Interview Questions from ChatGPT.md",
+    "06 - Kubernetes/0302 - Kubernetes Service Types - ClusterIP, NodePort, and LoadBalancer.md",
+    "06 - Kubernetes/0204 - Load Balancing in Kubernetes.md",
     "06 - Kubernetes/0100 - Architecture.md",
+    "06 - Kubernetes/0203 - Service Discovery in Kubernetes.md",
+    "06 - Kubernetes/0301 - DaemonSets in Kubernetes.md",
     "01 - Golang/0100 - Why Go is the fastest language.md",
     "01 - Golang/0001 - Interview Questions by ChatGPT.md",
     "01 - Golang/0400 - Defer, Panic, and Recover.md",
@@ -223,10 +227,7 @@
     "01 - Golang/Goroutines/0103 - Memory Behavior of Goroutines with Closures.md",
     "01 - Golang/Goroutines/0100 - Goroutines.md",
     "zimages/{A1933F55-D743-44B3-96F7-A281DDE9ED60}.png",
-    "01 - Golang/Goroutines/0102 - When to Use sync.Mutex vs. Channels in Go.md",
     "zimages/{FCB2B997-BA1A-4169-8519-B6D0E87C7FBE}.png",
-    "01 - Golang/Goroutines/0101 - Concurrency in Go.md",
-    "01 - System Design/LLD/0100 - Factory Method from Head First Design.md",
     "zimages/{EF3E6DC6-B51A-4E5A-AB94-9785E183DD24}.png",
     "01 - System Design/Design Examples",
     "01 - System Design",

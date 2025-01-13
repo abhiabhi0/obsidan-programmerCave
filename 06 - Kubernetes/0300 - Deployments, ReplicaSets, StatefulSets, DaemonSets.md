@@ -1,5 +1,3 @@
-## Deployments, ReplicaSets, StatefulSets, and DaemonSets in Kubernetes
-
 Kubernetes provides several abstractions to manage the deployment and scaling of applications. Among these, **Deployments**, **ReplicaSets**, **StatefulSets**, and **DaemonSets** are key components that serve different purposes in managing containerized workloads. Below is a detailed explanation of each.
 
 ### 1. Deployments
