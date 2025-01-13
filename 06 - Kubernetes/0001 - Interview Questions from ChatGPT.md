@@ -318,3 +318,34 @@ Unlike ConfigMaps, which are designed for non-sensitive data, Secrets provide a 
 
 ---
 
+## What is Kubernetes Persistent Volume (PV) and Persistent Volume Claim (PVC), and how do they work together to manage storage in a Kubernetes cluster?
+Can you also explain the different types of Persistent Volumes available in Kubernetes and give an example of how to use a PVC to request storage for a pod?
+[[0303 - Kubernetes Persistent Volume (PV)]]
+[[0304 - Kubernetes Persistent Volume Claim (PVC)]]
+
+A **Persistent Volume (PV)** is a storage resource in Kubernetes that is provisioned and managed by an administrator or dynamically by a storage class. It is a representation of storage in the cluster and provides an abstraction over the underlying physical storage. PVs are used to persist data beyond the lifecycle of a pod, so that the data remains even if the pod is deleted or rescheduled.
+Key features of PV:
+- **Life Cycle**: PVs exist independently of the pods and are persistent across pod restarts.
+- **Provisioning**: PVs can be either statically created by the administrator or dynamically provisioned via StorageClasses.
+- **Access Modes**: PVs define how they can be accessed (e.g., ReadWriteOnce, ReadOnlyMany, ReadWriteMany).
+- **Storage Backends**: PVs can represent different types of storage backends (e.g., NFS, AWS EBS, Google Persistent Disk, etc.).
+
+A **Persistent Volume Claim (PVC)** is a request for storage by a user. It acts as a way for Kubernetes users to request storage resources from the available Persistent Volumes without needing to know the underlying storage details. A PVC specifies the size, access modes, and volume type required for a pod.
+Key features of PVC:
+- **Requesting Storage**: PVCs specify how much storage is needed and the access mode required (e.g., ReadWriteOnce).
+- **Binding**: Kubernetes automatically binds a PVC to a matching PV that satisfies the requested storage criteria. If a suitable PV is not available, Kubernetes can dynamically provision one based on the storage class specified in the PVC.
+- **Reusability**: PVCs can be reused across different pods and persist data beyond pod lifecycles.
+### How PVs and PVCs Work Together:
+1. **Binding**: When a PVC is created, Kubernetes looks for a suitable PV that matches the requested size and access mode. If one is found, the PVC binds to the PV, and the pod can then use the storage.
+2. **Dynamic Provisioning**: If no suitable PV is available, and a **StorageClass** is specified in the PVC, Kubernetes can automatically provision a new PV based on the specified storage backend.
+3. **Storage Lifecycle**: Once a PV is bound to a PVC, it remains bound for the duration of the PVC's life. Even if the pod using the PVC is deleted, the PV remains intact until the PVC is deleted.
+### Types of Persistent Volumes in Kubernetes:
+Kubernetes supports various types of Persistent Volumes, depending on the storage backends and provisioners available. Some of the common types include:
+1. **AWS Elastic Block Store (EBS)**: Block-level storage volumes provisioned in AWS.
+2. **Google Persistent Disk (GCEPersistentDisk)**: Block-level storage for Google Cloud Engine instances.
+3. **NFS (Network File System)**: A network file system shared over the network.
+4. **iSCSI**: Storage over an iSCSI network protocol.
+5. **Ceph RBD**: Block storage provisioned by the Ceph storage system.
+6. **Azure Disk**: Managed disk storage in Microsoft Azure.
+7. **GlusterFS**: A distributed file system for data storage.
+---
