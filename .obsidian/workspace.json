@@ -36,9 +36,24 @@
               "icon": "lucide-file",
               "title": "Scaler - Interview preparation strategy"
             }
+          },
+          {
+            "id": "541aaf805409bc63",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Golang/0100 - Why Go is the fastest language.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0100 - Why Go is the fastest language"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -110,10 +125,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Scaler - Interview preparation strategy.md"
+                "file": "01 - Golang/0100 - Why Go is the fastest language.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of Scaler - Interview preparation strategy"
+              "title": "Outline of 0100 - Why Go is the fastest language"
             }
           },
           {
@@ -167,8 +182,9 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "138a36016c4bcd31",
+  "active": "541aaf805409bc63",
   "lastOpenFiles": [
+    "Scaler - Interview preparation strategy.md",
     "06 - Kubernetes/0001 - Interview Questions from ChatGPT.md",
     "06 - Kubernetes/0205 - Kubernetes Network Policy.md",
     "06 - Kubernetes/0304 - Kubernetes Persistent Volume Claim (PVC).md",
@@ -195,7 +211,6 @@
     "06 - Kubernetes/0000 - Index.md",
     "01 - Golang/0000 - Index.md",
     "01 - Golang/0601 - Pointers in Go.md",
-    "01 - Golang/Goroutines/0109 - Preventing Goroutine Leaks.md",
     "zimages/{A1933F55-D743-44B3-96F7-A281DDE9ED60}.png",
     "zimages/{FCB2B997-BA1A-4169-8519-B6D0E87C7FBE}.png",
     "zimages/{EF3E6DC6-B51A-4E5A-AB94-9785E183DD24}.png",
