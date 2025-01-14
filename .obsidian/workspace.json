@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07 - Kafka/How does Kafka guarantees message order.md",
+                "file": "01 - System Design/0101 - Design a URL shortening service.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "How does Kafka guarantees message order"
+              "title": "0101 - Design a URL shortening service"
             }
           },
           {
@@ -125,10 +125,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "07 - Kafka/How does Kafka guarantees message order.md"
+                "file": "01 - System Design/0101 - Design a URL shortening service.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of How does Kafka guarantees message order"
+              "title": "Outline of 0101 - Design a URL shortening service"
             }
           },
           {
@@ -184,6 +184,8 @@
   },
   "active": "c9400d7ec7af8253",
   "lastOpenFiles": [
+    "07 - Kafka/How does Kafka guarantees message order.md",
+    "01 - System Design/0101 - Design a URL shortening service.md",
     "07 - Kafka/0000 - Index.md",
     "07 - Kafka/Challenges faced while working with Kafka.md",
     "01 - Golang/0100 - Why Go is the fastest language.md",
@@ -209,8 +211,6 @@
     "01 - Golang/0400 - Defer, Panic, and Recover.md",
     "01 - Golang/Interview Questions/Untitled.md",
     "01 - Golang/Interview Questions",
-    "01 - Golang/0104 - Value Types vs Reference Types.md",
-    "01 - Golang/0500 - Interfaces in Go.md",
     "zimages/{A1933F55-D743-44B3-96F7-A281DDE9ED60}.png",
     "zimages/{FCB2B997-BA1A-4169-8519-B6D0E87C7FBE}.png",
     "zimages/{EF3E6DC6-B51A-4E5A-AB94-9785E183DD24}.png",
