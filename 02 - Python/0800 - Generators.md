@@ -3,9 +3,9 @@
     - Defined using the `yield` keyword instead of `return`.
     
 - **How Generators Work**:
-    
     - When a generator function is called, it returns a **generator object**.
     - The generator object can be iterated over to retrieve values one at a time.
+    
 - **Example**:
     
     ```python
