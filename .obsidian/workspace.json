@@ -4,236 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7282f8f03c3445c9",
+        "id": "1ce76c7b990fa6bf",
         "type": "tabs",
         "children": [
           {
-            "id": "77f205c1c732c02f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0100 - Basic Notes.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0100 - Basic Notes"
-            }
-          },
-          {
-            "id": "20153276a0c1480e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0500 - OOPs in Python.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0500 - OOPs in Python"
-            }
-          },
-          {
-            "id": "f36ce8c1b07a31dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0501 - Inheritance in Python.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0501 - Inheritance in Python"
-            }
-          },
-          {
-            "id": "99c10f0bffa5b403",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0502 - Polymorphism in Python.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0502 - Polymorphism in Python"
-            }
-          },
-          {
-            "id": "db711d1b6b1a46fc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0600 - Garbage Collector.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0600 - Garbage Collector"
-            }
-          },
-          {
-            "id": "2cf045dcd935b7bb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0700 - GIL and Multithreading.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0700 - GIL and Multithreading"
-            }
-          },
-          {
-            "id": "edbfdff47cf8bccb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0800 - Generators.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0800 - Generators"
-            }
-          },
-          {
-            "id": "2099269748fa1d0c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0900 - Shallow Copy vs Deep Copy.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0900 - Shallow Copy vs Deep Copy"
-            }
-          },
-          {
-            "id": "ae7e927b5c081eb9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/1000 - Memory Management in Python.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1000 - Memory Management in Python"
-            }
-          },
-          {
-            "id": "811b207de367b8b0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/1100 - Set and Frozen Set.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1100 - Set and Frozen Set"
-            }
-          },
-          {
-            "id": "282009afdaf2f4de",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/1200 - Pickling and Unpickling.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1200 - Pickling and Unpickling"
-            }
-          },
-          {
-            "id": "266ea13ec13c4a57",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/1300 - Argument Passing in Python.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1300 - Argument Passing in Python"
-            }
-          },
-          {
-            "id": "20c948913eb5552c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/1400 - Finalization in Python.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1400 - Finalization in Python"
-            }
-          },
-          {
-            "id": "a51fb9a7ecf7f109",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/1500 - Package vs Module.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1500 - Package vs Module"
-            }
-          },
-          {
-            "id": "15495fa35a02914e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "06 - Kubernetes/0000 - Index.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0000 - Index"
-            }
-          },
-          {
-            "id": "1e206360fb29acb2",
+            "id": "e0417177ed1a398c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -248,97 +23,22 @@
             }
           },
           {
-            "id": "881ce26c7151cb5e",
+            "id": "c8a4e0f64021e72c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 - Kubernetes/0204 - Load Balancing in Kubernetes.md",
+                "file": "06 - Kubernetes/0302 - Kubernetes Service Types - ClusterIP, NodePort, and LoadBalancer.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0204 - Load Balancing in Kubernetes"
-            }
-          },
-          {
-            "id": "a0991f588a8b1003",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "06 - Kubernetes/0203 - Service Discovery in Kubernetes.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0203 - Service Discovery in Kubernetes"
-            }
-          },
-          {
-            "id": "c8f0edbc11e398db",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "06 - Kubernetes/0301 - DaemonSets in Kubernetes.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0301 - DaemonSets in Kubernetes"
-            }
-          },
-          {
-            "id": "97850c8c9173598a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0400 - Tuple vs List.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0400 - Tuple vs List"
-            }
-          },
-          {
-            "id": "93a63a9351d9e481",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0300 - First-Class Citizens in Python.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0300 - First-Class Citizens in Python"
-            }
-          },
-          {
-            "id": "6fdbd032c20e26dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02 - Python/0200 - How Python Program is Run on a Machine.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0200 - How Python Program is Run on a Machine"
+              "title": "0302 - Kubernetes Service Types - ClusterIP, NodePort, and LoadBalancer"
             }
           }
         ],
-        "currentTab": 16
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -410,10 +110,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06 - Kubernetes/0204 - Load Balancing in Kubernetes.md"
+                "file": "06 - Kubernetes/0302 - Kubernetes Service Types - ClusterIP, NodePort, and LoadBalancer.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0204 - Load Balancing in Kubernetes"
+              "title": "Outline of 0302 - Kubernetes Service Types - ClusterIP, NodePort, and LoadBalancer"
             }
           },
           {
@@ -467,9 +167,10 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "881ce26c7151cb5e",
+  "active": "c8a4e0f64021e72c",
   "lastOpenFiles": [
     "06 - Kubernetes/0001 - Interview Questions from ChatGPT.md",
+    "06 - Kubernetes/0204 - Load Balancing in Kubernetes.md",
     "06 - Kubernetes/0203 - Service Discovery in Kubernetes.md",
     "06 - Kubernetes/0301 - DaemonSets in Kubernetes.md",
     "06 - Kubernetes/0000 - Index.md",
@@ -494,7 +195,6 @@
     "00 - Software engg/SQL Queries/Use of HAVING clause.md",
     "00 - Software engg/SQL Queries/DELETE vs DROP vs TRUNCATE.md",
     "00 - Software engg/DB/0000 - Index.md",
-    "00 - Software engg/DB/0001 - Scaler Notes Links.md",
     "01 - Golang/Interview Questions",
     "zimages/{A1933F55-D743-44B3-96F7-A281DDE9ED60}.png",
     "zimages/{FCB2B997-BA1A-4169-8519-B6D0E87C7FBE}.png",
