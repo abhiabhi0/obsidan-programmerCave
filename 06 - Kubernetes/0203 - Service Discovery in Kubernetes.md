@@ -1,9 +1,6 @@
-Service discovery is a crucial aspect of Kubernetes that enables Pods to locate and communicate with each other dynamically. This is essential in a microservices architecture where Pods can frequently change due to scaling, updates, or failures. Below are detailed notes to help you prepare for your interview on this topic.
-
 ### What is Service Discovery?
 
 Service discovery in Kubernetes refers to the mechanisms that allow applications (Pods) to find and communicate with each other without hardcoding IP addresses or endpoint configurations. This dynamic discovery is vital for maintaining connectivity in distributed systems.
-
 ### Key Mechanisms for Service Discovery
 
 Kubernetes provides several methods for service discovery:

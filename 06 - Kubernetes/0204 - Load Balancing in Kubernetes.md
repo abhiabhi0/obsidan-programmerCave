@@ -1,5 +1,3 @@
-Load balancing is a critical component in Kubernetes that ensures efficient distribution of network traffic across multiple Pods or services. This helps maintain performance, availability, and scalability of applications running in a Kubernetes cluster. Below are detailed notes to help you prepare for your interview on this topic.
-
 ### What is Load Balancing?
 
 Load balancing in Kubernetes refers to the process of distributing incoming network traffic across multiple backend services or Pods. This prevents any single Pod from becoming overwhelmed with requests, thereby enhancing application reliability and responsiveness.
