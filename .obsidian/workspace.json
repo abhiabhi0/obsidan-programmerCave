@@ -23,22 +23,142 @@
             }
           },
           {
-            "id": "c8a4e0f64021e72c",
+            "id": "1af3106aef5cb1a1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 - Kubernetes/0302 - Kubernetes Service Types - ClusterIP, NodePort, and LoadBalancer.md",
+                "file": "06 - Kubernetes/0100 - Architecture.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0302 - Kubernetes Service Types - ClusterIP, NodePort, and LoadBalancer"
+              "title": "0100 - Architecture"
+            }
+          },
+          {
+            "id": "848cf59d1283fdb3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 - Kubernetes/0101 - Container Orchestration.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0101 - Container Orchestration"
+            }
+          },
+          {
+            "id": "133f11e307b09171",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 - Kubernetes/0102 - What is a Pod in Kubernetes.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0102 - What is a Pod in Kubernetes"
+            }
+          },
+          {
+            "id": "a056767765cbe522",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 - Kubernetes/0103 - Relationship Between Container, Pod, Node, Cluster, and Other Components in Kubernetes.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0103 - Relationship Between Container, Pod, Node, Cluster, and Other Components in Kubernetes"
+            }
+          },
+          {
+            "id": "6cfb4faeb936820a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 - Kubernetes/0104 - etcd in Kubernetes.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0104 - etcd in Kubernetes"
+            }
+          },
+          {
+            "id": "4cd021b3002fb59e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 - Kubernetes/0105 - Kubernetes.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0105 - Kubernetes"
+            }
+          },
+          {
+            "id": "12069881fe88f2da",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 - Kubernetes/0106 - Kubernetes Object.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0106 - Kubernetes Object"
+            }
+          },
+          {
+            "id": "5282861c798f6817",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 - Kubernetes/0200 - What is Ingress in Kubernetes.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0200 - What is Ingress in Kubernetes"
+            }
+          },
+          {
+            "id": "cd8d738d3d99ce53",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06 - Kubernetes/0201 - API Gateway vs Ingress.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0201 - API Gateway vs Ingress"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -110,10 +230,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06 - Kubernetes/0302 - Kubernetes Service Types - ClusterIP, NodePort, and LoadBalancer.md"
+                "file": "06 - Kubernetes/0106 - Kubernetes Object.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0302 - Kubernetes Service Types - ClusterIP, NodePort, and LoadBalancer"
+              "title": "Outline of 0106 - Kubernetes Object"
             }
           },
           {
@@ -167,9 +287,18 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "c8a4e0f64021e72c",
+  "active": "12069881fe88f2da",
   "lastOpenFiles": [
+    "06 - Kubernetes/0105 - Kubernetes.md",
+    "06 - Kubernetes/0104 - etcd in Kubernetes.md",
+    "06 - Kubernetes/0103 - Relationship Between Container, Pod, Node, Cluster, and Other Components in Kubernetes.md",
+    "06 - Kubernetes/0102 - What is a Pod in Kubernetes.md",
+    "06 - Kubernetes/0101 - Container Orchestration.md",
+    "06 - Kubernetes/0100 - Architecture.md",
     "06 - Kubernetes/0001 - Interview Questions from ChatGPT.md",
+    "06 - Kubernetes/0200 - What is Ingress in Kubernetes.md",
+    "06 - Kubernetes/0201 - API Gateway vs Ingress.md",
+    "06 - Kubernetes/0302 - Kubernetes Service Types - ClusterIP, NodePort, and LoadBalancer.md",
     "06 - Kubernetes/0204 - Load Balancing in Kubernetes.md",
     "06 - Kubernetes/0203 - Service Discovery in Kubernetes.md",
     "06 - Kubernetes/0301 - DaemonSets in Kubernetes.md",
@@ -186,15 +315,6 @@
     "02 - Python/0600 - Garbage Collector.md",
     "02 - Python/0502 - Polymorphism in Python.md",
     "02 - Python/0501 - Inheritance in Python.md",
-    "02 - Python/0500 - OOPs in Python.md",
-    "02 - Python/0400 - Tuple vs List.md",
-    "02 - Python/0100 - Basic Notes.md",
-    "02 - Python/0300 - First-Class Citizens in Python.md",
-    "02 - Python/0200 - How Python Program is Run on a Machine.md",
-    "00 - Software engg/DB/Database Sharding.md",
-    "00 - Software engg/SQL Queries/Use of HAVING clause.md",
-    "00 - Software engg/SQL Queries/DELETE vs DROP vs TRUNCATE.md",
-    "00 - Software engg/DB/0000 - Index.md",
     "01 - Golang/Interview Questions",
     "zimages/{A1933F55-D743-44B3-96F7-A281DDE9ED60}.png",
     "zimages/{FCB2B997-BA1A-4169-8519-B6D0E87C7FBE}.png",
