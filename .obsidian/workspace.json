@@ -4,161 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "1ce76c7b990fa6bf",
+        "id": "7836f3f06f46bbcb",
         "type": "tabs",
         "children": [
           {
-            "id": "e0417177ed1a398c",
+            "id": "a103f20542b43686",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 - Kubernetes/0001 - Interview Questions from ChatGPT.md",
+                "file": "01 - System Design/HLD/1001 - Design an Unique ID Generator.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0001 - Interview Questions from ChatGPT"
+              "title": "1001 - Design an Unique ID Generator"
             }
           },
           {
-            "id": "1af3106aef5cb1a1",
+            "id": "857c42c13e19dc24",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "06 - Kubernetes/0100 - Architecture.md",
+                "file": "01 - System Design/HLD/1002 - Design Rate Limiter.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0100 - Architecture"
-            }
-          },
-          {
-            "id": "848cf59d1283fdb3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "06 - Kubernetes/0101 - Container Orchestration.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0101 - Container Orchestration"
-            }
-          },
-          {
-            "id": "133f11e307b09171",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "06 - Kubernetes/0102 - What is a Pod in Kubernetes.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0102 - What is a Pod in Kubernetes"
-            }
-          },
-          {
-            "id": "a056767765cbe522",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "06 - Kubernetes/0103 - Relationship Between Container, Pod, Node, Cluster, and Other Components in Kubernetes.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0103 - Relationship Between Container, Pod, Node, Cluster, and Other Components in Kubernetes"
-            }
-          },
-          {
-            "id": "6cfb4faeb936820a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "06 - Kubernetes/0104 - etcd in Kubernetes.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0104 - etcd in Kubernetes"
-            }
-          },
-          {
-            "id": "4cd021b3002fb59e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "06 - Kubernetes/0105 - Kubernetes.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0105 - Kubernetes"
-            }
-          },
-          {
-            "id": "12069881fe88f2da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "06 - Kubernetes/0106 - Kubernetes Object.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0106 - Kubernetes Object"
-            }
-          },
-          {
-            "id": "5282861c798f6817",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "06 - Kubernetes/0200 - What is Ingress in Kubernetes.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0200 - What is Ingress in Kubernetes"
-            }
-          },
-          {
-            "id": "cd8d738d3d99ce53",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "06 - Kubernetes/0201 - API Gateway vs Ingress.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0201 - API Gateway vs Ingress"
+              "title": "1002 - Design Rate Limiter"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -230,10 +110,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06 - Kubernetes/0106 - Kubernetes Object.md"
+                "file": "01 - System Design/HLD/1002 - Design Rate Limiter.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0106 - Kubernetes Object"
+              "title": "Outline of 1002 - Design Rate Limiter"
             }
           },
           {
@@ -287,8 +167,12 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "12069881fe88f2da",
+  "active": "857c42c13e19dc24",
   "lastOpenFiles": [
+    "01 - System Design/HLD/1001 - Design an Unique ID Generator.md",
+    "01 - System Design/HLD/1002 - Design Rate Limiter.md",
+    "01 - System Design/0101 - Design a URL shortening service.md",
+    "06 - Kubernetes/0106 - Kubernetes Object.md",
     "06 - Kubernetes/0105 - Kubernetes.md",
     "06 - Kubernetes/0104 - etcd in Kubernetes.md",
     "06 - Kubernetes/0103 - Relationship Between Container, Pod, Node, Cluster, and Other Components in Kubernetes.md",
@@ -311,10 +195,6 @@
     "02 - Python/1000 - Memory Management in Python.md",
     "02 - Python/0900 - Shallow Copy vs Deep Copy.md",
     "02 - Python/0800 - Generators.md",
-    "02 - Python/0700 - GIL and Multithreading.md",
-    "02 - Python/0600 - Garbage Collector.md",
-    "02 - Python/0502 - Polymorphism in Python.md",
-    "02 - Python/0501 - Inheritance in Python.md",
     "01 - Golang/Interview Questions",
     "zimages/{A1933F55-D743-44B3-96F7-A281DDE9ED60}.png",
     "zimages/{FCB2B997-BA1A-4169-8519-B6D0E87C7FBE}.png",

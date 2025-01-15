@@ -121,30 +121,64 @@ https://docs.google.com/document/d/1s-XVwY2NfyvIH-kEpQOixml72SqBRJr9nUMNycTqwgc/
 import time
 from collections import defaultdict
 
-class SlidingWindowRateLimiter:
-    def __init__(self, limit, window_size):
-        self.limit = limit
-        self.window_size = window_size
-        self.data = defaultdict(lambda: {"prev": 0, "cur": 0, "last_update": 0})
+class SlidingWindowCounter:
+    def __init__(self, bucket_size, max_requests):
+        self.bucket_size = bucket_size  # Size of each bucket (in time units)
+        self.max_requests = max_requests  # Maximum allowed requests in the sliding window
+        self.requests = defaultdict(lambda: [0, 0])  # Maps user_id to [prev_bucket_count, cur_bucket_count]
+        self.last_timestamp = defaultdict(lambda: 0)  # Last timestamp for each user_id
 
-    def allow_request(self, ip):
-        now = time.time()
-        bucket = int(now // self.window_size)
+    def _current_bucket(self, timestamp):
+        return timestamp // self.bucket_size
 
-        # Update buckets
-        if self.data[ip]["last_update"] < bucket:
-            self.data[ip]["prev"] = self.data[ip]["cur"]
-            self.data[ip]["cur"] = 0
-            self.data[ip]["last_update"] = bucket
+    def _update_buckets(self, user_id, timestamp):
+        current_bucket = self._current_bucket(timestamp)
 
-        # Calculate sliding window requests
-        elapsed = now % self.window_size
-        prev_percentage = (self.window_size - elapsed) / self.window_size
-        total_requests = self.data[ip]["cur"] + self.data[ip]["prev"] * prev_percentage
+        # If the last request was in a different bucket, reset counts
+        if current_bucket > self._current_bucket(self.last_timestamp[user_id]):
+            prev_count = self.requests[user_id][1]  # Current bucket count
+            self.requests[user_id][0] = prev_count  # Move current count to previous
+            self.requests[user_id][1] = 0  # Reset current count
 
-        if total_requests < self.limit:
-            self.data[ip]["cur"] += 1
-            return True  # Allow request
+        self.last_timestamp[user_id] = timestamp
+
+    def allow_request(self, user_id):
+        timestamp = int(time.time())
+        self._update_buckets(user_id, timestamp)
+
+        prev_count = self.requests[user_id][0]
+        cur_count = self.requests[user_id][1]
+
+        # Calculate the percentage of the current bucket that is filled
+        current_bucket_start = self._current_bucket(timestamp) * self.bucket_size
+        elapsed_time_in_current_bucket = timestamp - current_bucket_start
+        percentage_filled = min(1.0, elapsed_time_in_current_bucket / self.bucket_size)
+
+        # Approximate count for the current bucket based on previous bucket's count
+        approximate_current_count = int(prev_count * (1 - percentage_filled))
+
+        total_requests = cur_count + approximate_current_count
+
+        if total_requests < self.max_requests:
+            # Allow request
+            self.requests[user_id][1] += 1  # Increment current bucket count
+            return True
         else:
-            return False  # Deny request
+            # Deny request
+            return False
+
+# Example usage:
+if __name__ == "__main__":
+    rate_limiter = SlidingWindowCounter(bucket_size=50, max_requests=100)
+
+    user_id = "user123"
+    
+    # Simulate requests at different timestamps
+    for i in range(120):
+        if rate_limiter.allow_request(user_id):
+            print(f"Request {i + 1} allowed")
+        else:
+            print(f"Request {i + 1} denied")
+        
+        time.sleep(0.5)  # Simulate time delay between requests
 ```
