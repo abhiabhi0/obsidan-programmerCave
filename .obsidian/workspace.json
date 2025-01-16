@@ -36,9 +36,69 @@
               "icon": "lucide-file",
               "title": "1002 - Design Rate Limiter"
             }
+          },
+          {
+            "id": "6c844cd7c2494d17",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 - Django/0100 - Introduction to Django.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0100 - Introduction to Django"
+            }
+          },
+          {
+            "id": "16afab78931cedd2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 - Django/0200 - Setting Up Views, Models, and Templates in Django.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0200 - Setting Up Views, Models, and Templates in Django"
+            }
+          },
+          {
+            "id": "9fdd94b3f268ee99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 - Django/0300 - Models in Django.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0300 - Models in Django"
+            }
+          },
+          {
+            "id": "c481e85c1144e616",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "03 - Django/0400 - Django Views.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0400 - Django Views"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -110,10 +170,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - System Design/HLD/1002 - Design Rate Limiter.md"
+                "file": "03 - Django/0300 - Models in Django.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 1002 - Design Rate Limiter"
+              "title": "Outline of 0300 - Models in Django"
             }
           },
           {
@@ -167,10 +227,14 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "857c42c13e19dc24",
+  "active": "9fdd94b3f268ee99",
   "lastOpenFiles": [
-    "01 - System Design/HLD/1001 - Design an Unique ID Generator.md",
+    "03 - Django/0200 - Setting Up Views, Models, and Templates in Django.md",
+    "03 - Django/0400 - Django Views.md",
+    "03 - Django/0300 - Models in Django.md",
+    "03 - Django/0100 - Introduction to Django.md",
     "01 - System Design/HLD/1002 - Design Rate Limiter.md",
+    "01 - System Design/HLD/1001 - Design an Unique ID Generator.md",
     "01 - System Design/0101 - Design a URL shortening service.md",
     "06 - Kubernetes/0106 - Kubernetes Object.md",
     "06 - Kubernetes/0105 - Kubernetes.md",
@@ -191,10 +255,6 @@
     "02 - Python/1400 - Finalization in Python.md",
     "02 - Python/1300 - Argument Passing in Python.md",
     "02 - Python/1200 - Pickling and Unpickling.md",
-    "02 - Python/1100 - Set and Frozen Set.md",
-    "02 - Python/1000 - Memory Management in Python.md",
-    "02 - Python/0900 - Shallow Copy vs Deep Copy.md",
-    "02 - Python/0800 - Generators.md",
     "01 - Golang/Interview Questions",
     "zimages/{A1933F55-D743-44B3-96F7-A281DDE9ED60}.png",
     "zimages/{FCB2B997-BA1A-4169-8519-B6D0E87C7FBE}.png",
