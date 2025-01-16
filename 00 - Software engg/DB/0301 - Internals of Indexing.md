@@ -1,25 +1,74 @@
-<mark class="hltr-b">Indexing is the way to get an unordered table into an order that will maximize the query’s efficiency while searching</mark>.
+### Indexing Internals
+- **Definition**: Indexing is a technique to improve data retrieval speed in databases by creating a separate data structure that maps search keys to their corresponding data locations.
+### Types of Indexes
+1. **Clustered Index**:
+   - Data rows are stored in order based on the index key.
+   - Only one clustered index per table.
+   - Example: Primary key often implemented as a clustered index.
+   
+1. **Non-Clustered Index**:
+   - Separate structure from data rows; contains pointers to the actual data.
+   - Multiple non-clustered indexes can exist on a table.
 
-An index is a <mark class="hltr-g">data structure on disk & in-memory that stores a column value (onto which index is created) along with pointers to the corresponding rows of table in heap</mark>. This data structure is usually implemented as a <mark class="hltr-o">B-tree (Balanced Tree</mark>) or it’s variation.
+2. **Unique Index**:
+   - Ensures all values in the indexed column are distinct.
 
-Suppose we have table of **employee**. Below are table representation, single page representation of records and heap representation to have better understanding.
+3. **Composite Index**:
+   - Index on multiple columns to optimize queries filtering by those columns.
 
-![[Pasted image 20240614101549.png]]
+4. **Full-Text Index**:
+   - Optimized for searching text within string columns.
 
-Now let’s say it has ‘**id**’ as the primary key, and an index is automatically created for it. Below is the representation for the same. You can see index representation of primary key ‘**id**’ which is mapped to the exact location of rows in heap pages.
+### Internal Structures
+- **B-Tree Structure**:
+  - Most common structure for indexes.
+  - Allows sorted data and efficient searching, insertion, and deletion.
+  
+  #### B-Tree Diagram
+  ```
+        [Root]
+         / \
+       /     \
+    [A]      [B]
+    / \      / \
+  [C] [D] [E] [F]
+  ```
 
-![[Pasted image 20240614101653.png]]
+- **Leaf Nodes**: Store actual data pointers.
+- **Non-Leaf Nodes**: Store keys and pointers to child nodes.
 
-Lets see how this will work internally when we hit “**select name from Employee where ‘id=10**” with index ‘**id**’ and without index.
+### How Indexing Works
+1. **Data Structure Creation**:
+   - An index is created on specific columns, maintaining a sorted order of values.
 
-> “Each time a query is executed, the initial task undertaken by the database engine is **query optimisation**. This process involves evaluating the query, considering the table’s data size, taking into account any indexes established on the table and analysing some internal statistics tables. Based on these factors, the database engine determines whether to proceed with a full table scan, a bitmap scan, or an index scan. ”
+2. **Search Optimization**:
+   - Binary search or other efficient algorithms are used on the index to locate data quickly.
 
-## Scenario When index on ‘id’ exist
+3. **Pointer References**:
+   - Each entry in the index points to the actual row in the table, allowing quick access.
 
-In this scenario, the database query optimiser will assess the query, table data and choose to execute an index scan due to the presence of an index on the ‘**id**’ field. This scan involves searching through the index, once the index is located, corresponding row’s location in the page is utilised to retrieve the ‘**name**’ field associated with it.
+### Advantages of Indexing
 
-## Scenario When index does not exist
+- **Improved Query Performance**: Faster retrieval of rows matching specific values.
+- **Efficient Data Access**: Reduces disk I/O operations by keeping frequently accessed data in memory.
+- **Optimized Sorting Operations**: Avoids full table scans for sorting by using indexed columns.
+- **Consistent Performance**: Maintains performance levels as data volume increases.
 
-In this scenario, the database query optimiser will assess the most effective approach for handling this query. Given the absence of an index on the table, it will select a full table scan strategy. This strategy involves examining the entire table using the query’s specified value. While this approach is acceptable for smaller tables, it becomes inefficient for larger datasets. Mostly, database might internally optimize the process and conduct a parallel table scan using multiple threads.
+### Trade-offs and Considerations
 
-[[0302 - Types of Indexing in Databases]]
+- **Storage Overhead**: Additional disk space required for index structures.
+- **Maintenance Costs**: Updates to indexed columns require index updates, adding overhead during write operations.
+- **Choosing Right Indexes**: Requires analysis of query patterns to avoid over-indexing.
+
+### Conclusion
+
+Indexing is essential for enhancing database performance by providing efficient access paths to data. Understanding its internals—such as types, structures, and benefits—enables better database design and optimization strategies.
+
+Citations:
+[1] https://www.geeksforgeeks.org/indexing-in-databases-set-1/
+[2] https://www.ibm.com/docs/en/watson-explorer/12.0.x?topic=indexing-internals
+[3] https://www.freecodecamp.org/news/database-indexing-at-a-glance-bb50809d48bd/
+[4] https://builtin.com/data-science/b-tree-index
+[5] https://www.atlassian.com/data/databases/how-does-indexing-work
+[6] https://www.sqlshack.com/sql-server-clustered-indexes-internals-with-examples/
+[7] https://courses.cs.washington.edu/courses/cse444/17wi/sections/section2.pdf

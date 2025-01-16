@@ -21,8 +21,24 @@
               "icon": "lucide-file",
               "title": "0201 - MySQL vs PostgreSQL"
             }
+          },
+          {
+            "id": "27e2648de7da78a7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "00 - Software engg/DB/0301 - Internals of Indexing.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0301 - Internals of Indexing"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,10 +110,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "00 - Software engg/DB/0201 - MySQL vs PostgreSQL.md"
+                "file": "00 - Software engg/DB/0301 - Internals of Indexing.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0201 - MySQL vs PostgreSQL"
+              "title": "Outline of 0301 - Internals of Indexing"
             }
           },
           {
@@ -151,8 +167,9 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "1d3c93d0d592d466",
+  "active": "27e2648de7da78a7",
   "lastOpenFiles": [
+    "00 - Software engg/DB/0201 - MySQL vs PostgreSQL.md",
     "04 - DSA/Array/(Prefix Sum) Subarray Sum Equals K.md",
     "05 - Design APIs and Data modes/0200 - Design DB School Management.md",
     "02 - System Design/0107 - Design Call Me Back After X Seconds service.md",
@@ -178,7 +195,6 @@
     "02 - System Design/HLD/1002 - Design Rate Limiter.md",
     "02 - System Design/HLD/1001 - Design an Unique ID Generator.md",
     "02 - System Design/0101 - Design a URL shortening service.md",
-    "06 - Kubernetes/0106 - Kubernetes Object.md",
     "01 - Golang/Interview Questions",
     "zimages/{A1933F55-D743-44B3-96F7-A281DDE9ED60}.png",
     "zimages/{FCB2B997-BA1A-4169-8519-B6D0E87C7FBE}.png",
