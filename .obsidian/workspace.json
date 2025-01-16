@@ -37,8 +37,7 @@
               "title": "0203 - Service Discovery in Kubernetes"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,10 +109,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "06 - Kubernetes/0203 - Service Discovery in Kubernetes.md"
+                "file": "00 - Software engg/0001 - Interview Questions from ChatGPT.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0203 - Service Discovery in Kubernetes"
+              "title": "Outline of 0001 - Interview Questions from ChatGPT"
             }
           },
           {
@@ -167,8 +166,9 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "63af9aeaf931a578",
+  "active": "4181eb4955629fa8",
   "lastOpenFiles": [
+    "06 - Kubernetes/0203 - Service Discovery in Kubernetes.md",
     "00 - Software engg/0001 - Interview Questions from ChatGPT.md",
     "01 - Golang/Goroutines/0200 - Lifecycle and Scheduling of a Goroutine.md",
     "01 - Golang/Goroutines/0101 - Concurrency in Go.md",
@@ -192,7 +192,6 @@
     "06 - Kubernetes/0201 - API Gateway vs Ingress.md",
     "06 - Kubernetes/0302 - Kubernetes Service Types - ClusterIP, NodePort, and LoadBalancer.md",
     "06 - Kubernetes/0204 - Load Balancing in Kubernetes.md",
-    "06 - Kubernetes/0203 - Service Discovery in Kubernetes.md",
     "06 - Kubernetes/0301 - DaemonSets in Kubernetes.md",
     "06 - Kubernetes/0000 - Index.md",
     "01 - Golang/Interview Questions",

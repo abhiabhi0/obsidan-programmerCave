@@ -75,3 +75,33 @@
 - **Distributed Transactions**:
     - Use patterns like Saga to coordinate distributed transactions across services without global locks.
 ---
+## Have you implemented service discovery in your microservices? If so, how?
+Yes, I have implemented DNS-based service discovery in Kubernetes, leveraging its built-in capabilities to facilitate dynamic and scalable communication between microservices. Here's how I approached it:
+### **1. DNS-Based Service Discovery in Kubernetes**
+#### **Definition**:
+Kubernetes automatically provides DNS names for services, allowing Pods to communicate with other services using human-readable and predictable names instead of hardcoding IP addresses.
+### **2. How It Works**
+- **Service Creation**:
+    - When a Kubernetes Service is created, it automatically gets a DNS name in the format:  
+        `<service-name>.<namespace>.svc.cluster.local`
+    - For example, a service named `user-service` in the `default` namespace would have the DNS name:  
+        `user-service.default.svc.cluster.local`.
+- **DNS Resolution**:
+    - Kubernetes DNS resolves these service names to the ClusterIP of the service.
+    - Requests to the service are load-balanced across all healthy Pods associated with it.
+- **Simplified Communication**:
+    - Pods in the same namespace can use just `<service-name>` to communicate with the service.
+    - Pods in other namespaces need the fully qualified name (FQDN): `<service-name>.<namespace>.svc.cluster.local`.
+### **4. Advantages of Kubernetes DNS**
+- **Dynamic Resolution**: DNS entries are updated automatically as Pods scale up or down.
+- **Load Balancing**: Kubernetes Services distribute traffic across healthy Pods.
+- **Decoupling**: Pods do not need to know IP addresses, making service communication resilient to changes.
+### **5. Key Considerations**
+- **Health Probes**:
+    - Define `readinessProbe` and `livenessProbe` in Pod specifications to ensure only healthy Pods receive traffic.
+- **DNS Cache**:
+    - Handle DNS caching issues using tools like CoreDNS or proper TTL configurations.
+- **Namespace Segregation**:
+    - Use namespaces to isolate services logically.
+---
+## What techniques have you used to handle distributed transactions across microservices?
