@@ -1,5 +1,5 @@
 ## You have an application that requires storing user-uploaded files, such as images and videos. These files need to be highly available, durable, and accessible globally. Which AWS service would you use, and how would you design the solution to meet these requirements?
-[[0101 - Solution Design using Amazon S3]]
+[[0102 - Solution Design using Amazon S3]]
 
 ---
 
