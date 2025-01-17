@@ -1,11 +1,8 @@
 #### Overview
-
 - The `select` statement handles multiple channel operations simultaneously.
 - Waits for one or more communication operations to complete and proceeds when one is ready.
 - Syntax resembles a `switch` statement but works with channel operations.
-
 ---
-
 #### Syntax
 
 ```go
