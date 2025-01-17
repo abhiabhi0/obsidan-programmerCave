@@ -977,3 +977,32 @@ There are several strategies and best practices for optimizing memory usage and 
 5. **Profile and Monitor GC**:
     - Use **Go's built-in profiling tools** (e.g., the `pprof` package) to monitor and analyze memory usage, heap allocations, and garbage collection activity.
     - **Memory profiler** and **GC trace** can provide insight into how much time is spent in GC and how frequently it's occurring.
+---
+### What features of Go do you find most suitable for building microservices? Can you share a use case where you leveraged Go’s strengths?
+#### Key Features of Go for Microservices
+1. **Concurrency Support**: Go's built-in concurrency model, utilizing goroutines and channels, allows developers to handle multiple tasks simultaneously without complex threading mechanisms. This is essential for microservices that often need to manage numerous requests concurrently.
+2. **Fast Startup Time**: Go compiles to a single static binary, which results in quick startup times. This is advantageous for microservices, especially in cloud environments where instances may need to scale up or down rapidly.
+3. **Minimal Runtime Overhead**: The language's design minimizes memory usage and runtime overhead, making it efficient for resource-constrained environments. This is crucial for microservices that are deployed in containers.
+4. **Rich Standard Library**: Go comes with a robust standard library that includes packages for HTTP servers, JSON handling, and more, which simplifies the development of RESTful APIs and other web services.
+5. **Simplicity and Readability**: Go's clean syntax and simplicity make it easy to learn and maintain, facilitating collaboration among teams and reducing the complexity often associated with microservice architectures.
+6. **Strong Tooling**: Go has excellent tooling support for testing, profiling, and benchmarking, which helps developers build resilient applications while ensuring high performance.
+7. **Cross-Platform Deployment**: The ability to compile applications into static binaries means that Go applications can be easily deployed across different environments without worrying about dependencies.
+---
+### Can you discuss error handling in Go? How do you ensure reliability in your Go applications?
+Error handling in Go is a fundamental aspect of writing robust applications. Unlike many programming languages that use exceptions, Go employs a straightforward approach using the built-in `error` type. Here’s an overview of how error handling works in Go and strategies to ensure reliability in applications.
+#### Error Handling in Go
+##### The `error` Type
+In Go, errors are represented by the `error` interface, which has a single method:
+
+```go
+type error interface {
+    Error() string
+}
+```
+
+Functions that can fail typically return two values: the result and an `error`. If an error occurs, the function returns a non-nil error value; otherwise, it returns nil.
+##### Defer, Panic, and Recover
+Go provides additional mechanisms for managing errors through `defer`, `panic`, and `recover`. 
+- **Defer**: Used to ensure that a function call is performed later in the program's execution, often for cleanup tasks.
+- **Panic**: Similar to throwing an exception; it stops normal execution and begins panicking.
+- **Recover**: A built-in function that allows you to regain control of a panicking goroutine.
