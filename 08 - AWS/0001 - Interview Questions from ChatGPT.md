@@ -20,3 +20,5 @@
 [[1002 - Solution Design for High-Performance Web Application]]
 
 ---
+## You are building a microservices architecture on AWS. Each microservice is containerized and needs to be deployed, scaled, and managed efficiently. What AWS services would you use to manage the containers, and how would you ensure security, scalability, and high availability?
+
