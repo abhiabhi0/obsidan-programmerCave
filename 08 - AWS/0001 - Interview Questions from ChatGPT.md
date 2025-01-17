@@ -4,11 +4,11 @@
 ---
 
 ## Your team is deploying a containerized application on AWS. The application needs to scale automatically based on CPU utilization and should ensure high availability across multiple Availability Zones. Which AWS service would you use for this, and how would you configure it?
-[[0201 - Solution Design using Amazon EKS]]
+[[0202 - Solution Design using Amazon EKS]]
 
 ---
 ## You have a database-heavy application with unpredictable workloads. The database must handle automatic scaling, automated backups, high availability, and read-heavy operations efficiently. Which AWS database service would you use, and how would you configure it to meet these requirements?
-[[0301 - Solution Design using Amazon RDS]]
+[[0302 - Solution Design using Amazon RDS]]
 
 ---
 ## You are tasked with designing a serverless backend for an event-driven application that processes data from multiple sources in real-time. The solution must handle unpredictable spikes in traffic, ensure high availability, and minimize operational overhead. Which AWS services would you use, and how would you design the solution?
