@@ -28,13 +28,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "08 - AWS/1001 - Solution Design using AWS Serverless Services.md",
+                "file": "08 - AWS/1002 - Solution Design for High-Performance Web Application.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1001 - Solution Design using AWS Serverless Services"
+              "title": "1002 - Solution Design for High-Performance Web Application"
             }
           }
         ]
@@ -168,9 +168,10 @@
   },
   "active": "960f6d71b4a32ff6",
   "lastOpenFiles": [
+    "08 - AWS/1002 - Solution Design for High-Performance Web Application.md",
     "08 - AWS/1001 - Solution Design using AWS Serverless Services.md",
-    "08 - AWS/0301 - Solution Design using Amazon RDS.md",
     "08 - AWS/0001 - Interview Questions from ChatGPT.md",
+    "08 - AWS/0301 - Solution Design using Amazon RDS.md",
     "08 - AWS/0201 - Solution Design using Amazon EKS.md",
     "08 - AWS/0101 - Solution Design using Amazon S3.md",
     "00 - Software engg/AWS Lambda.md",
@@ -195,7 +196,6 @@
     "04 - DSA/Array/(Prefix Sum) Subarray Sum Equals K.md",
     "05 - Design APIs and Data modes/0200 - Design DB School Management.md",
     "02 - System Design/0107 - Design Call Me Back After X Seconds service.md",
-    "00 - Software engg/0501 - Different types of deployment.md",
     "01 - Golang/Interview Questions",
     "zimages/{A1933F55-D743-44B3-96F7-A281DDE9ED60}.png",
     "zimages/{FCB2B997-BA1A-4169-8519-B6D0E87C7FBE}.png",

@@ -16,3 +16,7 @@
 
 ---
 
+## You are deploying a high-performance web application that needs to run on virtual servers. The application must handle dynamic scaling, ensure fault tolerance, and provide optimal performance. Which AWS services would you use, and how would you design the architecture?
+[[1002 - Solution Design for High-Performance Web Application]]
+
+---
