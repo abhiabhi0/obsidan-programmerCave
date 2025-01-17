@@ -1,4 +1,3 @@
-
 ### Explain how Go handles concurrency and describe the role of Goroutines and Channels. Can you also provide an example demonstrating their usage?
 #### **Feedback on your answer:**
 1. **Goroutines**:
