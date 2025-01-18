@@ -96,7 +96,7 @@
     - Each consumer gets exclusive access to specific partitions.
 **![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdP-zs5Z7-j2ftuo7-mmkvjiWRLTOI4u4RgwfPvwUnAjZDJiSv0bg8UvPKxqNgq4PG2PPfFbjpsoWQogxJtTSpqjcTXnrIfaAdwnOF0sf0zOKTDYLK3pGomn1XouUg-wpppc5Rnke0IXNxGfMQD4hjTuwqa?key=RcMDqZ96s0ud-MH2iUfptA)**
 
-[[01 - Kafka]]
+[[0101 - Introduction to Apache Kafka]]
 ##### Kafka Features:
 1. **Scalability**:
     - Partitions allow sharding of topics across brokers.
