@@ -1,5 +1,3 @@
-## What Are Slices?
-
 Slices in Go are a flexible, convenient, and powerful abstraction for sequences of elements. They are built on top of arrays and provide a more dynamic way to work with collections of data.
 
 Internally, a slice is a descriptor of a segment of an underlying array, consisting of three components:
@@ -207,45 +205,6 @@ emptySlice := make([]int, 0)
 fmt.Println(nilSlice == nil) // true
 fmt.Println(emptySlice == nil) // false
 ```
-
----
-
-## Advanced Example: Recursion and Slices
-
-Slices are passed by value, meaning the slice header is copied but the underlying array is shared.
-
-Example:
-
-```go
-package main
-import "fmt"
-
-func f(s []string, level int) {
-    if level > 5 {
-        return
-    }
-    s = append(s, fmt.Sprint(level))
-    f(s, level+1)
-    fmt.Println("level:", level, "slice:", s)
-}
-
-func main() {
-    f(nil, 0)
-}
-```
-
-Output:
-
-```
-level: 5 slice: [0 1 2 3 4 5]
-level: 4 slice: [0 1 2 3 4]
-level: 3 slice: [0 1 2 3]
-level: 2 slice: [0 1 2]
-level: 1 slice: [0 1]
-level: 0 slice: [0]
-```
-
-Each recursion creates a new slice header, leaving previous slices untouched.
 
 ---
 
