@@ -4,131 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "21ceccde45df90ed",
+        "id": "4af9c74c4601f540",
         "type": "tabs",
         "children": [
           {
-            "id": "af33f872c51ec487",
+            "id": "1aeea3f24b0136ff",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/0105 - new() and make() in Golang.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "0105 - new() and make() in Golang"
-            }
-          },
-          {
-            "id": "99b774da75ae4004",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/0103 - Function Literals, Naked Returns, Variadic Functions, Init Functions.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0103 - Function Literals, Naked Returns, Variadic Functions, Init Functions"
-            }
-          },
-          {
-            "id": "d174d44367e9c2df",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/0506 - http.Handler Interface in Go.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0506 - http.Handler Interface in Go"
-            }
-          },
-          {
-            "id": "4b800e4c2245f96b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "07 - Kafka/0000 - Index.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0000 - Index"
-            }
-          },
-          {
-            "id": "1fe184b4b748d971",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "07 - Kafka/0001 - Interview Questions from ChatGPT.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0001 - Interview Questions from ChatGPT"
-            }
-          },
-          {
-            "id": "94696944ff16d75c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/0505 - Sorting with sort.Interface in Go.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0505 - Sorting with sort.Interface in Go"
-            }
-          },
-          {
-            "id": "48ee8effceffbae7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/0502 - Interface Embedding.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0502 - Interface Embedding"
-            }
-          },
-          {
-            "id": "5c1cb559bc7d819a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01 - Golang/0503 - Type Assertion in Go.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "0503 - Type Assertion in Go"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -258,8 +147,11 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "1fe184b4b748d971",
+  "active": "1aeea3f24b0136ff",
   "lastOpenFiles": [
+    "02 - System Design/LLD/0002 - Design Patterns Summarized.md",
+    "02 - System Design/LLD/0001 - SOLID Principles Summarized.md",
+    "07 - Kafka/0001 - Interview Questions from ChatGPT.md",
     "07 - Kafka/0000 - Index.md",
     "01 - Golang/0506 - http.Handler Interface in Go.md",
     "01 - Golang/0505 - Sorting with sort.Interface in Go.md",
@@ -286,9 +178,6 @@
     "08 - AWS",
     "01 - Golang/Goroutines/0700 - select in Golang.md",
     "01 - Golang/0001 - Interview Questions by ChatGPT.md",
-    "01 - Golang/0201 - Slices.md",
-    "01 - Golang/Slice Internals.md",
-    "01 - Golang/1100 - Slice.md",
     "00 - Software engg/Docker",
     "01 - Golang/Interview Questions",
     "zimages/{A1933F55-D743-44B3-96F7-A281DDE9ED60}.png",
