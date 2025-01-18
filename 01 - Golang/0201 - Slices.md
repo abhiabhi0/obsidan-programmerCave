@@ -6,7 +6,19 @@ Internally, a slice is a descriptor of a segment of an underlying array, consist
 - **Length**: The number of elements in the slice.
 - **Capacity**: The maximum number of elements the slice can grow to without reallocating.
 
-**Plaintext Diagram**:
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var a = []int{10, 20, 30, 40, 50}
+	b := a[:3]
+	fmt.Println(b) // [10 20 30]
+	fmt.Println(len(b)) // 3
+	fmt.Println(cap(b)) // 5
+}
+```
 
 ```
 Underlying Array: [10, 20, 30, 40, 50]
