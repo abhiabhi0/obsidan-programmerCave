@@ -43,6 +43,21 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "01 - Golang/0506 - http.Handler Interface in Go.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0506 - http.Handler Interface in Go"
+            }
+          },
+          {
+            "id": "94696944ff16d75c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "01 - Golang/0505 - Sorting with sort.Interface in Go.md",
                 "mode": "source",
                 "backlinks": true,
@@ -155,10 +170,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Golang/0505 - Sorting with sort.Interface in Go.md"
+                "file": "01 - Golang/0506 - http.Handler Interface in Go.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0505 - Sorting with sort.Interface in Go"
+              "title": "Outline of 0506 - http.Handler Interface in Go"
             }
           },
           {
@@ -214,8 +229,9 @@
   },
   "active": "d174d44367e9c2df",
   "lastOpenFiles": [
-    "01 - Golang/0504 - Interface Values in Go.md",
     "01 - Golang/0505 - Sorting with sort.Interface in Go.md",
+    "01 - Golang/0506 - http.Handler Interface in Go.md",
+    "01 - Golang/0504 - Interface Values in Go.md",
     "01 - Golang/0500 - Interfaces in Go.md",
     "01 - Golang/0503 - Type Assertion in Go.md",
     "01 - Golang/0502 - Interface Embedding.md",
@@ -242,7 +258,6 @@
     "01 - Golang/Slice Internals.md",
     "01 - Golang/1100 - Slice.md",
     "06 - Kubernetes/0001 - Interview Questions from ChatGPT.md",
-    "00 - Software engg/Docker/0001 - Interview Questions from ChatGPT.md",
     "00 - Software engg/Docker",
     "01 - Golang/Interview Questions",
     "zimages/{A1933F55-D743-44B3-96F7-A281DDE9ED60}.png",
