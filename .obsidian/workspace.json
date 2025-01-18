@@ -118,13 +118,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "07 - Kafka/0109 - Kafka Partition.md",
+                "file": "07 - Kafka/0110 - Kafka Offset.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0109 - Kafka Partition"
+              "title": "0110 - Kafka Offset"
             }
           },
           {
@@ -215,10 +215,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "07 - Kafka/0109 - Kafka Partition.md"
+                "file": "07 - Kafka/0110 - Kafka Offset.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0109 - Kafka Partition"
+              "title": "Outline of 0110 - Kafka Offset"
             }
           },
           {
@@ -274,13 +274,14 @@
   },
   "active": "40a2ed7c01d10e48",
   "lastOpenFiles": [
+    "07 - Kafka/0109 - Kafka Partition.md",
+    "07 - Kafka/0110 - Kafka Offset.md",
     "07 - Kafka/0101 - Introduction to Apache Kafka.md",
     "07 - Kafka/0108 - Kafka Topic.md",
     "07 - Kafka/0001 - Interview Questions from ChatGPT.md",
     "07 - Kafka/0107 - Kafka Broker.md",
     "07 - Kafka/0106 - Kafka Consumer.md",
     "07 - Kafka/0105 - Kafka Producer.md",
-    "07 - Kafka/0109 - Kafka Partition.md",
     "07 - Kafka/0203 - Message Delivery Guarantees in Kafka.md",
     "07 - Kafka/0202 - How messages are added to Kafka partitions.md",
     "07 - Kafka/How does Kafka guarantees message order.md",
@@ -301,7 +302,6 @@
     "08 - AWS/0302 - Solution Design using Amazon RDS.md",
     "Resume Ideas",
     "08 - AWS/0301 - AWS RDS Notes.md",
-    "08 - AWS/0202 - Solution Design using Amazon EKS.md",
     "08 - AWS",
     "00 - Software engg/Docker",
     "01 - Golang/Interview Questions",
