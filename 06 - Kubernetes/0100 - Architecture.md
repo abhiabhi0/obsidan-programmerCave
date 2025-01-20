@@ -29,7 +29,7 @@ Worker Nodes are the machines where application workloads run, encapsulated in P
 
 - **Container Runtime**: This is responsible for running containers on a Node. Common container runtimes include Docker, containerd, and CRI-O. The runtime pulls container images from repositories and manages their execution[7][8].
 
-[[0102 - What is a Pod in Kubernetes|Pods]]
+[[0102 - What is a Pod in Kubernetes]]
 ### 3. Nodes in Kubernetes
 
 A Kubernetes cluster consists of at least one Master Node (Control Plane) and one or more Worker Nodes:
