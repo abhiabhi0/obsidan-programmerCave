@@ -98,6 +98,21 @@
             }
           },
           {
+            "id": "e9f2c0784ec855d8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01 - Golang/0501a - Interface example with Shape Interface.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "0501a - Interface example with Shape Interface"
+            }
+          },
+          {
             "id": "8b40d0b296eb316f",
             "type": "leaf",
             "state": {
@@ -113,7 +128,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -185,10 +200,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01 - Golang/0505 - Sorting with sort.Interface in Go.md"
+                "file": "01 - Golang/0501a - Interface example with Shape Interface.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0505 - Sorting with sort.Interface in Go"
+              "title": "Outline of 0501a - Interface example with Shape Interface"
             }
           },
           {
@@ -242,8 +257,9 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "f982cf7b28cc3507",
+  "active": "e9f2c0784ec855d8",
   "lastOpenFiles": [
+    "01 - Golang/0505 - Sorting with sort.Interface in Go.md",
     "01 - Golang/0504 - Interface Values in Go.md",
     "01 - Golang/0501b - Interface example with Worker Interface.md",
     "01 - Golang/0501a - Interface example with Shape Interface.md",
@@ -271,7 +287,6 @@
     "06 - Kubernetes/0203 - Service Discovery in Kubernetes.md",
     "06 - Kubernetes/0202 - Kubernetes Ingress with Kong container gateway.md",
     "06 - Kubernetes/0201 - API Gateway vs Ingress.md",
-    "06 - Kubernetes/0200 - What is Ingress in Kubernetes.md",
     "desktop.ini",
     "Resume Ideas",
     "08 - AWS",
