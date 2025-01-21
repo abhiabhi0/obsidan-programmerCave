@@ -30,7 +30,7 @@
 ### 03 - Memory Management
 - [[0301 - Garbage Collector in Go]]
 ### Interface
-- [[0501 - Interface example to select game for students]]
+- [[0501a - Interface example with Shape Interface]]
 
 ## Resources:
 https://dave.cheney.net/practical-go
