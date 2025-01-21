@@ -16,7 +16,7 @@
 - **Answer:**
     - Go’s lightweight runtime and simplicity suited our needs for fast, efficient, and scalable services.
     - It provides excellent support for concurrency, making it ideal for services handling high-throughput tasks.
-    - Go’s static typing and single binary deployment reduced runtime errors and simplified the CI/CD pipeline. [[Go’s Static Typing and Single Binary Deployment]]
+    - Go’s static typing and single binary deployment reduced runtime errors and simplified the CI/CD pipeline. [[0106 - Go’s Static Typing and Single Binary Deployment]]
 
 #### **4. What challenges did you face during the decomposition?**
 

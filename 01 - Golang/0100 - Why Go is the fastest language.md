@@ -24,6 +24,8 @@
 - **Fast Compile Times**
     - Rapid compilation.
     - Faster development, quick iterations.
+[[0106 - Go’s Static Typing and Single Binary Deployment]]
+![[Why Go is the fastest language 1.png]]
 ### 1. Compiled Language
 - Go is a **compiled language**, meaning that it translates source code directly into machine code without relying on an interpreter or virtual machine. This direct compilation results in faster execution times compared to languages that use bytecode or are interpreted, such as Java or Python [1][4][6].
 
@@ -46,7 +48,6 @@
 
 ### 7. Fast Compile Times
 - Go is known for its rapid compile times, which can significantly speed up the development process. This allows developers to iterate quickly and test their applications without long wait times [4][6].
-- [[Go’s Static Typing and Single Binary Deployment]]
 
 https://web.stanford.edu/class/ee380/Abstracts/100428-pike-stanford.pdf
 
