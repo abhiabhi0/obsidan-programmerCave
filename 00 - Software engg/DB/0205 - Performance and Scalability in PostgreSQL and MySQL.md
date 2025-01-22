@@ -1,4 +1,3 @@
-Both PostgreSQL and MySQL are robust database management systems capable of handling large datasets and high traffic. However, they exhibit different strengths in performance and scalability due to their underlying architectures and design philosophies.
 ## PostgreSQL: Performance and Scalability
 
 ### Performance

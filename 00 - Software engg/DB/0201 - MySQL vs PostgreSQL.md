@@ -1,5 +1,3 @@
-When comparing MySQL and PostgreSQL, it's essential to understand their fundamental differences, strengths, and weaknesses. Both are popular relational database management systems (RDBMS), but they cater to different use cases and preferences.
-
 ## Database Type
 - **MySQL**: A purely relational database management system, it is known for its simplicity and speed, making it suitable for web applications and read-heavy workloads.
 - **PostgreSQL**: An object-relational database management system (ORDBMS), it supports advanced features such as table inheritance and custom data types, making it more versatile for complex applications. 
