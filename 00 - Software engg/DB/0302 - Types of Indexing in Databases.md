@@ -1,5 +1,3 @@
-Indexing is a crucial technique in databases that enhances the speed of data retrieval operations. By creating an index on a database table, you can significantly reduce the amount of data the database engine needs to scan when executing queries. Here’s a detailed explanation of the various types of indexing commonly used in databases:
-
 ## Types of Indexing
 
 ### 1. **Primary Index**

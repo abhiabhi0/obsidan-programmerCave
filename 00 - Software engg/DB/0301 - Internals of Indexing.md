@@ -18,7 +18,7 @@
 
 4. **Full-Text Index**:
    - Optimized for searching text within string columns.
-
+[[0302 - Types of Indexing in Databases]]
 ### Internal Structures
 - **B-Tree Structure**:
   - Most common structure for indexes.
