@@ -98,7 +98,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -170,10 +170,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02 - System Design/HLD/0402 - SQL and NoSQL.md"
+                "file": "02 - System Design/HLD/0401 - SQL vs NoSQL Databases.md"
               },
               "icon": "lucide-list",
-              "title": "Outline of 0402 - SQL and NoSQL"
+              "title": "Outline of 0401 - SQL vs NoSQL Databases"
             }
           },
           {
@@ -227,8 +227,9 @@
       "oz-clear-unused-images:Clear Unused Images": false
     }
   },
-  "active": "de0d0990291f19f2",
+  "active": "510df347f7f92690",
   "lastOpenFiles": [
+    "02 - System Design/HLD/0402 - SQL and NoSQL.md",
     "02 - System Design/HLD/0401 - SQL vs NoSQL Databases.md",
     "00 - Software engg/DB/SQL vs NoSQL.md",
     "00 - Software engg/DB/Database Sharding.md",
@@ -254,7 +255,6 @@
     "01 - Golang/0500 - Interfaces in Go.md",
     "01 - Golang/0102 - Function Closures.md",
     "01 - Golang/0101 - What are Packages in Go.md",
-    "01 - Golang/Goroutines/0500 - Go runtime.md",
     "zimages/Why Go is the fastest language 1.png",
     "zimages/Why Go is the fastest language.png",
     "desktop.ini",
