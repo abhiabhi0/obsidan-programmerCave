@@ -1,91 +1,69 @@
-#### **1. CAP Theorem Overview**
-- **CAP** stands for **Consistency**, **Availability**, and **Partition Tolerance**.
-- **Theorem Statement**: In a distributed system, you can only guarantee **two out of three** properties simultaneously during a **network partition**.
-- **Key Insight**: Network partitions (P) are unavoidable in distributed systems. During a partition, the system must choose between **C** (consistency) or **A** (availability).
+The **CAP Theorem**, also known as **Brewer's Theorem**, is a fundamental principle in distributed computing that states that a distributed data store can only provide two of the following three guarantees simultaneously:
 
----
+1. **Consistency (C)**: All nodes see the same data at the same time. When a read operation is performed, it returns the most recent write or an error.
+2. **Availability (A)**: Every request received by a non-failing node in the system must result in a response, ensuring that the system remains operational.
+3. **Partition Tolerance (P)**: The system continues to operate even in the presence of network partitions or failures.
 
-#### **2. Definitions**
-- **Consistency (C)**:
-  - All nodes see the **same data at the same time**.
-  - Every read receives the **most recent write** or an error.
-  - Example: After writing to Node A, a read from Node B returns the updated value.
+### Key Points of CAP Theorem
 
-- **Availability (A)**:
-  - Every request receives a **non-error response**, but data may not be the latest.
-  - The system remains operational **even if some nodes fail**.
+- **Trade-offs**: In the event of a network partition, a system must choose between consistency and availability. This means that if a partition occurs, you can either ensure that all nodes return the latest data (consistency) or allow some nodes to respond with potentially outdated data (availability) but not both.
+- **Real-world implications**: No distributed system can completely avoid network failures; thus, understanding how to balance these properties is crucial for system design.
 
-- **Partition Tolerance (P)**:
-  - The system continues to function **despite network failures** (e.g., dropped messages, node crashes).
-  - Partitions are unavoidable in distributed systems (so **P is mandatory**).
+### Diagram Representation
 
----
+Here's a simple Venn diagram representation of the CAP theorem:
 
-#### **3. CAP Trade-offs**
-- **CP (Consistency + Partition Tolerance)**:
-  - Sacrifices availability during partitions.
-  - Example: A banking system ensures transactions are accurate (consistent) but may become temporarily unavailable during network issues.
-  - Databases: MongoDB, HBase, Redis (CP configurations).
+```
+       +------------------+
+       |                  |
+       |      C          |
+       |                  |
+       |      +----------+----------+
+       |      |                     |
+       |      |         A           |
+       |      |                     |
+       +------+---------------------+
+              |        P            |
+              +---------------------+
+```
 
-- **AP (Availability + Partition Tolerance)**:
-  - Sacrifices consistency during partitions.
-  - Example: A social media app remains available during outages but may show stale posts.
-  - Databases: Cassandra, DynamoDB, CouchDB.
+### Types of Systems Based on CAP
 
-- **CA (Consistency + Availability)**:
-  - Not practical for distributed systems. CA systems assume no partitions (e.g., single-node databases like MySQL in non-replicated setups).
+Based on which properties are prioritized, systems can be categorized as follows:
 
----
+- **CP Systems (Consistency and Partition Tolerance)**: These systems ensure that all nodes have consistent data even during network partitions but may sacrifice availability. An example is traditional relational databases like PostgreSQL.
+  
+- **AP Systems (Availability and Partition Tolerance)**: These systems prioritize availability and will return responses even if they cannot guarantee consistency during partitions. Examples include NoSQL databases like Cassandra and DynamoDB.
 
-#### **5. Real-World Examples**
-- **CP Systems**:
-  - **MongoDB**: Prioritizes consistency with leader election during partitions.
-  - **HBase**: Strong consistency via a single master node.
-- **AP Systems**:
-  - **Cassandra**: Uses eventual consistency; stays available during partitions.
-  - **DynamoDB**: Offers tunable consistency (AP by default).
+- **CA Systems (Consistency and Availability)**: These systems provide both consistency and availability under normal conditions but cannot handle network partitions effectively. Such systems are theoretical and not practically realizable in distributed environments.
+[[0300 - CAP Theorem, PACELC Theorem, and Master-Slave Systems]]
+### Practical Considerations
 
----
+When preparing for your interview, consider these practical aspects:
 
-#### **6. Key Concepts**
-- **Eventual Consistency** (AP systems):
-  - Data becomes consistent **after partitions heal** (e.g., social media feeds).
-- **BASE** (Alternative to ACID):
-  - **B**asically **A**vailable, **S**oft state, **E**ventual consistency.
-- **PACELC** Extension:
-  - If **P**artition occurs, choose between **A**vailability and **C**onsistency (**PAC**).  
-  - **E**lse (**L**atency vs. **C**onsistency) during normal operations.  
-  ![PACELC](https://www.datastax.com/sites/default/files/inline-images/pacelc.png)
+1. **Choosing Properties**: Be prepared to discuss scenarios where you would prioritize one property over another based on application requirements.
+2. **Real-World Examples**: Familiarize yourself with different databases and their approach to the CAP theorem:
+   - **Cassandra**: AP system prioritizing availability.
+   - **MongoDB**: Offers tunable consistency levels, allowing choices between CP and AP.
+   - **HBase**: Generally CP, focusing on strong consistency.
 
----
+3. **PACELC Theorem**: An extension of CAP, which states that even when there is no partition, you still have to choose between latency and consistency. This theorem adds another layer of decision-making for system design.
 
-#### **7. Common Interview Questions**
-1. **Explain CAP Theorem and its implications**.  
-   *Focus on trade-offs during partitions and real-world examples.*
+### Interview Preparation Tips
 
-2. **Can a distributed system be both CA?**  
-   *No. Partitions are inevitable, so true CA systems are non-distributed (e.g., single-node DBs).*
+- **Understand Trade-offs**: Be ready to explain how different choices affect system behavior and user experience.
+- **Use Diagrams**: When discussing systems, use diagrams to illustrate your points clearly.
+- **Stay Updated**: Keep abreast of current trends in distributed databases and their handling of CAP properties.
 
-3. **Why is DynamoDB considered AP?**  
-   *It prioritizes availability and eventual consistency during partitions.*
+By mastering these concepts and being able to articulate them clearly, you will demonstrate a solid understanding of distributed systems during your interview. Good luck!
 
-4. **How does a CP system handle a partition?**  
-   *It blocks requests to avoid inconsistency (e.g., MongoDB elects a new primary node).*
-
----
-
-#### **8. Misconceptions**
-- **Myth**: “You always have to sacrifice one of C, A, or P.”  
-  *Truth: The trade-off only applies **during a partition**.*
-- **Myth**: “AP systems are never consistent.”  
-  *Truth: They achieve **eventual consistency** after partitions resolve.*
-
----
-
-#### **9. How to Choose CP vs. AP**
-- **CP Use Cases**: Financial systems, inventory management (consistency critical).
-- **AP Use Cases**: Social media, IoT sensors (availability over consistency).
-
----
-
-**Good Luck!** Focus on trade-offs, examples, and clarity. You’ve got this! 🚀
+Citations:
+[1] https://www.bmc.com/blogs/cap-theorem/
+[2] https://www.tryexponent.com/blog/cap-theorem
+[3] https://daily.dev/blog/cap-theorem-explained-consistency-availability-partition-tolerance
+[4] https://www.geeksforgeeks.org/5-common-system-design-concepts-for-interview-preparation/
+[5] https://www.educative.io/blog/what-is-cap-theorem
+[6] https://www.youtube.com/watch?v=AJ11dV1dYqI
+[7] https://en.wikipedia.org/wiki/CAP_theorem
+[8] https://news.ycombinator.com/item?id=34999464
+[9] https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/

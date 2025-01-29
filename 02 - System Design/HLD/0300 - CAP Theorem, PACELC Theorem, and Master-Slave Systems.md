@@ -5,7 +5,7 @@ The CAP theorem states that a distributed system can only provide two of three p
 - **Consistency (C):** Every read receives the most recent write or an error.
 - **Availability (A):** Every request receives a response, without guarantee that it contains the most recent write.
 - **Partition Tolerance (P):** The system continues to operate despite network partitions.
-
+[[0101 - CAP Theorem]]
 #### **Real-life Example:**
 
 Rohit starts a company, "Reminder," where he notes reminders for callers. Initially, Rohit handles all calls and records them in a diary. As the business grows, he hires Raj to manage the workload. This leads to:
