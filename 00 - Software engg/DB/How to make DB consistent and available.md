@@ -82,7 +82,7 @@ The **CAP theorem** states that in a distributed system, you can only guarantee 
 - **SQL Databases**: Prioritize consistency over availability.
 - **NoSQL Databases**: Often prioritize availability and partition tolerance over immediate consistency (eventual consistency).
 
-Ref: [[CAP Theorem]]
+Ref: [[0101 - CAP Theorem]]
 
 ---
 ### **Ensuring Both Consistency and Availability**
